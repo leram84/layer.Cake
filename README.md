@@ -9,6 +9,7 @@ layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr)
 * Highly modular and extensible via custom modules
 * Custom buttons on homepage that take you directly to other tabs
 * Recently Added background tile with webkit hover animations
+* Login page, chat room, and homepage included
 
 ## Installation Instructions
 
