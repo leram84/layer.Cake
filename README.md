@@ -1,6 +1,5 @@
 # layer#Cake
-layer#Cake is a theme engine for Organizr
-It will take 7 user submitted colors (5 fill layers and 2 text layers) and appply a well thought out logic to generate your theme.
+layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme.
 
 ## Features
 
@@ -21,10 +20,10 @@ It will take 7 user submitted colors (5 fill layers and 2 text layers) and apppl
 
 ## Adding Custom Modules
 
-Once your base theme is setup, you can also make some customizations and additions via [custom modules](https://github.com/leram84/layer.Cake/tree/master/Modules).
+Once your base theme is setup, you can also make some customization's and additions via [custom modules](https://github.com/leram84/layer.Cake/tree/master/Modules).
 
-[The Custom Chat Page Module](https://github.com/leram84/layer.Cake/blob/master/Modules/custom-chat-page.css) and [The Custom Login Page Module](https://github.com/leram84/layer.Cake/blob/master/Modules/custom-login-page.css) (to use different color sets than homepage) can be installed by OVERWRITTING the default modules in the CSS box.
+[The Custom Chat Page Module](https://github.com/leram84/layer.Cake/blob/master/Modules/custom-chat-page.css) and [The Custom Login Page Module](https://github.com/leram84/layer.Cake/blob/master/Modules/custom-login-page.css) (to use different color sets than homepage) can be installed by OVERWRITING the default modules in the CSS box.
 
-[The Remove Blur Module](https://github.com/leram84/layer.Cake/blob/master/Modules/remove-blur.css) (to remove the blur effect that shows when a tab is active) can be installed by pasting it to the very bottom of your css box.
+[The Remove Blur Module](https://github.com/leram84/layer.Cake/blob/master/Modules/remove-blur.css) (to remove the blur effect that shows when a tab is active) can be installed by pasting it to the very bottom of your CSS box.
 
 And any of [The Custom Button Modules](https://github.com/leram84/layer.Cake/tree/master/Modules) can be installed by pasting to the very bottom of the HTML box and editing the 6 or 8 user edit lines that are identified in the code. 
