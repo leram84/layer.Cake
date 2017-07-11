@@ -1,59 +1,43 @@
-    <!-- ///////////////////////    Four Button Grid     \\\\\\\\\\\\\\\\\\\\\\\ -->
-    <!-- \\\\\\\\\\\\\\\\\\\\\\\      Custom Module      /////////////////////// -->
-    <!-- ///////////////////////       Button One        \\\\\\\\\\\\\\\\\\\\\\\ -->
-            <div class="row">
-        <!-- **User Edit** Replace bLayerOne with the LOWERCASE name of the tab you wish this button to go to **User Edit** -->
-                <div tab="bLayerOne" class="hp-link col-sm-6 col-lg-6">
-                    <div class="content-box green-bg" style="cursor: pointer;">
-        <!-- **User Edit** Replace btLayerOne with the Text you wish to display on this button **User Edit** -->
-                        <h1 style="margin: 10px" class="text-uppercase text-center">btLayerOne</h1>
-                        <div class="clearfix"></div>
-                     </div>
-                </div>
+<!-- ///////////////////////      Four Button        \\\\\\\\\\\\\\\\\\\\\\\ -->
+<!-- \\\\\\\\\\\\\\\\\\\\\\\     Custom Module       /////////////////////// -->
+<div class="row"> 
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\       Button One        /////////////////////// -->    <div tab="plex" class="hp-link col-sm-6 col-lg-6">
+        <div class="content-box green-bg" style="cursor: pointer;">
+            <h1 style="margin: 10px" class="text-uppercase text-center">Watch</h1>
+            <div class="clearfix"></div>
+         </div>
+    </div>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\       Button One        /////////////////////// -->
     <!-- ///////////////////////       Button Two        \\\\\\\\\\\\\\\\\\\\\\\ -->
-        <!-- **User Edit** Replace bLayerTwo with the LOWERCASE name of the tab you wish this button to go to **User Edit** -->
-                <div tab="bLayerTwo" class="hp-link col-sm-6 col-lg-6">
-                    <div class="content-box green-bg" style="cursor: pointer;">
-        <!-- **User Edit** Replace btLayerTwo with the Text you wish to display on this button **User Edit** -->
-                        <h1 style="margin: 10px" class="text-uppercase text-center">btLayerTwo</h1>
-                        <div class="clearfix"></div>
-                     </div>
-                </div>
+    <div tab="chat" class="hp-link col-sm-6 col-lg-6">
+        <div class="content-box green-bg" style="cursor: pointer;">
+            <h1 style="margin: 10px" class="text-uppercase text-center">Chat</h1>
+            <div class="clearfix"></div>
+         </div>
+    </div>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\       Button Two        /////////////////////// -->
-            </div>
-            <script>
-                $('.hp-link').click(function(e){
-                    window.parent.$("li[name^='"+$(this).attr('tab')+"']").click();
-                    e.preventDefault();
-                });
-            </script>
     <!-- ///////////////////////      Button Three       \\\\\\\\\\\\\\\\\\\\\\\ -->
-        <!-- **User Edit** Replace bLayerThree with the LOWERCASE name of the tab you wish this button to go to **User Edit** -->
-                <div tab="bLayerThree" class="hp-link col-sm-6 col-lg-6">
-                    <div class="content-box green-bg" style="cursor: pointer;">
-        <!-- **User Edit** Replace btLayerThree with the Text you wish to display on this button **User Edit** -->
-                        <h1 style="margin: 10px" class="text-uppercase text-center">btLayerThree</h1>
-                        <div class="clearfix"></div>
-                     </div>
-                </div>
+    <div tab="chat" class="hp-link col-sm-6 col-lg-6">
+        <div class="content-box green-bg" style="cursor: pointer;">
+            <h1 style="margin: 10px" class="text-uppercase text-center">Request Show/Movie (WIP)</h1>
+            <div class="clearfix"></div>
+         </div>
+    </div>
     <!-- \\\\\\\\\\\\\\\\\\\\\\\      Button Three       /////////////////////// -->
     <!-- ///////////////////////       Button Four       \\\\\\\\\\\\\\\\\\\\\\\ -->
-        <!-- **User Edit** Replace bLayerFour with the LOWERCASE name of the tab you wish this button to go to **User Edit** -->
-                <div tab="bLayerFour" class="hp-link col-sm-6 col-lg-6">
-                    <div class="content-box green-bg" style="cursor: pointer;">
-        <!-- **User Edit** Replace btLayerFour with the Text you wish to display on this button **User Edit** -->
-                        <h1 style="margin: 10px" class="text-uppercase text-center">btLayerFour</h1>
-                        <div class="clearfix"></div>
-                     </div>
-                </div>
-    <!-- \\\\\\\\\\\\\\\\\\\\\\\       Button Four       /////////////////////// -->
-            </div>
-            <script>
-                $('.hp-link').click(function(e){
-                    window.parent.$("li[name^='"+$(this).attr('tab')+"']").click();
-                    e.preventDefault();
-                });
-            </script>
-    <!-- ///////////////////////    Four Button Grid     \\\\\\\\\\\\\\\\\\\\\\\ -->
-    <!-- \\\\\\\\\\\\\\\\\\\\\\\      Custom Module      /////////////////////// -->
+    <div tab="donate" class="hp-link col-sm-6 col-lg-6">
+        <div class="content-box green-bg" style="cursor: pointer;">
+            <h1 style="margin: 10px" class="text-uppercase text-center">Donate</h1>
+            <div class="clearfix"></div>
+         </div>
+    </div>
+    <!-- ///////////////////////       Button Four       \\\\\\\\\\\\\\\\\\\\\\\ -->
+</div>
+<script>
+    $('.hp-link').click(function(e){
+        window.parent.$("li[name^='"+$(this).attr('tab')+"']").click();
+        e.preventDefault();
+    });
+</script>
+<!-- ///////////////////////    Four Button Grid     \\\\\\\\\\\\\\\\\\\\\\\ -->
+<!-- \\\\\\\\\\\\\\\\\\\\\\\      Custom Module      /////////////////////// -->

@@ -1,62 +1,63 @@
-    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
-    /* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-    /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-        :root {
-            --color-lLayerOne: #272361;
-            --color-lLayerTwo: #662f8f;
-            --color-lLayerThree: #ed2e72;
-            --color-lLayerFour: #9680bb;
-            --color-ltLayerOne: #71cde5;
-            --color-ltLayerTwo: #ffffff;
+/* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+/* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    :root {
+        --color-lLayerOne: #272b30;
+        --color-lLayerTwo: #63a8eb;
+        --color-lLayerThree: #3d3d3d;
+        --color-lLayerFour: #000000;
+        --color-ltLayerOne: #000000;
+        --color-ltLayerTwo: #ffffff;
+    }
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+/* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    /* Background */
+        .table-cell.text-center {
+            background: var(--color-lLayerOne);
         }
-    /* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
-    /* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
-        /* Background */
-            .table-cell.text-center {
-                background: var(--color-lLayerOne);
-            }
-        /* Close Button */
-            button.close {
-                color: var(--color-ltLayerOne) !important;
-                text-shadow: 0 1px 0 grey;
-            }
-        /* Login Box Header */
+     /* Close Button */
+        button.close {
+            color: var(--color-ltLayerOne) !important;
+            text-shadow: 0 1px 0 grey;
+        }
+    /* Login Box Header */
             .biggest-box {
-                background: var(--color-lLayerTwo) !important;
-            }
-        /* Login Box Header Text */
-            h1.zero-m.text-uppercase {
-                color: var(--color-ltLayerOne) !important;
-            }
-        /* Login Box */
-            div.big-box.text-left.login-form {
-                color: var(--color-ltLayerTwo) !important;
-                background: var(--color-lLayerThree);
-            }
-        /* Dynamic Login Box Text Input Line */
-            .form-control.material {
-                background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(white, white);
-            }
-        /* Login Button */
-            button#loginSubmit {
-                background: var(--color-lLayerTwo) !important;
-            }
-        /* Login Button Text */
-            button#loginSubmit text {
-                color: var(--color-ltLayerTwo) !important;
-            }
-        /* Forgot Password Button */
-            button#switchForgot {
-                background: var(--color-lLayerFour) !important;
-            }
-        /* Forgot Password Button Text */
-            button#switchForgot text {
-                color: var(--color-ltLayerTwo) !important;
-            }
-    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+            background: var(--color-lLayerTwo) !important;
+        }
+    /* Login Box Header Text */
+        h1.zero-m.text-uppercase {
+            color: var(--color-ltLayerOne) !important;
+        }
+    /* Login Box */
+        .content-box {
+            color: var(--color-ltLayerTwo) !important;
+            background: var(--color-lLayerThree);
+        }
+    /* Dynamic Login Box Text Input Line */
+        .form-control.material {
+            background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(black, white);
+        }
+    /* Login Button */
+        button#loginSubmit {
+            background: var(--color-lLayerTwo) !important;
+        }
+    /* Login Button Text */
+        button#loginSubmit text {
+            color: var(--color-ltLayerTwo) !important;
+        }
+    /* Forgot Password Button */
+        button#switchForgot {
+            background: var(--color-lLayerFour) !important;
+        }
+    /* Forgot Password Button Text */
+        button#switchForgot text {
+            color: var(--color-ltLayerTwo) !important;
+        }
+/* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+/* --------------------------------------------------------------------------- */
