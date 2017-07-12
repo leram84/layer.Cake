@@ -1,10 +1,16 @@
+/* /////////////////////////        Calendar         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
 <style>
-       /* Calendar Unavailable */
+        /* Calendar Unavailable */
             .label.label-danger.well-sm,.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.red-bg {
                 background-color: var(--color-cLayerThree) !important;
             }
         /* Calendar Released */
             .label.light-blue-bg.well-sm, .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.light-blue-bg {
-                background-color: #40aec3 !important;
+                background-color: var(--color-layerSix) !important;
             }
 </style>
+/* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* /////////////////////////        Calendar         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
