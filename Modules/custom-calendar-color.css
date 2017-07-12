@@ -1,8 +1,5 @@
 <style>
-/* /\/\/\/\/\/\/\/\/\/\/\/\ */
-/*  FINFLIX CUSTOM  */
-/* \/\/\/\/\/\/\/\/\/\/\/\/ */
-        /* Calendar Unavailabe */
+       /* Calendar Unavailable */
             .label.label-danger.well-sm,.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.red-bg {
                 background-color: var(--color-cLayerThree) !important;
             }
