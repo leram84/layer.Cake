@@ -22,6 +22,10 @@
                 color: var(--color-tLayerTwo) !important;
                 background: var(--color-layerThree);
             }
+        /* Login Box Border Radius */
+            .in .content-box {
+                background: var(--color-layerTwo);
+            }
         /* Dynamic Login Box Text Input Line */
             .form-control.material {
                 background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(white, white);
