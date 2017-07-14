@@ -6,10 +6,10 @@
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// -->
     <style>
         :root {
-            --color-calGreen: #42b382;
-            --color-calRed: #e9585b;
-            --color-calBlue: #3f51b5;
-            --color-calLBlue: #90c1f1;
+            --color-calAvailable: #42b382;
+            --color-calUnavailable: #e9585b;
+            --color-calUnreleased: #3f51b5;
+            --color-calPremier: #90c1f1;
         }
     /* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
@@ -17,29 +17,29 @@
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
     /* Calendar Legend */
         .label.label-primary.well-sm {
-            background: var(--color-calGreen);
+            background: var(--color-calAvailable);
         }
         .label.label-danger.well-sm {
-            background: var(--color-calRed);
+            background: var(--color-calUnavailable);
         }
         .label.indigo-bg.well-sm {
-            background: var(--color-calBlue) !important;
+            background: var(--color-calUnreleased) !important;
         }
         .label.light-blue-bg.well-sm {
-            background: var(--color-calLBlue) !important;
+            background: var(--color-calPremier) !important;
         }
     /* Calendar Color Code */
         .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.green-bg {
-            background: var(--color-calGreen) !important;
+            background: var(--color-calAvailable) !important;
         }
         .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.red-bg {
-            background: var(--color-calRed) !important;
+            background: var(--color-calUnavailable) !important;
         }
         .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.indigo-bg {
-            background: var(--color-calBlue) !important;
+            background: var(--color-calUnreleased) !important;
         }
         .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.light-blue-bg {
-            background: var(--color-calLBlue) !important;
+            background: var(--color-calPremier) !important;
         }
     </style>
     <!-- /////////////////////////     Cal Color Codes     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
