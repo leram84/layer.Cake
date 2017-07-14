@@ -28,4 +28,10 @@ span#openTrailer.label.label-danger {
 div#calendarMainID.modal-content {
     padding-bottom: 10px;
 }
+
+
+/* Needed to fix Media Search .gray-bg */
+.form-control.gray-bg {
+    background: var(--color-layerThree) !important;
+}
     </style>
