@@ -1,0 +1,31 @@
+<script>
+$(document).ready(function(){
+    $("#calendarExtra").addClass("gray-bg");
+});
+</script>
+
+<style>
+.gray-bg {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+img#calendarPoster {
+    border: 1px solid grey;
+    box-shadow: 0 25px 45px rgba(0,0,0,.5);
+}
+div#calendarMain.modal-content {
+    border: 1px solid grey;
+    filter: brightness(90%) contrast(100%) !important;
+}
+div.col-lg-8.col-sm-7 {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    width: 58%;
+    margin-top: 50px;
+}
+span#openTrailer.label.label-danger {
+    font-size: 18px;
+}
+div#calendarMainID.modal-content {
+    padding-bottom: 10px;
+}
+    </style>
