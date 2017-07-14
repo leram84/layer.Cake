@@ -25,6 +25,8 @@ Once your base theme is setup, you can also make some customization's and additi
 
 [The Custom Chat Page Module](https://github.com/leram84/layer.Cake/blob/master/Modules/custom-chat-page.css) and [The Custom Login Page Module](https://github.com/leram84/layer.Cake/blob/master/Modules/custom-login-page.css) (to use different color sets than homepage) can be installed by OVERWRITING the default modules in the CSS box.
 
+[The Custom Calendar Color Codes Module](https://github.com/leram84/layer.Cake/blob/master/Modules/Custom%20Calendar%20Color%20Codes.html) (to change the green, red, blue and light blue calendar colors) can be installed by pasting it to the very bottom of your HTML box.
+
 [The Remove Blur Module](https://github.com/leram84/layer.Cake/blob/master/Modules/remove-blur.css) (to remove the blur effect that shows when a tab is active) can be installed by pasting it to the very bottom of your CSS box.
 
 And any of [The Custom Button Modules](https://github.com/leram84/layer.Cake/tree/master/Modules) can be installed by pasting to the very bottom of the HTML box and editing the 6 or 8 user edit lines that are identified in the code. 
