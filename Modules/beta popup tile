@@ -29,6 +29,11 @@ div#calendarMainID.modal-content {
     padding-bottom: 10px;
 }
 
+/* Trailer background */
+.palette-Grey-900 {
+    background: rgba(0, 0, 0, 0.0)!important;
+}
+
 
 /* Needed to fix Media Search .gray-bg */
 .form-control.gray-bg {
