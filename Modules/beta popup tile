@@ -35,8 +35,13 @@ div#calendarMainID.modal-content {
 }
 
 
+
 /* Needed to fix Media Search .gray-bg */
 .form-control.gray-bg {
     background: var(--color-layerThree) !important;
 }
+span.badge.gray-bg {
+    background: #fff!important;
+}
+
     </style>
