@@ -4,7 +4,7 @@
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
         :root {
             --color-layerOne: #1C2833;
-            --color-layerTwo: #2B3E50;
+            --color-layerTwo: rgba(43,62,80, 0.7);
             --color-layerThree: #3E4F5F;
             --color-layerFour: #5D6B7F;
             --color-layerFive: #CC7B19;
