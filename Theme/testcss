@@ -1,0 +1,149 @@
+    /* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+    /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+        :root {
+            --color-layerOne: #1C2833;
+            --color-layerTwo: #2B3E50;
+            --color-layerThree: #3E4F5F;
+            --color-layerFour: #5D6B7F;
+            --color-layerFive: #CC7B19;
+            --color-tLayerOne: #CC7B19;
+            --color-tLayerTwo: #ffffff;
+        }
+    /* /////////////////////////                         \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
+    /* /////////////////////////         End Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
+    /* --------------------------------------------------------------------------- */
+    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Background */
+            .table-cell.text-center {
+                background: var(--color-layerOne);
+            }
+        /* Close Button */
+            button.close {
+                color: var(--color-layerFive) !important;
+                text-shadow: 0 1px 0 grey;
+            }
+        /* Login Box Header */
+            .biggest-box {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Login Box Header Text */
+            h1.zero-m.text-uppercase {
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Login Box */
+            div.big-box.text-left.login-form {
+                color: var(--color-tLayerTwo);
+                background: var(--color-layerThree);
+            }
+/* Login Box Border Radius */
+    .in .content-box {
+        background: var(--color-layerTwo);
+    }
+        /* Dynamic Login Box Text Input Line */
+            .form-control.material {
+                background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(white, white);
+            }
+        /* Login Button */
+            button#loginSubmit {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Login Button Text */
+            button#loginSubmit text {
+                color: var(--color-tLayerTwo) !important;
+            }
+        /* Forgot Password Button */
+            button#switchForgot {
+                background: var(--color-layerFour) !important;
+            }
+        /* Forgot Password Button Text */
+            button#switchForgot text {
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    /* --------------------------------------------------------------------------- */
+    /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Chat Page Background */
+            body#chat.scroller-body {
+                background-color: var(--color-layerOne);
+            }
+        /* Chat Box Background */
+            .content-box.big-box.chat.gray-bg {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Received Messages */
+            .chat .chat-double > li.chat-inverted > .chat-panel {
+                background: var(--color-layerThree) !important;
+                border-color: var(--color-layerThree) !important;
+            }
+        /* Received Message Direction Indicator */
+            .chat .chat-double .chat-panel.red-bg:after {
+                border-right: 9px solid var(--color-layerThree);
+            }
+        /* Sent Messages */
+            .chat .chat-double li .chat-panel {
+                background: var(--color-layerFour) !important;
+                border-color: var(--color-layerFour) !important;
+            }
+        /* Sent Message Direction Indicator */
+            .chat .chat-double .chat-panel.blue-bg:after {
+                border-left: 9px solid var(--color-layerFour);
+            }
+        /* Message Username Text */
+            h4.pull-left.zero-m {
+                color: var(--color-tLayerTwo);
+            }
+        /* Message Date and Time Text */
+            p.pull-right {
+                color: var(--color-tLayerTwo);
+            }
+        /* Chat Message Text */
+            .chat-body {
+                color: var(--color-tLayerTwo);
+            }
+        /* Text Input Box */
+            input#message.form-control.gray-bg {
+                background: var(--color-layerOne) !important;
+                border-color: var(--color-tLayerTwo);
+            }
+        /* Online Box Header */
+            .content-title.big-box.i-block.gray-bg {
+                background-color: var(--color-layerTwo) !important;
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Online Box Divider Line */
+            .col-lg-2 .content-box {
+                background: var(--color-layerOne);
+            }
+        /* Online Users Box */
+            div#onlineusers.big-box {
+                color: var(--color-tLayerTwo);
+                background: var(--color-layerTwo);
+            }
+        /* Online User Badge */
+            .badge-success {
+                background: var(--color-layerFive);
+            }
+    /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    /* --------------------------------------------------------------------------- */
+    /* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Main Menu Text */
+            .profile-usermenu ul li a {
+                color: var(--color-tLayerTwo);
+            }
+    /* /////////////////////////        Home Page        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+/* This will remove the blur effect that shows on tab icons when they are active (Replace "rgba(0, 0, 0, 0.0)" with a color code of your choice to change the color of the blur). */
+    .TabOpened {
+        -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.0));
+        -filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.0));
+    }
+</style>
