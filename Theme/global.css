@@ -48,7 +48,7 @@
             }
     /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-    /* --------------------------------------------------------------------------- */
+
     /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
         /* Chat Page Background */
@@ -114,7 +114,7 @@
             }
     /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-    /* --------------------------------------------------------------------------- */
+
     /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
         /* Settings Page Background */
@@ -145,7 +145,38 @@
             }
     /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
-    /* --------------------------------------------------------------------------- */
+
+    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Background */
+            .members-sidebar-open {
+                background: var(--color-layerOne) !important
+            }
+        /* Close Button */
+            i.fa.fa-remove.fa-lg.pull-right {
+                color: var(--color-layerFive);
+            }
+        /* Username */
+            .profile-usertitle-name {
+                color: var(--color-tLayerOne)!important;
+            }
+        /* User Class */
+            .profile-usertitle-job {
+                color: var(--color-tLayerTwo)!important;
+            }
+        /* Edit Info Button */
+            .profile-userbuttons .text-uppercase {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFour);
+            }
+        /* Logout Button */
+            button.logout.btn.btn-warning.waves.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFive);
+            }
+    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+
     /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
         /* Not Found Page Body Text */
