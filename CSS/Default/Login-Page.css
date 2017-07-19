@@ -1,0 +1,50 @@
+    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Background */
+            .table-cell.text-center {
+                background: var(--color-layerOne);
+            }
+        /* Close Button */
+            button.close {
+                color: var(--color-layerFive) !important;
+                text-shadow: 0 1px 0 grey;
+            }
+        /* Login Box Header */
+            .biggest-box {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Login Box Header Text */
+            h1.zero-m.text-uppercase {
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Login Box */
+            div.big-box.text-left.login-form {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerThree);
+            }
+        /* Login Box Border Radius */
+            .in .content-box {
+                background: var(--color-layerTwo);
+            }
+        /* Dynamic Login Box Text Input Line */
+            .form-control.material {
+                background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(white, white);
+            }
+        /* Login Button */
+            button#loginSubmit {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Login Button Text */
+            button#loginSubmit text {
+                color: var(--color-tLayerTwo) !important;
+            }
+        /* Forgot Password Button */
+            button#switchForgot {
+                background: var(--color-layerFour) !important;
+            }
+        /* Forgot Password Button Text */
+            button#switchForgot text {
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
