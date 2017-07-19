@@ -2,10 +2,10 @@
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// -->
     /* Calendar Legend */
         .label.label-primary.well-sm {
-            background: var(--color-calAvailable);
+            background: var(--color-calAvailable) !important;
         }
         .label.label-danger.well-sm {
-            background: var(--color-calUnavailable);
+            background: var(--color-calUnavailable) !important;
         }
         .label.indigo-bg.well-sm {
             background: var(--color-calUnreleased) !important;
