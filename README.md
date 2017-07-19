@@ -75,7 +75,7 @@ Once your base theme is setup, you can also make some customization's and additi
 > **Description**:  Add an image as your homepage background. <br/>
 > **Installation**: Copy and paste [this code](https://github.com/leram84/layer.Cake/blob/master/HTML/Add-Ons/Homepage-Background-Image.html) to the bottom of your HTML box, and edit the `<<User Edit>>` line.
 
-[Custom Button Modules Add-Ons](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) 
+[Custom Button Module Add-Ons](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) 
 > **Description**:  Adds Custom Buttons to the top of your homepage that will navigate to other tabs INSIDE Organizr <br/>
 > **Installation**: Choose your layout from the [HTML Add-On Section](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) and paste the code to the bottom of your HTML box. Then edit the 6-8 `<<User Edit>>` lines identified in the code.
 
