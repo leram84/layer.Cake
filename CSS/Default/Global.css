@@ -1,0 +1,207 @@
+    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Background */
+            .table-cell.text-center {
+                background: var(--color-layerOne);
+            }
+        /* Close Button */
+            button.close {
+                color: var(--color-layerFive) !important;
+                text-shadow: 0 1px 0 grey;
+            }
+        /* Login Box Header */
+            .biggest-box {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Login Box Header Text */
+            h1.zero-m.text-uppercase {
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Login Box */
+            div.big-box.text-left.login-form {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerThree);
+            }
+        /* Login Box Border Radius */
+            .in .content-box {
+                background: var(--color-layerTwo);
+            }
+        /* Dynamic Login Box Text Input Line */
+            .form-control.material {
+                background-image: linear-gradient(var(--color-layerFive), var(--color-layerFive)), linear-gradient(white, white);
+            }
+        /* Login Button */
+            button#loginSubmit {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Login Button Text */
+            button#loginSubmit text {
+                color: var(--color-tLayerTwo) !important;
+            }
+        /* Forgot Password Button */
+            button#switchForgot {
+                background: var(--color-layerFour) !important;
+            }
+        /* Forgot Password Button Text */
+            button#switchForgot text {
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+
+    /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Chat Page Background */
+            body#chat.scroller-body {
+                background-color: var(--color-layerOne);
+            }
+        /* Chat Box Background */
+            .content-box.big-box.chat.gray-bg {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Received Messages */
+            .chat .chat-double > li.chat-inverted > .chat-panel {
+                background: var(--color-layerThree) !important;
+                border-color: var(--color-layerThree) !important;
+            }
+        /* Received Message Direction Indicator */
+            .chat .chat-double .chat-panel.red-bg:after {
+                border-right: 9px solid var(--color-layerThree);
+            }
+        /* Sent Messages */
+            .chat .chat-double li .chat-panel {
+                background: var(--color-layerFour) !important;
+                border-color: var(--color-layerFour) !important;
+            }
+        /* Sent Message Direction Indicator */
+            .chat .chat-double .chat-panel.blue-bg:after {
+                border-left: 9px solid var(--color-layerFour);
+            }
+        /* Message Username Text */
+            h4.pull-left.zero-m {
+                color: var(--color-tLayerTwo);
+            }
+        /* Message Date and Time Text */
+            p.pull-right {
+                color: var(--color-tLayerTwo);
+            }
+        /* Chat Message Text */
+            .chat-body {
+                color: var(--color-tLayerTwo);
+            }
+        /* Text Input Box */
+            input#message.form-control.gray-bg {
+                background: var(--color-layerOne) !important;
+                border-color: var(--color-tLayerTwo);
+            }
+        /* Online Box Header */
+            .content-title.big-box.i-block.gray-bg {
+                background-color: var(--color-layerTwo) !important;
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Online Box Divider Line */
+            .col-lg-2 .content-box {
+                background: var(--color-layerOne);
+            }
+        /* Online Users Box */
+            div#onlineusers.big-box {
+                color: var(--color-tLayerTwo);
+                background: var(--color-layerTwo);
+            }
+        /* Online User Badge */
+            .badge-success {
+                background: var(--color-layerFive);
+            }
+    /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    
+    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Settings Page Background */
+            body.scroller-body {
+                background: var(--color-layerOne) !important;
+            }
+        /* Settings Panel Background */
+            .profile-sidebar {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Main Menu Text */
+            .profile-usermenu ul li a {
+                color: var(--color-tLayerTwo);
+            }
+        /* Settings Panel Hover */
+            .profile-usermenu ul li a:hover {
+                background: var(--color-layerThree) !important;
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Settings Panel Active */
+            .profile-usermenu ul li.active a {
+                border-left: 3px solid var(--color-layerFive) !important;
+            }
+        /* Settings Active Panel Header */
+            .email-active .email-header {
+                color: var(--color-tLayerOne) !important;
+                background: var(--color-layerTwo) !important;
+            }
+    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    
+    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Background */
+            .members-sidebar-open {
+                background: var(--color-layerOne) !important
+            }
+        /* Close Button */
+            i.fa.fa-remove.fa-lg.pull-right {
+                color: var(--color-layerFive);
+            }
+        /* Username */
+            .profile-usertitle-name {
+                color: var(--color-tLayerOne)!important;
+            }
+        /* User Class */
+            .profile-usertitle-job {
+                color: var(--color-tLayerTwo)!important;
+            }
+        /* Edit Info Button */
+            .profile-userbuttons .text-uppercase {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFour);
+            }
+        /* Logout Button */
+            button.logout.btn.btn-warning.waves.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFive);
+            }
+        /* Update Button */
+            input.btn.btn-success.text-uppercase.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFive);
+            }
+        /* Go Back Button */
+            button#goBackButtons.btn.btn-primary.text-uppercase.waves.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFour);
+            }
+        /* Logout Page Text */
+            h3.zero-m.text-uppercase {
+                color: var(--color-tLayerTwo) !important;
+            }
+            a#logoutSubmit.i-block {
+                color: var(--color-tLayerTwo) !important;
+            }
+            a.i-block {
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+
+    /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Not Found Page Body Text */
+            h4.text-center{
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
