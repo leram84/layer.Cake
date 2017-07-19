@@ -1,0 +1,90 @@
+    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Settings Page Background */
+            body.scroller-body {
+                background: var(--color-layerOne) !important;
+            }
+        /* Settings Panel Background */
+            .profile-sidebar {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Main Menu Text */
+            .profile-usermenu ul li a {
+                color: var(--color-tLayerTwo);
+            }
+        /* Settings Panel Hover */
+            .profile-usermenu ul li a:hover {
+                background: var(--color-layerThree) !important;
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Settings Panel Active */
+            .profile-usermenu ul li.active a {
+                border-left: 3px solid var(--color-layerFive) !important;
+            }
+        /* Settings Active Panel Header */
+            .email-active .email-header {
+                color: var(--color-tLayerOne) !important;
+                background: var(--color-layerTwo) !important;
+            }
+    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+    
+    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Background */
+            .members-sidebar-open {
+                background: var(--color-layerOne) !important
+            }
+        /* Close Button */
+            i.fa.fa-remove.fa-lg.pull-right {
+                color: var(--color-layerFive);
+            }
+        /* Username */
+            .profile-usertitle-name {
+                color: var(--color-tLayerOne)!important;
+            }
+        /* User Class */
+            .profile-usertitle-job {
+                color: var(--color-tLayerTwo)!important;
+            }
+        /* Edit Info Button */
+            .profile-userbuttons .text-uppercase {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFour);
+            }
+        /* Logout Button */
+            button.logout.btn.btn-warning.waves.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFive);
+            }
+        /* Update Button */
+            input.btn.btn-success.text-uppercase.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFive);
+            }
+        /* Go Back Button */
+            button#goBackButtons.btn.btn-primary.text-uppercase.waves.waves-effect.waves-float {
+                color: var(--color-tLayerTwo) !important;
+                background: var(--color-layerFour);
+            }
+        /* Logout Page Text */
+            h3.zero-m.text-uppercase {
+                color: var(--color-tLayerTwo) !important;
+            }
+            a#logoutSubmit.i-block {
+                color: var(--color-tLayerTwo) !important;
+            }
+            a.i-block {
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+
+    /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
+        /* Not Found Page Body Text */
+            h4.text-center{
+                color: var(--color-tLayerTwo) !important;
+            }
+    /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module     ///////////////////////// */
