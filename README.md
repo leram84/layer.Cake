@@ -1,5 +1,3 @@
-** Under construction AGAIN... sorry, had to make some changes in structure for live updates. The good news is I've got everything working in dev now and the new format will be even easier! 7/21 at the latest! **
-
 # layer#Cake
 layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme.
 
@@ -24,8 +22,7 @@ You now have 3 install paths to choose from: Basic Live Default, Advanced Live C
 
 Ok, SUPER simple. 
 1) Copy and paste [Default.css](https://github.com/leram84/layer.Cake/blob/master/Live/Default.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 7 colors with your own hex codes. 
-2) Copy and paste [Homepage.html](https://github.com/leram84/layer.Cake/blob/master/Live/Homepage.html) to your HTML box in Organizr (Settings/Edit Homepage/Gear Icon).
-3) All all done! You're probably gonna want to go eat some cake now :)
+2) That's it... seriously, you're all done! You're probably gonna want to go eat some cake now :)
 
 | Pros  | Cons |
 | ------------- | ------------- |
@@ -37,9 +34,8 @@ Ok, SUPER simple.
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually.
 1) Copy and paste [Custom.css](https://github.com/leram84/layer.Cake/blob/master/Live/Custom.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 32 colors with your own hex codes (though you will likely reuse many). 
-2) Copy and paste [Homepage.html](https://github.com/leram84/layer.Cake/blob/master/Live/Homepage.html) to your HTML box in Organizr (Settings/Edit Homepage/Gear Icon).
-3) ???
-4) Profit
+2) ???
+3) Profit
 
 | Pros  | Cons |
 | ------------- | ------------- |
@@ -49,7 +45,7 @@ This setup will allow you to customize a bunch of stuff (Homepage, login, chat, 
 ### Super Duper Advanced Static
 (I fork cake like this for breakfast)
 
-If for whatever reason you don't want to sync your theme to this repo and want to manually manage and update it on your own, you can simply copy and paste whatever [CSS](https://github.com/leram84/layer.Cake/tree/master/CSS) or [HTML](https://github.com/leram84/layer.Cake/tree/master/HTML) you would like directly into Organizr.
+If for whatever reason you don't want to sync your theme to this repo and want to manually manage and update it on your own, I've setup a static version of the css [here](https://github.com/leram84/layer.Cake/blob/master/CSS/Static.css). I will keep this updated, but there won't be any versioning so you're on your own for following commits.
 
 
 | Pros  | Cons |
@@ -63,24 +59,24 @@ Once your base theme is setup, you can also make some customization's and additi
 
 [Remove Blur Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Blur.css)
 > **Description**:  Remove the Blur Effect that displays over ACTIVE icons in the sidebar. <br/>
-> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/CSS/Add-Ons/Remove-Blur.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Remove-Blur.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 [Remove Close Button Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Close-iFrame-Button.css) <br/>
 **Disclaimer**: I'll leave this up, but I don't recommend you use this anymore since I just realized it will also hide the X when in split screen view. In that case you won't have any on screen promts to close the second screen, only refresh and the `Esc + Esc` shortcut will work. Buyer beware.
 > **Description**:  Remove the Close iFrame Button from the top bar of Organizr. <br/>
-> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/CSS/Add-Ons/Remove-Close-iFrame-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Remove-Close-iFrame-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 [Remove Popout Button Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Popout-Button.css)
 > **Description**:  Remove the iFrame Popout Button from the top bar of Organizr. <br/>
-> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/CSS/Add-Ons/Remove-Popout-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Remove-Popout-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 [Homepage Background Image Add-On](https://github.com/leram84/layer.Cake/blob/master/HTML/Add-Ons/Homepage-Background-Image.html)
 > **Description**:  Add an image as your homepage background. <br/>
-> **Installation**: Copy and paste [this code](https://github.com/leram84/layer.Cake/blob/master/HTML/Add-Ons/Homepage-Background-Image.html) to the bottom of your HTML box, and edit the `<<User Edit>>` line.
+> **Installation**: Copy and paste [this code](https://github.com/leram84/layer.Cake/blob/master/Add-Ons/Homepage-Background-Image.html) to the bottom of your HTML box, and edit the `<<User Edit>>` line.
 
 [Custom Button Module Add-Ons](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) 
 > **Description**:  Adds Custom Buttons to the top of your homepage that will navigate to other tabs INSIDE Organizr <br/>
-> **Installation**: Choose your layout from the [HTML Add-On Section](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) and paste the code to the bottom of your HTML box. Then edit the 6-8 `<<User Edit>>` lines identified in the code.
+> **Installation**: Choose your layout from the [HTML Add-On Section](https://github.com/leram84/layer.Cake/tree/master/Add-Ons) and paste the code to the bottom of your HTML box. Then edit the 6-8 `<<User Edit>>` lines identified in the code.
 
 ## Roll Credits
 
