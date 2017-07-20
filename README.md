@@ -1,5 +1,3 @@
-# Beta: still working out some bugs with live update!
-
 # layer#Cake
 layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme.
 
@@ -63,15 +61,15 @@ Once your base theme is setup, you can also make some customization's and additi
 
 [Remove Blur Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Blur.css)
 > **Description**:  Remove the Blur Effect that displays over ACTIVE icons in the sidebar. <br/>
-> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/2949e3da/CSS/Add-Ons/Remove-Blur.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/01c103c3/CSS/Add-Ons/Remove-Blur.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 [Remove Close Button Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Close-iFrame-Button.css)
 > **Description**:  Remove the Close iFrame Button from the top bar of Organizr. <br/>
-> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/2949e3da/CSS/Add-Ons/Remove-Close-iFrame-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/01c103c3/CSS/Add-Ons/Remove-Close-iFrame-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 [Remove Popout Button Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Popout-Button.css)
 > **Description**:  Remove the iFrame Popout Button from the top bar of Organizr. <br/>
-> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/2949e3da/CSS/Add-Ons/Remove-Popout-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/01c103c3/CSS/Add-Ons/Remove-Popout-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 [Homepage Background Image Add-On](https://github.com/leram84/layer.Cake/blob/master/HTML/Add-Ons/Homepage-Background-Image.html)
 > **Description**:  Add an image as your homepage background. <br/>
