@@ -164,12 +164,23 @@
             .progress-bar-success {
                 background-color: var(--color-layerFive);
             }
-        /* Now Playing Text */
+        /* Now Playing Text (1.4-)*/
             #streamz > .text-center {
                 font-size: 18px;
                 font-weight: 500;
                 color: var(--color-tLayerOne)
             }
+        /* Now Playing Header Text (1.41+) */
+            #streamz > h5 > strong {
+                color: var(--color-tLayerOne);
+                font-size: 18px;
+                font-weight: 500;
+            }
+        /* Now Playing Header Text Stream Count (1.41+) */
+            #streamz > h5 > strong > code {
+	            color: var(--color-tLayerTwo);
+                background: var(--color-layerTwo);
+		    }
         /* Now Playing Tile Background */
             .thumbnail.ultra-widget  {
                 background-color: var(--color-layerTwo);
