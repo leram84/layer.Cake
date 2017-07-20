@@ -1,7 +1,7 @@
     <!-- /////////////////////////     Cal Color Codes     \\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// -->
     /* Calendar Legend */
-        .label.label-primary.well-sm {
+        #calendarLegendRow > div > div > span.label.label-primary.well-sm {
             background: var(--color-calAvailable) !important;
         }
         .label.label-danger.well-sm {
