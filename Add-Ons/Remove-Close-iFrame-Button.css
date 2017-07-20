@@ -1,0 +1,8 @@
+    /* /////////////////////////       Close Button      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+    /* This will remove the button that closes the current iFrame */
+        .mdi-window-close {
+            display: none;
+        }
+    /* /////////////////////////       Close Button      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */ 
