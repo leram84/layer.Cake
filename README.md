@@ -1,4 +1,4 @@
-** Under Construction **
+** Under Construction (well its all finished and should work fine... but some of it still needs to propagate the cdn servers. Feel free to set it all up, and within 24 hours everything will automatically start working **
 
 # layer#Cake
 layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme.
@@ -79,6 +79,10 @@ Once your base theme is setup, you can also make some customization's and additi
 [Custom Button Module Add-Ons](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) 
 > **Description**:  Adds Custom Buttons to the top of your homepage that will navigate to other tabs INSIDE Organizr <br/>
 > **Installation**: Choose your layout from the [HTML Add-On Section](https://github.com/leram84/layer.Cake/tree/master/Add-Ons) and paste the code to the bottom of your HTML box. Then edit the 6-8 `<<User Edit>>` lines identified in the code.
+
+[Rounded DL Tab Buttons](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Popout-Button.css) (**User Request**)
+> **Description**:  This will change the Download Panels tabs from square buttons to rounded. <br/>
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/master/Add-Ons/Rounded-DL-Tabs.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
 ## Roll Credits
 
