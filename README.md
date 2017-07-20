@@ -1,3 +1,5 @@
+# Beta: still working out some bugs with live update!
+
 # layer#Cake
 layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme.
 
