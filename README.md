@@ -82,7 +82,7 @@ Once your base theme is setup, you can also make some customization's and additi
 
 ## Roll Credits
 
-* Obviously none of this would be possible without [@causefx](https://github.com/causefx) and the amazing work he has done with [Organizr](https://github.com/causefx/Organizr) But much more than that (and on a personal level) he has been one of the most altruistic devs I have yet to come across! On top of the one man show that is Organizr... the dude literally spends hours a day closing issues on git/reddit/gitter and is personally responsible for hundreds (thousands?) of running web servers. Cheers homie!
+* Obviously none of this would be possible without [@causefx](https://github.com/causefx) and the amazing work he has done with [Organizr](https://github.com/causefx/Organizr) But much more than that (and on a personal level) he has been one of the most altruistic devs I have yet to come across! On top of the one man show that is Organizr... the dude literally spends hours a day closing issues on git/reddit/gitter and is personally responsible for hundreds (thousands?) of running web servers.... Also he literally taught me everything I needed to know to make this repo. Cheers homie!
 
 * Live updates are made possible by the awesome [Rawgit](https://github.com/rgrove/rawgit) project. 
 
