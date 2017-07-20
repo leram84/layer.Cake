@@ -21,7 +21,7 @@ You now have 3 install paths to choose from: Basic Live Default, Advanced Live C
 (I just wanna dark theme this thing and move on!)
 
 Ok, SUPER simple. 
-1) Copy and paste [Default.css](https://github.com/leram84/layer.Cake/blob/master/Live/Default.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 7 colors with your own hex codes. 
+1) Copy and paste the contents of [Default.css](https://github.com/leram84/layer.Cake/blob/master/Live/Default.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 7 colors with your own hex codes. 
 2) That's it... seriously, you're all done! You're probably gonna want to go eat some cake now :)
 
 | Pros  | Cons |
@@ -33,7 +33,7 @@ Ok, SUPER simple.
 (I need more colors!)
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually.
-1) Copy and paste [Custom.css](https://github.com/leram84/layer.Cake/blob/master/Live/Custom.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 32 colors with your own hex codes (though you will likely reuse many). 
+1) Copy and paste the contents of [Custom.css](https://github.com/leram84/layer.Cake/blob/master/Live/Custom.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 32 colors with your own hex codes (though you will likely reuse many). 
 2) ???
 3) Profit
 
