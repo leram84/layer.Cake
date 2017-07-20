@@ -1,0 +1,8 @@
+    /* /////////////////////////       Popout Button     \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+    /* This will remove the button that opens the current iFrame in another tab */
+        .mdi-window-restore {
+            display: none;
+        }
+    /* /////////////////////////       Popout Button     \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */ 
