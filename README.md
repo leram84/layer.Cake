@@ -63,7 +63,8 @@ Once your base theme is setup, you can also make some customization's and additi
 > **Description**:  Remove the Blur Effect that displays over ACTIVE icons in the sidebar. <br/>
 > **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/01c103c3/CSS/Add-Ons/Remove-Blur.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
-[Remove Close Button Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Close-iFrame-Button.css)
+[Remove Close Button Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Close-iFrame-Button.css) <br/>
+**Disclaimer**: I'll leave this up, but I don't recommend you use this anymore since I just realized it will also hide the X when in split screen view. In that case you won't have any on screen promts to close the second screen, only refresh and the `Esc + Esc` shortcut will work. Buyer beware.
 > **Description**:  Remove the Close iFrame Button from the top bar of Organizr. <br/>
 > **Installation**: Paste `<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/leram84/layer.Cake/01c103c3/CSS/Add-Ons/Remove-Close-iFrame-Button.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
