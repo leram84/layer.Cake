@@ -425,9 +425,8 @@
                 background: var(--color-loginLayerThree);
             }
         /* Dynamic Login Box Text Input Line */
-            .form-control.material {
-                background-image: linear-gradient(var(--color-loginLayerFive), var(--color-loginLayerFive)), linear-gradient(white, white);
-            }
+            #login > div > .form-control.material {
+                background-image: linear-gradient(var(--color-loginLayerFive), var(--color-loginLayerFive)), linear-gradient(var(--color-tLayerTwo), var(--color-tLayerTwo));
         /* Login Button */
             button#loginSubmit {
                 background: var(--color-loginLayerTwo) !important;
