@@ -34,8 +34,7 @@ Ok, SUPER simple.
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually.
 1) Copy and paste the contents of [Custom.css](https://github.com/leram84/layer.Cake/blob/master/Live/Custom.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 32 colors with your own hex codes (though you will likely reuse many). 
-2) ???
-3) Profit
+2) Profit
 
 | Pros  | Cons |
 | ------------- | ------------- |
@@ -55,7 +54,7 @@ If for whatever reason you don't want to sync your theme to this repo and want t
 
 ## Add-Ons
 
-Once your base theme is setup, you can also make some customization's and additions via [CSS](https://github.com/leram84/layer.Cake/tree/master/CSS/Add-Ons) and [HTML](https://github.com/leram84/layer.Cake/tree/master/HTML/Add-Ons) Add-ons
+Once your base theme is setup, you can also make some customization's and additions via [Add-ons](https://github.com/leram84/layer.Cake/tree/master/Add-Ons)
 
 [Remove Blur Add-On](https://github.com/leram84/layer.Cake/blob/master/CSS/Add-Ons/Remove-Blur.css)
 > **Description**:  Remove the Blur Effect that displays over ACTIVE icons in the sidebar. <br/>
