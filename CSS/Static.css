@@ -716,5 +716,14 @@
             ul#settings-list.nav > li.active a {
                 color: var(--color-tLayerOne)!important;
             }
+            div.colour-field input {
+                border: 1px solid var(--color-tLayerTwo);
+            }
+            #donate-org > div > div > div > div > div.container > h2 > strong > em.gray {
+                color: var(--color-tLayerTwo);
+            }
+            #donate-org > div > div > div > div.jumbotron > div.container > p.pull-right {
+                color: var(--color-tLayerTwo);
+            }
         /* /////////////////////////          Clean          \\\\\\\\\\\\\\\\\\\\\\\\\ */
         /* \\\\\\\\\\\\\\\\\\\\\\\\\            Up           ///////////////////////// */
