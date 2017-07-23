@@ -69,6 +69,9 @@
                 background: var(--color-layerTwo)!important;
                 border-color: var(--color-layerTwo)!important;
             }
+            #homepageNotice > div > div > div.panel-body {
+                background: var(--color-layerThree);
+            }
         /* Button Text */
             h1.text-uppercase.text-center {
                 color: var(--color-tLayerOne);
