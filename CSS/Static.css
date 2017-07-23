@@ -71,6 +71,7 @@
             }
             #homepageNotice > div > div > div.panel-body {
                 background: var(--color-layerThree);
+		border-radius: 3px;
             }
         /* Button Text */
             h1.text-uppercase.text-center {
