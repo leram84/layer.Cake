@@ -467,10 +467,10 @@
     
     /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-        /* Settings Page Background */
+        /* Settings Page Background
             body.scroller-body {
                 background: var(--color-extraLayerOne);
-            }
+            } */
         /* Settings Panel Background */
             .profile-sidebar {
                 background: var(--color-extraLayerTwo) !important;
