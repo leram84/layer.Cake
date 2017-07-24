@@ -469,7 +469,7 @@
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
         /* Settings Page Background */
             body.scroller-body {
-                background: var(--color-extraLayerOne) !important;
+                background: var(--color-extraLayerOne);
             }
         /* Settings Panel Background */
             .profile-sidebar {
