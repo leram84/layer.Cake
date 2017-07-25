@@ -1,0 +1,68 @@
+.pace-done {
+    background: #272361;
+}
+#tvList {
+    background: #662f8f;
+
+}
+div#TvShowTab.tab-pane.active.in {
+    background: #662f8f;
+        border: 5px solid #fcc404;
+    border-radius: 0 0 10px 10px;
+}
+.in hr {
+    border: 2px solid #fcc404;
+}
+.in .row {
+    padding-left: 50px
+}
+img {
+
+                    -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.0);
+                z-index: 10000000;
+                border-radius: 10px;
+                opacity: 1 !important;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container > div {
+   background: #ed2e72;
+    border-radius: 10px
+
+}
+h1{
+    padding-left: 50px;
+    color: #fcc404;
+}
+.container > div > h4 {
+    padding-left: 50px
+}
+#tvSearchContent {
+    background:  #9680bb !important;
+}
+.in .input-group-addon {
+    background: #9680bb!important;
+}
+#tvTabButton {
+    background:  #9680bb;
+    border-radius: 10px 10px 0 0;
+    border-top: 5px solid #fcc404;
+    border-left: 5px solid #fcc404;
+    border-right: 5px solid #fcc404;
+}
+div#tvList > hr {
+    border-bottom: 50p
+}
+.navbar-collapse {
+    background: #ed2e72;
+}
+.navbar-nav {
+    background: #ed2e72;
+}
+.navbar-brand {
+    background: #ed2e72;
+}
+.navbar-nav .active a {
+    background: #ed2e72 !important;
+}
