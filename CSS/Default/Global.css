@@ -569,7 +569,9 @@
             }
             .email-active .active.in {
                 background: var(--color-layerThree);
-                border: 2px solid ;
+                border-left: 2px solid;
+                border-right: 2px solid;
+                border-bottom: 2px solid;
             }
             .email-active .apps.active a {
                 background: var(--color-layerThree)!important;
