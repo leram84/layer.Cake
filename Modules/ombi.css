@@ -1,68 +1,150 @@
+ :root {
+    --color-layerOne: #1D222B;
+    --color-layerTwo: #2A333F;
+    --color-layerThree: #31363E;
+    --color-layerFour: #2C3442;
+    --color-layerFive: #f9be03;
+}
+
 .pace-done {
-    background: #272361;
+    background: var(--color-layerOne);
 }
 #tvList {
-    background: #662f8f;
-
+    background: var(--color-layerThree);
 }
 div#TvShowTab.tab-pane.active.in {
-    background: #662f8f;
-        border: 5px solid #fcc404;
+    background: var(--color-layerThree);
+    border: 5px solid var(--color-layerFive);
     border-radius: 0 0 10px 10px;
 }
-.in hr {
-    border: 2px solid #fcc404;
-}
 .in .row {
-    padding-left: 50px
+    padding-left: 50px;
 }
 img {
-
-                    -moz-transform: scale(1.1);
-                -webkit-transform: scale(1.1);
-                transform: scale(1.0);
-                z-index: 10000000;
-                border-radius: 10px;
-                opacity: 1 !important;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.0);
+    z-index: 10000000;
+    border-radius: 10px;
+    opacity: 1 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container > div {
-   background: #ed2e72;
-    border-radius: 10px
-
+    background: var(--color-layerTwo);
+    border-radius: 10px;
 }
-h1{
+h1 {
     padding-left: 50px;
-    color: #fcc404;
+    color: var(--color-layerFive);
+    padding-top: 20px;
 }
 .container > div > h4 {
-    padding-left: 50px
+    padding-left: 50px;
 }
 #tvSearchContent {
-    background:  #9680bb !important;
+    background: var(--color-layerFour) !important;
 }
 .in .input-group-addon {
-    background: #9680bb!important;
+    background: var(--color-layerFour)!important;
 }
 #tvTabButton {
-    background:  #9680bb;
+    background: var(--color-layerFour);
     border-radius: 10px 10px 0 0;
-    border-top: 5px solid #fcc404;
-    border-left: 5px solid #fcc404;
-    border-right: 5px solid #fcc404;
+    border-top: 5px solid var(--color-layerFive);
+    border-left: 5px solid var(--color-layerFive);
+    border-right: 5px solid var(--color-layerFive);
 }
 div#tvList > hr {
-    border-bottom: 50p
+    border-bottom: 50p;
 }
 .navbar-collapse {
-    background: #ed2e72;
+    background: var(--color-layerTwo);
 }
 .navbar-nav {
-    background: #ed2e72;
+    background: var(--color-layerTwo);
 }
 .navbar-brand {
-    background: #ed2e72;
+    background: var(--color-layerTwo);
 }
 .navbar-nav .active a {
-    background: #ed2e72 !important;
+    background: var(--color-layerTwo) !important;
+}
+.in .col-sm-8 a {
+    color: var(--color-layerFive);
+}
+.navbar-brand {
+    color: var(--color-layerFive)!important;
+}
+#\32 77165.dropdownTv {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
+    overflow: hidden;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #5cb85c;
+    color: #fff!important;
+    transition: background-color 0.3s;
+}
+.col-sm-2 .btn-sm.btn-primary-outline {
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    padding-left: 10px;
+    padding-right: 15px;
+    background-color: #df691a;
+    color: #fff!important;
+    transition: background-color 0.3s;
+}
+#\32 77165.dropdown-toggle {
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #d9534f;
+    color: #fff!important;
+    transition: background-color 0.3s;
+}
+#\32 63541 {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
+    overflow: hidden;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #5cb85c;
+    color: #fff!important;
+    border-color: #5cb85c!important;
+    transition: background-color 0.3s;
+}
+.in .btn-primary-outline.dropdown-toggle {
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: var(--color-layerFive);
+    color: var(--color-layerOne)!important;
+    border-color: var(--color-layerFive)!important;
+    transition: background-color 0.3s;
+}
+.in .form-control-withbuttons {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+.in .btn-primary-outline.dropdown-toggle {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+.in .fa-search {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 20px;
 }
