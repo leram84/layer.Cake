@@ -1,12 +1,21 @@
  :root {
-    --color-layerOne: #1D222B;
-    --color-layerTwo: #2A333F;
-    --color-layerThree: #31363E;
-    --color-layerFour: #2C3442;
+    --color-layerOne: #1D1E21;
+    --color-layerTwo: #364051;
+    --color-layerThree: #2D3239;
+    --color-layerFour: #364051;
     --color-layerFive: #f9be03;
 }
+#movieTabButton {
+    background: var(--color-layerFour);
+    border-radius: 5px 5px 0 0;
 
+    margin-right: 5px;
+
+    padding-left: 20px;
+    padding-right: 25px
+}
 .pace-done {
+    background: url("https://students.cs.unipi.gr/~p07156/Resources/Grunge.jpg");
     background: var(--color-layerOne);
 }
 #tvList {
@@ -14,8 +23,9 @@
 }
 div#TvShowTab.tab-pane.active.in {
     background: var(--color-layerThree);
-    border: 5px solid var(--color-layerFive);
-    border-radius: 0 0 10px 10px;
+    border: 2px solid var(--color-layerFive);
+    border-radius: 0 0 5px 5px;
+    margin-top: -2px;
 }
 .in .row {
     padding-left: 50px;
@@ -31,28 +41,31 @@ img {
 }
 .container > div {
     background: var(--color-layerTwo);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 h1 {
-    padding-left: 50px;
+    padding-left: 20px;
     color: var(--color-layerFive);
     padding-top: 20px;
 }
 .container > div > h4 {
-    padding-left: 50px;
+    padding-left: 25px;
 }
 #tvSearchContent {
     background: var(--color-layerFour) !important;
 }
 .in .input-group-addon {
-    background: var(--color-layerFour)!important;
+    background: var(--color-layerThree)!important;
+    border-radius: 5px;
 }
 #tvTabButton {
-    background: var(--color-layerFour);
-    border-radius: 10px 10px 0 0;
-    border-top: 5px solid var(--color-layerFive);
-    border-left: 5px solid var(--color-layerFive);
-    border-right: 5px solid var(--color-layerFive);
+    background: var(--color-layerThree);
+    border-radius: 5px 5px 0 0;
+    border-top: 2px solid var(--color-layerFive);
+    border-left: 2px solid var(--color-layerFive);
+    border-right: 2px solid var(--color-layerFive);
+    border-bottom: 2px solid var(--color-layerThree);
+    box-shadow: 0 12px 0 -5px var(--color-layerThree);
 }
 div#tvList > hr {
     border-bottom: 50p;
@@ -85,7 +98,6 @@ div#tvList > hr {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
     background-color: #5cb85c;
     color: #fff!important;
-    transition: background-color 0.3s;
 }
 .col-sm-2 .btn-sm.btn-primary-outline {
     border-radius: 2px;
@@ -118,33 +130,53 @@ div#tvList > hr {
     transition: background-color 0.3s;
 }
 .in .btn-primary-outline.dropdown-toggle {
-    position: relative;
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-    background-color: var(--color-layerFive);
+    margin-right: 10px;
+    background-color: #CC9C03;
     color: var(--color-layerOne)!important;
-    border-color: var(--color-layerFive)!important;
+    border-color: var(--color-layerOne)!important;
     transition: background-color 0.3s;
 }
 .in .form-control-withbuttons {
-    border-left: 2px solid;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
+    border-left: 1px solid;
+    padding-bottom: 14px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     margin-top: 30px;
-    margin-left: 10px;
-    border-radius: 25px;
+    margin-left: 20px;
+    border-radius: 25px 0 0 25px;
+      overflow: hidden;
+      min-height: 100%;
 }
 .in .btn-primary-outline.dropdown-toggle {
     margin-top: 30px;
-    margin-right: 40px;
+    margin-right: 35px;
+
 }
 .in .fa-search {
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    padding: 15px;
-    border-radius: 25px;
-    margin-top: 20px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    padding: 15px 15px 15px 15px;
+    border-radius: 0 25px 25px 0;
+    margin-top: 21px;
+      overflow: hidden;
+      min-height: 100%;
+    margin-right: 0px;
+    background: var(--color-layerFour)!important;
+}
+.label-primary {
+    background: var(--color-layerFive);
+    color: var(--color-layerFour);
+}
+#movieTabButton {
+    background: var(--color-layerFour);
+    /*border: 2px solid var(--color-layerFive);
+    margin-right: 10px;
+    border-radius: 5px 5px 0 0;
+
+    padding-left: 15px;
+    padding-right: 20px*/
 }
