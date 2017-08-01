@@ -3,7 +3,7 @@
     /* /////////////////////////       Begin Edit        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\                         ///////////////////////// */
         :root {
-        /* This block is for the Homepage */
+    /* This block is for the Home and Settings Pages */
             --color-layerOne: #272361;
             --color-layerTwo: #662f8f;
             --color-layerThree: #ed2e72;
@@ -11,14 +11,19 @@
             --color-layerFive: #46bc99;
             --color-tLayerOne: #71cde5;
             --color-tLayerTwo: #ffffff;
-    /* This block is for the Login Page */
+    /* This block is for the Calendar Color Codes */
+            --color-calAvailable: #42b382;
+            --color-calUnavailable: #e9585b;
+            --color-calUnreleased: #3f51b5;
+            --color-calPremier: #90c1f1;
+    /* This block is for the Login, Logout, and Popup Pages */
             --color-loginLayerOne: #272361;
             --color-loginLayerTwo: #662f8f;
             --color-loginLayerThree: #ed2e72;
             --color-loginLayerFour: #9680bb;
             --color-loginLayerFive: #46bc99;
-            --color-chatTLayerOne: #71cde5;
-            --color-chatTLayerTwo: #ffffff;
+            --color-loginTLayerOne: #71cde5;
+            --color-loginTLayerTwo: #ffffff;
     /* This block is for the Chat Page */
             --color-chatLayerOne: #272361;
             --color-chatLayerTwo: #662f8f;
@@ -27,19 +32,6 @@
             --color-chatLayerFive: #46bc99;
             --color-chatTLayerOne: #71cde5;
             --color-chatTLayerTwo: #ffffff;
-    /* This block is for all the Settings and popup windows */
-            --color-extraLayerOne: #272361;
-            --color-extraLayerTwo: #662f8f;
-            --color-extraLayerThree: #ed2e72;
-            --color-extraLayerFour: #9680bb;
-            --color-extraLayerFive: #46bc99;
-            --color-extraTLayerOne: #71cde5;
-            --color-extraTLayerTwo: #ffffff;
-    /* This block is for the Calendar Color Codes */
-            --color-calAvailable: #42b382;
-            --color-calUnavailable: #e9585b;
-            --color-calUnreleased: #3f51b5;
-            --color-calPremier: #90c1f1;
         }
     /* /////////////////////////         Custom          \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      User Settings      ///////////////////////// */
