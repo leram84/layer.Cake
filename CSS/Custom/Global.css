@@ -1,8 +1,16 @@
     /* /////////////////////////         Homepage        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
+        /* Splash Screen */
+            li.splash-item.content-box.small-box.ultra-widget.gray-bg {
+                background: var(--color-layerTwo) !important;
+                color: var(--color-tLayerTwo) !important;
+            }
+            div#splashScreen.splash-modal.modal.fade.in .table-wrapper.big-box {
+                background: var(--color-layerOne) !important;
+            }
         /* Homepage Background */
-            body {
-                background-color: var(--color-layerOne);
+            html > body.scroller-body {
+                background-color: var(--color-layerOne) !important;
             }
         /* Home Page Notices */
             .jumbotron {
@@ -23,7 +31,7 @@
             }
             #homepageNotice > div > div > div.panel-body {
                 background: var(--color-layerThree);
-		border-radius: 3px;
+		            border-radius: 3px;
             }
         /* Button Text */
             h1.text-uppercase.text-center {
@@ -205,9 +213,9 @@
                 background-color: var(--color-layerFive) !important;
             }
         /* Now Playing Bottom Margin */
-        #plexRowNowPlaying {
-            margin-bottom: 5px;
-        }
+            #plexRowNowPlaying {
+                margin-bottom: 5px;
+            }
         /* Recently Added Tile Background */
             .box-shadow.content-box {
                 background: var(--color-layerTwo);
@@ -355,7 +363,172 @@
             }
     /* /////////////////////////         Homepage        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
-
+    
+    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
+        /* Settings Panel Background */
+            .profile-sidebar {
+                background: var(--color-layerTwo) !important;
+            }
+        /* Main Menu Text */
+            .profile-usermenu ul li a {
+                color: var(--color-tLayerTwo);
+            }
+        /* Settings Panel Hover */
+            .profile-usermenu ul li a:hover {
+                background: var(--color-layerThree) !important;
+                color: var(--color-tLayerOne) !important;
+            }
+        /* Settings Panel Active */
+            .profile-usermenu ul li.active a {
+                border-left: 3px solid var(--color-layerFive) !important;
+            }
+        /* Settings Active Panel Header */
+            .email-active .email-header {
+                color: var(--color-tLayerOne) !important;
+                background: var(--color-layerTwo) !important;
+            }
+        /* Settings Active Panel Background */
+            div.email-inner.small-box {
+                background: var(--color-layerTwo);
+            }
+        /* Settings Active Panel Form Text */
+            .form-inline .form-control {
+                color: var(--color-tLayerTwo);
+            }
+        /* Edit Tabs Panel Odd Rows */
+            #submitTabs ul > li {
+                background: var(--color-layerFour);
+            }
+        /* Edit Tabs Panel Odd Even */
+            .todo li:nth-child(even) {
+                background: var(--color-layerThree) !important;
+            }
+        /* Text */
+            body.scroller-body {
+                color: var(--color-tLayerTwo);
+            }
+        /* Edit Tabs Chevron Icon */
+            .form-inline .input-group .input-group-addon {
+                background: var(--color-layerTwo) !important;
+            }
+            .email-active {
+                background: var(--color-layerTwo) !important;
+            }
+            .email-active .in > .row {
+                background: var(--color-layerThree);
+                padding-left: 20px;
+            }
+            .email-active .active.in {
+                background: var(--color-layerThree);
+                border-left: 2px solid;
+                border-right: 2px solid;
+                border-bottom: 2px solid;
+            }
+            .email-active .apps.active a {
+                background: var(--color-layerThree)!important;
+                border-color: var(--color-layerThree)!important;
+            }
+            .email-active .apps.active {
+                border-left: 2px solid !important;
+                border-top: 2px solid !important;
+                border-right: 2px solid !important;
+                border-color: var(--color-tLayerTwo);
+            }
+            .in.tab-pane h3 {
+                color: var(--color-tLayerOne);
+            }
+            .colour-field.col-lg-6 {
+                background: var(--color-layerTwo) !important;
+                border-color: var(--color-tLayerTwo);
+            }
+            .colour-field.col-lg-4 {
+                background: var(--color-layerTwo) !important;
+                border-color: var(--color-tLayerTwo);
+            }
+            .users-box .table-striped {
+                background: var(--color-layerThree);
+            }
+            .table-striped>tbody>tr:nth-of-type(odd) {
+                background-color: var(--color-layerFour);
+            }
+	        	#datatable_length label {
+                color: var(--color-tLayerTwo);
+            } 
+            #datatable_length select {
+                color: var(--color-tLayerTwo);
+                background: var(--color-layerThree);
+            }
+            table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1, table.dataTable thead th.sorting_asc, table.dataTable thead th.sorting_desc {
+                background-color: var(--color-layerThree);
+            }
+            table.dataTable.stripe tbody tr.even, table.dataTable.display tbody tr.even, table.dataTable thead th.sorting {
+                background-color: var(--color-layerFour);
+            }
+            table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+                background-color: var(--color-layerFour);
+            }
+            table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+                background-color: var(--color-layerThree);
+            }
+            #datatable_info {
+                color: var(--color-tLayerTwo);
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                background: var(--color-layerThree);
+                padding: 6px 12px;
+                border-right: 1px solid var(--color-layerTwo);
+                color: var(--color-tLayerTwo) !important;
+                margin: 0;
+            }
+            #datatable_paginate .current {
+                color: var(--color-tLayerOne)!important;
+                background: var(--color-layerFour);
+                border: 1px solid var(--color-layerFour);
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+                color: var(--color-tLayerTwo) !important;
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:active, .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+                background: var(--color-layerFour);
+                color: var(--color-tLayerTwo) !important;
+                border-color: var(--color-layerFour);
+            }
+            #datatable_paginate {
+                color: var(--color-tLayerTwo)!important;
+                background: var(--color-layerThree);
+            }
+            #loginStats > div > div > div#goodPercent.progress-bar.progress-bar-success {
+                background-color: #42b382!important;
+            }
+            ul#settings-list.nav > li.active a {
+                color: var(--color-tLayerOne)!important;
+            }
+            div.colour-field input {
+                border: 1px solid var(--color-tLayerTwo);
+            }
+            #donate-org > div > div > div > div > div.container > h2 > strong > em.gray {
+                color: var(--color-tLayerTwo);
+            }
+            #donate-org > div > div > div > div.jumbotron > div.container > p.pull-right {
+                color: var(--color-tLayerTwo);
+            }
+            input#title.form-control {
+                color: var(--color-tLayerTwo);
+                background: var(--color-layerThree);
+            }
+            .in .modal-body .material {
+                background: #fff;
+            }
+            .jFiler-items-grid .jFiler-item .jFiler-item-container .jFiler-item-assets .text-success {
+                color: var(--color-tLayerTwo);
+            }
+            a.fa.fa-trash.jFiler-item-trash-action{
+                color: var(--color-layerFive);
+            }
+    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
+    
     /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
         /* Background */
@@ -364,7 +537,7 @@
             }
         /* Close Button */
             button.close {
-                color: var(--color-loginTLayerOne) !important;
+                color: var(--color-loginLayerFive) !important;
                 text-shadow: 0 1px 0 grey;
             }
         /* Login Box Header */
@@ -380,21 +553,103 @@
                 color: var(--color-loginTLayerTwo) !important;
                 background: var(--color-loginLayerThree);
             }
-        /* Login Button */
-            button#loginSubmit {
-                background: var(--color-loginLayerTwo) !important;
+        /* Login and out Buttons */
+            #login .text-center {
+                color: var(--color-loginTLayerTwo)!important;
             }
-        /* Login Button Text */
-            button#loginSubmit text {
+            #loginSubmit {
+                background: var(--color-loginLayerTwo)!important;
+            }
+            #loginSubmit text {
+                color: var(--color-loginTLayerTwo)!important;
+            }
+            #switchForgot {
+                background: var(--color-loginLayerFour)!important;
+            }
+            #switchForgot text {
+                color: var(--color-loginTLayerTwo)!important;
+            }
+            #login .form-control {
+                background: var(--color-loginLayerFour);
+            }
+        /* Remember Me Knob */
+            #login div div input.switcher-success:checked + label:before {
+                background-color: var(--color-loginLayerFive);
+            }
+            #login div div input.switcher-success:checked + label:after {
+                background-color: var(--color-loginLayerFive);
+            }
+        /* Logout Background */
+            .members-sidebar-open {
+                background: var(--color-loginLayerOne) !important;
+            }
+            #members-sidebar div.content-box.profile-sidebar.box-shadow{
+                background: var(--color-loginLayerTwo)!important;
+            }
+            #members-sidebar h4.pull-left.zero-m{
+                color: var(--color-loginTLayerOne);
+            }
+        /* Close Button */
+            i.fa.fa-remove.fa-lg.pull-right {
+                color: var(--color-loginLayerFive);
+            }
+            div.big-box.login-form{
+                background: var(--color-loginLayerThree);
+            }
+        /* Username */
+            .profile-usertitle-name {
+                color: var(--color-loginTLayerOne)!important;
+            }
+        /* User Class */
+            .profile-usertitle-job {
+                color: var(--color-loginTLayerTwo)!important;
+            }
+        /* Edit Info Button */
+            .profile-userbuttons .text-uppercase {
+                color: var(--color-loginTLayerTwo) !important;
+                background: var(--color-loginLayerThree);
+            }
+        /* Logout Button */
+            button.logout.btn.btn-warning.waves.waves-effect.waves-float {
+                color: var(--color-loginTLayerTwo) !important;
+                background: var(--color-loginLayerFour);
+            }
+        /* Update Button */
+            input.btn.btn-success.text-uppercase.waves-effect.waves-float {
+                color: var(--color-loginTLayerTwo) !important;
+                background: var(--color-loginLayerThree);
+            }
+        /* Go Back Button */
+            button#goBackButtons.btn.btn-primary.text-uppercase.waves.waves-effect.waves-float {
+                color: var(--color-loginTLayerTwo) !important;
+                background: var(--color-loginLayerFour);
+            }
+        /* Logout Page Text */
+            h3.zero-m.text-uppercase {
                 color: var(--color-loginTLayerTwo) !important;
             }
-        /* Forgot Password Button */
-            button#switchForgot {
-                background: var(--color-loginLayerFour) !important;
-            }
-        /* Forgot Password Button Text */
-            button#switchForgot text {
+            a#logoutSubmit.i-block {
                 color: var(--color-loginTLayerTwo) !important;
+            }
+            a.i-block {
+                color: var(--color-loginTLayerTwo) !important;
+            }
+            #update .form-control{
+                background: var(--color-loginLayerFour);
+                color: var(--color-loginTLayerTwo);
+            }
+        /* Not Found Page */
+            div.content-box div.big-box.text-left{
+                background: var(--color-loginLayerThree);
+            }
+            div.content-box div.big-box.text-left h4.text-center{
+                color: var(--color-loginTLayerTwo)!important;
+            }
+            button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-float {
+                background: var(--color-loginLayerTwo)!important;
+            }
+            button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-float text {
+                color: var(--color-loginTLayerTwo)!important;
             }
     /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
@@ -462,226 +717,9 @@
             .badge-success {
                 background: var(--color-chatLayerFive);
             }
+        /* Who's Typing */
+            li#istyping{
+                color: var(--color-chatTLayerTwo);
+            }
     /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-    
-    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-        /* Settings Page Background
-            body.scroller-body {
-                background: var(--color-extraLayerOne);
-            } */
-        /* Settings Panel Background */
-            .profile-sidebar {
-                background: var(--color-extraLayerTwo) !important;
-            }
-        /* Main Menu Text */
-            .profile-usermenu ul li a {
-                color: var(--color-extraTLayerTwo);
-            }
-        /* Settings Panel Hover */
-            .profile-usermenu ul li a:hover {
-                background: var(--color-extraLayerThree) !important;
-                color: var(--color-extraTLayerOne) !important;
-            }
-        /* Settings Panel Active */
-            .profile-usermenu ul li.active a {
-                border-left: 3px solid var(--color-extraLayerFive) !important;
-            }
-        /* Settings Active Panel Header */
-            .email-active .email-header {
-                color: var(--color-extraTLayerOne) !important;
-                background: var(--color-extraLayerTwo) !important;
-            }
-    /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-    
-    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-        /* Background */
-            .members-sidebar-open {
-                background: var(--color-extraLayerOne) !important;
-            }
-        /* Close Button */
-            i.fa.fa-remove.fa-lg.pull-right {
-                color: var(--color-extraLayerFive);
-            }
-        /* Username */
-            .profile-usertitle-name {
-                color: var(--color-extraTLayerOne)!important;
-            }
-        /* User Class */
-            .profile-usertitle-job {
-                color: var(--color-extraTLayerTwo)!important;
-            }
-        /* Edit Info Button */
-            .profile-userbuttons .text-uppercase {
-                color: var(--color-extraTLayerTwo) !important;
-                background: var(--color-extraLayerFour);
-            }
-        /* Logout Button */
-            button.logout.btn.btn-warning.waves.waves-effect.waves-float {
-                color: var(--color-extraTLayerTwo) !important;
-                background: var(--color-extraLayerFive);
-            }
-        /* Update Button */
-            input.btn.btn-success.text-uppercase.waves-effect.waves-float {
-                color: var(--color-extraTLayerTwo) !important;
-                background: var(--color-extraLayerFive);
-            }
-        /* Go Back Button */
-            button#goBackButtons.btn.btn-primary.text-uppercase.waves.waves-effect.waves-float {
-                color: var(--color-extraTLayerTwo) !important;
-                background: var(--color-extraLayerFour);
-            }
-        /* Logout Page Text */
-            h3.zero-m.text-uppercase {
-                color: var(--color-extraTLayerTwo) !important;
-            }
-            a#logoutSubmit.i-block {
-                color: var(--color-extraTLayerTwo) !important;
-            }
-            a.i-block {
-                color: var(--color-extraTLayerTwo) !important;
-            }
-    /* /////////////////////////       Logout Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-
-    /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-        /* Not Found Page Body Text */
-            h4.text-center{
-                color: var(--color-extraTLayerTwo) !important;
-            }
-    /* /////////////////////////      Miscellaneous      \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
-
-    /* /////////////////////////          Clean          \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\            Up           ///////////////////////// */
-        /* Settings Active Panel Background */
-            div.email-inner.small-box {
-                background: var(--color-layerTwo);
-            }
-        /* Settings Active Panel Form Text */
-            .form-inline .form-control {
-                color: var(--color-tLayerTwo);
-            }
-        /* Edit Tabs Panel Odd Rows */
-            #submitTabs ul > li {
-                background: var(--color-layerFour);
-            }
-        /* Edit Tabs Panel Odd Even */
-            .todo li:nth-child(even) {
-                background: var(--color-layerThree) !important;
-            }
-        /* Text */
-            body.scroller-body {
-                color: var(--color-tLayerTwo);
-            }
-        /* Edit Tabs Chevron Icon */
-            .form-inline .input-group .input-group-addon {
-                background: var(--color-layerTwo) !important;
-            }
-            .email-active {
-                background: var(--color-layerTwo) !important;
-            }
-            .email-active .in > .row {
-                background: var(--color-layerThree);
-                padding-left: 20px;
-            }
-            .email-active .active.in {
-                background: var(--color-layerThree);
-                border-left: 2px solid;
-                border-right: 2px solid;
-                border-bottom: 2px solid;
-            }
-            .email-active .apps.active a {
-                background: var(--color-layerThree)!important;
-                border-color: var(--color-layerThree)!important;
-            }
-            .email-active .apps.active {
-                border-left: 2px solid !important;
-                border-top: 2px solid !important;
-                border-right: 2px solid !important;
-                border-color: var(--color-tLayerTwo);
-            }
-            .in.tab-pane h3 {
-                color: var(--color-tLayerOne);
-            }
-            .colour-field.col-lg-6 {
-                background: var(--color-layerTwo) !important;
-                border-color: var(--color-tLayerTwo);
-            }
-            .colour-field.col-lg-4 {
-                background: var(--color-layerTwo) !important;
-                border-color: var(--color-tLayerTwo);
-            }
-            .users-box .table-striped {
-                background: var(--color-layerThree);
-            }
-            .table-striped>tbody>tr:nth-of-type(odd) {
-                background-color: var(--color-layerFour);
-            }
-	    	#datatable_length label {
-                color: var(--color-tLayerTwo);
-            } 
-            #datatable_length select {
-                color: var(--color-tLayerTwo);
-                background: var(--color-layerThree);
-            }
-            table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1, table.dataTable thead th.sorting_asc, table.dataTable thead th.sorting_desc {
-                background-color: var(--color-layerThree);
-            }
-            table.dataTable.stripe tbody tr.even, table.dataTable.display tbody tr.even, table.dataTable thead th.sorting {
-                background-color: var(--color-layerFour);
-            }
-            table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
-                background-color: var(--color-layerFour);
-            }
-            table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
-                background-color: var(--color-layerThree);
-            }
-            #datatable_info {
-                color: var(--color-tLayerTwo);
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button {
-                background: var(--color-layerThree);
-                padding: 6px 12px;
-                border-right: 1px solid var(--color-layerTwo);
-                color: var(--color-tLayerTwo) !important;
-                margin: 0;
-            }
-            #datatable_paginate .current {
-                color: var(--color-tLayerOne)!important;
-                background: var(--color-layerFour);
-                border: 1px solid var(--color-layerFour);
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-                color: var(--color-tLayerTwo) !important;
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:active, .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-                background: var(--color-layerFour);
-                color: var(--color-tLayerTwo) !important;
-                border-color: var(--color-layerFour);
-            }
-            #datatable_paginate {
-                color: var(--color-tLayerTwo)!important;
-                background: var(--color-layerThree);
-            }
-            #loginStats > div > div > div#goodPercent.progress-bar.progress-bar-success {
-                background-color: #42b382!important;
-            }
-            ul#settings-list.nav > li.active a {
-                color: var(--color-tLayerOne)!important;
-            }
-            div.colour-field input {
-                border: 1px solid var(--color-tLayerTwo);
-            }
-            #donate-org > div > div > div > div > div.container > h2 > strong > em.gray {
-                color: var(--color-tLayerTwo);
-            }
-            #donate-org > div > div > div > div.jumbotron > div.container > p.pull-right {
-                color: var(--color-tLayerTwo);
-            }
-        /* /////////////////////////          Clean          \\\\\\\\\\\\\\\\\\\\\\\\\ */
-        /* \\\\\\\\\\\\\\\\\\\\\\\\\            Up           ///////////////////////// */
