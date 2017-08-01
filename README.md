@@ -15,7 +15,7 @@ layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr)
 
 ## Screenshots
 
- <img src="https://github.com/leram84/layer.Cake/blob/Screenshots/WeylandHP.png" width="33%"> <img src="https://github.com/leram84/layer.Cake/blob/Screenshots/Fin1.png" width="33%"> <img src="https://github.com/leram84/layer.Cake/blob/Screenshots/Fin2.png" width="33%"> <img src="https://github.com/leram84/layer.Cake/blob/Screenshots/Fin3.png" width="33%"> <img src="https://github.com/leram84/layer.Cake/blob/Screenshots/Fin4.png" width="33%"> 
+ <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/WeylandHP.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin1.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin2.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin3.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin4.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/settings.PNG" width="33%">
 
 Thanks [gilbN](https://github.com/gilbN) and [jonfinley](https://github.com/jonfinley)!
 
