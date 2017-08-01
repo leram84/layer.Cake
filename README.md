@@ -1,7 +1,7 @@
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/layer-Cake/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 # layer#Cake
 layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme. There is a lot of extensibility here, but if you just want to skin your site, it can be done in seconds.
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/layer-Cake/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Features
 
