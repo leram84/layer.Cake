@@ -1,8 +1,0 @@
-    /* /////////////////////////        Blur Effect      \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */    
-    /* This Round the corners of the Download Tile Tabs */
-        #downloadClientRow > div > div > div > div > ul > li a {
-            border-radius: 25px !important;
-        }
-    /* /////////////////////////        Blur Effect      \\\\\\\\\\\\\\\\\\\\\\\\\ */
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
