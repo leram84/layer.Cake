@@ -27,7 +27,7 @@ If anyone else would like to submit screenshots please do so in issues. I love s
 
 You now have 3 install paths to choose from: Basic Live Default, Advanced Live Custom, and Super Duper Advanced Static :)
 
-### Basic Live Default
+### 1) Basic Live Default
 (I just wanna dark theme this thing and move on!)
 
 Ok, SUPER simple. 
@@ -39,7 +39,7 @@ Ok, SUPER simple.
 | * Fast and Easy Install  | * Limited Customization  |
 | * Live Updates so you don't have to adjust manually after every Organizr update  | * Live Updates also mean you are at the mercy of this repo  |
 
-### Advanced Live Custom
+### 2) Advanced Live Custom
 (I need more colors!)
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually.
@@ -54,7 +54,7 @@ This setup will allow you to customize a bunch of stuff (Homepage, login, chat, 
 | * Tons of Custom Colors!  | * Will take a little longer to configure  |
 | * Live Updates so you don't have to adjust manually after every Organizr update  | * Live Updates also mean you are at the mercy of this repo  |
 
-### Super Duper Advanced Static
+### 3) Super Duper Advanced Static
 (I fork cake like this for breakfast)
 
 If for whatever reason you don't want to sync your theme to this repo and want to manually manage and update it on your own, I've setup a static version of the css [here](https://github.com/leram84/layer.Cake/blob/master/CSS/Static.css). I will keep this updated, but there won't be any versioning so you're on your own for following commits. If you do want to go this route but need a little hand holding, [gilbN](https://github.com/gilbN) has made some pretty extensive documentation [here](https://blog.weyland.tech/blog/customizing-organizr-with-layer-cake). 
