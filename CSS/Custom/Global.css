@@ -553,6 +553,9 @@
                 color: var(--color-loginTLayerTwo) !important;
                 background: var(--color-loginLayerThree);
             }
+            #login .material {
+                padding-left: 10px;
+            }
         /* Login and out Buttons */
             #login .text-center {
                 color: var(--color-loginTLayerTwo)!important;
