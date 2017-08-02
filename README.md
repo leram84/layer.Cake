@@ -27,7 +27,7 @@ If anyone else would like to submit screenshots please do so in issues. I love s
 
 You now have 3 install paths to choose from: Basic Live Default, Advanced Live Custom, and Super Duper Advanced Static :)
 
-### 1) Default
+### 1) Default (Live)
 (I just wanna dark theme this thing and move on!)
 
 Ok, SUPER simple. 
@@ -39,7 +39,7 @@ Ok, SUPER simple.
 | * Fast and Easy Install  | * Limited Customization  |
 | * Live Updates so you don't have to adjust manually after every Organizr update  | * Live Updates also mean you are at the mercy of this repo  |
 
-### 2) Custom
+### 2) Custom (Live)
 (I need more colors!)
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually.
