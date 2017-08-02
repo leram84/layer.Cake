@@ -19,7 +19,7 @@ layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr)
 
 <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin3.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/WeylandHP.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin4.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin1.png" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/settings.PNG" width="33%"> <img src="https://raw.githubusercontent.com/leram84/layer.Cake/Screenshots/Fin2.png" width="33%">
 
-Thanks [gilbN](https://github.com/gilbN) and [jonfinley](https://github.com/jonfinley)!
+Thanks [gilbN](https://github.com/gilbN) and [prof](https://github.com/jonfinley)!
 
 If anyone else would like to submit screenshots please do so in issues. I love seeing what you guys come up with!
 
@@ -27,7 +27,7 @@ If anyone else would like to submit screenshots please do so in issues. I love s
 
 You now have 3 install paths to choose from: Basic Live Default, Advanced Live Custom, and Super Duper Advanced Static :)
 
-### 1) Basic Live Default
+### 1) Default
 (I just wanna dark theme this thing and move on!)
 
 Ok, SUPER simple. 
@@ -39,7 +39,7 @@ Ok, SUPER simple.
 | * Fast and Easy Install  | * Limited Customization  |
 | * Live Updates so you don't have to adjust manually after every Organizr update  | * Live Updates also mean you are at the mercy of this repo  |
 
-### 2) Advanced Live Custom
+### 2) Custom
 (I need more colors!)
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually.
@@ -54,7 +54,7 @@ This setup will allow you to customize a bunch of stuff (Homepage, login, chat, 
 | * Tons of Custom Colors!  | * Will take a little longer to configure  |
 | * Live Updates so you don't have to adjust manually after every Organizr update  | * Live Updates also mean you are at the mercy of this repo  |
 
-### 3) Super Duper Advanced Static
+### 3) Static
 (I fork cake like this for breakfast)
 
 If for whatever reason you don't want to sync your theme to this repo and want to manually manage and update it on your own, I've setup a static version of the css [here](https://github.com/leram84/layer.Cake/blob/master/CSS/Static.css). I will keep this updated, but there won't be any versioning so you're on your own for following commits. If you do want to go this route but need a little hand holding, [gilbN](https://github.com/gilbN) has made some pretty extensive documentation [here](https://blog.weyland.tech/blog/customizing-organizr-with-layer-cake). 
