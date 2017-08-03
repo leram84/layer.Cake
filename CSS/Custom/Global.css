@@ -517,9 +517,6 @@
                 color: var(--color-tLayerTwo);
                 background: var(--color-layerThree);
             }
-            .in .modal-body .material {
-                background: #fff;
-            }
             .jFiler-items-grid .jFiler-item .jFiler-item-container .jFiler-item-assets .text-success {
                 color: var(--color-tLayerTwo);
             }
@@ -530,7 +527,7 @@
                 background: var(--color-layerThree);
             }
             .checkFrame .form-control {
-                background: var(--color-layerFour) !important;
+                background: var(--color-layerFour);
             }
             .checkFrame .modal-header {
                 background: var(--color-layerTwo);
