@@ -526,6 +526,24 @@
             a.fa.fa-trash.jFiler-item-trash-action{
                 color: var(--color-layerFive);
             }
+            .checkFrame .modal-body {
+                background: var(--color-layerThree);
+            }
+            .checkFrame .form-control {
+                background: var(--color-layerFour) !important;
+            }
+            .checkFrame .modal-header {
+                background: var(--color-layerTwo);
+            }
+            .checkFrame .modal-title {
+                color: var(--color-tLayerOne);
+            }
+            .checkFrame span {
+                color: var(--color-layerFive);
+            }
+            .checkFrame .modal-footer {
+                background: var(--color-layerTwo);
+            }
     /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
     
