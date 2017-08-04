@@ -33,7 +33,7 @@ You now have 3 install paths to choose from: Basic Live Default, Advanced Live C
 Ok, SUPER simple. 
 1) Copy and paste the contents of [Default.css](https://github.com/leram84/layer.Cake/blob/master/Live/Default.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon).
 2) Edit the 7 colors with your own hex codes.... Let me say that again. EDIT THE 7 COLORS WITH YOUR OWN HEX CODES. If you need help choosing colors I highly recommend you check out [coolors.co](https://coolors.co/).
-2) That's it... seriously, you're all done! You're probably gonna want to go eat some cake now :)
+3) That's it... seriously, you're all done! You're probably gonna want to go eat some cake now :)
 
 | Pros  | Cons |
 | ------------- | ------------- |
@@ -44,8 +44,10 @@ Ok, SUPER simple.
 (I need more colors!)
 
 This setup will allow you to customize a bunch of stuff (Homepage, login, chat, miscellaneous, and Calendar) individually. It is identical to the default installation, you just have more colors you can set. 
-1) Copy and paste the contents of [Custom.css](https://github.com/leram84/layer.Cake/blob/master/Live/Custom.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon), and then edit the 32 colors with your own hex codes (though you will likely reuse many). 
-2) Profit
+1) Copy and paste the contents of [Custom.css](https://github.com/leram84/layer.Cake/blob/master/Live/Custom.css) to your CSS box in Organizr (Settings/Edit Colors/Gear Icon).
+2) Edit the 32 colors with your own hex codes (though you will likely reuse many). 
+3) ???
+4) Profit
 
 **** Disclaimer: Please note that this option comes with an extra set of colors labeled "extraLayer". These serve no function other than to act as a placeholder for future addons. You can leave them as is and they won't cause any trouble :)
 
