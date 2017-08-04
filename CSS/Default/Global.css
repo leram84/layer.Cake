@@ -544,6 +544,9 @@
             }
             #login .material {
                 padding-left: 10px;
+		background: var(--color-layerThree);
+                border-bottom: 1px solid var(--color-tLayerTwo);
+                color: var(--color-tLayerTwo);
             }
         /* Login and out Buttons */
             #login .text-center {
@@ -560,9 +563,6 @@
             }
             #switchForgot text {
                 color: var(--color-tLayerTwo)!important;
-            }
-            #login .form-control {
-                background: var(--color-layerFour);
             }
         /* Remember Me Knob */
             #login div div input.switcher-success:checked + label:before {
