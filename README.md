@@ -37,8 +37,8 @@ Ok, SUPER simple.
 
 | Pros  | Cons |
 | ------------- | ------------- |
-| Fast and Easy Install  | Limited Customization  |
-| Live Updates so you don't have to adjust <br/> manually after every Organizr update  | Live Updates also mean you <br/> are at the mercy of this repo  |
+| <ul><li>Fast and Easy Install</li><li>Live Updates so you don't have to adjust <br/> manually after every Organizr update</li></ul> | <ul><li>Limited Customization</li><li>Live Updates also mean you <br/> are at the mercy of this repo</li></ul> |
+
 
 ### 2) Custom (Live)
 (I need more colors!)
@@ -54,8 +54,7 @@ This setup will allow you to customize a bunch of stuff (Homepage, login, chat, 
 
 | Pros  | Cons |
 | ------------- | ------------- |
-| Tons of Custom Colors!  | Will take a little longer to configure  |
-| Live Updates so you don't have to adjust <br/> manually after every Organizr update  | Live Updates also mean you <br/> are at the mercy of this repo  |
+| <ul><li>Tons of Custom Colors!</li><li>Live Updates so you don't have to adjust <br/> manually after every Organizr update</li></ul> | <ul><li>Will take a little longer to configure</li><li>Live Updates also mean you <br/> are at the mercy of this repo</li></ul> |
 
 ### 3) Static
 (I fork cake like this for breakfast)
@@ -65,8 +64,7 @@ If for whatever reason you don't want to sync your theme to this repo and want t
 
 | Pros  | Cons |
 | ------------- | ------------- |
-| God mode... you can have whatever you want  | This is the most time consuming option  |
-| You have complete customization <br/> control over everything  | Will have to manually update your theme <br/> after every new Organizr feature is added  |
+| <ul><li>God mode... you can have whatever you want</li><li>You have complete customization <br/> control over everything</li></ul> | <ul><li>This is the most time consuming option</li><li>Will have to manually update your theme <br/> after every new Organizr feature is added</li></ul> |
 
 ## Add-Ons
 
