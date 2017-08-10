@@ -1,3 +1,5 @@
+## Wait for the next Organizr update. I'll remove this when its time :)
+
 # layer#Cake
 layer#Cake is a theme engine for [Organizr](https://github.com/causefx/Organizr). It will take 7 user submitted colors (5 fill layers and 2 text layers) and apply a well thought out logic to generate your theme. There is a lot of extensibility here, but if you just want to skin your site, it can be done in seconds.
 
