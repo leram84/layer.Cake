@@ -538,6 +538,16 @@
                 background: var(--color-layerThree);
                 border: var(--color-layerThree);
             }
+            #plexModal div div div.modal-header {
+                background: var(--color-layerTwo);
+                color: var(--color-tLayerOne);
+            }
+            #plexModal div div div.modal-footer {
+                background: var(--color-layerTwo);
+            }
+            #plexModal div div div.modal-body {
+                background: var(--color-layerThree);
+            }
         /* Garbage */
             textarea#customCSS_id.form-control {
                 font-family: "Courier New", Courier, monospace;
