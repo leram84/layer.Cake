@@ -145,6 +145,22 @@
     .table-hover>tbody>tr:hover {
         background-color: var(--color-layerThree);
     }
+    .table-hover>tbody>tr>th img {
+        max-width: 100%;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: .8 !important;
+    }
+    .table-hover>tbody>tr:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(.9);
+        z-index: 10000000;
+        border-radius: 10px;
+        opacity: 1 !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 /* Download Tile */
     .tabbable.panel.with-nav-tabs.panel-default, .panel-default>.panel-heading, .panel-default>.panel-heading, .table-responsive, .content-tools a {
         color: var(--color-tLayerTwo);
@@ -581,6 +597,15 @@
     .checkFrame .modal-footer {
         background: var(--color-layerTwo);
     }
+/* Garbage */
+    textarea#customCSS_id.form-control {
+        font-family: "Courier New", Courier, monospace;
+        color: #3bfc34 !important;
+    }
+    textarea#homepageCustomHTML1_id.form-control{
+        font-family: "Courier New", Courier, monospace;
+        color: #3bfc34 !important;
+    }
 /* /////////////////////////      Settings Page     \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Static Module     ///////////////////////// */
     
@@ -739,6 +764,11 @@
 /* Sent Message Direction Indicator */
     .chat .chat-double .chat-panel.blue-bg:after {
         border-left: 9px solid var(--color-chatLayerFour);
+    }
+/* Direction Indicator Border */
+    .chat .chat-double li .chat-panel:before {
+        border-left: 10px solid var(--color-chatLayerFour);
+        border-right: 0 solid var(--color-chatLayerThree);
     }
 /* Message Username Text */
     h4.pull-left.zero-m {
