@@ -597,6 +597,13 @@
     .checkFrame .modal-footer {
         background: var(--color-layerTwo);
     }
+    #submitTabs div div ul li.jFiler-item {
+        background: var(--color-layerTwo);
+    }
+    #submitTabs div div ul li div.jFiler-item-container {
+        background: var(--color-layerThree);
+        border: var(--color-layerThree);
+    }
 /* Garbage */
     textarea#customCSS_id.form-control {
         font-family: "Courier New", Courier, monospace;
