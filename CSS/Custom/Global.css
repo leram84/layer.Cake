@@ -574,6 +574,29 @@
             #plexModal div div div.modal-body {
                 background: var(--color-layerThree);
             }
+            .iconpicker-popover.popover {
+                background: var(--color-layerTwo);
+            }
+            .iconpicker-popover.popover .popover-title {
+                    background: var(--color-layerTwo);
+            }
+            input.form-control.iconpicker-search {
+                color: var(--color-tLayerTwo) !important;
+            }
+            div.iconpicker-items {
+                background: var(--color-layerThree) !important;
+            }
+            a.iconpicker-item {
+                background: var(--color-layerFour);
+                color: var(--color-tLayerTwo) !important;
+            }
+            a.iconpicker-item:hover {
+                background: var(--color-layerThree);
+                color: var(--color-tLayerTwo) !important;
+            }
+            .iconpicker .iconpicker-item:hover:not(.iconpicker-selected) {
+                background-color: var(--color-layerTwo) !important;
+            }
         /* Garbage */
             textarea#customCSS_id.form-control {
                 font-family: "Courier New", Courier, monospace;
