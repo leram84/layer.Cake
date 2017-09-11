@@ -128,7 +128,7 @@
         border-top: 2px solid var(--color-layerThree);
     }
 /* Media Search Body Active Content Count */
-    .badge {
+    #resultshere .badge {
         background: var(--color-layerThree) !important;
     }
 /* Media Search Body Active Content Count Icons */
