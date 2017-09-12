@@ -1,0 +1,65 @@
+/*  ___                                      __ __     ____              __                 */
+/* /\_ \                                    _\ \\ \__ /\  _`\           /\ \                */
+/* \//\ \      __     __  __     __   _ __ /\__  _  _\\ \ \/\_\     __  \ \ \/'\      __    */
+/*   \ \ \   /'__`\  /\ \/\ \  /'__`\/\`'__\/_ \ \\ \ _\ \ \/_/_  /'__`\ \ \ , <    /'__`\  */
+/*    \_\ \_/\ \L\.\_\ \ \_\ \/\  __/\ \ \/  /\_   _  _\\ \ \_\ \/\ \C\.\_\ \ \\`\ /\  __/  */
+/*    /\____\ \__/.\_\\/`____ \ \____\\ \_\  \/_/\_\\_\/ \ \____/\ \__/.\_\\ \_\ \_\ \____\ */
+/*    \/____/\/__/\/_/ `/___/> \/____/ \/_/     \/_//_/   \/___/  \/__/\/_/ \/_/\/_/\/____/ */
+/*                        /\___/                                                            */
+/*                        \/__/                                                  -Hackerman */
+:root {
+/* This block is for the Home and Settings Pages */
+    --color-layerOne:           #272361;
+    --color-layerTwo:           #662f8f;
+    --color-layerThree:         #ed2e72;
+    --color-layerFour:          #9680bb;
+    --color-layerFive:          #46bc99;
+    --color-tLayerOne:          #71cde5;
+    --color-tLayerTwo:          #ffffff;
+/* This block is for the Calendar Color Codes */
+    --color-calAvailable:       #42b382;
+    --color-calUnavailable:     #e9585b;
+    --color-calUnreleased:      #3f51b5;
+    --color-calPremier:         #90c1f1;
+/* This block is for the Login, Logout, and Popup Pages */
+    --color-loginLayerOne:      #272361;
+    --color-loginLayerTwo:      #662f8f;
+    --color-loginLayerThree:    #ed2e72;
+    --color-loginLayerFour:     #9680bb;
+    --color-loginLayerFive:     #46bc99;
+    --color-loginTLayerOne:     #71cde5;
+    --color-loginTLayerTwo:     #ffffff;
+/* This block is for the Chat Page */
+    --color-chatLayerOne:       #272361;
+    --color-chatLayerTwo:       #662f8f;
+    --color-chatLayerThree:     #ed2e72;
+    --color-chatLayerFour:      #9680bb;
+    --color-chatLayerFive:      #46bc99;
+    --color-chatTLayerOne:      #71cde5;
+    --color-chatTLayerTwo:      #ffffff;
+/* This block is earmarked for Custom Add-Ons */
+    --color-extraLayerOne:      #272361;
+    --color-extraLayerTwo:      #662f8f;
+    --color-extraLayerThree:    #ed2e72;
+    --color-extraLayerFour:     #9680bb;
+    --color-extraLayerFive:     #46bc99;
+    --color-extraTLayerOne:     #71cde5;
+    --color-extraTLayerTwo:     #ffffff;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/CSS/Custom/Global.css">
+<!--           _      _    _                     _    _      _               -->
+<!--          /_\  __| |__| |___ _ _            | |  (_)_ _ | |__ ___        -->
+<!--         / _ \/ _` / _` / _ \ ' \           | |__| | ' \| / /(_-<        -->
+<!--        /_/ \_\__,_\__,_\___/_||_|          |____|_|_||_|_\_\/__/        -->
+<!-- \/\/\/\/\/\/\/\/\/   Paste your add-on links below   \/\/\/\/\/\/\/\/\/ -->
+
+
+
+
+<!-- /\/\/\/\/\/\/\/\/\   Paste your add-on links above   /\/\/\/\/\/\/\/\/\ -->
+<!--           _      _    _                     _    _      _               -->
+<!--          /_\  __| |__| |___ _ _            | |  (_)_ _ | |__ ___        -->
+<!--         / _ \/ _` / _` / _ \ ' \           | |__| | ' \| / /(_-<        -->
+<!--        /_/ \_\__,_\__,_\___/_||_|          |____|_|_||_|_\_\/__/        -->
+<style>
