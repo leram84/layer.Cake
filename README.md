@@ -95,6 +95,10 @@ Once your base theme is setup, you can also make some customization's and additi
 > **Description**:  This will change the Download Panels tabs from square buttons to rounded. <br/>
 > **Installation**: Paste `<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/Rounded-DL-Tabs.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
 
+[Numbered Playlist Fix Add-On](https://github.com/leram84/layer.Cake/blob/master/Add-Ons/Numbered-Plist-Fix.css)
+> **Description**:  Hides the first letter of your Playlist Title. This is useful if you want to number your plex playlists but don't want the number to display on your homepage.  <br/>
+> **Installation**: Paste `<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/Numbered-Plist-Fix.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
+
 ## Roll Credits
 
 * Obviously none of this would be possible without [@causefx](https://github.com/causefx) and the amazing work he has done with [Organizr](https://github.com/causefx/Organizr) But much more than that (and on a personal level) he has been one of the most altruistic devs I have yet to come across! On top of the one man show that is Organizr... the dude literally spends hours a day closing issues on git/reddit/gitter and is personally responsible for hundreds (thousands?) of running web servers.... Also he literally taught me everything I needed to know to make this repo. Cheers homie!
