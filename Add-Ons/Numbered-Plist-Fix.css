@@ -1,3 +1,6 @@
 #plexPlaylists h5.text-center:first-letter {
     color: transparent;
 }
+#plexPlaylists .btn-group .dropdown-menu > li > a:first-letter {
+    color: transparent;
+}
