@@ -2689,7 +2689,7 @@ div.login.i-block div.content-box div.biggest-box {
     overflow-x: hidden ! important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
-    background-position: right !important;
+    background-position: center !important;
     padding-top: 50px;
     margin-top: 20px;
     border-left: 30px solid transparent;
