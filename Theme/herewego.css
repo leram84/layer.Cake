@@ -1901,10 +1901,10 @@ button.close:hover {
 button.close {
     opacity: 1;
 }
-/* Calendar Legend */
+/* Calendar Legend
 #body-homepage #calendarLegendRow > div > div > span.label.label-primary.well-sm {
     background: var(--color-calAvailable) !important;
-}
+} */
 #body-homepage .label.label-danger.well-sm {
     background: var(--color-calUnavailable) !important;
 }
