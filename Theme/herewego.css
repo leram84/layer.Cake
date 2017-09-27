@@ -918,8 +918,8 @@ div.mCSB_dragger_bar {
     #homepageNotice {
         position: fixed;
         left: 50%;
-        top: 25%;
-        transform: translate(-50%, -50%);
+        margin-top: 75px;
+        transform: translate(-50%, 0);
         background: #191a1c;
         box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         z-index: 999999999999999999999999999999999999;
