@@ -32,6 +32,9 @@
 #body-settings .fa.fa-close {
     font-size: 20px;
 }
+#user-menu-div .content-box.top-clock {
+    display: none;
+}
 @media (min-width: 1300px) {
     #chat-chat-div {
         max-width: 75% !important;
