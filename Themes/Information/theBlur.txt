@@ -1,6 +1,6 @@
 layer#Cake industries presents theBlur! Currently in beta :)
 Instructioins:
-Step One: Add your button html from here - https://github.com/leram84/layer.Cake/blob/master/Add-Ons/theBlur-buttons.html and edit if needed (old html will not work)
+Step One: Add your button html from <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/theBlur-buttons.html" target="_blank">here</a> and edit if needed (old html will not work)
 Step Two: Upload your top bar logo to Organizr from the "Edit Tabs" screen under the name "blurlogo.png".
 Step Three: Select theBlur as your theme and enjoy!
 Notes:
