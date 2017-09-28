@@ -1376,6 +1376,9 @@ a.fix-nav {
 .gn-menu-main {
     background: rgba(0, 0, 0, .86);
 }
+#tabList .tab-item .tab-link {
+    color: #999;
+}
 .tab-item:hover a {
     color: #ffffff !important;
     background: hsla(0, 0%, 100%, .08);
