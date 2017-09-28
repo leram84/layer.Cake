@@ -1615,6 +1615,9 @@ button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float:hov
 .all .zero-m {
     padding-left: 2px;
 }
+.fc-calendar .fc-toolbar .fc-prev-button, .fc-calendar .fc-toolbar .fc-next-button {
+    color: hsla(0, 0%, 100%, .45);
+}
 button.fc-prev-button.fc-button.fc-state-default.fc-corner-left:hover {
     color: #fff;
 }
