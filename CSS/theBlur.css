@@ -997,7 +997,7 @@ div.mCSB_dragger_bar {
     margin-bottom: 20px;
 }
 #splashScreen > div > div.row:nth-last-of-type(1):before {
-    content: "Select Aplication";
+    content: "Select Application";
     color: #fff;
     font-size: 20px;
     padding-right: 15px;
