@@ -95,7 +95,7 @@
         text-transform: uppercase;
         line-height: 20px;
         font-family: inherit;
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+        background: transparent;
         margin-left: ;
     }
     #chat-chat-div {
