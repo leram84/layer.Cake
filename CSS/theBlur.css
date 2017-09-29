@@ -1297,12 +1297,15 @@ img.pull-left {
     border-color: transparent !important;
 }
 html > body.scroller-body {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
     box-shadow: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 .gn-menu-wrapper {
     background: transparent;
