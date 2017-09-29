@@ -1,6 +1,8 @@
 #plexPlaylists h5.text-center:first-letter {
     color: transparent;
+    margin-left: -11px;
 }
 #plexPlaylists .btn-group .dropdown-menu > li > a:first-letter {
     color: transparent;
+    margin-left: -11px;
 }
