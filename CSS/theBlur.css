@@ -480,11 +480,8 @@
 }
 /* Preload/Scroll Bar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-nav.gn-menu-wrapper.gn-open-fixed #mCSB_1_scrollbar_vertical {
-    margin-right: -17px !important;
-}
-nav.gn-menu-wrapper.gn-open-all #mCSB_1_scrollbar_vertical {
-    margin-right: -17px !important;
+#mCSB_1_dragger_vertical > div {
+    display: none;
 }
 .la-timer {
     background: transparent;
@@ -568,15 +565,6 @@ div.la-ball-scale-multiple.la-3x:before {
 div.nicescroll-cursors {
     background: #73797d !important;
     border: 1px solid #73797d !important;
-}
-#mCSB_1_scrollbar_vertical {
-    margin-right: -3px !important;
-}
-nav.gn-menu-wrapper.gn-open-fixed {
-    overflow: hidden;
-}
-nav.gn-menu-wrapper.gn-open-all {
-    overflow: hidden;
 }
 div.mCSB_dragger_bar {
     background: #73797d !important;
