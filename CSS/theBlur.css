@@ -479,7 +479,9 @@
     z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 }
 /* Preload/Scroll Bar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
+.mCSB_scrollTools.mCSB_1_scrollbar.mCS-minimal.mCSB_scrollTools_vertical {
+    margin-right: -17px;
+}
 #mCSB_1_dragger_vertical > div {
     display: none;
 }
