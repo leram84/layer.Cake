@@ -1369,6 +1369,19 @@ a.fix-nav {
 .gn-menu-main {
     background: rgba(0, 0, 0, .86);
 }
+.gn-menu li.rightActive > a {
+    box-shadow: inset 3px 0 0 0 #CC7B19;
+    border-radius: 0 0 0 0;
+    margin-left: 0;
+    background: transparent;
+    color: #F9BE03 !important;
+}
+.gn-menu li.rightActive > a:hover {
+    background: hsla(0, 0%, 100%, .08);
+    color: #fff !important;
+    border-radius: 0 5px 5px 0;
+    margin-right: 5px;
+}
 #tabList .tab-item .tab-link {
     color: #999;
 }
