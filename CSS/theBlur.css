@@ -482,9 +482,6 @@
 .mCSB_scrollTools.mCSB_1_scrollbar.mCS-minimal.mCSB_scrollTools_vertical {
     margin-right: -17px;
 }
-#mCSB_1_dragger_vertical > div {
-    display: none;
-}
 .la-timer {
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0);
