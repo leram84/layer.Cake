@@ -1,3 +1,5 @@
-#plexRowNowPlaying {
-    margin-top: 75px;
+@media (min-width: 850px) {
+    #plexRowNowPlaying {
+        margin-top: 75px;
+    }
 }
