@@ -1,3 +1,5 @@
-#plexRow {
-    margin-top: 75px;
+@media (min-width: 850px) {
+    #plexRow {
+        margin-top: 75px;
+    }
 }
