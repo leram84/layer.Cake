@@ -170,7 +170,7 @@
         display: none;
     }
     #main-chat .btn-group.btn-group-justified>.btn-group:nth-child(3) {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: fixed, fixed, fixed;
     background-position: center center, center center, center center;
@@ -187,7 +187,7 @@
         height: 50px;
         float: right;
         color: transparent !important;
-        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
         background-repeat: repeat, repeat, no-repeat !important;
         background-attachment: fixed, fixed, fixed !important;
         background-position: center center, center center, center center !important;
@@ -221,14 +221,7 @@
         -o-background-size: auto, cover;
     }
     #main-chat .grayish-blue-bg {
-        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
-        background-repeat: repeat, repeat, no-repeat !important;
-    background-attachment: fixed, fixed, fixed !important;
-    background-position: center center, center center, center center !important;
-    background-size: auto, auto, cover !important;
-    -webkit-background-size: auto, auto, cover;
-    -moz-background-size: auto, auto, cover;
-    -o-background-size: auto, auto, cover;
+        background: transparent !important;
     }
 }
 #chat-chat-div .fa-heart {
