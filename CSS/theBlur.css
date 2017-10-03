@@ -2657,7 +2657,35 @@ table#datatable.display.dataTable.no-footer.dtr-inline {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module      ///////////////////////// */
 /* /////////////////////////        Login Page       \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\       Custom Module     ///////////////////////// */
-
+#switchCreateUser {
+    background: transparent !important;
+    padding: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+#switchCreateUser text {
+    color: transparent !important;
+}
+#switchCreateUser:before {
+    content: "Need an Account? ";
+    cursor: initial;
+    color: hsla(0, 0%, 100%, .45);
+    text-transform: none;
+}
+#switchCreateUser text:after {
+    content: "Create One Here!";
+    cursor: pointer;
+    text-transform: none;
+    color: #cc7b19;
+    padding: 0;
+    margin-left: -120px;
+}
+#switchCreateUser text:hover:after {
+    color: #fff;
+    text-decoration: underline;
+}
 #loginModal .biggest-box {
     padding-bottom: 150px;
 }
