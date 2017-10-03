@@ -2193,6 +2193,9 @@ tr.openTab {
 .panel-default>.panel-heading {
     color: #fff;
 }
+#downloadClientRow > div > div > div > div.panel-heading > h3 {
+    margin-top: 12px;
+}
 #downloadClientRow .progress-widget.table-striped > thead {
     background-color: hsla(0, 0%, 100%, .04);
     border-top: 2px solid rgba(0, 0, 0, .3);
