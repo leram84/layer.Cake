@@ -1265,6 +1265,22 @@ div#splashScreen.splash-modal.modal.fade.in div.table-wrapper.big-box div.row {}
 .splash-item .text-center .text-uppercase {
     text-transform: none;
 }
+#splashScreen li>div>div>center>.fa-sm {
+    border-radius: 50% !important;
+    width: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100px !important;
+    border: 4px solid hsla(0, 0%, 100%, .1);
+    background: hsla(0, 0%, 100%, .1);
+    overflow: hidden;
+}
+#splashScreen .splash-item:hover .fa-sm {
+    border: 4px solid #fff !important;
+}
+#splashScreen li>div>div>center {
+    max-height: 104px;
+}
 /* Splash Screen ////////////////////////////////////////////////// */
 
 div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.text-center div.login.i-block div.content-box {
