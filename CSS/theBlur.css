@@ -1846,6 +1846,9 @@ a.pull-left.next-mail.btn.btn-default.waves.waves-button.btn-sm.waves-effect.wav
 #plexRow i.fa.fa-angle-left {
     margin-right: 15px !important;
 }
+#embyRow i.fa.fa-angle-left {
+    margin-right: 15px !important;
+}
 div.recentHeader.inbox-pagination.RecentlyAddedContent div.pull-right {
     float: left !important;
 }
