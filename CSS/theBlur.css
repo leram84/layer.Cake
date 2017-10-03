@@ -1506,9 +1506,6 @@ a.fix-nav.selected:hover > i.mdi.mdi-pin-off {
 a.fix-nav:hover > i.mdi.mdi-pin {
     color: #fff !important;
 }
-.bottom-bnts {
-    background: rgba(0, 0, 0, .15) !important;
-}
 a.fix-nav {
     background: transparent !important;
 }
@@ -3413,16 +3410,16 @@ ul#gn-menu.gn-menu-main {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-/* .bottom-bnts {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, repeat, no-repeat;
-    background-attachment: fixed, fixed, fixed;
-    background-position: center center, center center, center center;
-    background-size: auto, auto, cover;
+.bottom-bnts {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+    background-repeat: repeat, repeat, no-repeat !important;
+    background-attachment: fixed, fixed, fixed !important;
+    background-position: center center, center center, center center !important;
+    background-size: auto, auto, cover !important;
     -webkit-background-size: auto, auto, cover;
     -moz-background-size: auto, auto, cover;
     -o-background-size: auto, auto, cover;
-} */
+}
 i.mdi.mdi-pin-off {
     color: hsl(33, 70%, 50%);
 }
