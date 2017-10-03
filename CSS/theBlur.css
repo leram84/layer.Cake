@@ -1,3 +1,26 @@
+@media (max-width: 650px) {
+    #recentContent-title:after {
+        display: none !important;
+    }
+    #playlist-title:after {
+        display: none !important;
+    }
+    #recentContent-title {
+        margin-top: -15px;
+        margin-left: 0;
+    }
+    #playlist-title {
+        margin-top: -15px;
+        margin-left: 0;
+    }
+    button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float {
+        text-align: left !important;
+        padding: 5px 0;
+    }
+    #calendarLegendRow div.btn-group:before {
+        padding-right: 10px;
+    }
+}
 #body-settings #submitTabs .form-content.col-sm-12.col-md-2.col-lg-1 {
     min-width: 15%;
 }
@@ -46,6 +69,7 @@
         right: calc(-100%);
         max-width: 80vw;
         width: 100% !important;
+        -webkit-transition: all 0s;
         transition: all 0s;
     }
     #main-chat .gray-bg {
@@ -66,6 +90,7 @@
     #chat-users-div .content-box {
         background: rgba(0, 0, 0, .15) !important;
         padding-bottom: 100vh;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     #chat-users-div>.gray-bg>br {
@@ -80,9 +105,16 @@
         line-height: 20px;
     }
     #chat-chat-div .big-box {
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
-        padding-top: 0;
-        padding-bottom: 30px;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    padding-top: 0;
+    padding-bottom: 30px;
     }
     #main-chat .btn-group.btn-group-justified>.btn-group:nth-child(3):before {
         content: "Chat Room";
@@ -115,8 +147,15 @@
         width: 80vw !important;
     }
     #chat-users-div .gray-bg {
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
-        height: 100% !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    height: 100% !important;
     }
     #main-chat .fa.fa-close {
         position: fixed;
@@ -131,7 +170,14 @@
         display: none;
     }
     #main-chat .btn-group.btn-group-justified>.btn-group:nth-child(3) {
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center, center center, center center;
+    background-size: auto, auto, cover;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
     }
     #chat-switch-close:hover .fa.fa-close {
         color: #fff;
@@ -141,7 +187,14 @@
         height: 50px;
         float: right;
         color: transparent !important;
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+        background-repeat: repeat, repeat, no-repeat !important;
+        background-attachment: fixed, fixed, fixed !important;
+        background-position: center center, center center, center center !important;
+        background-size: auto, auto, cover !important;
+        -webkit-background-size: auto, auto, cover;
+        -moz-background-size: auto, auto, cover;
+        -o-background-size: auto, auto, cover;
         padding-bottom: 10px;
     }
     #onlineusers {
@@ -158,10 +211,24 @@
 }
 @media (max-width: 763px) {
     #chat-chat-div .gray-bg {
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
     }
     #main-chat .grayish-blue-bg {
-        background: #191a1c !important;
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .08)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+        background-repeat: repeat, repeat, no-repeat !important;
+    background-attachment: fixed, fixed, fixed !important;
+    background-position: center center, center center, center center !important;
+    background-size: auto, auto, cover !important;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
     }
 }
 #chat-chat-div .fa-heart {
@@ -170,7 +237,7 @@
 #gn-menu .mdi-account-circle {
     border: 2px solid rgba(0, 0, 0, 0.0);
     border-radius: 50%;
-    padding: 0;
+    padding: 2px 1px 1px 1px;
     font-size: 24px;
 }
 #gn-menu .mdi-account-circle:hover {
@@ -211,6 +278,7 @@
     display: none !important;
 }
 #main-user .waves-effect {
+    -webkit-transition: all 0s;
     transition: all 0s;
 }
 #main-user .btn-group-justified>.btn-group {
@@ -228,8 +296,10 @@
     margin-right: 5px !important;
     margin-top: 37px !important;
     height: 465px !important;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     border-radius: 5px;
+    -webkit-transition: all, 0s;
     transition: all, 0s;
 }
 #main-user .grayish-blue-bg {
@@ -293,6 +363,16 @@
 #main-user .grayish-blue-bg .btn-group:nth-child(5) {
     margin-top: 10px;
 }
+.group-guest #main-user .grayish-blue-bg .btn-group:nth-child(5) {
+    margin-bottom: 75px !important
+}
+
+.group-guest #main-user .grayish-blue-bg .btn-group:nth-child(5):before {
+    border-top: 1px solid transparent;
+}
+.group-guest #main-user {
+    height: 375px !important;
+}
 #main-user .grayish-blue-bg .btn-group:nth-child(6) {
     margin-top: 20px;
     margin-bottom: 20px !important;
@@ -311,6 +391,7 @@
     content: "\f057";
 }
 .mdi-fullscreen-exit {
+    -webkit-transform: scale(1, 1) !important;
     transform: scale(1, 1) !important;
 }
 #splitView:hover {
@@ -419,11 +500,13 @@
     position: fixed;
     left: 50%;
     top: 55px;
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     height: 440px;
     width: 600px;
     z-index: 9999999999999999999;
     background: #191a1c;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     border-radius: 4px;
 }
@@ -491,6 +574,7 @@
 }
 .la-timer.la-dark:after {
     content: '';
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
     top: 50%;
@@ -510,6 +594,7 @@ div.la-ball-scale-multiple.la-3x {
 }
 .la-ball-scale-multiple.la-3x:after {
     content: '';
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
     top: 200px;
@@ -526,6 +611,7 @@ div.la-ball-scale-multiple.la-3x {
 div.la-ball-scale-multiple.la-3x:before {
     content: "Loading";
     color: #fff !important;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
     top: 240px;
@@ -543,9 +629,11 @@ div.la-ball-scale-multiple.la-3x:before {
 }
 @keyframes spin {
     0% {
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100% {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -583,6 +671,7 @@ div.mCSB_dragger_bar {
     width: 8px !important;
 }
 #ascrail2000:hover div.nicescroll-cursors {
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
 }
 #ascrail2001:active .nicescroll-cursors {
@@ -591,6 +680,7 @@ div.mCSB_dragger_bar {
     width: 8px !important;
 }
 #ascrail2000:active div.nicescroll-cursors {
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
 }
 /* Preload/Scroll Bar ////////////////////////////////////////////////// */
@@ -601,6 +691,7 @@ div.mCSB_dragger_bar {
 }
 .mdi-fullscreen {
     font: normal normal normal 14px/1 FontAwesome;
+    -webkit-transform: scale(.75, .75);
     transform: scale(.75, .75);
 }
 .mdi-fullscreen-exit:before {
@@ -608,6 +699,7 @@ div.mCSB_dragger_bar {
 }
 .mdi-fullscreen-exit {
     font: normal normal normal 14px/1 FontAwesome;
+    -webkit-transform: scale(.75, .75);
     transform: scale(.75, .75);
 }
 /* Top Bar ////////////////////////////////////////////////// */
@@ -627,6 +719,11 @@ div.mCSB_dragger_bar {
     margin-right: -15px;
     width: 100%;
 }
+#searchEmbyRow {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100%;
+}
 /* Media Search ////////////////////////////////////////////////// */
 /* Black Bar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -640,6 +737,7 @@ div.mCSB_dragger_bar {
         max-height: 77vh;
         background: #191a1c !important;
         max-width: 500px;
+        -webkit-box-shadow: 0 15px 55px rgba(0, 0, 0, .5);
         box-shadow: 0 15px 55px rgba(0, 0, 0, .5);
         border-radius: 5px;
         overflow-y: scroll;
@@ -656,6 +754,14 @@ div.mCSB_dragger_bar {
     #searchPlexRow div.content-box {
         border-radius: 5px;
     }
+    #searchEmbyRow.row {
+        height: 61px;
+        position: fixed;
+        z-index: 999999999999999999999999999999;
+    }
+    #searchEmbyRow div.content-box {
+        border-radius: 5px;
+    }
     #content > br {
         display: none;
     }
@@ -670,7 +776,15 @@ div.mCSB_dragger_bar {
         top: 0;
         left: 0;
     }
-    .row-bblur {} #searchPlexRow div.content-box.box-shadow.big-box.todo-list {
+    #searchPlexRow div.content-box.box-shadow.big-box.todo-list {
+        width: 500px;
+        height: 35px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0;
+        margin-top: 12.5px;
+    }
+    #searchEmbyRow div.content-box.box-shadow.big-box.todo-list {
         width: 500px;
         height: 35px;
         padding-left: 0px;
@@ -690,6 +804,7 @@ div.mCSB_dragger_bar {
         top: 10px;
         left: 20px;
         z-index: 99999999999999999;
+        -webkit-transform: scale(.8, .9);
         transform: scale(.8, .9);
     }
     div.content-box.orange-bg.home:hover {
@@ -876,6 +991,7 @@ div.mCSB_dragger_bar {
         cursor: pointer;
     }
     div#testArea.row {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         width: 100%;
         position: fixed;
@@ -890,6 +1006,9 @@ div.mCSB_dragger_bar {
     #searchPlexRow {
         background: #191a1c;
     }
+    #searchEmbyRow {
+        background: #191a1c;
+    }
     #body-homepage #ascrail2000 div.nicescroll-cursors {
         margin-top: 63px !important;
     }
@@ -897,8 +1016,10 @@ div.mCSB_dragger_bar {
         position: fixed;
         left: 50%;
         margin-top: 75px;
+        -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
         background: #191a1c;
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         z-index: 999999999999999999999999999999999999;
     }
@@ -937,6 +1058,9 @@ div.mCSB_dragger_bar {
     #searchPlexRow .col-lg-12 {
         padding: 0;
     }
+    #searchEmbyRow .col-lg-12 {
+        padding: 0;
+    }
     div.goto-splash {
         display: none;
     }
@@ -947,6 +1071,9 @@ div.mCSB_dragger_bar {
         margin-top: 0px !important;
     }
     #searchPlexRow {
+        width: 100vw;
+    }
+    #searchEmbyRow {
         width: 100vw;
     }
 }
@@ -983,7 +1110,14 @@ div.mCSB_dragger_bar {
     max-height: 150px;
     opacity: 1 !important;
     border-radius: 3px !important;
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     margin-bottom: 20px;
 }
 #splashScreen > div > div.row:nth-last-of-type(1):before {
@@ -1034,11 +1168,11 @@ li.splash-item.content-box.small-box.ultra-widget.gray-bg span.text-uppercase.w-
     font-size: 16px;
 }
 .splash-item:hover {
-    -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
     border-radius: 3px;
     opacity: 1 !important;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 li.splash-item.content-box.small-box.ultra-widget .w-icon {
@@ -1050,6 +1184,7 @@ li.splash-item.content-box.small-box.ultra-widget .w-icon {
 div.w-icon center i img {
     border-radius: 50% !important;
     width: 100px;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 100px !important;
     border: 4px solid hsla(0, 0%, 100%, .1);
@@ -1151,13 +1286,19 @@ div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.te
     }
 }
 #loginModal {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
-#loginModal div.table-wrapper {
+#loginModal .table-wrapper {
+    background: transparent !important;
+}
+/* #loginModal div.table-wrapper {
     background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") !important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1171,7 +1312,7 @@ nav.gn-menu-wrapper.gn-open-all #gn-scroller {
     background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") !important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
+} */
 .content-box {
     border-radius: 0;
 }
@@ -1190,6 +1331,7 @@ div#preloader.preloader.table-wrapper {
 }
 .content-box.orange-bg {
     background: transparent !important;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 #content div div.row {
@@ -1211,9 +1353,11 @@ input#searchInput.form-control.input-group-addon.gray-bg {
     position: absolute;
     left: 50%;
     top: 40%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .modal-content .modal-content {
+    -webkit-filter: brightness(150%);
     filter: brightness(150%);
     background: transparent;
     border: 1px solid #000;
@@ -1289,28 +1433,30 @@ html > body.scroller-body {
     background-attachment: fixed, fixed;
     background-position: center center, center center;
     background-size: auto, cover;
+    -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
 .gn-menu-wrapper {
-    background: transparent;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
-nav.gn-menu-wrapper.gn-open-all {
+/* nav.gn-menu-wrapper.gn-open-all {
     background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 nav.gn-menu-wrapper.gn-open-fixed {
     background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-}
+} */
 li.dropdown.some-btn .mdi {
     color: hsla(0, 0%, 100%, .6);
 }
@@ -1361,7 +1507,7 @@ a.fix-nav:hover > i.mdi.mdi-pin {
     color: #fff !important;
 }
 .bottom-bnts {
-    background: rgba(0, 0, 0, .86) !important;
+    background: rgba(0, 0, 0, .15) !important;
 }
 a.fix-nav {
     background: transparent !important;
@@ -1370,6 +1516,7 @@ a.fix-nav {
     background: rgba(0, 0, 0, .86);
 }
 .gn-menu li.rightActive > a {
+    -webkit-box-shadow: inset 3px 0 0 0 #CC7B19;
     box-shadow: inset 3px 0 0 0 #CC7B19;
     border-radius: 0 0 0 0;
     margin-left: 0;
@@ -1391,12 +1538,14 @@ a.fix-nav {
     border-radius: 0 5px 5px 0;
     margin-right: 5px;
     margin-left: 0;
+    -webkit-box-shadow: -5px 0 0 0 hsla(0, 0%, 100%, .08);
     box-shadow: -5px 0 0 0 hsla(0, 0%, 100%, .08);
 }
 .gn-menu-main a {
     margin-left: 0;
 }
 .gn-menu li.active > a {
+    -webkit-box-shadow: inset 3px 0 0 0 #CC7B19;
     box-shadow: inset 3px 0 0 0 #CC7B19;
     border-radius: 0 0 0 0;
     margin-left: 0px;
@@ -1429,12 +1578,14 @@ a.fix-nav {
 }
 #recentMedia {
     background: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
     padding-left: 0;
     padding-right: 0;
 }
 #playlist-all {
     background: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
     padding-left: 0;
     padding-right: 0;
@@ -1477,6 +1628,12 @@ a.fix-nav {
 #searchPlexRow .todo-list {
     background: #000;
 }
+#embySearchForm input#searchInput.form-control.input-group-addon.gray-bg {
+    background: #4c5054 !important;
+}
+#searchEmbyRow .todo-list {
+    background: #000;
+}
 div.input-group-addon {
     background: #4c5054 !important;
     border-radius: 5px 0 0 5px !important;
@@ -1496,9 +1653,12 @@ div#clearSearch.input-group-addon {
     background: #fff !important;
     color: #555 !important;
 }
+#embySearchForm input#searchInput.form-control.input-group-addon:focus {
+    background: #fff !important;
+    color: #555 !important;
+}
 .slick-slide img {
     border: 2px solid transparent;
-    -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
@@ -1517,10 +1677,10 @@ div.progress.progress-bar-sm.zero-m {
 }
 .ultra-widget .openTab:hover img {
     outline: 2px solid #CC7B19;
+    -webkit-box-shadow: 0 4px 0 2px #CC7B19;
     box-shadow: 0 4px 0 2px #CC7B19;
 }
 .ultra-widget .openTab img {
-    -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
@@ -1540,15 +1700,19 @@ div.progress.progress-bar-sm.zero-m {
     color: #CC7B19 !important;
 }
 .fc-event.indigo-bg:hover {
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
 }
 .fc-event.red-bg:hover {
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
 }
 .fc-event.green-bg:hover {
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
 }
 .fc-event.light-blue-bg:hover {
+    -webkit-filter: brightness(110%);
     filter: brightness(110%);
 }
 .green-bg,
@@ -1573,6 +1737,7 @@ div.progress.progress-bar-sm.zero-m {
 a.zero-m.pull-left.prev-mail.btn.btn-default.waves.waves-button.btn-sm.waves-effect.waves-float.slick-arrow {
     color: hsla(0, 0%, 100%, .45);
     background: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .caption .fa-play:before {
@@ -1586,6 +1751,7 @@ a.zero-m.pull-left.prev-mail.btn.btn-default.waves.waves-button.btn-sm.waves-eff
 a.pull-left.next-mail.btn.btn-default.waves.waves-button.btn-sm.waves-effect.waves-float.slick-arrow {
     color: hsla(0, 0%, 100%, .45);
     background: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 a.pull-left.next-mail.btn.btn-default.waves.waves-button.btn-sm.waves-effect.waves-float.slick-arrow:hover {
@@ -1595,6 +1761,9 @@ a.zero-m.pull-left.prev-mail.btn.btn-default.waves.waves-button.btn-sm.waves-eff
     color: #fff;
 }
 #plexPlaylists div a i:before {
+    font: normal normal normal 28px/1 FontAwesome;
+}
+#embyPlaylists div a i:before {
     font: normal normal normal 28px/1 FontAwesome;
 }
 .fc-state-active:hover {
@@ -1646,6 +1815,11 @@ i.fa.fa-close.white {
     border: 2px solid #CC7B19;
     border-radius: 0;
 }
+#embyRowNowPlaying div.overlay.content-box.small-box.gray-bg {
+    background: hsla(0, 0%, 10%, .8) !important;
+    border: 2px solid #CC7B19;
+    border-radius: 0;
+}
 #calendarTrailer .fa-play:before {
     content: '';
     display: block;
@@ -1665,10 +1839,12 @@ span#openTrailer.label.label-danger {
 img.pull-left {
     border-radius: 50% !important;
     width: 67px;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 67px;
 }
 div.btn-group {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 button.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right:hover {
@@ -1766,6 +1942,7 @@ i.fa.fa-info-circle.fa-stack-1x.fa-inverse:hover {
     font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     border: 0;
+    -webkit-transition: background-color .1s;
     transition: background-color .1s;
     font-weight: 600;
     white-space: nowrap;
@@ -1844,6 +2021,9 @@ a.pull-left.next-mail.btn.btn-default.waves.waves-button.btn-sm.waves-effect.wav
     margin-right: 15px !important;
 }
 #plexRow i.fa.fa-angle-left {
+    margin-right: 15px !important;
+}
+#embyPlaylists i.fa.fa-angle-left {
     margin-right: 15px !important;
 }
 #embyRow i.fa.fa-angle-left {
@@ -2125,6 +2305,9 @@ i.fa.fa-pause {
 #plexRowNowPlaying {
     margin-bottom: 5px;
 }
+#embyRowNowPlaying {
+    margin-bottom: 5px;
+}
 .box-shadow.content-box {
     background: rgba(0, 0, 0, .15);
 }
@@ -2136,6 +2319,7 @@ i.fa.fa-pause {
 button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float {
     color: #F9BE03;
     background-color: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .RecentlyAddedContent .dropdown-toggle:hover {
@@ -2152,6 +2336,7 @@ button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float .bt
 }
 .dropdown-menu {
     background-color: #191a1c !important;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
     box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
     border-radius: 4px !important;
 }
@@ -2168,6 +2353,11 @@ button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float .bt
     -webkit-transition: .5s;
 }
 #plexPlaylists h5.text-center {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+#embyPlaylists h5.text-center {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
@@ -2446,7 +2636,14 @@ a.fa.fa-trash.jFiler-item-trash-action {
     color: #fff !important;
 }
 #submitTabs div div.row {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center, center center, center center;
+    background-size: auto, auto, cover;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
     border-radius: 0 !important;
     border-color: rgba(0, 0, 0, .15) !important;
     padding-top: 5px;
@@ -2523,6 +2720,7 @@ div.big-box.text-left.login-form {
 }
 #switchForgot {
     background: transparent!important;
+    -webkit-box-shadow: none;
     box-shadow: none;
     padding: 10px 18px !important;
     font-size: 16px;
@@ -2609,7 +2807,10 @@ select#imagetype_selector.form-control:hover {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
     line-height: 1.5em;
     border: 0;
     -webkit-box-shadow: none;
@@ -2621,12 +2822,16 @@ input {
     -webkit-appearance: textfield;
     background-color: white;
     -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
     user-select: text;
     cursor: auto;
     padding: 1px;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
+    -o-border-image: initial;
     border-image: initial;
 }
 p.error {
@@ -2683,6 +2888,7 @@ form#forgotPassword button.btn.btn-block.btn-info.text-uppercase.waves.waves-eff
 }
 div.login.i-block div.content-box {
     background: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
     margin-top: -150px;
 }
@@ -2714,6 +2920,7 @@ div.login.i-block div.content-box div.biggest-box h1 {
     margin-top: 3px;
     width: auto;
     float: right;
+    -webkit-box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, 0.12);
 }
 .login-btn:hover {
@@ -2828,7 +3035,14 @@ button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-
         margin-top: 0 !important;
     }
     #chat .main-wrapper {
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") no-repeat center center fixed / cover !important;
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
         height: 100%;
     }
     #chat div.col-lg-10 {
@@ -2893,7 +3107,14 @@ button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-
         margin-top: 0 !important;
     }
     #chat .main-wrapper {
-        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") no-repeat center center fixed / cover !important;
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
         height: 100%;
     }
     #chat div.col-lg-10 {
@@ -2981,6 +3202,7 @@ body#chat.scroller-body {
     border-right: 9px solid rgba(0, 0, 0, .2);
 }
 .chat .chat-double li .chat-panel {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .chat .chat-double .chat-panel.blue-bg:after {
@@ -3022,13 +3244,21 @@ li#istyping {
     background: #ac3323;
 }
 .email-content.chat-box.white-bg.email-active {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
 
 #members-sidebar div.content-box.profile-sidebar.box-shadow {
     margin-top: -20px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     border-radius: 0 0 3px 3px;
 }
@@ -3073,6 +3303,7 @@ button.logout.btn.btn-warning.waves.waves-effect.waves-float:hover {
 }
 .members-sidebar-open {
     background: transparent !important;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 input.btn.btn-success.text-uppercase.waves-effect.waves-float {
@@ -3127,6 +3358,7 @@ div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.te
 }
 div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.text-center div.login.i-block div.content-box {
     border-radius: 3px !important;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 form#logout a#logoutSubmit.i-block {
@@ -3170,12 +3402,27 @@ form#logout center {
     margin-right: -1.1em !important;
 }
 ul#gn-menu.gn-menu-main {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center, center center, center center;
+    background-size: auto, auto, cover;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
-.bottom-bnts {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
-}
+/* .bottom-bnts {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center, center center, center center;
+    background-size: auto, auto, cover;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
+} */
 i.mdi.mdi-pin-off {
     color: hsl(33, 70%, 50%);
 }
@@ -3187,10 +3434,19 @@ i.mdi.mdi-pin-off {
 }
 .refresh-preloader {
     background: rgba(0, 0, 0, .15);
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 div#main-wrapper.main-wrapper > div#content.content {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") repeat center center fixed, url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed / cover !important;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .email-active .apps.active a {
@@ -3260,6 +3516,7 @@ button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-
 }
 .no-js .login.i-block .big-box.text-left button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-float {
     background: hsla(0, 0%, 100%, .25) !important;
+    -webkit-box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, 0.12);
 }
 .no-js .login.i-block .big-box.text-left button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-float:hover {
