@@ -1,3 +1,6 @@
+#weather {
+    display: none !important;
+}
 @media (max-width: 650px) {
     #recentContent-title:after {
         display: none !important;
