@@ -749,6 +749,7 @@ div.mCSB_dragger_bar {
         float: right;
     }
     #searchPlexRow.row {
+        top: 0;
         height: 61px;
         position: fixed;
         z-index: 999999999999999999999999999999;
