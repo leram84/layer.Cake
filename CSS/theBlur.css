@@ -730,7 +730,7 @@ div.mCSB_dragger_bar {
 /* Black Bar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 @media (min-width: 800px) {
-    #downloadClientRow {
+    #body-homepage #content {
         margin-top: 80px;
     }
     #resultshere.table-responsive {
@@ -757,6 +757,7 @@ div.mCSB_dragger_bar {
         border-radius: 5px;
     }
     #searchEmbyRow.row {
+        top: 0;
         height: 61px;
         position: fixed;
         z-index: 999999999999999999999999999999;
