@@ -999,13 +999,14 @@ div.mCSB_dragger_bar {
         box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         width: 100%;
         position: fixed;
-        margin-top: 60px;
+        margin-top: -19px;
         z-index: 999999999;
         background: #191a1c;
         padding: 20px;
     }
     #testArea div.content-box {
         background: hsla(0, 0%, 100%, .2) !important;
+        border-radius: 3px;
     }
     #searchPlexRow {
         background: #191a1c;
