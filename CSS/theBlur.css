@@ -1,3 +1,9 @@
+#user-menu-div > div > br {
+    display: none;
+}
+#user-menu-div > div > div:nth-child(2) {
+    display: none;
+}
 #weather {
     display: none !important;
 }
