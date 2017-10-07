@@ -2505,7 +2505,7 @@ body.scroller-body {
     background: rgba(0, 0, 0, .15) !important;
 }
 .email-active {
-    background: rgba(0, 0, 0, .15) !important;
+    background: rgba(0, 0, 0, .15);
 }
 .email-active .in > .row {
     background: rgba(0, 0, 0, .15);
