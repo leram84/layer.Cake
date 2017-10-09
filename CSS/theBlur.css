@@ -1,6 +1,3 @@
-#body-homepage #ascrail2003 {
-    top: 74.5px !important;
-}
 #user-menu-div > div > br {
     display: none;
 }
@@ -76,6 +73,9 @@
     }
 }
 @media (min-width: 760px) {
+    #body-homepage #ascrail2003 {
+        top: 74.5px !important;
+    }
     #main-chat {
         overflow: visible;
         right: calc(-100%);
