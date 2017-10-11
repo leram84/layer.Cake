@@ -73,6 +73,9 @@
     }
 }
 @media (min-width: 760px) {
+    #body-homepage #ascrail2002 {
+        top: 74.5px !important;
+    }
     #body-homepage #ascrail2003 {
         top: 74.5px !important;
     }
