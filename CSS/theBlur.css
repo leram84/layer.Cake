@@ -1507,7 +1507,7 @@ a.show-members:after {
     display: inline-block;
     width: 0;
     height: 0;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     vertical-align: middle;
     border-color: hsla(0, 0%, 100%, .6);
     border-top: 5px solid;
