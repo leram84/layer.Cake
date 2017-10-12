@@ -242,24 +242,30 @@
 #chat-chat-div .fa-heart {
     display: none !important;
 }
+.mdi-account-circle:before {
+    display: none !important;
+}
 #gn-menu .mdi-account-circle {
-    border: 2px solid rgba(0, 0, 0, 0.0);
+    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/account-icon48.png");
     border-radius: 50%;
     padding: 0;
+    margin-top: 3px;
     font-size: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    overflow: visible;
 }
 #gn-menu .mdi-account-circle:hover {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    color: hsla(0, 0%, 100%, .6);
+    box-shadow: inset 0 0 0 2px #fff;
 }
 #gn-menu .show-members {
     margin-top: -2px !important;
 }
 #gn-menu .dropdown.some-btn:hover .mdi-account-circle {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    color: hsla(0, 0%, 100%, .6);
+    box-shadow: inset 0 0 0 2px #fff;
 }
 #gn-menu .mdi.mdi-forum.animated {
     font-size: 24px;
