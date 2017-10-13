@@ -1,3 +1,6 @@
+#plexSearchForm > div > div > div:nth-child(1) > i {
+    color: hsla(0, 0%, 100%, .7);
+}
 #user-menu-div > div > br {
     display: none;
 }
