@@ -1492,7 +1492,7 @@ nav.gn-menu-wrapper.gn-open-fixed {
     background-size: cover;
 } */
 li.dropdown.some-btn .mdi {
-    color: hsla(0, 0%, 100%, .6);
+    color: #999;
 }
 li.dropdown.some-btn .mdi:hover {
     color: #fff;
