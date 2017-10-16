@@ -11,4 +11,4 @@ Notes:
 - Only Slim top bar is currently supported.
 - Only elegant notifications are currently supported.
 - The root options in the custom css box can all be edited to your liking, and the four colors at the bottom will adjust the homepage calendar colors.
-- theBlur will move the chat icon from the top bar to the black bar of your homepage. If you wish to re-enable the chat icon in the top bar add <code><link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/topbar-chat.css"></code> to the add-on section in the custom css box. 
+- theBlur will move the chat icon from the top bar to the black bar of your homepage. If you wish to re-enable the chat icon in the top bar add <code> `<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/topbar-chat.css">` </code> to the add-on section in the custom css box. 
