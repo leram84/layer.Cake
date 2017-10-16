@@ -1,6 +1,6 @@
 layer#Cake industries presents theBlur!
 Instructioins:
-Step One: Add your button html from <a href="https://github.com/leram84/layer.Cake/tree/master/Add-Ons/html" target="_blank">here</a> and edit if needed (Make sure to update as there are changes from the beta)
+Step One: Choose your button html from one of the option below and edit if needed (Make sure to update as there are changes from the beta)
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-buttons.html" target="_blank">Default For Plex Users</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-buttons.html" target="_blank">For Plex Users who want the chat button to go to the chat tab instead of the chat sidebar</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-emby-buttons.html" target="_blank">Default For Emby Users</a>
