@@ -1,3 +1,57 @@
+#gn-menu > li.pull-right > ul > li:nth-child(2) {
+    display: none;
+}
+.white-bg {
+    background: transparent !important;
+}
+.smk-alert-content > div  {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #CC7B19;
+    width: 24px;
+    height: 24px;
+    -webkit-animation: spin 0.3s linear infinite;
+    animation: spin 0.3s linear infinite;
+    margin-left: -12px;
+    margin-top: -12px !important;
+    opacity: 1 !important;
+    color: transparent;
+    background: transparent;
+    padding: 0;
+}
+#body-index > div.smk-alert-content > div > * {
+    display: none;
+}
+/* Chat Badge */
+.new-message {
+    color: hsla(0, 0%, 100%, .6) !important;
+}
+.new-message:hover {
+    color: #fff !important;
+}
+.tada {
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+.mdi.mdi-forum.animated.tada.loop-animation.new-message:after {
+    content: "";
+    background: #CC7B19 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 10px;
+    left: -3px;
+    top: -2px;
+}
+/* Chat Badge */
 #plexSearchForm > div > div > div:nth-child(1) > i {
     color: hsla(0, 0%, 100%, .7);
 }
@@ -249,7 +303,7 @@
     display: none !important;
 }
 #gn-menu .mdi-account-circle {
-    background: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/account-icon48.png);
+    background: var(--account-icon);
     border-radius: 50%;
     padding: 0;
     margin-top: 4px;
@@ -973,7 +1027,7 @@ div.mCSB_dragger_bar {
         z-index: 99999999999999999999999999;
     }
     #startBtn.row:hover {
-        border: 2px solid #fff;
+        box-shadow: inset 0 0 0 2px #fff;
         cursor: pointer;
     }
     #startBtn.row:after {
