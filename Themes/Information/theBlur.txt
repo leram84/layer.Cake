@@ -1,19 +1,22 @@
 layer#Cake industries presents theBlur!
-Instructioins:
-Step One: Choose your button html from one of the option below and edit if needed (Make sure to update as there are changes from the beta)
+Instructioins
+Step 1: Choose your button html from one of the option below and edit if needed (Make sure to update as there are changes from the beta)
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-buttons.html" target="_blank">Default For Plex Users</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-buttons-chat-tab.html" target="_blank">For Plex Users who want the chat button to go to the chat tab instead of the chat sidebar</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-emby-buttons.html" target="_blank">Default For Emby Users</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-emby-buttons-chat-tab.html" target="_blank">For Emby Users who want the chat button to go to the chat tab instead of the chat sidebar</a>
-Step Two: Upload your top bar logo to Organizr from the "Edit Tabs" screen under the name "blurlogo.png".
-Step Three: Select theBlur as your theme, save, refresh and enjoy!
+Step 2: Upload your top bar logo to Organizr from the "Edit Tabs" screen under the name "blurlogo.png".
+Step 3: Select theBlur as your theme, save, refresh and enjoy!
 Notes:
 - Only Slim top bar is currently supported.
 - Only elegant notifications are currently supported.
 - The root options in the custom css box can all be edited to your liking, and the four colors at the bottom will adjust the homepage calendar colors.
-- theBlur will move the chat icon from the top bar to the black bar of your homepage. If you wish to re-enable the chat icon in the top bar add <code>&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;ajax.php?a=show-file&#x26;file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/topbar-chat.css&#x22;&#x3E;</code> to the add-on section in the custom css box. 
+- theBlur will move the chat icon from the top bar to the black bar of your homepage. If you wish to re-enable the chat icon in the top bar add
+<code>&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;ajax.php?a=show-file&#x26;file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/topbar-chat.css&#x22;&#x3E;</code>
+to the add-on section in the custom css box. 
 Changelog:
-v1.0  - New Speedtest Icon (Thanks @si0972!)
-      - Updated Button configuration (Now with Emby Support!)
-      - Removed Chat from top bar and enabled chat sidebar from homepage
-      - Bug fixes... lots of bug fixes :)
+v1.0
+- New Speedtest Icon (Thanks @si0972!)
+- Updated Button configuration (Now with Emby Support!)
+- Removed Chat from top bar and enabled chat sidebar from homepage
+- Bug fixes... lots of bug fixes :)
