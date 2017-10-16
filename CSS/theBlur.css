@@ -872,6 +872,32 @@ div.mCSB_dragger_bar {
         right: 100px;
         z-index: 99999999;
     }
+    div.content-box.orange-bg.emby {
+        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-gray.png") !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        position: fixed;
+        display: inline-block;
+        overflow: visible;
+        width: 28px;
+        min-height: 28px;
+        top: 18px;
+        right: 100px;
+        z-index: 99999999;
+    }
+    div.content-box.orange-bg.emby:hover {
+        background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-white.png") !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        position: fixed;
+        display: inline-block;
+        overflow: visible;
+        width: 28px;
+        min-height: 28px;
+        top: 18px;
+        right: 100px;
+        z-index: 99999999;
+    }
     div.content-box.orange-bg.ombi h1.text-uppercase {
         display: none;
     }
