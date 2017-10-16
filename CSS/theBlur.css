@@ -872,6 +872,9 @@ div.mCSB_dragger_bar {
         right: 100px;
         z-index: 99999999;
     }
+    div.content-box.orange-bg.emby h1.text-uppercase {
+        display: none;
+    }
     div.content-box.orange-bg.emby {
         background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-gray.png") !important;
         background-size: cover !important;
