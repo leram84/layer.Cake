@@ -1,0 +1,6 @@
+.group-admin #splashScreen {
+    display: none !important
+}
+.group-admin .modal-backdrop.fade.in {
+    display: none
+}
