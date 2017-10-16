@@ -12,3 +12,8 @@ Notes:
 - Only elegant notifications are currently supported.
 - The root options in the custom css box can all be edited to your liking, and the four colors at the bottom will adjust the homepage calendar colors.
 - theBlur will move the chat icon from the top bar to the black bar of your homepage. If you wish to re-enable the chat icon in the top bar add <code>&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;ajax.php?a=show-file&#x26;file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/topbar-chat.css&#x22;&#x3E;</code> to the add-on section in the custom css box. 
+Changelog:
+v1.0  - New Speedtest Icon (Thanks @si0972!)
+      - Updated Button configuration (Now with Emby Support!)
+      - Removed Chat from top bar and enabled chat sidebar from homepage
+      - Bug fixes... lots of bug fixes :)
