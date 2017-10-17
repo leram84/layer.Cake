@@ -1,3 +1,6 @@
+.group-guest #gn-menu > li.pull-right > ul > li:nth-child(2) {
+    display: block;
+}
 #gn-menu > li.pull-right > ul > li:nth-child(2) {
     display: none;
 }
