@@ -852,7 +852,7 @@ div.mCSB_dragger_bar {
         display: inline-block;
         background: #191a1c;
         width: 100vw;
-        z-index: 999;
+        z-index: 9999;
         top: 0;
         left: 0;
     }
