@@ -4,6 +4,7 @@
     font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-bottom: 10px;
 }
 .group-guest #gn-menu > li.pull-right > ul > li:nth-child(3) {
     display: none;
