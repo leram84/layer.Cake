@@ -1,3 +1,6 @@
 #gn-menu > li.pull-right > ul > li:nth-child(2) {
     display: block !important;
 }
+.group-guest #gn-menu > li.pull-right > ul > li:nth-child(3) {
+    display: block !important;
+}
