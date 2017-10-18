@@ -1,3 +1,10 @@
+#resultshere > h2 {
+    color: hsla(0,0%,100%,.45);
+    font-size: 14px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .group-guest #gn-menu > li.pull-right > ul > li:nth-child(3) {
     display: none;
 }
