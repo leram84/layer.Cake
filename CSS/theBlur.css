@@ -150,12 +150,13 @@
     }
 }
 @media (min-width: 760px) {
-    /* Playlist dropdown */
+    /* Playlist dropdown scrollbar */
     #body-homepage #ascrail2002 {
         margin-top: -74.5px !important;
     }
+    /* sab scrollbar */
     #body-homepage #ascrail2003 {
-        top: 74.5px !important;
+        margin-top: -74.5px !important;
     }
     #main-chat {
         overflow: visible;
