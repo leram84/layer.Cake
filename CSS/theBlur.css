@@ -301,6 +301,9 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
     #body-homepage #ascrail2000 {
         top: 74.5px !important;
     }
+    #body-homepage #ascrail2001 {
+        margin-top: 0 !important;
+    }
     #body-homepage .nicescroll-rails-vr {
         margin-top: -74.5px;
     }
