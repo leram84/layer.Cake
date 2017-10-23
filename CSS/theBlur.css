@@ -2183,6 +2183,8 @@ div.recentHeader.inbox-pagination.all div.pull-right {
 ul.dropdown-menu.filter-recent-playlist.playlist-listing {
     left: 8px !important;
     right: auto !important;
+    height: auto !important;
+    max-height: 200px;
 }
 #recentMedia div div div ul.dropdown-menu.filter-recent-event {
     left: 8px !important;
