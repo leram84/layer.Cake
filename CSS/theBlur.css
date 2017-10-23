@@ -150,13 +150,16 @@
     }
 }
 @media (min-width: 760px) {
-    /* Playlist dropdown scrollbar */
+    /* Playlist dropdown scrollbar
     #body-homepage #ascrail2002 {
         margin-top: -74.5px !important;
     }
-    /* sab scrollbar */
+    sab scrollbar
     #body-homepage #ascrail2003 {
         margin-top: -74.5px !important;
+    } */
+    #body-homepage .nicescroll-rails-vr {
+        margin-top: -74.5px;
     }
     #main-chat {
         overflow: visible;
@@ -295,7 +298,7 @@
         color: #fff !important;
     }
     #main-chat #ascrail2000 div.nicescroll-cursors {
-        margin-top: 0 !important;
+        margin-top: 74.5px !important;
     }
 }
 @media (min-width: 1250px) {
