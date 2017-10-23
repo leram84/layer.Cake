@@ -5,6 +5,10 @@
     font-weight: 600 !important;
     font-size: 15px !important;
 }
+#recentContent-title-plex:after {
+    content: " -";
+    margin-left: 5px;
+}
 #recentMediaPlex .text-center {
     font-size: 18px;
     font-weight: 500;
@@ -37,11 +41,34 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonPlex div.pull-right {
 #recentMediaPlex div div div div small.elip {
     padding-left: 4px;
 }
+#streamz-plex > h5 > strong {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+#streamz-plex > .text-center {
+    font-size: 18px;
+    font-weight: 500;
+    color: #F9BE03
+}
+#streamz-plex div div div div div span i.fa.fa-play:before {
+    content: "\f04b";
+}
+#streamz-plex div div div div div span i.fa.fa-play {
+    color: #fff;
+}
 #recentContent-title-Emby {
     float: left;
     text-transform: uppercase;
     font-weight: 600 !important;
     font-size: 15px !important;
+}
+#recentContent-title-emby:after {
+    content: " -";
+    margin-left: 5px;
 }
 #recentMediaEmby .text-center {
     font-size: 18px;
@@ -74,6 +101,41 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
 }
 #recentMediaEmby div div div div small.elip {
     padding-left: 4px;
+}
+#streamz-emby > h5 > strong {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+#streamz-emby > .text-center {
+    font-size: 18px;
+    font-weight: 500;
+    color: #F9BE03
+}
+#streamz-emby div div div div div span i.fa.fa-play:before {
+    content: "\f04b";
+}
+#streamz-emby div div div div div span i.fa.fa-play {
+    color: #fff;
+}
+@media (max-width: 650px) {
+    #recentContent-title-plex:after {
+        display: none !important;
+    }
+    #recentContent-title-plex {
+        margin-top: -15px;
+        margin-left: 0;
+    }
+    #recentContent-title-emby:after {
+        display: none !important;
+    }
+    #recentContent-title-emby {
+        margin-top: -15px;
+        margin-left: 0;
+    }
 }
 /* New media classes */
 #splashScreen ping span {
