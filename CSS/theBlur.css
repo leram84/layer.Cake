@@ -150,8 +150,9 @@
     }
 }
 @media (min-width: 760px) {
+    /* Playlist dropdown */
     #body-homepage #ascrail2002 {
-        top: 74.5px !important;
+        margin-top: -74.5px !important;
     }
     #body-homepage #ascrail2003 {
         top: 74.5px !important;
@@ -2175,7 +2176,6 @@ div.recentHeader.inbox-pagination.all div.pull-right {
 ul.dropdown-menu.filter-recent-playlist.playlist-listing {
     left: 8px !important;
     right: auto !important;
-    height: auto !important;
 }
 #recentMedia div div div ul.dropdown-menu.filter-recent-event {
     left: 8px !important;
