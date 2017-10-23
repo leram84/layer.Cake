@@ -158,6 +158,9 @@
     #body-homepage #ascrail2003 {
         margin-top: -74.5px !important;
     } */
+    #body-homepage #ascrail2000 {
+        top: 74.5px !important;
+    }
     #body-homepage .nicescroll-rails-vr {
         margin-top: -74.5px;
     }
@@ -298,7 +301,7 @@
         color: #fff !important;
     }
     #main-chat #ascrail2000 div.nicescroll-cursors {
-        margin-top: 74.5px !important;
+        margin-top: 0 !important;
     }
 }
 @media (min-width: 1250px) {
