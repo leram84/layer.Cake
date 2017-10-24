@@ -6,3 +6,7 @@
     color: transparent;
     margin-left: -11px;
 }
+#playlist-title:after {
+    content: " --";
+    margin-left: 5px;
+}
