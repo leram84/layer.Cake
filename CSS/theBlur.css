@@ -1965,8 +1965,19 @@ div.progress.progress-bar-sm.zero-m {
 }
 .ultra-widget .openTab:hover img {
     outline: 2px solid #CC7B19;
-    -webkit-box-shadow: 0 4px 0 2px #CC7B19;
-    box-shadow: 0 4px 0 2px #CC7B19;
+}
+.ultra-widget .openTab:hover  ~ .progress.progress-bar-sm.zero-m > .progress-bar.progress-bar-success {
+    background-color: transparent !important;
+}
+.ultra-widget .openTab:hover  ~ .progress-bar-sm {
+    background-color: transparent !important;
+}
+.ultra-widget .openTab:hover ~ .progress.progress-bar-sm.zero-m > .progress-bar.palette-Grey-500.bg {
+    background-color: transparent !important;
+}
+.ultra-widget .openTab img {
+    -webkit-transition: all 0s;
+    transition: all 0s;
 }
 .ultra-widget .openTab img {
     -webkit-transition: all 0.2s;
