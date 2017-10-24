@@ -7,6 +7,6 @@
     margin-left: -11px;
 }
 #playlist-title:after {
-    content: " --";
+    content: " - -";
     margin-left: 5px;
 }
