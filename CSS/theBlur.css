@@ -122,17 +122,17 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
     color: #fff;
 }
 @media (max-width: 650px) {
-    #recentContent-title-plex:after {
+    #recentContent-title-Plex:after {
         display: none !important;
     }
-    #recentContent-title-plex {
+    #recentContent-title-Plex {
         margin-top: -15px;
         margin-left: 0;
     }
-    #recentContent-title-emby:after {
+    #recentContent-title-Emby:after {
         display: none !important;
     }
-    #recentContent-title-emby {
+    #recentContent-title-Emby {
         margin-top: -15px;
         margin-left: 0;
     }
