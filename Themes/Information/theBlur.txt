@@ -4,8 +4,8 @@ Step 1: Choose your button html from one of the option below and edit if needed 
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-buttons.html" target="_blank">Default For Plex Users</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-buttons-chat-tab.html" target="_blank">For Plex Users who want the chat button to go to the chat tab instead of the chat sidebar</a>
   <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-emby-buttons.html" target="_blank">Default For Emby Users</a>
-  <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-emby-buttons-chat-tab.html" target="_blank">For Emby Users who want the chat button to go to the chat tab instead of the chat sidebar</a>
-Step 2: Upload your top bar logo to Organizr from the "Edit Tabs" screen under the name "blurlogo.png".
+  <a href="https://github.com/leram84/layer.Cake/blob/master/Add-Ons/html/theBlur-emby-buttons-chat-tab.html" target="_blank">For Emby Users who want the chat button to go to the chat tab instead of the chat sidebar</a> and paste it to the Custom HTML box in Settings>Edit Homepage>HTML
+Step 2: Upload your top bar logo to Organizr from the "Edit Tabs" screen under the name "blurlogo.png". (This will make your logo show up in a few places throughout your site, most notably the login page) 
 Step 3: Select theBlur as your theme, save, refresh and enjoy!
 Notes:
 - Only Slim top bar is currently supported.
