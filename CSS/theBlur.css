@@ -1,4 +1,53 @@
 /* New media classes */
+/* sledge */
+.slick-image-tall {
+    width: 125px;
+    height: 180px;
+    padding: 0;
+}
+.requestBottom {
+    width: 125px;
+    max-width: 100%;
+    padding: 0;
+}
+#recentRequests {
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+#requestContent-title {
+    color: #fff;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+#requestContent-title:after {
+    content: " -";
+    margin-left: 5px;
+}
+#recentRequests > div.recentHeader.inbox-pagination.RequestedContent > div > div > button {
+    float: left !important;
+}
+#recentRequests i.fa.fa-angle-left {
+    margin-right: 15px !important;
+}
+.RequestedContent .zero-m {
+    padding-left: 2px;
+}
+#recentRequests div a i:before {
+    font: normal normal normal 28px/1 FontAwesome;
+}
+div.recentHeader.inbox-pagination.RequestedContent div.pull-right {
+    float: left !important;
+}
+#recentRequests > div.recentHeader.inbox-pagination.RequestedContent > div > div > ul {
+    left: 8px !important;
+    right: auto !important;
+}
+/* sledge */
 #recentContent-title-Plex {
     float: left;
     text-transform: uppercase;
@@ -133,6 +182,13 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
         display: none !important;
     }
     #recentContent-title-Emby {
+        margin-top: -15px;
+        margin-left: 0;
+    }
+    #requestContent-title:after{
+        display: none !important;
+    }
+    #requestContent-title {
         margin-top: -15px;
         margin-left: 0;
     }
