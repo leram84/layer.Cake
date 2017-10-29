@@ -1329,6 +1329,7 @@ div.mCSB_dragger_bar {
         z-index: 999999999;
         background: #191a1c;
         padding: 20px;
+        margin-left: -15px;
     }
     #testArea div.content-box {
         background: hsla(0, 0%, 100%, .2) !important;
