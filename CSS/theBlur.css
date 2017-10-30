@@ -1,3 +1,6 @@
+#tabList .tooltip-inner {
+    display: none;
+}
 /* New media classes */
 /* sledge */
 .slick-image-tall {
