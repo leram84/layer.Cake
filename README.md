@@ -1,7 +1,7 @@
 # layer#Cake
 layer#Cake is the theme engine for [Organizr](https://github.com/causefx/Organizr). The Basic and Advanced will take user submitted colors and apply a well thought out logic to generate your theme. There is a lot of extensibility here, but if you just want to skin your site, it can be done in seconds. The "themes" section will allow you to install entire UI mods on top of Organizr with a one click install. The first theme is theBlur, but more are comming!
 
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/leram84/layer.Cake/blob/master/LICENSE) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/layer-Cake/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![PM](https://img.shields.io/badge/Reddit-Message-lightgrey.svg)](https://www.reddit.com/message/compose?to=leram84&subject=layer.Cake) 
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/leram84/layer.Cake/blob/master/LICENSE) [![Discord](https://img.shields.io/badge/Discord-PlexPy-738bd7.svg?style=flat-square)](https://discord.gg/rZXH7hu) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/layer-Cake/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![PM](https://img.shields.io/badge/Reddit-Message-lightgrey.svg)](https://www.reddit.com/message/compose?to=leram84&subject=layer.Cake) 
 
 ## Features
 
