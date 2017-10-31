@@ -8,6 +8,7 @@ Step 1: Choose your button html from one of the option below and edit if needed 
 Step 2: Upload your top bar logo to Organizr from the "Edit Tabs" screen under the name "blurlogo.png". (This will make your logo show up in a few places throughout your site, most notably the login page) 
 Step 3: Select theBlur as your theme, save, refresh and enjoy!
 Notes:
+- (*NEW* v1.6x) Now that the Homepage can be re-ordered. You must make sure that the Media Search is at the top with the speedtest tab directly after it, otherwise they won't work properly.
 - Only Slim top bar is currently supported.
 - Only elegant notifications are currently supported.
 - The root options in the custom css box can all be edited to your liking, and the four colors at the bottom will adjust the homepage calendar colors.
