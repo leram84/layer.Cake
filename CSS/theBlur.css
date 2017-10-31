@@ -898,7 +898,7 @@ div.la-ball-scale-multiple.la-3x {
     color: rgba(0, 0, 0, 0) !important;
     width: auto;
 }
-#preloader > div > div > div > logo > img
+#preloader .logo > img
     display: block;
     margin: auto;
 }
