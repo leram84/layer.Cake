@@ -1,3 +1,6 @@
+#tabList .tooltip-arrow {
+    display: none;
+}
 #tabList .tooltip-inner {
     display: none;
 }
