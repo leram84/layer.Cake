@@ -1,3 +1,36 @@
+/* Error Page */
+.pagenotfound .content-box {
+    background: #191a1c;
+}
+.pagenotfound .content-box .top {
+    background: hsla(0, 0%, 100%, .2) !important;
+    height: 90px;
+}
+#body-error .table-wrapper {
+    background: rgb(63,66,69) !important;
+}
+#body-error .main-wrapper .top > h1 {
+    padding-top: 20px;
+    font-size: 45px;
+    font-weight: 100;
+    color: #fff !important;
+}
+#body-error .main-wrapper .top > h1:before {
+    content: "Error: ";
+}
+#body-error .main-wrapper .top > a {
+    top: 15px;
+}
+#body-error .pagenotfound .content-box .big-box > h4 {
+    color: #fff !important;
+}
+#body-error .pagenotfound .content-box .big-box > p {
+    color: #999 !important;
+}
+#body-error .main-wrapper .top > a > i.fa.fa-circle.fa-stack-2x {
+    color: #E5A00D !important;
+}
+/* Error Page */
 #tabList .tooltip-arrow {
     display: none;
 }
