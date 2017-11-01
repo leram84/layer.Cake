@@ -385,14 +385,6 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
     }
 }
 @media (min-width: 760px) {
-    /* Playlist dropdown scrollbar
-    #body-homepage #ascrail2002 {
-        margin-top: -74.5px !important;
-    }
-    sab scrollbar
-    #body-homepage #ascrail2003 {
-        margin-top: -74.5px !important;
-    } */
     #body-homepage #ascrail2000 {
         top: 74.5px !important;
     }
@@ -1391,7 +1383,6 @@ div.mCSB_dragger_bar {
     #homepageNotice {
         position: fixed;
         left: 50%;
-        margin-top: 75px;
         -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
         background: #191a1c;
@@ -1426,6 +1417,35 @@ div.mCSB_dragger_bar {
         border-top: 3px solid hsla(0, 0%, 100%, .2) !important;
         min-width: 500px;
     }
+    /* HP notification */
+    #homepageNotice .big-box {
+        overflow: scroll;
+        max-height: calc(80vh - 68px);
+        margin-top: 68px;
+    }
+    .panel-box.panel-warning {
+        border-top: none;
+    }
+    #homepageNotice .content-title.i-block:after {
+        content: "Attention";
+        font-size: 28px;
+        color: rgb(238, 238, 238);
+        padding-left: 10px;
+    }
+    #homepageNotice .content-title.i-block:before {
+        content: "\f06a";
+    }
+    #homepageNotice .content-title.i-block {
+        font: normal normal normal 28px/1 FontAwesome;
+        color: #999;
+        position: fixed;
+        background: #444546;
+        margin-top: -68px;
+    }
+    #homepageNotice .content-title.i-block .pull-right {
+        font-size: 24px;
+    }
+    /* HP notification */
 }
 @media (max-width: 800px) {
     #content > br {
