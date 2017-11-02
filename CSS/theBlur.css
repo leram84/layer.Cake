@@ -1149,9 +1149,9 @@ div.mCSB_dragger_bar {
         position: fixed;
         display: inline-block;
         overflow: visible;
-        width: 39px;
-        height: 39px;
-        top: 10px;
+        width: 36px;
+        height: 34px;
+        top: 13px;
         left: 20px;
         z-index: 99999999999999999;
     }
