@@ -1429,6 +1429,7 @@ div.mCSB_dragger_bar {
         font-size: 28px;
         color: rgb(238, 238, 238);
         padding-left: 10px;
+        font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     #homepageNotice .content-title.i-block:before {
         content: "\f06a";
