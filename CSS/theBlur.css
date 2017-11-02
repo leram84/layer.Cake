@@ -1,3 +1,8 @@
+/* DANGER */
+.dropdown-backdrop {
+    display: none;
+}
+/* DANGER */
 /* Error Page */
 .pagenotfound .content-box {
     background: #020a0e;
