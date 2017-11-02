@@ -12,8 +12,8 @@ body {
     font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .navbar-default {
-    background-color: rgba(0,0,0,.15);
-    border-color: rgba(0,0,0,.15);
+    background-color: rgba(0,0,0,.2);
+    border-color: rgba(0,0,0,.2);
 }
 .navbar {
     -webkit-box-shadow: none;
@@ -28,7 +28,7 @@ body {
     left: 0;
     width: 240px;
     height: 60px;
-    background: rgba(0,0,0,.15);
+    background: rgba(0,0,0,.3);
 }
 .flipthis-wrapper .navbar-brand {
     margin: auto !important;
@@ -38,17 +38,57 @@ body {
     color: #F9BE03;
     line-height: 60px;
     padding: 0;
+    font-size: 15px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-stretch: normal;
+font-style: normal;
+font-variant-caps: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-weight: 600;
+letter-spacing: normal;
+text-shadow: none;
+text-size-adjust: 100%;
+text-transform: none;
+user-select: none;
+word-spacing: 0;
+writing-mode: horizontal-tb;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color:rgba(0, 0, 0, 0)
+
 }
 .flipthis-wrapper .navbar-brand:hover {
     color: #F9BE03;
+}
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right {
+    line-height: 60px;
+    height: 60px;
+}
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown {
+    line-height: 60px;
+    height: 60px;
+}
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a {
+    line-height: 60px;
+    height: 60px;
+    padding: 0 15px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13.3333px;
+    
+}
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:hover,
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:active,
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:focus{
+    background: transparent;
 }
 body > ombi > div {
     margin-left: 240px !important;
 }
 #Search:before {
-    content: "OPTIONS";
+    content: "MENU";
     position: fixed;
-    top: 80px;
+    top: 90px;
     left: 14px;
     height: 45px;
     color: hsla(0,0%,100%,.3);
@@ -63,9 +103,9 @@ body > ombi > div {
     top: 60px;
     left: 0;
     padding-bottom: 100vh;
-    padding-top: 65px;
+    padding-top: 85px;
     padding-right: 150px;
-    background: rgba(0,0,0,.15);
+    background: rgba(0,0,0,.2);
     width: 240px;
     font-size: 13px;
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -80,7 +120,7 @@ body > ombi > div {
 }
 #Requests {
     position: fixed;
-    top: 165px;
+    top: 185px;
     left: 0;
     font-size: 13px;
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -93,7 +133,7 @@ body > ombi > div {
 #UserManagement:before {
     content: "Admin";
     position: fixed;
-    top: 220px;
+    top: 250px;
     left: 15px;
     height: 45px;
     color: hsla(0,0%,100%,.3);
@@ -105,7 +145,7 @@ body > ombi > div {
 }
 #UserManagement {
     position: fixed;
-    top: 280px;
+    top: 310px;
     left: 0;
     font-size: 13px;
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -117,7 +157,7 @@ body > ombi > div {
 }
 #bs-example-navbar-collapse-1 > ul:nth-child(4) {
     position: fixed;
-    top: 320px;
+    top: 350px;
     left: 0;
     
 }
@@ -135,7 +175,7 @@ body > ombi > div {
 #bs-example-navbar-collapse-1 {
     
 }
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text, .navbar-default .navbar-nav>li>a:focus {
     color: hsla(0,0%,100%,.7);
 }
 .navbar-default .navbar-nav>.active>a {
@@ -149,3 +189,9 @@ body > ombi > div {
     color: #fff;
     background-color: hsla(0,0%,100%,.08);
 }
+/* test */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: transparent;
+}
+/* test */
+    
