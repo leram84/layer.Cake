@@ -477,14 +477,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
         line-height: 20px;
     }
     #chat-chat-div .big-box {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: var(--chat-bg);
     padding-top: 0;
     padding-bottom: 30px;
     }
@@ -519,14 +512,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
         width: 80vw !important;
     }
     #chat-users-div .gray-bg {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: var(--chat-bg);
     height: 100% !important;
     }
     #main-chat .fa.fa-close {
@@ -583,14 +569,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
 }
 @media (max-width: 763px) {
     #chat-chat-div .gray-bg {
-        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
+        background: var(--chat-bg);
     }
     #main-chat .grayish-blue-bg {
         background: transparent !important;
@@ -3503,14 +3482,7 @@ button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-
         margin-top: 0 !important;
     }
     #chat .main-wrapper {
-        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
+        background: var(--chat-bg);
         height: 100%;
     }
     #chat div.col-lg-10 {
@@ -3575,14 +3547,7 @@ button.btn.log-in.btn-block.btn-primary.text-uppercase.waves.waves-effect.waves-
         margin-top: 0 !important;
     }
     #chat .main-wrapper {
-        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
+        background: var(--chat-bg);
         height: 100%;
     }
     #chat div.col-lg-10 {
