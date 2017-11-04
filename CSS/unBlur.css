@@ -3677,14 +3677,7 @@ li#istyping {
     background: #ac3323;
 }
 .email-content.chat-box.white-bg.email-active {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
-    background-repeat: repeat, no-repeat !important;
-    background-attachment: fixed, fixed !important;
-    background-position: center center, center center;
-    background-size: auto, cover !important;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: var(--chat-bg);
 }
 /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
