@@ -1,3 +1,28 @@
+.refreshImage span.w-refresh:hover:before {
+    display: none;
+}
+#streams-plex .ultra-widget.refreshImage .w-refresh.w-p-icon.gray .fa-stack,
+#streams-emby .ultra-widget.refreshImage .w-refresh.w-p-icon.gray .fa-stack {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.ultra-widget.refreshImage .w-refresh.w-p-icon.gray .fa-stack {
+    font-size: 0.5em !important;
+    color: rgba(0,0,0,.3);
+}
+.ultra-widget .w-refresh.w-p-icon {
+    opacity: 1;
+}
+#streams-plex .ultra-widget .w-refresh.w-p-icon.gray,
+#streams-emby .ultra-widget .w-refresh.w-p-icon.gray {
+    color: rgba(0,0,0,.3);
+}
+.ultra-widget.refreshImage .w-refresh.w-p-icon.gray .fa-stack .fa-inverse {
+    color: hsla(0, 0%, 100%, .45);
+}
+.ultra-widget.refreshImage .w-refresh.w-p-icon.gray .fa-stack .fa-inverse:hover {
+    color: #fff;
+}
 /* DANGER */
 .dropdown-backdrop {
     display: none;
