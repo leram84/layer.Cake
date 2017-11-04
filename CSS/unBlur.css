@@ -1869,9 +1869,6 @@ li.dropdown.some-btn .mdi {
 li.dropdown.some-btn .mdi:hover {
     color: #fff;
 }
-ul#gn-menu.gn-menu-main {
-    background: #020a0e;
-}
 #menu-toggle span {
     background: hsla(0, 0%, 100%, .6);
 }
