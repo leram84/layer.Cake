@@ -22,7 +22,7 @@ div#main-wrapper.main-wrapper > div#content.content {
 #loginModal {
     background: var(--login-bg);
 }
-#submitTabs div div.row {
+/* #submitTabs div div.row {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: fixed, fixed, fixed;
@@ -34,7 +34,7 @@ div#main-wrapper.main-wrapper > div#content.content {
     border-radius: 0 !important;
     border-color: rgba(0, 0, 0, .15) !important;
     padding-top: 5px;
-}
+} */
 /* DANGER */
 .dropdown-backdrop {
     display: none;
