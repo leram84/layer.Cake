@@ -1,3 +1,40 @@
+html > body.scroller-body {
+    background: var(--homepage-bg);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+ul#gn-menu.gn-menu-main {
+    background: var(--topbar-bg);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.gn-menu-wrapper {
+    background: var(--sidebar-bg);
+}
+.bottom-bnts {
+    background: var(--bottom-button) !important;
+}
+div#main-wrapper.main-wrapper > div#content.content {
+    background: var(--fallback-bg);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#loginModal {
+    background: var(--login-bg);
+}
+#submitTabs div div.row {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center, center center, center center;
+    background-size: auto, auto, cover;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
+    border-radius: 0 !important;
+    border-color: rgba(0, 0, 0, .15) !important;
+    padding-top: 5px;
+}
 /* DANGER */
 .dropdown-backdrop {
     display: none;
@@ -1701,34 +1738,9 @@ div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.te
         color: hsla(0, 0%, 100%, .7);
     }
 }
-#loginModal {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-}
 #loginModal .table-wrapper {
     background: transparent !important;
 }
-/* #loginModal div.table-wrapper {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") !important;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-nav.gn-menu-wrapper.gn-open-fixed #gn-scroller {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") !important;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-nav.gn-menu-wrapper.gn-open-all #gn-scroller {
-    background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png") !important;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-} */
 .content-box {
     border-radius: 0;
 }
@@ -1842,21 +1854,6 @@ img.pull-left {
     color: #FFFFFF;
     background: transparent !important;
     border-color: transparent !important;
-}
-html > body.scroller-body {
-    background: var(--home-bg);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.gn-menu-wrapper {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
 }
 /* nav.gn-menu-wrapper.gn-open-all {
     background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") no-repeat center center fixed;
@@ -3056,19 +3053,6 @@ a.fa.fa-trash.jFiler-item-trash-action {
 #content button.btn.btn-danger.btn-sm.waves.close-button:hover {
     color: #fff !important;
 }
-#submitTabs div div.row {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
-    background-repeat: repeat, repeat, no-repeat;
-    background-attachment: fixed, fixed, fixed;
-    background-position: center center, center center, center center;
-    background-size: auto, auto, cover;
-    -webkit-background-size: auto, auto, cover;
-    -moz-background-size: auto, auto, cover;
-    -o-background-size: auto, auto, cover;
-    border-radius: 0 !important;
-    border-color: rgba(0, 0, 0, .15) !important;
-    padding-top: 5px;
-}
 #submitTabs div.panel {
     border-radius: 0 !important;
     border-color: rgba(0, 0, 0, .15) !important;
@@ -3888,28 +3872,6 @@ form#logout center {
     margin-left: -1.1em !important;
     margin-right: -1.1em !important;
 }
-ul#gn-menu.gn-menu-main {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, repeat, no-repeat;
-    background-attachment: fixed, fixed, fixed;
-    background-position: center center, center center, center center;
-    background-size: auto, auto, cover;
-    -webkit-background-size: auto, auto, cover;
-    -moz-background-size: auto, auto, cover;
-    -o-background-size: auto, auto, cover;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.bottom-bnts {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
-    background-repeat: repeat, repeat, no-repeat !important;
-    background-attachment: fixed, fixed, fixed !important;
-    background-position: center center, center center, center center !important;
-    background-size: auto, auto, cover !important;
-    -webkit-background-size: auto, auto, cover;
-    -moz-background-size: auto, auto, cover;
-    -o-background-size: auto, auto, cover;
-}
 i.mdi.mdi-pin-off {
     color: hsl(33, 70%, 50%);
 }
@@ -3921,18 +3883,6 @@ i.mdi.mdi-pin-off {
 }
 .refresh-preloader {
     background: rgba(0, 0, 0, .15);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-div#main-wrapper.main-wrapper > div#content.content {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
