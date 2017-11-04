@@ -528,14 +528,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
         display: none;
     }
     #main-chat .btn-group.btn-group-justified>.btn-group:nth-child(3) {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png);
-    background-repeat: repeat, repeat, no-repeat;
-    background-attachment: fixed, fixed, fixed;
-    background-position: center center, center center, center center;
-    background-size: auto, auto, cover;
-    -webkit-background-size: auto, auto, cover;
-    -moz-background-size: auto, auto, cover;
-    -o-background-size: auto, auto, cover;
+    background: rgba(0,0,0,.15);
     }
     #chat-switch-close:hover .fa.fa-close {
         color: #fff;
@@ -545,15 +538,11 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
         height: 50px;
         float: right;
         color: transparent !important;
-        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
-        background-repeat: repeat, repeat, no-repeat !important;
-        background-attachment: fixed, fixed, fixed !important;
-        background-position: center center, center center, center center !important;
-        background-size: auto, auto, cover !important;
-        -webkit-background-size: auto, auto, cover;
-        -moz-background-size: auto, auto, cover;
-        -o-background-size: auto, auto, cover;
+        background: transparent !important;
         padding-bottom: 10px;
+    }
+    #main-chat .grayish-blue-bg {
+        background: rgba(0,0,0,.15) !important;
     }
     #onlineusers {
         color: #fff !important;
