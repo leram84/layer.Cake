@@ -583,10 +583,16 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
 }
 @media (max-width: 763px) {
     #chat-chat-div .gray-bg {
-        background: var(--chat-bg);
+        background: var(--chat-bg) !important;
     }
     #main-chat .grayish-blue-bg {
-        background: transparent !important;
+        background: #191a1c !important;
+    }
+     #main-chat .big-box.chat.gray-bg {
+        padding: 0 15px 15px 15px;
+    }
+    #onlineusers {
+        color: hsla(0, 0%, 100%, .45) !important;
     }
 }
 #chat-chat-div .fa-heart {
