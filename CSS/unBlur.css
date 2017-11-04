@@ -582,7 +582,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
     }
 }
 @media (max-width: 763px) {
-    #chat-chat-div .gray-bg {
+    #main-chat .gray-bg {
         background: var(--chat-bg) !important;
     }
     #main-chat .grayish-blue-bg {
