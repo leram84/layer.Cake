@@ -3677,7 +3677,7 @@ li#istyping {
     background: #ac3323;
 }
 .email-content.chat-box.white-bg.email-active {
-    background: var(--chat-bg);
+    background: var(--chat-bg) !important;
 }
 /* /////////////////////////        Chat Room        \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Custom Module      ///////////////////////// */
