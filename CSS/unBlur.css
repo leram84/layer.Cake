@@ -542,7 +542,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
         padding-bottom: 10px;
     }
     #main-chat .grayish-blue-bg {
-        background: rgba(0,0,0,.15) !important;
+        background: transparent !important;
     }
     #onlineusers {
         color: #fff !important;
