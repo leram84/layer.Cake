@@ -42,7 +42,7 @@ div#main-wrapper.main-wrapper > div#content.content {
 /* DANGER */
 /* Error Page */
 .pagenotfound .content-box {
-    background: #020a0e;
+    background: #191a1c;
 }
 .pagenotfound .content-box .top {
     background: hsla(0, 0%, 100%, .2) !important;
@@ -856,7 +856,7 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
     height: 440px;
     width: 600px;
     z-index: 9999999999999999999;
-    background: #020a0e;
+    background: #191a1c;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     border-radius: 4px;
@@ -878,17 +878,17 @@ div.recentHeader.inbox-pagination.RecentlyAddedContentonEmby div.pull-right {
 }
 #update .form-group:nth-child(6) {
     padding-right: 25px;
-    background: #020a0e;
+    background: #191a1c;
 }
 #update .form-group:nth-child(7) {
     padding-right: 25px;
-    background: #020a0e;
+    background: #191a1c;
     padding-top: 30px;
     margin-top: -15px;
 }
 #update .form-group:nth-child(8) {
     padding-right: 25px;
-    background: #020a0e;
+    background: #191a1c;
     padding-top: 30px;
     margin-top: -15px;
     padding-bottom: 50px;
@@ -1091,7 +1091,7 @@ div.mCSB_dragger_bar {
         z-index: 999999999999999999999999999999999;
         position: fixed;
         max-height: 77vh;
-        background: #020a0e !important;
+        background: #191a1c !important;
         max-width: 500px;
         -webkit-box-shadow: 0 15px 55px rgba(0, 0, 0, .5);
         box-shadow: 0 15px 55px rgba(0, 0, 0, .5);
@@ -1128,7 +1128,7 @@ div.mCSB_dragger_bar {
         padding-top: 5px;
         padding-bottom: 0;
         display: inline-block;
-        background: #020a0e;
+        background: #191a1c;
         width: 100vw;
         z-index: 9999;
         top: 0;
@@ -1382,7 +1382,7 @@ div.mCSB_dragger_bar {
         position: fixed;
         margin-top: -19px;
         z-index: 999999999;
-        background: #020a0e;
+        background: #191a1c;
         padding: 20px;
         margin-left: -15px;
     }
@@ -1391,10 +1391,10 @@ div.mCSB_dragger_bar {
         border-radius: 3px;
     }
     #searchPlexRow {
-        background: #020a0e;
+        background: #191a1c;
     }
     #searchEmbyRow {
-        background: #020a0e;
+        background: #191a1c;
     }
     #body-homepage #ascrail2000 div.nicescroll-cursors {
         margin-top: 63px !important;
@@ -1404,7 +1404,7 @@ div.mCSB_dragger_bar {
         left: 50%;
         -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
-        background: #020a0e;
+        background: #191a1c;
         -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
         z-index: 999999999999999999999999999999999999;
@@ -1742,7 +1742,7 @@ div#preloader.preloader.table-wrapper {
     box-shadow: none;
 }
 #content div div.row {
-    background: #020a0e;
+    background: #191a1c;
 }
 div#content.container-fluid > div > div.row {
     margin-top: -20px;
@@ -1987,7 +1987,7 @@ a.fix-nav {
 }
 #resultshere .table-hover>tbody>tr {
     border-radius: 0 24px 4px 0 !important;
-    background: #020a0e;
+    background: #191a1c;
 }
 #resultshere .table-hover>tbody>tr>th {
     padding: 5px;
@@ -2344,7 +2344,7 @@ i.fa.fa-info-circle.fa-stack-1x.fa-inverse:hover {
     cursor: pointer;
 }
 .sweet-alert {
-    background-color: #020a0e;
+    background-color: #191a1c;
     z-index: 99999999999;
     padding: 0;
 }
@@ -2725,11 +2725,11 @@ button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float .bt
 }
 .dropdown-menu>li>a {
     color: hsla(0, 0%, 100%, .7);
-    background: #020a0e;
+    background: #191a1c;
     margin-left: 0px !important;
 }
 .dropdown-menu {
-    background-color: #020a0e !important;
+    background-color: #191a1c !important;
     -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
     box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
     border-radius: 4px !important;
@@ -2885,7 +2885,7 @@ body.scroller-body {
     padding-left: 20px;
 }
 .email-active .active.in {
-    background: #020a0e;
+    background: #191a1c;
     border-left: 2px solid #999;
     border-right: 2px solid #999;
     border-bottom: 2px solid #999;
@@ -3042,7 +3042,7 @@ table#datatable.display.dataTable.no-footer.dtr-inline {
     width: 100% !important;
 }
 #content div div div.modal-content {
-    background: #020a0e;
+    background: #191a1c;
 }
 /* /////////////////////////      Settings Page      \\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\      Default Module      ///////////////////////// */
@@ -3780,7 +3780,7 @@ button.btn.waves.btn-default.btn-sm.dropdown-toggle.waves-effect.waves-float:foc
     color: #fff !important;
 }
 div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.text-center {
-    background: #020a0e !important;
+    background: #191a1c !important;
 }
 div.logout-modal.modal.fade.in div.table-wrapper div.table-row div.table-cell.text-center div.login.i-block div.content-box {
     border-radius: 3px !important;
@@ -3842,16 +3842,16 @@ i.mdi.mdi-pin-off {
     box-shadow: none;
 }
 .email-active .apps.active a {
-    background: #020a0e !important;
-    border-color: #020a0e!important;
+    background: #191a1c !important;
+    border-color: #191a1c!important;
 }
 #tab-theme_colours > div > div > div > center {
-    background: #020a0e;
+    background: #191a1c;
     margin-left: 0;
     margin-right: 0;
 }
 #content div.email-header.gray-bg {
-    background: #020a0e !important;
+    background: #191a1c !important;
 }
 #content div.email-inner.small-box {
     background: transparent;
