@@ -1546,14 +1546,7 @@ div.mCSB_dragger_bar {
     max-height: 150px;
     opacity: 1 !important;
     border-radius: 3px !important;
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
-    background-repeat: repeat, no-repeat !important;
-    background-attachment: fixed, fixed !important;
-    background-position: center center, center center !important;
-    background-size: auto, cover !important;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: var(--splashscreen-buttons) !important;
     margin-bottom: 20px;
 }
 #splashScreen > div > div.row:nth-last-of-type(1):before {
@@ -1648,7 +1641,7 @@ div.w-icon center i img {
     opacity: 1;
 }
 div#splashScreen.splash-modal.modal.fade.in div.table-wrapper.big-box {
-    background: #000 !important;
+    background: var(--splashscreen-bg) !important;
 }
 div#splashScreen.splash-modal.modal.fade.in div.table-wrapper.big-box div.row {} #splashScreen .col-lg-1,
 #splashScreen .col-lg-10,
