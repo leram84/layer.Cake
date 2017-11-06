@@ -967,6 +967,10 @@ div.la-ball-scale-multiple.la-3x {
 #preloader .logo > img {
     display: block;
     margin: auto;
+    max-width: 90vw;
+    width: auto;
+    height: auto;
+    max-height: 192px;
 }
 .la-ball-scale-multiple.la-3x:after {
     content: '';
