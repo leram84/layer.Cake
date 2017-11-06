@@ -278,14 +278,13 @@ body > ombi > nav > div > div.navbar-header > div > a {
 }
 .container {
     padding-left: 30px;
-    padding-right: 30px;
+    margin-right: 0;
 }
 body > ombi > div {
     margin-left: 240px !important;
-    width: calc(100vw - 240px) !important;
+    width: calc(100vw - 270px) !important;
     margin-top: 60px;
     height: calc(100vh - 60px);
-
 }
 body > ombi > div > ng-component > h1 {
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -314,14 +313,17 @@ body > ombi > div > ng-component > br{
 }
 #nav-tabs {
     border-bottom: 2px solid rgba(0,0,0,.3);
-    margin-top: 20px;
+    margin-top: 80px;
 }
 .nav-tabs>li {
     font-size: 20px;
     line-height: 36px;
     float: right;
-    margin: 0 -15px 0 0;
+    margin-left: 30px;
     cursor: pointer;
+}
+.nav-tabs>li>a {
+    padding: 10px 0 15px 10px;
 }
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
@@ -348,16 +350,16 @@ body > ombi > div > ng-component > br{
 .input-group > .input-group-addon.right-radius {
     display: block;
     float: left;
-    margin-top: 52px;
+    margin-top: 62px;
 
 }
-#MoviesTab > div.input-group {
+/* #MoviesTab > div.input-group {
     display: block;
     float: left;
-}
+} */
 .input-group > #search {
     float: right;
-    margin: 50px 0 0 -45px;
+    margin: 60px 0 0 -45px;
     padding: 6px 40px;
 }
 #search {
@@ -449,3 +451,5 @@ body > ombi > div > ng-component > br{
 #movieList {
     margin-top: 100px;
 }
+.ui-treetable table {
+    margin-bottom: 60px;
