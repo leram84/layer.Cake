@@ -14,6 +14,15 @@ body {
 .navbar-default {
     background-color: rgba(0,0,0,.2);
     border-color: rgba(0,0,0,.2);
+    
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center center, center center, center center;
+    background-size: auto, auto, cover;
+    -webkit-background-size: auto, auto, cover;
+    -moz-background-size: auto, auto, cover;
+    -o-background-size: auto, auto, cover;
 }
 .navbar {
     -webkit-box-shadow: none;
@@ -30,11 +39,41 @@ body > ombi > nav > div > div.navbar-header > div {
     height: 60px;
     background: rgba(0,0,0,.3);
 }
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul {
+    margin-right: 5px;
+}
 body > ombi > nav > div > div.navbar-header > div:hover {
     background: rgba(0,0,0,.45);
 }
 body > ombi > nav > div > div.navbar-header > div > a:hover {
     color: #fff !important;
+}
+.flipthis-wrapper .navbar-brand {
+    margin: auto !important;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    color: #F9BE03 !important;
+    line-height: 60px;
+    padding: 0;
+    font-size: 15px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    user-select: none;
+    word-spacing: 0;
+    writing-mode: horizontal-tb;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body > ombi > nav > div > div.navbar-header > div > a {
     margin: auto !important;
@@ -64,7 +103,7 @@ body > ombi > nav > div > div.navbar-header > div > a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .flipthis-wrapper .navbar-brand:hover {
-    color: #F9BE03;
+    color: #fff !important;
 }
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right {
     line-height: 60px;
@@ -94,8 +133,14 @@ body > ombi > nav > div > div.navbar-header > div > a {
     border-radius: 4px !important;
     cursor: pointer;
 }
+#TvShowTab > div.input-group > div > div > ul,
+#MoviesTab > div.input-group > div > div > ul {
+    margin-top: -25px;
+}
 .dropdown-menu>li>a {
     color: hsla(0, 0%, 100%, .7);
+    font-size: 14px;
+    padding: 8px 20px;
 }
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
@@ -180,11 +225,26 @@ body > ombi > nav > div > div.navbar-header > div > a {
     width: 235px;
     border-radius: 0 4px 4px 0;
 }
-#bs-example-navbar-collapse-1 > ul:nth-child(4) {
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li:nth-child(1) {
     position: fixed;
     top: 350px;
     left: 0;
+    font-size: 13px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li:nth-child(1) > a {
+    width: 235px;
+    border-radius: 0 4px 4px 0;
+}
+#bs-example-navbar-collapse-1 > ul:nth-child(4) {
+    position: fixed;
+    top: 390px;
+    left: 0;
 
+}
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li:nth-child(1) > a > i {
+    font-size: 115%;
 }
 #bs-example-navbar-collapse-1 > ul:nth-child(4) > li > a {
     width: 235px;
@@ -197,7 +257,6 @@ body > ombi > nav > div > div.navbar-header > div > a {
     font-size: 115%;
 
 }
-#bs-example-navbar-collapse-1 {}
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-text,
 .navbar-default .navbar-nav>li>a:focus {
@@ -207,11 +266,11 @@ body > ombi > nav > div > div.navbar-header > div > a {
     background-color: transparent;
 }
 .navbar-default .navbar-nav>.active>a {
-    color: #F9BE03;
+    color: #F9BE03 !important;
 }
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: hsla(0,0%,100%,.08);
+    color: #fff !important;
+    background-color: hsla(0,0%,100%,.08) !important;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
@@ -229,23 +288,40 @@ body > ombi > div {
 
 }
 body > ombi > div > ng-component > h1 {
-    font-size: 28px !important;
-    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-    line-height: 1.71428571;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px !important;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 60px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 270px;
+    z-index: 9999;
     color: #eee;
-    border-bottom: 2px solid rgba(0,0,0,.3);
 }
 body > ombi > div > ng-component > h4 {
     display: none;
 }
+body > ombi > div > ng-component > br{
+    display: none;
+}
 #nav-tabs {
     border-bottom: 2px solid rgba(0,0,0,.3);
+    margin-top: 20px;
 }
 .nav-tabs>li {
     font-size: 20px;
     line-height: 36px;
     float: right;
     margin: 0 -15px 0 0;
+    cursor: pointer;
 }
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
@@ -253,6 +329,9 @@ body > ombi > div > ng-component > h4 {
     background-color: transparent;
     border: none;
     color: #F9BE03;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
 }
 .nav-pills>li>a,
 .nav-tabs>li>a,
@@ -269,7 +348,7 @@ body > ombi > div > ng-component > h4 {
 .input-group > .input-group-addon.right-radius {
     display: block;
     float: left;
-    margin-top: 27px;
+    margin-top: 52px;
 
 }
 #MoviesTab > div.input-group {
@@ -277,13 +356,17 @@ body > ombi > div > ng-component > h4 {
     float: left;
 }
 .input-group > #search {
-    margin: 25px 0 0 -45px;
+    float: right;
+    margin: 50px 0 0 -45px;
+    padding: 6px 40px;
+}
+#search {
     width: 500px;
     max-width: calc(100vw - 320px);
     display: block;
-    float: right;
+    margin-top: 50px;
     height: 38px;
-    padding: 6px 40px;
+    padding: 6px 15px;
     font-size: 14px;
     color: #eee;
     vertical-align: middle;
@@ -362,3 +445,7 @@ body > ombi > div > ng-component > h4 {
     background: transparent;
 }
 /* test */
+
+#movieList {
+    margin-top: 100px;
+}
