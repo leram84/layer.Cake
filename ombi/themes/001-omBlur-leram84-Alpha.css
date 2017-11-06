@@ -279,14 +279,13 @@ body > ombi > nav > div > div.navbar-header > div > a {
 }
 .container {
     padding-left: 30px;
-    padding-right: 30px;
+    margin-right: 0;
 }
 body > ombi > div {
     margin-left: 240px !important;
-    width: calc(100vw - 240px) !important;
+    width: calc(100vw - 270px) !important;
     margin-top: 60px;
     height: calc(100vh - 60px);
-
 }
 body > ombi > div > ng-component > h1 {
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -315,14 +314,17 @@ body > ombi > div > ng-component > br{
 }
 #nav-tabs {
     border-bottom: 2px solid rgba(0,0,0,.3);
-    margin-top: 20px;
+    margin-top: 80px;
 }
 .nav-tabs>li {
     font-size: 20px;
     line-height: 36px;
     float: right;
-    margin: 0 -15px 0 0;
+    margin-left: 30px;
     cursor: pointer;
+}
+.nav-tabs>li>a {
+    padding: 10px 0 15px 10px;
 }
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
@@ -349,23 +351,23 @@ body > ombi > div > ng-component > br{
 .input-group > .input-group-addon.right-radius {
     display: block;
     float: left;
-    margin-top: 52px;
+    margin-top: -48px;
 
 }
-#MoviesTab > div.input-group {
+/* #MoviesTab > div.input-group {
     display: block;
     float: left;
-}
+} */
 .input-group > #search {
     float: right;
-    margin: 50px 0 0 -45px;
+    margin: -50px 0 0 -46px;
     padding: 6px 40px;
 }
 #search {
     width: 500px;
-    max-width: calc(100vw - 320px);
+    max-width: calc(100vw - 300px);
     display: block;
-    margin-top: 50px;
+    margin-top: -50px;
     height: 38px;
     padding: 6px 15px;
     font-size: 14px;
@@ -387,10 +389,11 @@ body > ombi > div > ng-component > br{
 }
 
 .input-group > .input-group-addon.right-radius > .btn-group {
-    margin-right: 330px;
-    margin-top: -50px;
+    position: fixed;
+    top: 21px;
+    left: 375px;
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 15px !important;
     font-stretch: normal;
     font-style: normal;
     font-variant-caps: normal;
@@ -400,6 +403,7 @@ body > ombi > div > ng-component > br{
     height: 60px;
     letter-spacing: normal;
     line-height: 60px;
+    z-index: 9999;
 }
 .btn-primary-outline:focus, .btn-primary-outline:hover, .open>.btn-primary-outline.dropdown-toggle {
     color: #fff!important;
@@ -410,7 +414,15 @@ body > ombi > div > ng-component > br{
     border: none!important;
     padding: 0;
     color: hsla(0,0%,100%,.65)!important;
-    font-size: 20px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-weight: 300;
     line-height: 20px;
 }
 .input-group-addon .btn-group .btn:hover {
@@ -445,8 +457,11 @@ body > ombi > div > ng-component > br{
 .navbar-default .navbar-nav>.open>a:hover {
     background: transparent;
 }
-/* test */
+/* test
 
 #movieList {
-    margin-top: 100px;
+    margin-top: 50px;
+} */
+.ui-treetable table {
+    margin-bottom: 60px;
 }
