@@ -12,6 +12,19 @@ body {
     color: #999;
     font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.pace-progress {
+   display: none;
+}
+.pace .pace-activity {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #CC7B19;
+    width: 24px;
+    height: 24px;
+    right: auto;
+    left: 15px;
+    top: 17px;
+}
 .navbar-default {
     background-color: rgba(0,0,0,.2);
     border-color: rgba(0,0,0,.2);
@@ -126,6 +139,9 @@ body > ombi > nav > div > div.navbar-header > div > a {
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:active,
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:focus {
     background: transparent;
+}
+.fa.fa-language > .caret {
+    margin: 5px 5px 0 5px;
 }
 .dropdown-menu {
     background-color: #020a0e !important;
@@ -278,13 +294,13 @@ body > ombi > nav > div > div.navbar-header > div > a {
     background-color: hsla(0,0%,100%,.08);
 }
 .container {
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
     margin-right: 0;
 }
 body > ombi > div {
     margin-left: 240px !important;
-    width: calc(100vw - 270px) !important;
-    margin-top: 60px;
+    width: calc(100vw - 240px) !important;
+    margin-top: 40px;
     height: calc(100vh - 60px);
 }
 body > ombi > div > ng-component > h1 {
@@ -351,7 +367,7 @@ body > ombi > div > ng-component > br{
 .input-group > .input-group-addon.right-radius {
     display: block;
     float: left;
-    margin-top: -48px;
+    margin-top: 32px;
 
 }
 /* #MoviesTab > div.input-group {
@@ -360,14 +376,14 @@ body > ombi > div > ng-component > br{
 } */
 .input-group > #search {
     float: right;
-    margin: -50px 0 0 -46px;
+    margin: 30px 0 0 -46px;
     padding: 6px 40px;
 }
 #search {
     width: 500px;
     max-width: calc(100vw - 300px);
     display: block;
-    margin-top: -50px;
+    margin-top: 30px;
     height: 38px;
     padding: 6px 15px;
     font-size: 14px;
@@ -390,7 +406,7 @@ body > ombi > div > ng-component > br{
 
 .input-group > .input-group-addon.right-radius > .btn-group {
     position: fixed;
-    top: 21px;
+    top: 20px;
     left: 375px;
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px !important;
@@ -400,7 +416,7 @@ body > ombi > div > ng-component > br{
     font-variant-ligatures: normal;
     font-variant-numeric: normal;
     font-weight: normal;
-    height: 60px;
+    width: 115px;
     letter-spacing: normal;
     line-height: 60px;
     z-index: 9999;
@@ -457,11 +473,24 @@ body > ombi > div > ng-component > br{
 .navbar-default .navbar-nav>.open>a:hover {
     background: transparent;
 }
-/* test
-
+/* test */
+.no-search-results .no-search-results-icon {
+    color: hsla(0, 0%, 100%, .45);
+}
+.no-search-results .no-search-results-text {
+    color: #b94a48;
+}
 #movieList {
-    margin-top: 50px;
-} */
+    margin-top: 40px;
+}
 .ui-treetable table {
     margin-bottom: 60px;
+}
+.row.backdrop {
+    min-height: 200px
+}
+.ui-treetable-data.ui-widget-content {
+    border: none !important;
+    background: transparent!important;
+    color: #fff;
 }
