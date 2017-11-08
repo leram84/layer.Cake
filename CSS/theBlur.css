@@ -1,3 +1,9 @@
+.slick-image-short {
+    width: 125px;
+    height: 130px;
+    margin-top: 50px;
+    padding: 0;
+}
 .sweet-alert .sa-icon {
     display: none !important;
 }
