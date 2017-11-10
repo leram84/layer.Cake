@@ -1490,25 +1490,28 @@ div.mCSB_dragger_bar {
     .panel-box.panel-warning {
         border-top: none;
     }
-    #homepageNotice .content-title.i-block:after {
-        content: "Attention";
-        font-size: 28px;
-        color: rgb(238, 238, 238);
-        padding-left: 10px;
-        font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
     #homepageNotice .content-title.i-block:before {
         content: "\f06a";
+        float: left;
     }
     #homepageNotice .content-title.i-block {
         font: normal normal normal 28px/1 FontAwesome;
         color: #999;
         position: fixed;
         background: #444546;
-        margin-top: -68px;
+        margin-top: -71px;
     }
     #homepageNotice .content-title.i-block .pull-right {
         font-size: 24px;
+    }
+    #homepageNotice > div > div > div > h4 {
+        font-size: 28px;
+        color: rgb(238, 238, 238);
+        padding-left: 10px;
+        font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    #homepageNotice > div > div > div > h4 > strong {
+        font-weight: normal;
     }
     /* HP notification */
 }
