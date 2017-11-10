@@ -1,3 +1,9 @@
+#homepageNotice .panel-box.panel-success p {
+    overflow: hidden;
+}
+#homepageNotice .panel-box.panel-success{
+    overflow: hidden;
+}
 .slick-image-short {
     width: 125px;
     height: 130px;
