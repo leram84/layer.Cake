@@ -3866,7 +3866,8 @@ form#logout h3.zero-m.text-uppercase {
     background: rgba(26, 26, 26, 1);
     margin-left: -1em !important;
     margin-right: -1em !important;
-    padding-bottom: 10px !important;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 div.big-box.login-form {
     background: #323232;
