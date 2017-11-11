@@ -328,13 +328,13 @@ body > ombi > nav > div > div.navbar-header > div > a {
     padding: 0 30px 0 30px;
     margin-right: 0;
 }
-body > ombi > div {
+/* body > ombi > div {
     margin-left: 240px !important;
     width: calc(100vw - 240px) !important;
     margin-top: 60px;
     height: calc(100vh - 60px);
     overflow-y: scroll;
-}
+} */
 body > ombi > div::-webkit-scrollbar {
         width: 14px;
 }
