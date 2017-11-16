@@ -1,0 +1,8 @@
+.nav-bar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    z-index: 1000;
+    padding: 0 3px;
+    font-size: 24px;
+    background-color: #fff;
+}
