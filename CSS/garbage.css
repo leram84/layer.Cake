@@ -4,5 +4,5 @@
     z-index: 1000;
     padding: 0 3px;
     font-size: 24px;
-    background-color: #fff;
+    background-color: #fff !important;
 }
