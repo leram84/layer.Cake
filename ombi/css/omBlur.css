@@ -1,4 +1,3 @@
-/* https://cdn.rawgit.com/leram84/layer.Cake/master/ombi/themes/001-omBlur-leram84-Alpha.css */
 body {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png");
     background-repeat: repeat, no-repeat;
@@ -67,7 +66,7 @@ body {
     font-size: 12px;
     min-height: 60px;
 }
-body > ombi > nav > div > div.navbar-header > div {
+body > ombi > div > nav > div > div.navbar-header > div {
     position: fixed;
     top: 0;
     left: 0;
@@ -78,10 +77,10 @@ body > ombi > nav > div > div.navbar-header > div {
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul {
     margin-right: 5px;
 }
-body > ombi > nav > div > div.navbar-header > div:hover {
+body > ombi > div > nav > div > div.navbar-header > div:hover {
     background: rgba(0,0,0,.45);
 }
-body > ombi > nav > div > div.navbar-header > div > a:hover {
+body > ombi > div > nav > div > div.navbar-header > div > a:hover {
     color: #fff !important;
 }
 .flipthis-wrapper .navbar-brand {
@@ -111,7 +110,7 @@ body > ombi > nav > div > div.navbar-header > div > a:hover {
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body > ombi > nav > div > div.navbar-header > div > a {
+body > ombi > div > nav > div > div.navbar-header > div > a {
     margin: auto !important;
     width: 240px;
     height: 60px;
@@ -328,30 +327,30 @@ body > ombi > nav > div > div.navbar-header > div > a {
     padding: 0 30px 0 30px;
     margin-right: 0;
 }
-/* body > ombi > div {
+body > ombi > div> .container {
     margin-left: 240px !important;
     width: calc(100vw - 240px) !important;
     margin-top: 60px;
     height: calc(100vh - 60px);
     overflow-y: scroll;
-} */
-body > ombi > div::-webkit-scrollbar {
+}
+.container::-webkit-scrollbar {
         width: 14px;
 }
-body > ombi > div::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
     background-color: transparent;
 }
-body > ombi > div::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
     background-color: hsla(0,0%,100%,.2);
     background-clip: padding-box;
 }
-body > ombi > div::-webkit-scrollbar-thumb:hover {
+.container::-webkit-scrollbar-thumb:hover {
     background-color: hsla(0,0%,100%,.3);
 }
-body > ombi > div > ng-component > h1 {
+.container > ng-component > h1 {
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px !important;
     font-stretch: normal;
@@ -370,10 +369,10 @@ body > ombi > div > ng-component > h1 {
     z-index: 999999;
     color: #eee;
 }
-body > ombi > div > ng-component > h4 {
+.container > ng-component > h4 {
     display: none;
 }
-body > ombi > div > ng-component > br{
+.container > ng-component > br{
     display: none;
 }
 #nav-tabs {
@@ -424,7 +423,7 @@ body > ombi > div > ng-component > br{
 } */
 .input-group > #search {
     float: right;
-    margin: 30px 0 0 -46.8px;
+    margin: 30px 0 0 -47px;
     padding: 6px 40px;
 }
 #search::-webkit-input-placeholder {
@@ -463,10 +462,10 @@ body > ombi > div > ng-component > br{
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
-body > ombi > div > ng-component > div.tab-content > div:nth-child(1) > movie-requests > div.form-group{
+movie-requests > div.form-group {
     margin: 40px 0;
 }
-body > ombi > div > ng-component > div.tab-content > div:nth-child(1) > movie-requests > div.form-group:before{
+movie-requests > div.form-group:before{
     content: "\F002";
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 15px;
@@ -578,9 +577,3 @@ body > ombi > div > ng-component > div.tab-content > div:nth-child(1) > movie-re
     overflow: scroll;
     max-height: 300px;
 }
-/* 
-1) Remove welcome from welcom leram84 
-2) Youtube trailer on search
-3) Scrollbar
-4) 
-*/
