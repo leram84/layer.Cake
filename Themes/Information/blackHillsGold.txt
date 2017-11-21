@@ -14,7 +14,8 @@ The Default Icon Pack can be found here:
 
 Extras:
 For the cool homepage buttons and speed test change, add the following to your Custom HTML in homepage settings.
-<code>
+
+<pre>
 &#x3C;div class=&#x22;row&#x22;&#x3E;
 &#x9;&#x3C;div class=&#x22;col-xs-6 col-sm-4 col-md-3 col-lg-2 splashContainer&#x22; id=&#x22;request-click&#x22;&#x3E;
 &#x9;&#x9;&#x3C;li style=&#x22;list-style-type: none; cursor: pointer;&#x22; window=&#x22;&#x22; class=&#x22;homepage-button splash-item content-box small-box ultra-widget gray-bg&#x22; tab-name=&#x22;request&#x22;&#x3E;
@@ -58,4 +59,4 @@ For the cool homepage buttons and speed test change, add the following to your C
 &#x9;&#x9;$(&#x22;div#startBtn&#x3E;div&#x3E;div&#x22;).hide();
 &#x9;});
 &#x3C;/script&#x3E;
-</code>
+</pre>
