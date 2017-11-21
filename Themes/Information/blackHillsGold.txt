@@ -1,0 +1,61 @@
+CauseFX's Personal Theme!
+Instructions:
+--logo-one (Logo for login page)
+--backdrop-one (Backdrop for main pages)
+--backdrop-two (Backdrop for sidebar)
+--backdrop-noise (Noise for Backdrops)
+
+Notes:
+I will be offering custom icons for Organizr Elite Supporter Pateron supporters.
+You will gain access to the icon PSD with the Organizr Ultimate Supporter Pateron role.
+
+The Default Icon Pack can be found here:
+<a href="https://github.com/leram84/layer.Cake/raw/master/Resources/blackhillsgold-iconpack.zip" target="_blank">Download Me!</a>
+
+Extras:
+For the cool homepage buttons and speed test change, add the following to your Custom HTML in homepage settings.
+<code>
+&#x3C;div class=&#x22;row&#x22;&#x3E;
+&#x9;&#x3C;div class=&#x22;col-xs-6 col-sm-4 col-md-3 col-lg-2 splashContainer&#x22; id=&#x22;request-click&#x22;&#x3E;
+&#x9;&#x9;&#x3C;li style=&#x22;list-style-type: none; cursor: pointer;&#x22; window=&#x22;&#x22; class=&#x22;homepage-button splash-item content-box small-box ultra-widget gray-bg&#x22; tab-name=&#x22;request&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x3C;div class=&#x22;w-content&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;w-icon&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;center&#x3E;&#x3C;i style=&#x22;&#x22;&#x3E;&#x3C;img src=&#x22;images/ombi-gold.png&#x22; style=&#x22;height: 100px; margin-top: -10px;&#x22; class=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/center&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;text-center&#x22;&#x3E;&#x3C;span class=&#x22;text-uppercase w-name elip&#x22;&#x3E;Request&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x3C;/li&#x3E;
+&#x9;&#x3C;/div&#x3E;
+&#x9;&#x3C;div class=&#x22;col-xs-6 col-sm-4 col-md-3 col-lg-2 splashContainer&#x22; id=&#x22;startBtn&#x22; onclick=&#x22;javascript:runTest()&#x22;&#x3E;
+&#x9;&#x9;&#x3C;li style=&#x22;list-style-type: none; cursor: pointer;&#x22; window=&#x22;&#x22; class=&#x22;splash-item content-box small-box ultra-widget gray-bg&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x3C;div class=&#x22;w-content&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;w-icon&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;center&#x3E;&#x3C;i style=&#x22;&#x22;&#x3E;&#x3C;img src=&#x22;images/speedtest-gold.png&#x22; style=&#x22;height: 100px; margin-top: -10px;&#x22; class=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/center&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;text-center&#x22;&#x3E;&#x3C;span class=&#x22;text-uppercase w-name elip&#x22;&#x3E;Test Speed&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x3C;/li&#x3E;
+&#x9;&#x3C;/div&#x3E;
+&#x9;&#x3C;div class=&#x22;col-xs-6 col-sm-4 col-md-3 col-lg-2 splashContainer&#x22; id=&#x22;abortBtn&#x22; onclick=&#x22;javascript:abortTest()&#x22; style=&#x22;display:none&#x22;&#x3E;
+&#x9;&#x9;&#x3C;li style=&#x22;list-style-type: none; cursor: pointer;&#x22; window=&#x22;&#x22; class=&#x22;splash-item content-box small-box ultra-widget gray-bg&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x3C;div class=&#x22;w-content&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;w-icon&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;center&#x3E;&#x3C;i style=&#x22;&#x22;&#x3E;&#x3C;img src=&#x22;images/stop-gold.png&#x22; style=&#x22;height: 100px; margin-top: -10px;&#x22; class=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/center&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;text-center&#x22;&#x3E;&#x3C;span class=&#x22;text-uppercase w-name elip&#x22;&#x3E;Abort Test&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&#x9;&#x9;&#x3C;/li&#x3E;
+&#x9;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;script&#x3E;
+&#x9;$(&#x27;.homepage-button&#x27;).click(function(e){
+&#x9;&#x9;tabName = $(this).attr(&#x27;tab-name&#x27;);
+&#x9;&#x9;window.parent.$(&#x22;li[name=&#x27;&#x22;+tabName+&#x22;&#x27;]&#x22;).click();
+&#x9;&#x9;console.log(tabName);
+&#x9;&#x9;e.preventDefault();
+&#x9;});
+&#x9;$(document).ready(function(){
+&#x9;&#x9;$(&#x22;div#startBtn&#x3E;div&#x3E;div&#x22;).hide();
+&#x9;});
+&#x3C;/script&#x3E;
+</code>
