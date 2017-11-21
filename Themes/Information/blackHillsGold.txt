@@ -9,6 +9,23 @@ Notes:
 I will be offering custom icons for Organizr Elite Supporter Pateron supporters.
 You will gain access to the icon PSD with the Organizr Ultimate Supporter Pateron role.
 
+Colors:
+
+<pre>
+Title Text: #DDC27A
+Loading Background: #000000
+Top Bar: #000000
+Bottom Bar: #000000
+Side Bar: #000000
+Hover Backgroud: #B98847
+Hover Text: : #000000
+Active Tab BG: #B98847
+Active Tab Icon: #FFFFFF
+Active Tab Text: #FFFFFF
+Inactive Icon: #DDC27A
+Inactive Text: #DDC27A
+</pre>
+
 The Default Icon Pack can be found here:
 <a href="https://github.com/leram84/layer.Cake/raw/master/Resources/blackhillsgold-iconpack.zip" target="_blank">Download Me!</a>
 
