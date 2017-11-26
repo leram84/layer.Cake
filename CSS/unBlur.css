@@ -2533,10 +2533,10 @@ button.close:hover {
 button.close {
     opacity: 1;
 }
-/* Calendar Legend
-#body-homepage #calendarLegendRow > div > div > span.label.label-primary.well-sm {
-    background: var(--color-calAvailable) !important;
-} */
+/* Calendar Legend */
+.sweet-alert.showSweetAlert.visible .label-primary {
+    background: var(--color-calAvailable);
+}
 #body-homepage .label.label-danger.well-sm {
     background: var(--color-calUnavailable) !important;
 }
