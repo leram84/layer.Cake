@@ -11,10 +11,45 @@ body {
     color: #999;
     font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+.pace-progress {
+   display: none;
+}
+.pace .pace-activity {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #CC7B19;
+    width: 24px;
+    height: 24px;
+    right: auto;
+    left: 15px;
+    top: 17px;
+}
+.ui-tooltip.ui-tooltip-top {
+    top: 60px;
+    left: 965.258px;
+    display: block;
+    margin-top: 3px;
+    padding: 5px 0;
+}
+.ui-tooltip .ui-tooltip-text {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 3px;
+    white-space: pre-line;
+}
+.ui-shadow {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
 .navbar-default {
     background-color: rgba(0,0,0,.2);
-    border-color: rgba(0,0,0,.2);
-    
+    border-color: rgba(0,0,0,.2);    
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png);
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: fixed, fixed, fixed;
@@ -31,7 +66,7 @@ body {
     font-size: 12px;
     min-height: 60px;
 }
-body > ombi > nav > div > div.navbar-header > div {
+body > ombi > div > nav > div > div.navbar-header > div {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,10 +77,10 @@ body > ombi > nav > div > div.navbar-header > div {
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul {
     margin-right: 5px;
 }
-body > ombi > nav > div > div.navbar-header > div:hover {
+body > ombi > div > nav > div > div.navbar-header > div:hover {
     background: rgba(0,0,0,.45);
 }
-body > ombi > nav > div > div.navbar-header > div > a:hover {
+body > ombi > div > nav > div > div.navbar-header > div > a:hover {
     color: #fff !important;
 }
 .flipthis-wrapper .navbar-brand {
@@ -75,7 +110,7 @@ body > ombi > nav > div > div.navbar-header > div > a:hover {
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body > ombi > nav > div > div.navbar-header > div > a {
+body > ombi > div > nav > div > div.navbar-header > div > a {
     margin: auto !important;
     width: 240px;
     height: 60px;
@@ -125,6 +160,9 @@ body > ombi > nav > div > div.navbar-header > div > a {
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:active,
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right >li.dropdown > a:focus {
     background: transparent;
+}
+.fa.fa-language > .caret {
+    margin: 5px 5px 0 5px;
 }
 .dropdown-menu {
     background-color: #020a0e !important;
@@ -185,6 +223,9 @@ body > ombi > nav > div > div.navbar-header > div > a {
     width: 235px;
     border-radius: 0 4px 4px 0;
 }
+.fa.fa-plus {
+    padding-right: 3px;
+}
 .navbar-default .navbar-nav>.active>a {
     background-color: transparent;
 }
@@ -212,6 +253,9 @@ body > ombi > nav > div > div.navbar-header > div > a {
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     line-height: 45px;
     font-weight: 600;
+}
+.fa.fa-user {
+    padding-left: 2px;
 }
 #UserManagement {
     position: fixed;
@@ -246,6 +290,9 @@ body > ombi > nav > div > div.navbar-header > div > a {
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li:nth-child(1) > a > i {
     font-size: 115%;
 }
+.fa.fa-warning {
+    color: #CC7B19 !important;
+}
 #bs-example-navbar-collapse-1 > ul:nth-child(4) > li > a {
     width: 235px;
     border-radius: 0 4px 4px 0;
@@ -277,16 +324,33 @@ body > ombi > nav > div > div.navbar-header > div > a {
     background-color: hsla(0,0%,100%,.08);
 }
 .container {
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
     margin-right: 0;
 }
-body > ombi > div {
+body > ombi > div> .container {
     margin-left: 240px !important;
-    width: calc(100vw - 270px) !important;
+    width: calc(100vw - 240px) !important;
     margin-top: 60px;
     height: calc(100vh - 60px);
+    overflow-y: scroll;
 }
-body > ombi > div > ng-component > h1 {
+.container::-webkit-scrollbar {
+        width: 14px;
+}
+.container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.container::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0,0%,100%,.2);
+    background-clip: padding-box;
+}
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: hsla(0,0%,100%,.3);
+}
+.container > ng-component > h1 {
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px !important;
     font-stretch: normal;
@@ -302,20 +366,20 @@ body > ombi > div > ng-component > h1 {
     position: fixed;
     top: 0;
     left: 270px;
-    z-index: 9999;
+    z-index: 999999;
     color: #eee;
 }
-body > ombi > div > ng-component > h4 {
+.container > ng-component > h4 {
     display: none;
 }
-body > ombi > div > ng-component > br{
+.container > ng-component > br{
     display: none;
 }
 #nav-tabs {
     border-bottom: 2px solid rgba(0,0,0,.3);
-    margin-top: 80px;
+    margin-top: 60px;
 }
-.nav-tabs>li {
+#\2f search .nav-tabs>li, #\2f requests .nav-tabs>li {
     font-size: 20px;
     line-height: 36px;
     float: right;
@@ -328,9 +392,10 @@ body > ombi > div > ng-component > br{
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
-    background-color: transparent;
+    background: transparent;
     border: none;
-    color: #F9BE03;
+    color: #F9BE03 !important;
+    cursor: pointer;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
     background-color: transparent;
@@ -341,16 +406,20 @@ body > ombi > div > ng-component > br{
     color: hsla(0,0%,100%,.45);
     border: none;
 }
-.nav>li>a:focus,
-.nav>li>a:hover {
-    background-color: transparent;
+.nav>li>a:focus{
+    background: transparent;
     border: none;
-    color: #fff;
+    color: #F9BE03 !important;
+}
+.nav>li>a:hover {
+    background: transparent;
+    border: none;
+    color: #fff !important;
 }
 .input-group > .input-group-addon.right-radius {
     display: block;
     float: left;
-    margin-top: 62px;
+    margin-top: 33px;
 
 }
 /* #MoviesTab > div.input-group {
@@ -359,16 +428,28 @@ body > ombi > div > ng-component > br{
 } */
 .input-group > #search {
     float: right;
-    margin: 60px 0 0 -45px;
+    margin: 30px 0 0 -47px;
     padding: 6px 40px;
+}
+#search::-webkit-input-placeholder {
+   color:transparent;
+}
+#search:-moz-placeholder {
+   color:transparent; 
+}
+#search::-moz-placeholder {
+   color:transparent; 
+}
+#search:-ms-input-placeholder {  
+   color:transparent;
 }
 #search {
     width: 500px;
-    max-width: calc(100vw - 320px);
+    max-width: calc(100vw - 300px);
     display: block;
-    margin-top: 50px;
+    margin-top: -30px;
     height: 38px;
-    padding: 6px 15px;
+    padding: 6px 40px;
     font-size: 14px;
     color: #eee;
     vertical-align: middle;
@@ -386,21 +467,38 @@ body > ombi > div > ng-component > br{
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
-
-.input-group > .input-group-addon.right-radius > .btn-group {
-    margin-right: 330px;
-    margin-top: -50px;
-    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+movie-requests > div.form-group, tv-requests > div.form-group {
+    margin: 40px 0;
+}
+movie-requests > div.form-group:before, tv-requests > div.form-group:before {
+    content: "\F002";
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: 15px;
+    font-weight: 400;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    padding-left: 16px;
+    height: 15px;
+    width: 15px;
+}
+.input-group > .input-group-addon.right-radius > .btn-group {
+    position: fixed;
+    top: 20px;
+    left: 375px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px !important;
     font-stretch: normal;
     font-style: normal;
     font-variant-caps: normal;
     font-variant-ligatures: normal;
     font-variant-numeric: normal;
     font-weight: normal;
-    height: 60px;
+    width: 115px;
     letter-spacing: normal;
     line-height: 60px;
+    z-index: 9999;
 }
 .btn-primary-outline:focus, .btn-primary-outline:hover, .open>.btn-primary-outline.dropdown-toggle {
     color: #fff!important;
@@ -411,8 +509,17 @@ body > ombi > div > ng-component > br{
     border: none!important;
     padding: 0;
     color: hsla(0,0%,100%,.65)!important;
-    font-size: 20px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-weight: 300;
     line-height: 20px;
+    height: 60px;
 }
 .input-group-addon .btn-group .btn:hover {
     color: #fff !important;
@@ -446,10 +553,133 @@ body > ombi > div > ng-component > br{
 .navbar-default .navbar-nav>.open>a:hover {
     background: transparent;
 }
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 /* test */
-
+#\2f usermanagement > ng-component > table {
+    background: rgba(0,0,0,.15);
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: hsla(0, 0%, 100%, .04);
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: hsla(0, 0%, 100%, .02);
+}
+#\2f usermanagement .btn-success-outline:before {
+    content: "+";
+    font-size: 18px;
+    line-height: 1;
+    padding: 0 6px 0 0;
+    vertical-align: bottom;
+}
+#\2f usermanagement .btn-success-outline {
+    color: #fff !important;
+    background-color: #CC7B19;
+    padding: 2px 7px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+    font-weight: 600;
+    white-space: nowrap;
+    float: right;
+    margin: 25px 0;
+}
+#\2f usermanagement .btn-success-outline:hover, #\2f usermanagement .btn-success-outline:focus, #\2f usermanagement .btn-success-outline:active {
+    color: #fff !important;
+    background-color: #e59029 !important;
+    border-color: #7f4c10;
+    cursor: pointer;
+}
+#\2f usermanagement a.btn-info-outline {
+    color: #fff !important;
+    background-color: hsla(0, 0%, 100%, .25);
+    padding: 2px 7px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    border: 0;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 4px;
+}
+#\2f usermanagement a.btn-info-outline:hover, #\2f usermanagement a.btn-info-outline:focus, #\2f usermanagement a.btn-info-outline:active {
+    color: #fff !important;
+    background-color: hsla(0, 0%, 100%, .3) !important;
+    border-color: hsla(0, 0%, 100%, .3);
+    cursor: pointer;
+}
+#\2f usermanagement button.btn-info-outline {
+    color: hsla(0, 0%, 100%, .6) !important;
+    background-color: transparent;
+    border-color: transparent !important;
+}
+#\2f usermanagement button.btn-info-outline:hover, #\2f usermanagement button.btn-info-outline:focus, #\2f usermanagement button.btn-info-outline:active {
+    color: #fff !important;
+    background: transparent !important;
+    text-decoration: underline;
+}
+.no-search-results .no-search-results-icon {
+    color: hsla(0, 0%, 100%, .45);
+}
+.no-search-results .no-search-results-text {
+    color: #b94a48;
+}
 #movieList {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .ui-treetable table {
     margin-bottom: 60px;
+}
+.row.backdrop {
+    min-height: 200px
+}
+.ui-treetable-data.ui-widget-content {
+    border: none !important;
+    background: transparent!important;
+    color: #fff;
+}
+#movieList > div:nth-child(2) > div > div.col-sm-8.small-padding > p {
+    overflow: scroll;
+    max-height: 300px;
+}
+
+/* Settings */
+settings-menu > hr {
+    display: none;
+}
+legend {
+    border-bottom: none;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px !important;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 60px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 270px;
+    z-index: 999999;
+    color: #eee;
+    width: auto;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background: transparent;
+    border-color: transparent;
+}
+/* Settings */
