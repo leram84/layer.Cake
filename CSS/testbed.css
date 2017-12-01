@@ -416,6 +416,7 @@ body > ombi > div> .container {
     border: none !important;
     color: transparent!important;
     width: 40px;
+    overflow: hidden;
 }
 #TvShowTab > div.input-group > div > div > a:hover, #MoviesTab > div.input-group > div > div > a:hover {
     color: transparent !important;
