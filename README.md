@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/layerCake.png"></p>
+
 # layer#Cake
 layer#Cake is the theme engine for [Organizr](https://github.com/causefx/Organizr). The Basic and Advanced will take user submitted colors and apply a well thought out logic to generate your theme. There is a lot of extensibility here, but if you just want to skin your site, it can be done in seconds. The "themes" section will allow you to install entire UI mods on top of Organizr with a one click install. The first theme is theBlur, but more are comming!
 
