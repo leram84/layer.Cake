@@ -392,7 +392,8 @@ body > ombi > div> .container {
     /* margin-top: 60px; */
 }
 #MoviesTab > div.input-group > div > div > ul, #TvShowTab > div.input-group > div > div > ul {
-    margin-top: 20px;
+    margin-top: 0;
+    margin-left: -100px;
 }
 
 
@@ -633,7 +634,8 @@ movie-requests > div.form-group:before, tv-requests > div.form-group:before {
 #MoviesTab > div.input-group > div > div, #TvShowTab > div.input-group > div > div {
     width: 40px;
     height: 38px;
-    margin-top: 25px;
+    margin-top: 20px;
+    padding-top: 5px;
 }
 #MoviesTab > div.input-group > div > div:after, #TvShowTab > div.input-group > div > div:after {
     content: '';
@@ -648,10 +650,13 @@ movie-requests > div.form-group:before, tv-requests > div.form-group:before {
     border-right: 4px solid transparent !important;
     margin: 7px 0px 0px 2px;
 }
-#TvShowTab > div.input-group > div > div > a:hover #TvShowTab > div.input-group > div > div:after, #MoviesTab > div.input-group > div > div > a:hover #MoviesTab > div.input-group > div > div:after {
-    color: #fff !important;
+#TvShowTab > div.input-group > div > div:hover:after, #MoviesTab > div.input-group > div > div:hover:after {
+    border-color: #fff !important;
+    border-top: 5px solid;
+    border-left: 4px solid transparent !important;
+    border-right: 4px solid transparent !important;
 }
-#TvShowTab > div.input-group > div > div > a:hover #TvShowTab > div.input-group > div > div:before, #MoviesTab > div.input-group > div > div > a:hover #MoviesTab > div.input-group > div > div:before {
+#TvShowTab > div.input-group > div > div:hover:before, #MoviesTab > div.input-group > div > div:hover:before {
     color: #fff !important;
 }
 /* .input-group-addon .btn-group .btn {
