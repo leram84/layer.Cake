@@ -1,3 +1,6 @@
+.app-loading-container {
+    background: #3f4245;
+}
 .app-loading>span {
     display: none;
 }
@@ -11,9 +14,6 @@
     content: '';
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    position: absolute;
-    top: 210px;
-    left: 50%;
     border: 2px solid transparent;
     border-radius: 50%;
     border-top: 2px solid #CC7B19;
@@ -21,7 +21,8 @@
     height: 24px;
     -webkit-animation: spin 0.5s linear infinite;
     animation: spin 0.5s linear infinite;
-    margin-left: -12px;
+    display: block;
+    margin: 20px auto;
 }
 /* @-webkit-keyframes spin {
     0% {
