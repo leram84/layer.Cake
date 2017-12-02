@@ -1,4 +1,46 @@
-
+.app-loading>span {
+    display: none;
+}
+.app-loading {
+    margin: auto;
+    color: #fff !important;
+    text-align: center;
+    font-size: 20px;
+}
+.app-loading:before {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #CC7B19;
+    width: 24px;
+    height: 24px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    margin-left: -12px;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 #\2f usermanagement > ng-component > table {
     background: rgba(0,0,0,.15);
     border-bottom: 2px solid rgba(0,0,0,.3);
