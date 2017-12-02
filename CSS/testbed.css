@@ -23,7 +23,7 @@
     animation: spin 0.5s linear infinite;
     margin-left: -12px;
 }
-@-webkit-keyframes spin {
+/* @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
     }
@@ -40,7 +40,7 @@
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-}
+} */
 #\2f usermanagement > ng-component > table {
     background: rgba(0,0,0,.15);
     border-bottom: 2px solid rgba(0,0,0,.3);
