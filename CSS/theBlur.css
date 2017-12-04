@@ -2580,6 +2580,9 @@ button.close {
     opacity: 1;
 }
 /* Calendar Legend */
+.label-primary {
+    background-color: var(--color-calAvailable);
+}
 .sweet-alert.showSweetAlert.visible .label-primary {
     background: var(--color-calAvailable);
 }
