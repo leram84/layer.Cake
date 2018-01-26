@@ -1,0 +1,8 @@
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
+    background: url("https://tacohouse.us/images/thlogo_dark1.png");
+    color: transparent !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0 15px !important;
+}
