@@ -113,7 +113,7 @@ body {
 }
 body {
     background: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), var(--color-background);
-    color: var(--color-primary);
+    color: hsla(0, 0%, 100%, .45);
     font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 600;
     overflow: hidden;
@@ -214,7 +214,62 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .row {
     margin: 0;
 }
+body > div.container-fluid > div > div.col-sm-10 > div > form > h2 {
+    font-size: 15px;
+    color: var(--color-primary);
+    border-top: 1px solid rgba(0,0,0,.3);
+    padding-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 /* clean up */
+.btn-default {
+    border-color: var(--color-secondary);
+    color: #fff;
+    background-color: var(--color-secondary);
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+}
+.btn-default:hover {
+    border-color: var(--color-secondary-hover);
+    color: #fff;
+    background-color: var(--color-secondary-hover);
+}
+body > div.container-fluid > div > div.col-sm-10 > div > form > a {
+    background-color: hsla(0,0%,100%,.25);
+    color: #fff;
+}
+body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
+    background-color: hsla(0,0%,100%,.3);
+    color: #fff;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 16px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71428571;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.form-group > label {
+    font-weight: 100;
+    color: #fff;
+}
 .navbar > .container-fluid {
     margin: 0;
     padding: 0;
@@ -433,15 +488,18 @@ app-loading-container {
         transform: rotate(360deg);
     }
 }
-body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar {
+body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar,
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar {
     width: 14px;
     max-height: calc(100% - 60px);
 }
-body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-track {
+body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-track,
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-track {
     background-color: transparent;
     max-height: calc(100% - 60px);
 }
-body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb {
+body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb,
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
@@ -449,7 +507,8 @@ body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb {
     background-clip: padding-box;
     max-height: calc(100% - 60px);
 }
-body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb:hover {
+body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb:hover,
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb:hover{
     background-color: hsla(0,0%,100%,.3);
 }
 .pace-progress {
@@ -479,11 +538,12 @@ body > .container-fluid {
 body > div.container-fluid > div.row-fluid > div.col-sm-2 {
     position: fixed;
     width: 240px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
     left: 0;
     top: 120px;
     background: rgba(0,0,0,.15);
-    padding: 0 5px 0 0;
+    padding: 0 5px 50px 0;
+    overflow-y: scroll;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width: calc(100vw - 240px);
