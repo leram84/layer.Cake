@@ -960,12 +960,24 @@ body > div.row-fluid {
 #libs {
     margin-bottom: 120px;
 }
+#books .cover img, #books_rand .cover img {
+    width: auto;
+}
 .container-fluid img {
     display: block;
-    min-width: 100%;
+    width: 100%;
     height: auto;
-    max-width: 400px;
+    max-width: 225px;
 }
 .pagination > strong {
     color: var(--color-primary);
+}
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 {
+    max-width: calc(25% - 30px);
+    display: inline-block;
+}
+
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta {
+    max-width: calc(75% - 30px);
+    display: inline-block;
 }
