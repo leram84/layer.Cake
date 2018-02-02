@@ -442,6 +442,20 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .container-fluid .discover {
     margin-bottom: 0;
 }
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.15);
+    border-radius: 3px;
+}
 /* clean up */
 
 app-loading-container {
@@ -745,15 +759,19 @@ body > div.container-fluid > div > div.col-sm-10 > div.container {
     border-bottom: 2px solid rgba(0,0,0,.3);
     background: hsla(0,0%,100%,.02);
     padding: 0;
+    max-width: calc(100% - 30px);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container > div {
     padding: 0;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
+    padding: 4px 0;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row:nth-of-type(odd) {
     background: hsla(0,0%,100%,.02);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > .col-xs-6 {
-    width: 91.666%;
+    width: calc(91.666% - 30px);
     overflow: hidden;
     text-overflow: ellipsis;
     color: hsla(0, 0%, 100%, .45);
