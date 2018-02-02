@@ -1,4 +1,4 @@
-#books, #books_rand {
+.book {
     width: 225px;
 }
 
@@ -548,7 +548,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-tra
 }
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb {
-    min-height: 50px;
+    min-height: 110px;
     border: 3px solid transparent;
     border-radius: 8px;
     background-color: hsla(0,0%,100%,.2);
@@ -622,8 +622,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.single {
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     margin-top: 0;
 }
-body > div.container-fluid > div > div.col-sm-10 > div.discover > h2,
-body > div.container-fluid > div > div.col-sm-10 > h3 {
+body > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
     color: #eee;
     font-size: 15px;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -637,6 +636,37 @@ body > div.container-fluid > div > div.col-sm-10 > h3 {
     font-weight: 600;
     padding-left: 15px;
     margin-bottom: 0;
+}
+body > div.container-fluid > div > div.col-sm-10 > h3 {
+    color: #eee;
+    width: calc(100% - 30px);
+    max-width: 800px;
+    margin: 20px auto 10px auto;
+    text-align: right;
+}
+body > div.container-fluid > div > div.col-sm-10 > h3:nth-child(3):before {
+    content: "About";
+    width: calc(100vw - 240px);
+    height: 60px;
+    margin: 0;
+    padding-left: 25px;
+    background: rgba(0,0,0,.15);
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+    text-size-adjust: 100%;
+    white-space: nowrap;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 600;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    position: fixed;
+    top: 60px;
+    left: 240px;
+    text-align: left;
 }
 body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2:before {
     content: "Books";
@@ -968,16 +998,18 @@ body > div.row-fluid {
     width: 100%;
     height: auto;
     max-width: 225px;
+    margin: auto;
 }
 .pagination > strong {
     color: var(--color-primary);
 }
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 {
     max-width: calc(25% - 30px);
-    display: inline-block;
+    position: fixed;
 }
 
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta {
-    max-width: calc(75% - 30px);
-    display: inline-block;
+    margin-left: calc(25% + 30px);
+    width: calc(75% - 30px);
+    max-width: 1000px;
 }
