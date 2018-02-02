@@ -818,8 +818,73 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > 
     word-spacing: normal;
     text-indent: 0px;
     text-shadow: none;
+    margin-top: 20px;
 }
 .well > form > .btn:hover {
     background-color: var(--color-secondary-hover);
 }
 /* Login */
+
+/* Alert */
+body > div.row-fluid {
+    margin-top: 0 !important;
+}
+.alert {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    width: 50%;
+    margin: 0;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    opacity: 1 !important;
+    right: 0;
+    border-radius: 10px;
+    
+    background-color: #000;
+    color: #eee;
+    border: 0;
+    -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.5);
+    box-shadow: 0 4px 12px rgba(0,0,0,.5);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    
+    height: 34px;
+    line-height: 1.71428571 !important;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 5px 0;
+    
+    z-index: 99999;
+    -moz-animation: cssAnimation 0s ease-in 8s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 8s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 8s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 8s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+.alert-danger {
+    background-color: rgba(255,85,51,.3);
+    color: #fff;
+}
+/* Alert */
