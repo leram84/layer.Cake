@@ -1,3 +1,7 @@
+.col-sm-3 {
+    width: 225px;
+}
+
 @media (min-width: 1200px){
 
 .col-lg-2 {
@@ -925,4 +929,13 @@ body > div.row-fluid {
 }
 #libs {
     margin-bottom: 120px;
+}
+.container-fluid img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+.pagination > strong {
+    color: var(--color-primary);
 }
