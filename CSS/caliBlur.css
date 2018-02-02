@@ -2,14 +2,44 @@
     width: 225px;
 }
 
-@media (min-width: 1200px){
-
-.col-lg-2 {
-    width: ;
+#infscr-loading img {
+    display: none;
 }
+#infscr-loading:before {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid var(--color-secondary);
+    width: 24px;
+    height: 24px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    display: block;
+    margin: 20px auto;
+    position: fixed;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    z-index: 999999;
 }
-#books {
-    
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 a {
     color: hsla(0, 0%, 100%, .45);
