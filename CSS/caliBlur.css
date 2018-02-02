@@ -615,7 +615,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.single {
     height: auto;
     width: calc(100vw - 254px);
     margin: 40px 0 90px 0  !important;
-    padding: 0px 20px 0 25px !important;
+    padding: 0px 0px 0 25px !important;
     
     
 }
