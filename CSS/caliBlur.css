@@ -574,7 +574,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.single {
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     margin-top: 0;
 }
-body > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
+body > div.container-fluid > div > div.col-sm-10 > div.discover > h2,
+body > div.container-fluid > div > div.col-sm-10 > h3 {
     color: #eee;
     font-size: 15px;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -888,3 +889,22 @@ body > div.row-fluid {
     color: #fff;
 }
 /* Alert */
+
+.table>thead>tr>th {
+    border-bottom: 0;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid rgba(0,0,0,.3);
+    background: rgba(0,0,0,.15);
+}
+#stats, #libs {
+    margin: auto;
+    width: calc(100% - 30px);
+    max-width: 800px;
+    color: hsla(0,0%,100%,.75);
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.2);
+}
+#libs {
+    margin-bottom: 120px;
+}
