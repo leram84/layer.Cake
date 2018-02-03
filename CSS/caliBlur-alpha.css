@@ -1,5 +1,53 @@
+#have_read_container input[type="checkbox" i] {
+    visibility: hidden;
+}
+#have_read_container input[type="checkbox" i]:hover:before {
+    cursor: pointer;
+    color: #fff;
+}
+#have_read_container input[type="checkbox" i]:before {
+    content: "\e106";
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    top: 60px;
+    right: 0px;
+    visibility: visible;
+    border-left: 2px solid rgba(0,0,0,.3);
+    padding: 20px 50px 40px 30px;
+}
+#have_read_container input[type="checkbox" i]:checked:before {
+    content: "\e105";
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    top: 60px;
+    right: 0px;
+    visibility: visible;
+    color: var(--color-primary);
+    padding: 20px 50px 40px 30px;
+}
+#have_read_container input[type="checkbox" i]:checked:hover:before {
+    color: #fff;
+}
+#have_read_form label {
+    display: none;
+}
+#have_read_cb {
+    
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .book {
     width: 225px;
+    max-width: 225px;
 }
 
 #infscr-loading img {
@@ -240,8 +288,6 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     color: #999;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul:nth-child(1) {}
-
-
 .author > a:hover {
     color: #fff !important;
 }
@@ -261,8 +307,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > h2 {
     border-color: var(--color-secondary);
     color: #fff;
     background-color: var(--color-secondary);
-    -webkit-transition: background-color .1s;
-    transition: background-color .1s;
+    -webkit-transition: background-color 0.1s;
+    transition: background-color 0.1s;
 }
 .btn-default:hover {
     border-color: var(--color-secondary-hover);
@@ -298,7 +344,6 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     -o-user-select: none;
     user-select: none;
 }
-
 
 .form-group > label {
     font-weight: 100;
@@ -346,7 +391,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     border-top: none;
 }
 .navigation .create-shelf a {
-    
+
     width: 150px;
     color: #fff !important;
     background-color: hsla(0, 0%, 100%, .25);
@@ -356,8 +401,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     border-radius: 3px;
     font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     border: 0;
-    -webkit-transition: background-color .1s;
-    transition: background-color .1s;
+    -webkit-transition: background-color 0.1s;
+    transition: background-color 0.1s;
     font-weight: 600;
     white-space: nowrap;
     margin: 5px;
@@ -376,7 +421,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation .create-shelf {
     width: auto;
     margin: 30px 0 30px 20px;
-    
+
 }
 .navigation .create-shelf:hover {
     background: transparent;
@@ -469,7 +514,12 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     padding-bottom: 0;
     overflow: visible!important;
 }
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
     outline: none;
     outline-offset: 0;
 }
@@ -556,7 +606,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thu
     max-height: calc(100% - 60px);
 }
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb:hover,
-body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb:hover{
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb:hover {
     background-color: hsla(0,0%,100%,.3);
 }
 .pace-progress {
@@ -606,7 +656,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
 }
 
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div {
-    
+
     width: 100%;
     margin: 0;
 }
@@ -614,10 +664,9 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover,
 body > div.container-fluid > div > div.col-sm-10 > div.single {
     height: auto;
     width: calc(100vw - 254px);
-    margin: 40px 0 90px 0  !important;
-    padding: 0px 0px 0 25px !important;
-    
-    
+    margin: 40px 0 90px !important;
+    padding: 0 0 0 25px !important;
+
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     margin-top: 0;
@@ -641,7 +690,7 @@ body > div.container-fluid > div > div.col-sm-10 > h3 {
     color: #eee;
     width: calc(100% - 30px);
     max-width: 800px;
-    margin: 20px auto 10px auto;
+    margin: 20px auto 10px;
     text-align: right;
 }
 body > div.container-fluid > div > div.col-sm-10 > h3:nth-child(3):before {
@@ -818,7 +867,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:hover
     z-index: -1;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container {
-    margin: 60px auto 120px auto;
+    margin: 60px auto 120px;
     border-top: 2px solid rgba(0,0,0,.3);
     border-bottom: 2px solid rgba(0,0,0,.3);
     background: hsla(0,0%,100%,.02);
@@ -861,8 +910,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > 
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 0 auto 0 auto;
-    padding: 60px
+    margin: 0 auto;
+    padding: 60px;
 }
 /* .well > h2 {
     color: #eee;
@@ -888,9 +937,9 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > 
     text-transform: uppercase;
     white-space: nowrap;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-    -webkit-transition: background-color .2s,color .2s;
-    transition: background-color .2s,color .2s;
-    padding: 6px 30px 5px 30px;
+    -webkit-transition: background-color 0.2s,color 0.2s;
+    transition: background-color 0.2s,color 0.2s;
+    padding: 6px 30px 5px;
     font-size: 15px;
     font-weight: 600;
     background-color: var(--color-secondary);
@@ -899,7 +948,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > 
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
-    text-indent: 0px;
+    text-indent: 0;
     text-shadow: none;
     margin-top: 20px;
 }
@@ -925,21 +974,21 @@ body > div.row-fluid {
     opacity: 1 !important;
     right: 0;
     border-radius: 10px;
-    
+
     background-color: #000;
     color: #eee;
     border: 0;
     -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.5);
     box-shadow: 0 4px 12px rgba(0,0,0,.5);
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
     height: 34px;
     line-height: 1.71428571 !important;
     overflow: hidden;
     font-size: 14px;
     padding: 5px 0;
-    
+
     z-index: 99999;
     -moz-animation: cssAnimation 0s ease-in 8s forwards;
     /* Firefox */
@@ -953,16 +1002,16 @@ body > div.row-fluid {
 }
 @keyframes cssAnimation {
     to {
-        width:0;
-        height:0;
-        overflow:hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
     }
 }
 @-webkit-keyframes cssAnimation {
     to {
-        width:0;
-        height:0;
-        visibility:hidden;
+        width: 0;
+        height: 0;
+        visibility: hidden;
     }
 }
 
@@ -975,11 +1024,17 @@ body > div.row-fluid {
 .table>thead>tr>th {
     border-bottom: 0;
 }
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
     border-top: 1px solid rgba(0,0,0,.3);
     background: rgba(0,0,0,.15);
 }
-#stats, #libs {
+#stats,
+#libs {
     margin: auto;
     width: calc(100% - 30px);
     max-width: 800px;
@@ -990,14 +1045,15 @@ body > div.row-fluid {
 #libs {
     margin-bottom: 120px;
 }
-#books .cover img, #books_rand .cover img {
+#books .cover img,
+#books_rand .cover img {
     width: auto;
 }
 .container-fluid img {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 225px;
+    max-width: 195px;
     margin: auto;
 }
 .pagination > strong {
