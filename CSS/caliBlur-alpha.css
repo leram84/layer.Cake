@@ -1,3 +1,5 @@
+
+
 #have_read_container input[type="checkbox" i] {
     visibility: hidden;
 }
@@ -204,22 +206,86 @@ body {
 body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     width: 360px;
 }
+#btn-upload {
+    min-width: 1px;
+    min-height: 1px;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    line-height: 1;
+    font-size: 1px
+}
+#btn-upload:hover {
+    cursor: pointer !important;
+}
+#main-nav > li:nth-child(1) {
+    float: right;
+    width: 60px;
+}
+#form-upload {
+    position: relative;
+    float: right;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    margin-right: 0;
+}
+
 #form-upload .form-group .btn {
-    color: #fff;
-    background: var(--color-secondary);
+    color: rgba(0,0,0,0);
+    background: transparent;
     border: 0;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 6px 0;
-    padding: 4px 10px 4px 8px;
+    margin: 0;
+    padding: 0px;
+    height: 60px;
 }
-#form-upload .form-group .btn:hover {
+#form-upload:hover .form-group .btn:after {
     background: var(--color-secondary-hover);
 }
+#form-upload:hover .form-group .btn:before {
+    -webkit-box-shadow: inset 0 0 0 2px #eee;
+    box-shadow: inset 0 0 0 2px #eee;
+}
 #form-upload .form-group .btn:before {
+    content: "\e043";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(0,0,0,.65);
+    font-size: 20px;
+    background: hsla(0, 0%, 100%, .45);
+    border-radius: 50%;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 12.5px;
+    right: 25px;
+    margin: 0;
+    padding: 0;
+    z-index: -9;
+}
+#form-upload .form-group .btn:after {
     content: "+";
-    margin-right: 5px;
-    font-size: 120%;
+    font-size: 14px;
+    color: #fff;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    padding: 0;
+    z-index: 9;
+    position: fixed;
+    line-height: 14px;
+    width: 14px;
+    height: 14px;
+    top: 35px;
+    right: 20px;
+    
 }
 .form-control {
     background-image: none;
