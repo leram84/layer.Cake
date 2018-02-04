@@ -433,10 +433,10 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation li a {
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
-    padding: 8px 0 2px 25px;
+    padding: 4px 0 4px 25px;
     font-size: 13px;
     height: 30px;
-
+    line-height: 21px;
 }
 .navigation li {
     min-height: 30px;
