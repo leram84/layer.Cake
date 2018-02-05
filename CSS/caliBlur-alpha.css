@@ -1,4 +1,15 @@
-
+$(function () {
+     $('input[type="file"]').change(function () {
+          if ($(this).val() != "") {
+                 $(this).css('color', '#333');
+          }else{
+                 $(this).css('color', 'transparent');
+          }
+     });
+})
+input[type="file"]{
+    color: transparent;
+}
 
 #have_read_container input[type="checkbox" i] {
     visibility: hidden;
@@ -209,11 +220,11 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
 #btn-upload {
     min-width: 1px;
     min-height: 1px;
-    width: 1px;
-    height: 1px;
+    width: 60px;
+    height: 60px;
     left: 0;
     line-height: 1;
-    font-size: 1px
+    font-size: 1px;
 }
 #btn-upload:hover {
     cursor: pointer !important;
@@ -283,7 +294,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     line-height: 14px;
     width: 14px;
     height: 14px;
-    top: 35px;
+    top: 10px;
     right: 20px;
     
 }
@@ -722,7 +733,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
 }
 
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div {
-
+    overflow: visible !important;
     width: 100%;
     margin: 0;
 }
@@ -1112,7 +1123,8 @@ body > div.row-fluid {
     margin-bottom: 120px;
 }
 #books .cover img,
-#books_rand .cover img {
+#books_rand .cover img,
+.book .cover img {
     width: auto;
 }
 .container-fluid img {
