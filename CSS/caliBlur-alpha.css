@@ -242,11 +242,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     height: 60px;
 }
 #form-upload:hover .form-group .btn:after {
-    color: #fff;
+    color: var(--color-secondary-hover);
 }
 #form-upload:hover .form-group .btn:before {
-    -webkit-box-shadow: inset 0 0 0 2px #eee;
-    box-shadow: inset 0 0 0 2px #eee;
+    -webkit-box-shadow: inset 0 0 0 2px #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+    background: var(--color-secondary-hover);
+    color: #fff;
 }
 #form-upload .form-group .btn:before {
     content: "\e043";
@@ -256,9 +258,9 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgba(0,0,0,.65);
+    color: #eee;
     font-size: 20px;
-    background: hsla(0, 0%, 100%, .45);
+    background: var(--color-secondary);
     border-radius: 50%;
     line-height: 35px;
     width: 35px;
@@ -267,13 +269,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     top: 12.5px;
     right: 25px;
     margin: 0;
-    padding: 0;
+    padding: 0 2px 0 0;
     z-index: -9;
 }
 #form-upload .form-group .btn:after {
     content: "+";
     font-size: 14px;
-    color: hsla(0, 0%, 100%, .45);
+    color: var(--color-secondary);
     background: transparent;
     border-radius: 50%;
     padding: 0;
@@ -283,7 +285,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     width: 12px;
     height: 12px;
     top: 26px;
-    right: 37px;
+    right: 38px;
 /* 
     content: "+";
     font-size: 14px;
