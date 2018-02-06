@@ -157,10 +157,10 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     left: 25px;
     content: '';
 }
-body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover {
+/* body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover {
     background: rgba(0,0,0,.45);
     color: #fff !important;
-}
+} */
  :root {
     --color-background: #474747;
     --color-primary: #F9BE03;
@@ -192,7 +192,7 @@ body {
     position: fixed;
     width: 100%;
     height: 60px;
-
+    z-index: -9;
 }
 body {
     background: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), var(--color-background);
@@ -219,7 +219,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
 }
 #main-nav > li:nth-child(1) {
     float: right;
-    width: 60px;
+    
 }
 #form-upload {
     position: relative;
@@ -242,7 +242,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     height: 60px;
 }
 #form-upload:hover .form-group .btn:after {
-    background: var(--color-secondary-hover);
+    color: #fff;
 }
 #form-upload:hover .form-group .btn:before {
     -webkit-box-shadow: inset 0 0 0 2px #eee;
@@ -273,6 +273,20 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
 #form-upload .form-group .btn:after {
     content: "+";
     font-size: 14px;
+    color: hsla(0, 0%, 100%, .45);
+    background: transparent;
+    border-radius: 50%;
+    padding: 0;
+    z-index: 9;
+    position: fixed;
+    line-height: 12px;
+    width: 12px;
+    height: 12px;
+    top: 26px;
+    right: 37px;
+/* 
+    content: "+";
+    font-size: 14px;
     color: #fff;
     background: var(--color-secondary);
     border-radius: 50%;
@@ -284,7 +298,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     height: 14px;
     top: 10px;
     right: 20px;
-
+    */
 }
 .form-control {
     background-image: none;
@@ -730,7 +744,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2 {
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width: calc(100vw - 240px);
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
     padding: 0;
     position: fixed;
     min-height: 1px;
@@ -749,7 +763,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover,
 body > div.container-fluid > div > div.col-sm-10 > div.single {
     height: auto;
     width: calc(100vw - 254px);
-    margin: 40px 0 90px !important;
+    margin: 40px 0 40px !important;
     padding: 0 0 0 25px !important;
 
 }
@@ -1145,33 +1159,77 @@ body > div.row-fluid {
 .pagination > strong {
     color: var(--color-primary);
 }
-body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 {
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3,
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-3.col-lg-3.col-xs-12 {
     max-width: calc(25% - 30px);
     position: fixed;
 }
-
-body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta {
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-3.col-lg-3.col-xs-12 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta,
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
     margin-left: calc(25% + 30px);
     width: calc(75% - 30px);
     max-width: 1000px;
 }
-
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > div > span > input.form-control.typeahead.tt-hint {
     background: hsla(0, 0%, 100%, .25) !important;
 }
-
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > div > span > input.form-control:focus {
+    background: #fff !important;
+}
+.glyphicon-star {
+    color: #fff;
+}
+.rating-input .glyphicon:hover {
+    cursor: pointer;
+}
+.rating-input:hover {
+    cursor: default;
+}
+.rating-input {
+    padding-left: 0;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > .btn.btn-default {
+    float: right;
+    margin: 0 0 0 10px;
+}
+#get_meta {
+    float: left;
+    margin: 0;
+}
+textarea {
+    resize:none; /* Safari */
+    resize:vertical; /* Chrome */
+}
 .modal-backdrop.in {
     display: none;
 }
 #metaModal,
 .modal.fade.in {
-    background: rgba(0,0,0,.5);
-    top: 60px;
-    overflow: hidden;
+    
+    
 }
-#metaModal > .modal-dialog {}
+#metaModal {
+    top: 0px;
+    overflow: hidden;
+    padding-top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
 #metaModal > .modal-dialog > .modal-content {
-    max-height: calc(100vh - 120px);
+    z-index: 9999999999999999999999;
+}
+#metaModal > .modal-dialog > .modal-content {
+    max-height: calc(100vh - 90px);
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     border-radius: 3px;
@@ -1262,7 +1320,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > div > s
     margin: 15px 0;
 }
 #meta-info {
-    max-height: calc(100vh - 407px);
+    max-height: calc(100vh - 357px);
     overflow-y: scroll;
     background: #282828 !important;
     padding: 0;
@@ -1329,4 +1387,28 @@ body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > div > s
     cursor: pointer;
     outline: 2px solid var(--color-secondary);
     filter: brightness(90%);
+}
+
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div:nth-child(1) > label:before {
+    content: "Edit Metadata";
+    width: calc(100vw - 240px);
+    height: 60px;
+    margin: 0;
+    padding-left: 25px;
+    background: rgba(0,0,0,.15);
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+    text-size-adjust: 100%;
+    white-space: nowrap;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 600;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    position: fixed;
+    top: 60px;
+    left: 240px;
 }
