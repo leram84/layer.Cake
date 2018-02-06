@@ -739,7 +739,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2 {
     left: 0;
     top: 120px;
     background: rgba(0,0,0,.15);
-    padding: 0 5px 50px 0;
+    padding: 0 5px 20px 0;
     overflow-y: scroll;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
