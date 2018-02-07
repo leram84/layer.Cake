@@ -1166,7 +1166,12 @@ body > div.row-fluid {
     border-top: 2px solid rgba(0,0,0,.2);
 }
 #libs {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
+}
+#stats > tbody > tr > th,
+#libs > tbody > tr > th,
+#libs > thead > tr > th:first-child {
+    color: hsla(0,0%,100%,.45);
 }
 #books .cover img,
 #books_rand .cover img,
