@@ -1616,3 +1616,6 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 .book-meta > .identifiers > p > .glyphicon-link {
     color: hsla(0,0%,100%,.45);
 }
+.rating .glyphicon-star.good {
+    color: var(--color-primary);
+}
