@@ -1679,3 +1679,36 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:l
 body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:last-of-type:hover {
     background: var(--color-secondary-hover);
 }
+.book-meta > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] {
+    position: fixed;
+    left: 280px;
+    top: 500px;
+    width: calc(100vw - 240px);
+}
+.book-meta > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] > a {
+    max-width: calc(25%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    margin-right: 100%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: hsla(0, 0%, 100%, .25);
+    text-transform: none;
+    padding: 2px 10px 2px 10px;
+    text-align: left;
+}
+.book-meta > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] > a:hover {
+    background: #ce3d2a;
+    color: #fff;
+}
+.book-meta > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] > a > .glyphicon-remove {
+
+    padding-right: 3px;
+   
+}
+body > div.container-fluid > div > div.col-sm-10 > div.single > div.row > div.col-sm-3.col-lg-3.col-xs-5 > div.cover > img {
+    max-height: 300px;
+    max-width: 100%;
+    width: auto;
+}
