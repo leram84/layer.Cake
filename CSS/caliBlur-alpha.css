@@ -1590,3 +1590,29 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+.book-meta > .identifiers > p > .btn-success {
+    background-color: rgba(0,0,0,.15);
+    color: hsla(0,0%,100%,.7);
+    padding: 0 10px;
+    font-size: 13px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-transition: background-color 0.2s,color 0.2s;
+    transition: background-color 0.2s,color 0.2s;
+    margin: 2px 3px 0 22px;
+}
+.book-meta > .identifiers > p > .btn-success:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.book-meta {
+    color: hsla(0,0%,100%,.7);
+}
+.book-meta > .identifiers > p > .glyphicon-link {
+    color: hsla(0,0%,100%,.45);
+}
