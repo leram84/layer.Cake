@@ -842,13 +842,11 @@ body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2:befor
     top: 60px;
     left: 240px;
 }
-body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2,
-.well > h2 {
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2, .well > h2 {
     width: calc(100vw - 240px);
     height: 60px;
     margin: 0;
     padding-left: 25px;
-    background: rgba(0,0,0,.15);
     color: hsla(0,0%,100%,.7);
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -861,6 +859,19 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-
     font-weight: 600;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
+    position: fixed;
+    top: 60px;
+    left: 240px;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 575px);
+    overflow: hidden;
+}
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before {
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,.15);
+    display: block;
+    content: '';
     position: fixed;
     top: 60px;
     left: 240px;
