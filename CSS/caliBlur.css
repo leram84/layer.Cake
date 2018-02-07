@@ -870,7 +870,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-
     top: 60px;
     left: 240px;
     text-overflow: ellipsis;
-    max-width: calc(100vw - 575px);
+    max-width: calc(100vw - 660px);
     overflow: hidden;
 }
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before {
@@ -1467,6 +1467,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     float: right;
     margin-top: -30px;
 }
+.book-meta > p {
+    color: hsla(0, 0%, 100%, .45);
+}
 .book-meta > .rating > p > .glyphicon-star {
     color: #eee;
 }
@@ -1581,19 +1584,15 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 }
 .book-meta .btn-toolbar > .btn-group > .btn-warning > span.glyphicon-edit {
     font-size: 18px;
-    line-height: 40px;
+    line-height: 42px;
     width: 100%;
 
-}
-.book-meta .btn-toolbar > .btn-group > .btn-warning > span.glyphicon-edit:before {
-    content: "\e061";
 }
 .btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2 > span.glyphicon-eye-open:before {
     content: "\e164";
     font-size: 18px;
 }
 .btn-toolbar > .btn-group > #btnGroupDrop2 > span.glyphicon-list:before {
-    content: "\e298";
     font-size: 18px;
 }
 #btnGroupDrop1 > span.glyphicon-download:before {
