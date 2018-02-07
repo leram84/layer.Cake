@@ -453,6 +453,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     font-size: 13px;
     height: 30px;
     line-height: 21px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .navigation li {
     min-height: 30px;
@@ -845,7 +848,8 @@ body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2:befor
     top: 60px;
     left: 240px;
 }
-body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2, .well > h2 {
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2,
+.well > h2 {
     width: calc(100vw - 240px);
     height: 60px;
     margin: 0;
@@ -866,7 +870,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-
     top: 60px;
     left: 240px;
     text-overflow: ellipsis;
-    max-width: calc(100vw - 575px);
+    max-width: calc(100vw - 660px);
     overflow: hidden;
 }
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before {
@@ -908,6 +912,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > h1:first-lette
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover > form > .btn.btn-default {
    float: right;
+    margin: 0 0 0 10px;
 }
 .pagination {
     display: block !important;
@@ -1109,19 +1114,22 @@ body > div.row-fluid {
     height: 34px;
     line-height: 1.71428571 !important;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 14px;
     padding: 5px 0;
 
     z-index: 99999;
-    -moz-animation: cssAnimation 0s ease-in 8s forwards;
+    -moz-animation: cssAnimation 0s ease-in 10s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 8s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 10s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 8s forwards;
+    -o-animation: cssAnimation 0s ease-in 10s forwards;
     /* Opera */
-    animation: cssAnimation 0s ease-in 8s forwards;
+    animation: cssAnimation 0s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+    
 }
 @keyframes cssAnimation {
     to {
@@ -1459,6 +1467,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     float: right;
     margin-top: -30px;
 }
+.book-meta > p {
+    color: hsla(0, 0%, 100%, .45);
+}
 .book-meta > .rating > p > .glyphicon-star {
     color: #eee;
 }
@@ -1531,9 +1542,10 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     display: inline-block;
     float: right;
 }
-.book-meta > div.more-stuff > .btn-toolbar:nth-child(3) > .btn-group > .btn-warning,
-#btnGroupDrop2,
-#btnGroupDrop1 {
+.book-meta .btn-toolbar > .btn-group > .btn-warning,
+.btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2,
+#btnGroupDrop1,
+.btn-toolbar > .btn-group > #btnGroupDrop2 {
     background: transparent;
     color: transparent;
     width: 85px;
@@ -1542,19 +1554,25 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     overflow: hidden;
 
 }
-.book-meta > div.more-stuff > .btn-toolbar:nth-child(3) > .btn-group > .btn-warning > span,
-#btnGroupDrop2 > span,
-#btnGroupDrop1 > span {
+.book-meta .btn-toolbar > .btn-group > .btn-warning > span,
+.btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2 > span,
+#btnGroupDrop1 > span,
+.btn-toolbar > .btn-group > #btnGroupDrop2 > span {
     color: hsla(0,0%,100%,.7);
 
 }
-.book-meta > div.more-stuff > .btn-toolbar:nth-child(3) > .btn-group > .btn-warning:hover > span,
-#btnGroupDrop2:hover > span,
-#btnGroupDrop1:hover > span {
+.book-meta .btn-toolbar > .btn-group > .btn-warning:hover > span,
+.btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2:hover > span,
+#btnGroupDrop1:hover > span,
+.btn-toolbar > .btn-group > #btnGroupDrop2:hover > span {
     color: #fff;
 }
-#btnGroupDrop2 > span.caret {
+.btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2 > span.caret {
     margin-left: -135px;
+    padding-bottom: 5px;
+}
+.btn-toolbar > .btn-group > #btnGroupDrop2 > span.caret {
+    margin-left: -105px;
     padding-bottom: 5px;
 }
 #btnGroupDrop1 > span.caret {
@@ -1564,18 +1582,26 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 .book-meta > div.more-stuff > .btn-toolbar > .btn-group {
     margin: 0;
 }
-.book-meta > div.more-stuff > .btn-toolbar:nth-child(3) > .btn-group > .btn-warning > span.glyphicon-edit {
+.book-meta .btn-toolbar > .btn-group > .btn-warning > span.glyphicon-edit {
     font-size: 18px;
-    line-height: 40px;
+    line-height: 42px;
     width: 100%;
 
 }
-#btnGroupDrop2 > span.glyphicon-eye-open:before {
+.btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2 > span.glyphicon-eye-open:before {
     content: "\e164";
+    font-size: 18px;
+}
+.btn-toolbar > .btn-group > #btnGroupDrop2 > span.glyphicon-list:before {
     font-size: 18px;
 }
 #btnGroupDrop1 > span.glyphicon-download:before {
     font-size: 18px;
+}
+.book-meta > div.btn-toolbar {
+    position: fixed;
+    top: 60px;
+    right: 340px;
 }
 .book-meta > div.more-stuff > .btn-toolbar > .btn-group > .btn-group > .dropdown-menu {
     margin-left: -75px;
@@ -1633,4 +1659,23 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 }
 .rating .glyphicon-star.good {
     color: var(--color-primary);
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-danger {
+    background: #ac3323;
+    width: auto;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-danger:hover {
+    background: #ce3d2a;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:first-of-type {
+    background: hsla(0, 0%, 100%, .25);
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:first-of-type:hover {
+    background: hsla(0, 0%, 100%, .3);
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:last-of-type {
+    background: var(--color-secondary);
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:last-of-type:hover {
+    background: var(--color-secondary-hover);
 }
