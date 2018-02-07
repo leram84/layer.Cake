@@ -885,7 +885,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2, 
 body > div.container-fluid > div > div.col-sm-10 > h1,
-body > div.container-fluid > div > div.col-sm-10 > div.discover > h1 {
+body > div.container-fluid > div > div.col-sm-10 > div.discover > h1,
+body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 {
    width: calc(100vw - 240px);
    height: 60px;
    margin: 0;
@@ -1201,6 +1202,7 @@ body > div.row-fluid {
     box-shadow: 0 0 2px rgba(0,0,0,.35);
     background-color: rgba(0,0,0,.45);
 }
+
 .pagination > strong {
     color: var(--color-primary);
 }
@@ -1695,7 +1697,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:l
     border-radius: 3px;
     background: hsla(0, 0%, 100%, .25);
     text-transform: none;
-    padding: 2px 10px 2px 10px;
+    padding: 0px 10px 0px 10px;
     text-align: left;
 }
 .book-meta > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] > a:hover {
@@ -1711,4 +1713,5 @@ body > div.container-fluid > div > div.col-sm-10 > div.single > div.row > div.co
     max-height: 300px;
     max-width: 100%;
     width: auto;
+    margin: 0;
 }
