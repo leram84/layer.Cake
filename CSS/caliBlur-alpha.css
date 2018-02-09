@@ -13,11 +13,13 @@
     height: 60px;
     background: transparent;
     top: 60px;
-    right: 0;
+    right: 120px;
     visibility: visible;
     border-left: 2px solid rgba(0,0,0,.3);
-    padding: 20px 50px 40px 30px;
+    border-right: 2px solid rgba(0,0,0,.3);
+    padding: 20px 39px 40px 19px;
     color: hsla(0,0%,100%,.7);
+    z-index: 999;
 }
 #have_read_container input[type="checkbox" i]:checked:before {
     content: "\e105";
@@ -26,10 +28,11 @@
     height: 60px;
     background: transparent;
     top: 60px;
-    right: 0;
+    right: 120px;
     visibility: visible;
     color: var(--color-primary);
-    padding: 20px 50px 40px 30px;
+    padding: 20px 39px 40px 19px;
+    z-index: 999;
 }
 #have_read_container input[type="checkbox" i]:checked:hover:before {
     color: #fff;
@@ -426,6 +429,15 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     -o-user-select: none;
     user-select: none;
 }
+.btn-primary {
+    color: #fff;
+    background-color: hsla(0,0%,100%,.25);
+    border-color: hsla(0,0%,100%,.25);
+}
+.btn-primary:hover {
+    background-color: hsla(0,0%,100%,.3);
+    border-color: hsla(0,0%,100%,.3);
+}
 
 .form-group > label {
     font-weight: 100;
@@ -780,19 +792,24 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover {
     margin-top: 0;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
-    color: #eee;
-    font-size: 15px;
-    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-    line-height: 24px;
+    color: #eee !important;
+    font-size: 15px !important;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    line-height: 24px !important;
     overflow: hidden!important;
     min-width: 0;
-    max-width: 100%;
-    text-overflow: ellipsis;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-overflow: ellipsis !important;
     white-space: nowrap!important;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding-left: 15px;
-    margin-bottom: 0;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    padding-left: 15px !important;
+    margin-bottom: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: auto !important;
 }
 body > div.container-fluid > div > div.col-sm-10 > h3 {
     color: #eee;
@@ -831,7 +848,7 @@ body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2:befor
     height: 60px;
     margin: 0;
     padding-left: 25px;
-    background: rgba(0,0,0,.15);
+    /* background: rgba(0,0,0,.15); */
     color: hsla(0,0%,100%,.7);
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -849,31 +866,34 @@ body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2:befor
     left: 240px;
 }
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2,
-.well > h2 {
-    width: calc(100vw - 240px);
-    height: 60px;
+.well > h2,
+body > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2 {
+    width: calc(100vw - 240px) !important;
+    height: 60px !important;
     margin: 0;
-    padding-left: 25px;
-    color: hsla(0,0%,100%,.7);
-    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 60px;
+    padding-left: 25px !important;
+    color: hsla(0,0%,100%,.7) !important;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 60px !important;
     text-size-adjust: 100%;
-    white-space: nowrap;
+    white-space: nowrap !important;
     -webkit-box-direction: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-weight: 600;
+    font-weight: 600 !important;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    position: fixed;
-    top: 60px;
-    left: 240px;
-    text-overflow: ellipsis;
-    max-width: calc(100vw - 660px);
-    overflow: hidden;
+    position: fixed !important;
+    top: 60px !important;
+    left: 240px !important;
+    text-overflow: ellipsis !important;
+    max-width: calc(100vw - 550px) !important;
+    overflow: hidden !important;
 }
-body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before {
+/* body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before,
+.well > h2:before */
+body > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     width: 100%;
     height: 60px;
     background: rgba(0,0,0,.15);
@@ -883,7 +903,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-
     top: 60px;
     left: 240px;
 }
-body > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2, 
+body > div.container-fluid > div > div.col-sm-10 > div.discover > h2, 
 body > div.container-fluid > div > div.col-sm-10 > h1,
 body > div.container-fluid > div > div.col-sm-10 > div.discover > h1,
 body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 {
@@ -891,7 +911,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-
    height: 60px;
    margin: 0;
    padding-left: 25px;
-   background: rgba(0,0,0,.15);
+   /* background: rgba(0,0,0,.15); */
    color: hsla(0,0%,100%,.7);
    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-size: 15px;
@@ -1434,13 +1454,13 @@ textarea {
     outline: 2px solid var(--color-secondary);
     filter:brightness(90%);
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div:nth-child(1) > label:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div:nth-child(10) > label:before {
     content: "Edit Metadata";
     width: calc(100vw - 240px);
     height: 60px;
     margin: 0;
     padding-left: 25px;
-    background: rgba(0,0,0,.15);
+    background: transparent;
     color: hsla(0,0%,100%,.7);
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -1457,6 +1477,72 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     top: 60px;
     left: 240px;
 }
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before {
+    content: "Advanced Search";
+    width: calc(100vw - 240px);
+    height: 60px;
+    margin: 0;
+    padding-left: 25px;
+    background: transparent;
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+    text-size-adjust: 100%;
+    white-space: nowrap;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 600;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    position: fixed;
+    top: 60px;
+    left: 240px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test {
+        border-top: 2px solid rgba(0,0,0,.3);
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-left: 33.33%;
+    margin-left: -33.33%;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn {
+    margin: 2px 3px 0 0;
+    padding: 0 10px;
+    background: hsla(0,0%,100%,.25);
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn:hover {
+    background: hsla(0,0%,100%,.3);
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn-danger:hover {
+    background: #ce3d2a;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn-danger.active {
+    background: #ac3323;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn-danger.active:hover {
+    background: #ce3d2a;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn-primary:hover {
+    background: var(--color-secondary-hover);
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn-primary.active {
+    background: var(--color-secondary);
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn-primary.active:hover {
+    background: var(--color-secondary-hover);
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg {
+    margin-left: -33.33%;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > label {
+    margin-left: -33.33%;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > label:first-of-type {
+    padding-top: 40px;
+}
+
 .book-meta > .author:before {
     content: "Author:";
     padding-right: 4px;
@@ -1523,6 +1609,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     margin-top: -20px;
     border-top: 2px solid rgba(0,0,0,.3);
     padding-top: 20px;
+    margin-top: 20px;
 }
 .book-meta > div {
     color: hsla(0,0%,100%,.65);
@@ -1538,11 +1625,14 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 .book-meta > .more-stuff {
     position: fixed;
     top: 60px;
-    right: 85px;
+    right: 0px;
 }
 .book-meta > .more-stuff > .btn-toolbar {
     display: inline-block;
     float: right;
+}
+.book-meta > .more-stuff > .btn-toolbar:nth-of-type(2) {
+    margin-right: 67px;
 }
 .book-meta .btn-toolbar > .btn-group > .btn-warning,
 .btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2,
@@ -1550,7 +1640,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 .btn-toolbar > .btn-group > #btnGroupDrop2 {
     background: transparent;
     color: transparent;
-    width: 85px;
+    width: 60px;
     height: 60px;
     margin: 0;
     overflow: hidden;
@@ -1606,7 +1696,21 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     right: 340px;
 }
 .book-meta > div.more-stuff > .btn-toolbar > .btn-group > .btn-group > .dropdown-menu {
-    margin-left: -75px;
+    margin-left: -100px;
+}
+.book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
+    margin-left: -200px;
+    max-width: 200px;
+}
+.book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
+    margin-left: -50px;
+    max-width: 200px;
+    overflow: hidden;
+}
+.book-meta .btn-toolbar > .btn-group > ul.dropdown-menu > li > a {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .dropdown-menu {
     background-color: #020a0e !important;
