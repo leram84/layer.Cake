@@ -132,7 +132,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.45);
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:before {
     background: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/home-gray.png");
@@ -141,10 +141,10 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     position: absolute;
     display: block;
     overflow: visible;
-    width: 27px;
-    height: 27px;
+    width: 25px;
+    height: 25px;
     top: 16.5px;
-    left: 25px;
+    left: 18px;
     content: '';
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover:after {
@@ -154,10 +154,10 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     position: absolute;
     display: block;
     overflow: visible;
-    width: 27px;
-    height: 27px;
+    width: 25px;
+    height: 25px;
     top: 16.5px;
-    left: 25px;
+    left: 18px;
     content: '';
 }
 /* body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover {
@@ -190,7 +190,7 @@ body {
     -o-background-size: auto, cover !important;
 }
 .navbar-default {
-    background-color: #1f1f1f !important;
+    background-color: rgba(0,0,0,.7) !important;
     border: none;
     position: fixed;
     width: 100%;
@@ -349,11 +349,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > b
 }
 
 body > div.navbar.navbar-default.navbar-static-top > div > form {
-    margin-left: -150px;
+    margin-left: -167px;
     padding: 0;
     margin-top: 15px;
     margin-bottom: 15px;
-
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form > .form-group > input {
+    border-radius: 4px 0 0 4px;
 }
 #main-nav {
     margin-right: 15px;
@@ -387,6 +389,10 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > h2 {
     margin-bottom: 30px;
 }
 /* clean up */
+.navigation .nav-head:nth-child(1n+2) {
+    border-top: none;
+    padding-top: 0;
+}
 .btn-default {
     border-color: var(--color-secondary);
     color: #fff;
@@ -449,7 +455,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 }
 .navigation .nav-head {
     text-transform: uppercase;
-    margin: 10px 0 0;
+    margin: 0;
     color: hsla(0,0%,100%,.3);
     text-transform: uppercase;
     font-size: 12px;
@@ -460,10 +466,11 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation li a {
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
-    padding: 4px 0 4px 25px;
+    padding: 4px 0;
     font-size: 13px;
     height: 30px;
     line-height: 21px;
+    width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -471,6 +478,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation li {
     min-height: 30px;
     border-radius: 0 4px 4px 0;
+    max-width: 265px;
+    padding: 0 25px;
+    overflow: visible;
 }
 .navigation li:hover {
     background-color: hsla(0,0%,100%,.08);
@@ -483,11 +493,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     background: transparent;
     color: #fff;
 }
-.navigation .nav-head:nth-child(1n+2) {
-    border-top: none;
-}
 .navigation .create-shelf a {
-
+    
     width: 150px;
     color: #fff !important;
     background-color: hsla(0, 0%, 100%, .25);
@@ -501,9 +508,16 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     transition: background-color 0.1s;
     font-weight: 600;
     white-space: nowrap;
-    margin: 5px;
+    margin: auto;
     text-transform: uppercase;
     max-height: 20px;
+}
+#scnd-nav .dropdown-menu > li > a:hover {
+    color: #fff;
+    background: transparent;
+}
+#scnd-nav .dropdown-menu {
+    left: 5px;
 }
 .navigation .create-shelf a:hover {
     background-color: hsla(0, 0%, 100%, .3);
@@ -516,8 +530,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 }
 .navigation .create-shelf {
     width: auto;
-    margin: 30px 0 30px 20px;
-
+    margin: 30px auto;
+    min-height: auto;
 }
 .navigation .create-shelf:hover {
     background: transparent;
@@ -763,7 +777,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2 {
     top: 120px;
     background: rgba(0,0,0,.15);
     padding: 0 5px 20px 0;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width: calc(100vw - 240px);
@@ -834,14 +848,23 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     left: 0;
     height: auto;
 }
-body > div.container-fluid > div > div.col-sm-10 > h3 {
+body > div.container-fluid > div > div.col-sm-10 > h3:not(:first-of-type) {
     color: #eee;
     width: calc(100% - 30px);
     max-width: 800px;
     margin: 20px auto 10px;
     text-align: right;
 }
-body > div.container-fluid > div > div.col-sm-10 > h3:nth-child(3):before {
+body > div.container-fluid > div > div.col-sm-10 > p {
+    margin: 40px 0 0 15px;
+}
+body > div.container-fluid > div > div.col-sm-10 > p > a {
+    color: var(--color-secondary);
+}
+body > div.container-fluid > div > div.col-sm-10 > p > a:hover {
+    color: #fff;
+}
+body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type {
     content: "About";
     width: calc(100vw - 240px);
     height: 60px;
@@ -991,7 +1014,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: 100;
-    margin-left: 20px;
+    margin-left: 0px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 60px;
@@ -1002,19 +1025,53 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     top: 0;
     right: 0;
 }
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
+    color: rgba(0,0,0,0);
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 100;
+    margin-left: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 60px;
+    height: 60px;
+    width: 65px;
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 65px;
+}
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:before {
     content: "\e092";
     visibility: visible;
     color: hsla(0,0%,100%,.35);
     height: 60px;
     line-height: 60px;
-
+    
     font-size: 15px;
     padding: 20px 0 20px 25px;
     margin-right: -27px;
 }
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:before {
+    content: "\e091";
+    visibility: visible;
+    color: hsla(0,0%,100%,.65);
+    height: 60px;
+    line-height: 60px;
+    border-left: 2px solid rgba(0,0,0,.3);
+    font-size: 15px;
+    padding: 20px 25px 20px 25px;
+    margin-right: ;
+}
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:hover:before {
     color: #fff;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:hover:before {
+    color: #fff;
+}
+.pagination > strong {
+    display: none;
 }
 .pagination:after {
     content: "\e092";
@@ -1024,7 +1081,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:hover
     display: inline-block;
     color: hsla(0,0%,100%,.55);
     line-height: 60px;
-    border-left: 2px solid rgba(0,0,0,.3);
+    
     font-size: 15px;
     padding: 0 25px;
     font-family: 'Glyphicons Halflings';
@@ -1036,6 +1093,12 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:hover
     line-height: 60px;
     height: 60px;
     z-index: -1;
+}
+.pagination > .ellipsis {
+    display: none;
+}
+.pagination > a:nth-last-of-type(2) {
+    display: none;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container {
     margin: 60px auto 120px;
@@ -1245,9 +1308,7 @@ body > div.row-fluid {
     background-color: rgba(0,0,0,.45);
 }
 
-.pagination > strong {
-    color: var(--color-primary);
-}
+
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3,
 body > div.container-fluid > div > div.col-sm-10 > div.col-sm-3.col-lg-3.col-xs-12 {
     max-width: calc(25% - 30px);
