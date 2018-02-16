@@ -1,15 +1,56 @@
+.navbar-toggle {
+    position: relative;
+    float: left;
+    padding: 10px 15px;
+    margin-top: 7.5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 4px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #eee;
+}
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse.in {
     margin-bottom: 920px;
     margin-left: 0;
     margin-right: 0;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse.in[aria-expanded="true"] {
-    margin-top: 109px;
+    margin-top: 50px;
     margin-bottom: 920px;
+    position: relative;
+    z-index: 9999999;
+    background: #323232;
+    box-shadow: none;
+    border: 0;
+    overflow: visible;
 }
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse.in[aria-expanded="true"]:after,
+body > div.container-fluid > div.row-fluid > div.col-sm-2:after {
+    display: inline-block !important;
+    position: absolute;
+    content: " ";
+    top: 0;
+    right: 14px;
+    width: calc(25vw - 14px);
+    height: 100%;
+    background: rgba(0,0,0,.65);
+    margin-right: -25vw;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-2 {
+    width: 75vw;
+    background: #323232;
+}
+
 body > div.container-fluid {
     margin-top: -920px;
-    z-index: 99;
+    
     padding: 0;
 }
 
@@ -23,19 +64,31 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header {
     top: 0;
     left: 0;
     z-index: 9999999999;
+    margin: 0;
+    width: 100%;
+    background: #000;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form {
-    position: absolute;
+    position: fixed;
+
     top: 50px;
     left: 0;
     border: none;
     margin: 0;
     box-shadow: none;
+    background: #1f1f1f;
+    height: 50px;
+    padding: 7.5px 15px 12.5px 15px;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form:after {
+    
 }
 body > div.navbar.navbar-default.navbar-static-top > div {
-    background: #1f1f1f;
+    background: #323232;
     padding: 0;
     margin: 0;
+    width: 75vw;
+    
 }
 body > div.container-fluid > div > div.col-sm-10 {
     position: fixed;
@@ -45,7 +98,10 @@ body > div.container-fluid > div > div.col-sm-10 {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    z-index: -99
+    z-index: -99;
+    padding: 25px 0 0 15px;
+    margin: 0 0 0 15px;
+    
 }
 body > div.container-fluid > div > div {
     
@@ -151,8 +207,8 @@ a:hover {
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
     
-    color: var(--color-primary) !important;
-    
+    color: #eee !important;
+    font-size: 24px;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-stretch: normal;
     font-style: normal;
@@ -416,6 +472,11 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation li a {
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
+    white-space: nowrap;
+    max-width: calc(75vw - 45px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 .navigation li {
     border-radius: 0 4px 4px 0;
@@ -691,9 +752,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thu
 }
 body > .container-fluid {
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-2 {
-    background: rgba(0,0,0,.15);
-}
+
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
 }
 
