@@ -1701,11 +1701,11 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     display: none;
 }
 #bookDetailsModal .modal-footer {
-    width: 100px;
+    /* width: 100px;
     position: fixed;
     top: 800px;
-    left: 0;
-    
+    left: 0; */
+    display: none;
 }
 a:focus {
     outline: none;
