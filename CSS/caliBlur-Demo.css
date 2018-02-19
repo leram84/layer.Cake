@@ -349,9 +349,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #eee;
+    background: #eee !important;
     color: #555;
 }
+.form-control.tt-hint {
+    background: hsla(0, 0%, 100%, .25)  !important;
+}
+
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button {
     background-color: hsla(0, 0%, 100%, .25);
     color: #eee;
@@ -453,6 +457,16 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .btn-primary:hover {
     background-color: hsla(0,0%,100%,.3);
     border-color: hsla(0,0%,100%,.3);
+}
+.btn-default.focus, .btn-default:focus {
+    border-color: var(--color-secondary-hover);
+    color: #fff;
+    background-color: var(--color-secondary-hover);
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    border-color: var(--color-secondary-hover);
+    color: #fff;
+    background-color: var(--color-secondary-hover);
 }
 
 .form-group > label {
@@ -1488,24 +1502,25 @@ textarea {
 #metaModal > .modal-dialog > .modal-content > .modal-header > .close:hover {
     opacity: 0.5;
 }
-#metaModal > .modal-dialog > .modal-content > .modal-header > .form-inline {
-    margin: 25px 15px;
+#metaModal > .modal-dialog > .modal-content > .modal-header > #meta-search {
+    margin: 25px 0 0 0;
 
 }
-#metaModal > .modal-dialog > .modal-content > .modal-header > .form-inline > .form-group {
+#metaModal > .modal-dialog > .modal-content > .modal-header > #meta-search > .input-group {
     max-width: 100%;
 }
-#metaModal > .modal-dialog > .modal-content > .modal-header > .form-inline > .form-group > input {
-    min-width: 100%;
-    border-radius: 3px 0 0 3px;
+#metaModal > .modal-dialog > .modal-content > .modal-header > #meta-search > .input-group > input {
+    width: calc(100% - 51px);
+    border-radius: 0;
     background-color: hsla(0, 0%, 100%, .15);
 }
-#metaModal > .modal-dialog > .modal-content > .modal-header > .form-inline > .form-group {
-    width: calc(100% - 47.84px);
+#metaModal > .modal-dialog > .modal-content > .modal-header > #meta-search > .input-group {
+    width: 100%;
 }
-#metaModal > .modal-dialog > .modal-content > .modal-header > .form-inline > button {
+#metaModal > .modal-dialog > .modal-content > .modal-header > #meta-search > .input-group > span > button {
     height: 38px;
-    padding: 6px 12px;
+    width: 50px;
+    padding: 0;
     font-weight: 100;
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px !important;
@@ -1521,20 +1536,60 @@ textarea {
     color: #eee;
     vertical-align: middle;
     background-color: hsla(0, 0%, 100%, .15);
-    border-radius: 0 3px 3px 0;
-    margin: 1px 0 0 -5px;
+    border-radius: 0;
+    margin: 0 0 0 -1px;
 }
-#metaModal > .modal-dialog > .modal-content > .modal-header > .form-inline > span {
+#metaModal > .modal-dialog > .modal-content > .modal-header > #meta-search > .input-group > span {
     float: right;
+    text-align: right;
+    width: 50px;
+    
+    margin: 0;
+}
+#metaModal > .modal-dialog > .modal-content > .modal-header > div {
     font-family: Open Sans Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 12px;
     line-height: 1.71428571;
     color: var(--color-primary);
     font-weight: 100;
-    width: 100%;
     text-align: right;
-    margin: 15px 0;
+    position: absolute;
+    right: 0;
+    padding: 12.5px;
 }
+#metaModal > .modal-dialog > .modal-content > .modal-body {
+    padding: 0;
+}
+#metaModal > .modal-dialog > .modal-content > .modal-body > .text-center {
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+#metaModal > .modal-dialog > .modal-content > .modal-body > #book-list {
+    margin-bottom: 0;
+}
+input.pill:checked + label {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-secondary);
+}
+
+input.pill + label {
+    border: 0;
+    border-radius: 0;
+    color: hsla(0,0%,100%,.25);
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 15px;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+input.pill + label:hover {
+    color: var(--color-secondary-hover);
+}
+
+
 #meta-info {
     max-height: calc(100vh - 357px);
     overflow-y: scroll;
@@ -1604,7 +1659,7 @@ textarea {
     outline: 2px solid var(--color-secondary);
     filter:brightness(90%);
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div:nth-child(10) > label:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 > div:nth-child(10) > label:before {
     content: "Edit Metadata";
     width: calc(100vw - 240px);
     height: 60px;
@@ -1626,6 +1681,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     position: fixed;
     top: 60px;
     left: 240px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-xs-12 {
+    margin: 50px 0;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before {
     content: "Advanced Search";
@@ -2220,4 +2278,15 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 }
 .dropdown-backdrop {
     display: none;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9.col-xs-12 > button.btn.btn-default {
+    float: right;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9.col-xs-12 > a:last-of-type {
+    float: right;
+    background: hsla(0, 0%, 100%, .25);
+    margin-right: 10px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9.col-xs-12 > a:last-of-type:hover {
+    background: hsla(0, 0%, 100%, .3);
 }
