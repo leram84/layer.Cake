@@ -1,0 +1,14 @@
+body {
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-color: #eee !important;
+    color: #000;
+    font-family: ;
+    font-weight: normal !important;
+}
