@@ -1359,13 +1359,46 @@ body .user-details > h3,
         margin-top: -100px !important;
         z-index: 9;
 } */
+    div > #\2f requests p-paginator {
+    top: -115px;
+    right: 20px;
+        z-index: 9;
+}
+    div > #\2f requests p-paginator .fa-backward:before {
+    content: "\EA2d";
+    font-weight: 400;
+    font-style: normal;
+    font-family: plex-icons;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    color: hsla(0,0%,100%,.7);
+    font-size: 20px;
+}
+    div > #\2f requests p-paginator .fa-forward:before {
+    content: "\EA2c";
+    font-weight: 400;
+    font-style: normal;
+    font-family: plex-icons;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    color: hsla(0,0%,100%,.7);
+    font-size: 20px;
+}
+    div > #\2f requests p-paginator .fa-backward {
+    margin-right: 20px;
+}
     movie-requests > div.form-group > div > span.input-group-btn {
         position: absolute;
         top: -25px;
-        left: calc(100vw - 130px);
+        left: calc(100vw - 250px);
         z-index: 9;
         padding-top: 0 !important;
     }
+    
     span > #filterBtn, movie-requests > div.form-group > div > span.input-group-btn > button.btn.btn-sm.btn-primary-outline.dropdown-toggle {
         margin-top: 0;
     }
@@ -1685,7 +1718,7 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
     content: '';
     display: block;
     position: absolute;
-    left: -30px;
+    left: 115px;
     top: -20px;
     width: 2px;
     height: 60px;
@@ -1743,10 +1776,7 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
     div > #\2f usermanagement\2f updatedetails > ng-component > div > div:nth-child(2) > form {
         margin-top:120px;
     }
-    div > #\2f requests p-paginator {
-    top: -40px;
-    right: 15px;
-}
+    
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1380px) {
