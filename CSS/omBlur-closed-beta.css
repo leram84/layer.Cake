@@ -310,6 +310,7 @@ Designed and built by @leram84 with all the respect in the world for @mdo and @f
     --color-tag-available: #5cb85c;
     --color-tag-denied: #ac3323 ;
     --color-tag-notRequested: #888;
+    --color-donateCustom: gold;
 }
 
 
@@ -359,6 +360,20 @@ movie-requests > div:nth-of-type(2),
     margin-left: -1169px !important;
     }
 }
+@media only screen and (min-width: 1080px) and (max-width: 1199px) {
+    div > #\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(1) > span {
+        max-width: calc(100vw - 800px);
+    }
+    div > #\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(2) > span {
+        max-width: calc(100vw - 800px);
+    }
+    div > .request-by > span:last-of-type {
+        max-width: calc(100vw - 1050px);
+    }
+    div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div > span {
+        max-width: calc(100vw - 850px);
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     margin-left: calc(405px - 100vw) !important;
@@ -367,10 +382,10 @@ movie-requests > div:nth-of-type(2),
     margin-left: calc(405px - 100vw) !important;
     }
     #rootFolderBtn {
-    margin-left: calc(868px - 100vw) !important;
+    margin-left: calc(870px - 100vw) !important;
 }
 #changeQualityBtn {
-    margin-left: calc(868px - 100vw) !important;
+    margin-left: calc(870px - 100vw) !important;
 }
         #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div.row > div.col-sm-3 > div > #rootFolderBtn {
     margin-left: calc(618px - 100vw) !important;
@@ -654,12 +669,54 @@ body > ombi > div > nav > div > div.navbar-header > div {
     content: "\EA51";
 }
 
-
+    
+    
+    #bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li {
+        position: fixed;
+    top: 460px;
+    left: 0;
+    width: 235px;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    height: 40px;
+    overflow: hidden;
+    }
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li {
+        position: fixed;
+    top: 265px;
+    left: 0;
+    width: 235px;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    height: 40px;
+    overflow: hidden;
+    }
+    .powerUser #bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li {
+        top: 420px;
+    }
+    #bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li > a,
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li > a {
+        padding-left: 25px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+#bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li > a:hover i.fa.fa-heart:before,
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li > a:hover i.fa.fa-heart:before {
+        color: var(--color-donateCustom) !important;
+    }
     
 #bs-example-navbar-collapse-1 > ul:nth-child(4) > li > a > i {
     font-size: 100%;
     
 }
+    
 body > ombi > div> .container {
     margin-left: 240px !important;
     width: calc(100vw - 240px) !important;
@@ -1181,6 +1238,45 @@ body .user-details > h3,
     margin-right: 0;
         
 }
+    
+    
+    
+    
+    #bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li,
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li {
+            width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0 0 0 0px;
+    }
+    #bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li > a,
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li > a {
+        visibility: hidden;
+    width: 60px;
+    height: 60px;
+    padding: 0 152px 120px 0;
+    margin: 0;
+    }
+    #bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li > a > i,
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li > a > i {
+        visibility: visible;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    padding: 15px;
+    line-height: 30px;
+    text-align: center;
+    }
+#bs-example-navbar-collapse-1 > div:nth-child(7) > ul > li > a:hover i.fa.fa-heart:before,
+    .user #bs-example-navbar-collapse-1 > div:nth-child(5) > ul > li > a:hover i.fa.fa-heart:before {
+        color: var(--color-donateCustom) !important;
+    }
+    
+    
+    
+    
+    
     .adminUser #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li:nth-child(1) {
         width: 60px;
         height: 60px;
@@ -1820,7 +1916,18 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
     div > #\2f usermanagement\2f updatedetails > ng-component > div > div:nth-child(2) > form {
         margin-top:120px;
     }
-    
+    div > #\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(1) > span {
+        max-width: calc(100vw - 470px);
+    }
+    div > #\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(2) > span {
+        max-width: calc(100vw - 470px);
+    }
+    div > .request-by > span:last-of-type {
+        max-width: calc(100vw - 720px);
+    }
+    div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div > span {
+        max-width: calc(100vw - 520px);
+    }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1380px) {
@@ -1944,6 +2051,12 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
 
 
 @media only screen and (min-width: 768px) {
+    
+    
+    
+    
+    
+    
     #\2f login .form-control:active, #\2f login .form-control:focus {
     background: #fff !important;
 }
@@ -5135,13 +5248,13 @@ ul, menu, dir {
     margin-left: 50px;
 }
 .request-by {
-    margin-top: 35px;
+    margin-top: 90px;
 }
 
 #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div:nth-child(3) {
     text-align: right;
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 .request-by > span:last-of-type {
     color: #fff;
@@ -5149,10 +5262,19 @@ ul, menu, dir {
     font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 47px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 1100px);
+    position: relative;
+    display: inline-block;
+    margin-top: -1px;
+    position: absolute;
 }
 .request-status {
-    margin-top: -45px;
+    margin-top: -115px;
 }
 .request-status > span:last-of-type {
     color: #fff;
@@ -5160,7 +5282,7 @@ ul, menu, dir {
     font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 600;
-    margin-left: 68px;
+    margin-left: 85px;
     background: transparent;
 }
 #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div:nth-child(3) > span:last-of-type {
@@ -5236,32 +5358,108 @@ white-space: nowrap;
 #approveBtn > form {
     position: absolute;
     right: 0;
-    margin: 60px 30px 0 0;
+    margin: 70px 30px 0 0;
 }
 #rootFolderBtn {
-    margin-top: 80px;
+    margin-top: 35px;
     float: left;
-    margin-left: calc(927px - 100vw);
+    margin-left: calc(930px - 100vw);
 }
 #changeQualityBtn {
     float: left;
-    margin-top: 55px;
-    margin-left: calc(927px - 100vw);
+    margin-top: 10px;
+    margin-left: calc(930px - 100vw);
 }
 #denyBtn > .btn {
-    margin: 60px 0 0 -20px;
+    margin: 70px 0 0 -20px;
 }
 .btn {
     font-weight: 400;
 }
 
 #rootFolderBtn > button, #changeQualityBtn > button {
-    padding: 3.5px 8px;
+    padding: 3.5px 6px;
     font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
+    transition: all 0s;
 }
-
+    
+    
+    #\2f requests > ng-component > div > div:nth-child(1) > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted {
+        
+        
+    }
+#\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(1) {
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 33px;
+    visibility: hidden;
+    margin-top: -65px;
+    margin-left: 67px;
+    white-space: nowrap;
+    max-width: 100%;
+}
+#\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(1) > span {
+    color: #fff;
+    font-size: 15px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    visibility: visible;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 860px);
+    display: inline-block;
+    
+}
+#\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(2) {
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 18px;
+    visibility: hidden;
+    margin-top: 0px;
+    margin-left: 33px;
+    white-space: nowrap;;
+}
+#\2f requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(2) > span {
+    color: #fff;
+    font-size: 15px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    visibility: visible;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 860px);
+    display: inline-block;
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 #approveBtn > form > .btn-success-outline {
         -o-transition: all .218s;
@@ -5429,12 +5627,12 @@ white-space: nowrap;
     z-index: 0;
 }
 #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div.row > div.col-sm-3 > div > #rootFolderBtn {
-        margin-top: 110px;
+        margin-top: 85px;
     float: left;
     margin-left: calc(678px - 100vw);
 }
 #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div.row > div.col-sm-3 > div > #changeQualityBtn {
-        margin-top: 70px;
+        margin-top: 55px;
     float: left;
     margin-left: calc(678px - 100vw);
 }
@@ -5447,7 +5645,40 @@ white-space: nowrap;
     float: left;
     width: 100%;
 }
-
+#\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div.ng-star-inserted {
+    margin-top: 40px;
+    }
+    #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div {
+        color: #ccc;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+        margin-left: 50px;
+        white-space: nowrap;
+    }
+    #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div > span {
+        color: #fff;
+    font-size: 15px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+        margin-left: 60px;
+        display: inline-block;
+        padding-bottom: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100vw - 910px);
+    }
+    #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div > td > div > div > div.col-sm-5.small-padding > div.ng-star-inserted > div:nth-child(2) > span {
+        margin-left: 28px;
+    }
+    
+    
+    
+    
+    
 #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody > div.ui-treetable-row.ng-star-inserted > td > table > tbody > div > td > div > tvrequests-children > div > div:nth-of-type(even) > div {
     background: ;
 }
@@ -7381,3 +7612,4 @@ movie-requests > div:nth-of-type(2),
     color: #fff !important;
 }
 }
+
