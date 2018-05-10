@@ -350,7 +350,8 @@ div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     margin-top: -37px;
 }
     div > #movieList > div:first-child, 
-    div > #tvList > p-treetable > div > div > table > tbody:first-of-type, 
+    div > #tvList > p-treetable > div > div > table > tbody:first-of-type,
+	#tvList > .no-search-results,
     div > movie-requests > div:nth-of-type(2) > div:first-child, 
     div > #\/requests > ng-component > div > div:nth-child(2) > tv-requests > div:nth-child(3) > p-treetable > div > div > table > tbody:first-of-type {
     border-top: 0 !important;
