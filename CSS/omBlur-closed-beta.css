@@ -4623,7 +4623,7 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     
     
     /* emby */
-    #embybt:nth-child(1):hover:before {
+    #embybtn:nth-child(1):hover:before {
     content: ''!important;
     display: block;
     background-image: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-color.png") !important;
