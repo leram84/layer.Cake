@@ -306,7 +306,8 @@ movie-requests > div:nth-of-type(2),
     #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: 1020px !important;
     }
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown) {
     right: 1020px !important;
     }
     #rootFolderBtn {
@@ -328,7 +329,8 @@ movie-requests > div:nth-of-type(2),
 div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 900px) !important;
 }
-        div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+        div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
     right: calc(100vw - 900px) !important;
         }
         
@@ -412,7 +414,8 @@ div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 554px) !important;
     }
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+#tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)	{
     right: calc(100vw - 554px) !important;
     }
     
@@ -420,10 +423,11 @@ div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     
     @-moz-document url-prefix(){
 movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
-    right: calc(100vw - 557px);
+    right: calc(100vw - 557px) !important;
 }
-        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
-    right: calc(100vw - 557px);
+        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
+    right: calc(100vw - 557px) !important;
         }
         div > #rootFolderBtn,
         div > #changeQualityBtn {
@@ -465,7 +469,8 @@ movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4
     /* #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 554px) !important;
     }
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+#tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)	{
     right: calc(100vw - 554px) !important;
     } */
     #rootFolderBtn {
@@ -924,7 +929,8 @@ body > ombi > div> .container > ng-component {
 movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 227px);
 }
-        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
     right: calc(100vw - 227px);
         }
             .container > ng-component > h1,
@@ -947,7 +953,8 @@ movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4
             movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 557px);
 }
-        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
     right: calc(100vw - 557px);
         }
         div > #\/requests > ng-component > div > div > movie-requests > div:nth-child(3) > div > div > div.col-sm-3.col-sm-push-3.small-padding > div > #markBtnGroup.ng-untouched {
@@ -962,7 +969,8 @@ movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4
     right: calc(100vw - 227px) !important;
                 margin-left: auto !important;
 }
-        div > tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+        div > tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+div > tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
     right: calc(100vw - 227px) !important;
             margin-left: auto !important;
         }
@@ -1644,7 +1652,8 @@ body .user-details > h3,
     #movieList > div > div > div:nth-child(5) > div.ng-star-inserted:nth-child(4) {
     right: calc(100vw - 224px) !important;
 }
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+#tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)	{
     right: calc(100vw - 224px) !important;
 }
 
@@ -2308,8 +2317,38 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
     }
     
     
-    #\2f landingpage > ng-component > div {
-        z-index: 999;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #\/landingpage {
+        z-index: 99999999;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    #\2f landingpage > ng-component > div > div > div > div > button {
+        background: var(--color-secondary);
+cursor: pointer;
+text-transform: uppercase;
+font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+        color: #fff !important;
+border-color: transparent !important;
+    }
+    #\2f landingpage > ng-component > div > div > div > div > button:hover {
+        background: var(--color-secondary-hover) !important;
     }
     #\2f landingpage > ng-component > div > div.bg.ng-trigger-fadeInOut {
         top: 0;
@@ -2317,7 +2356,8 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
     
     
     
-    #\2f login .form-control:active, #\2f login .form-control:focus {
+    #\2f login .form-control:active, #\2f login .form-control:focus,
+#\/login\/true	 .form-control:active, #\/login\/true .form-control:focus {
     background: #fff !important;
 }
 div > .dropdown-menu>li>a {
@@ -2386,7 +2426,8 @@ font-weight:
     font-weight: 400;
 
 }
-#\2f login > ng-component > div > div {
+#\2f login > ng-component > div > div,
+#\/login\/true > ng-component > div > div {
     z-index: 99999;
 }
 #login > div {
@@ -3432,10 +3473,12 @@ a:focus {
     outline-offset: 0;
 }
 #\2f login > ng-component > div > div.bg,
+#\/login\/true > ng-component > div > div.bg,
 #\2f reset > ng-component > div > div.bg {
     height: calc(100vh + 60px);
 }
-#\2f login .card-container.card {
+#\2f login .card-container.card,
+#\/login\/true .card-container.card {
     top: 40%;
 }
 
@@ -4525,6 +4568,183 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     top: -35px;
     right: 110px;
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* emby */
+    #embybt:nth-child(1):hover:before {
+    content: ''!important;
+    display: block;
+    background-image: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-color.png") !important;
+    width: 50px !important;
+    height: 50px !important;
+    position: relative;
+    background-color: rgba(0,0,0,0) !important;
+    border-radius: 50%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
+    font-family: plex-icons;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 22px;
+    padding: 5px;
+}
+    #movieList > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:nth-child(2) {
+        height: 50px !important;
+        margin-top: 175px;
+        padding: 0;
+        transition: all 0s;
+        border-radius: 8px !important;
+    }
+    #movieList > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:nth-child(2):hover {
+        border-color: var(--color-secondary) !important;
+        background: var(--color-secondary) !important;
+    }
+    
+    #movieList > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:nth-child(2):hover:before {
+        content: ''!important;
+    display: block;
+    background-image: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-wide.png") !important;
+    width: 146px !important;
+    height: 46px !important;
+    position: relative;
+    background-color: #fff !important;
+        background-position: center;
+    border-radius: 8px !important;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 130px !important;
+    margin-top: 0px !important;
+        top: 0 !important;
+        left: -.5px !important;
+        padding: 0 !important;
+    }
+    
+    
+    
+    
+    #tvList #embybtn {
+        height: 50px !important;
+        width: 150px;
+        margin-top: -65px;
+        padding: 0;
+        transition: all 0s;
+    }
+    
+    
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(5) > .btn-primary-outline {
+    -o-transition: all .218s;
+    -moz-transition: all .218s;
+    -webkit-transition: all .218s;
+    transition: all .218s;
+    padding: 2px 7px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px !important;
+    color: #fff!important;
+    background-color: var(--color-secondary) !important;
+    background-image: none;
+    border-color: var(--color-secondary) !important;
+    opacity: 1;
+    
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    -webkit-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
+    font-weight: 400 !important;
+    position: absolute;
+    top: -35px;
+    right: 110px;
+}
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown) {
+    right: calc(100vw - 614px);
+    top: 190px;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+}
+   
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) {
+    
+}
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn {
+        border-radius: 8px !important;
+        border: 2px solid rgba(0,0,0,0) !important;
+        color: transparent !important;
+        top: -50px !important;
+        
+    }
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:hover {
+        border-color: var(--color-secondary) !important;
+        background: var(--color-secondary) !important;
+    }
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:hover:before {
+        content: ''!important;
+    display: block;
+    background-image: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-wide.png") !important;
+    width: 146px !important;
+    height: 46px !important;
+    position: relative;
+    background-color: #fff !important;
+        background-position: center;
+    border-radius: 8px !important;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 130px !important;
+    margin-top: 0px !important;
+        top: 0 !important;
+        left: -.5px !important;
+        padding: 0 !important;
+        
+    }
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn {
+        
+    }
+    
+    
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(5) > .dropdown-menu {
+    top: -10px;
+    right: 110px;
+    left: auto;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3) > .btn-primary-outline {
     -o-transition: all .218s;
     -moz-transition: all .218s;
