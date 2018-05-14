@@ -4643,7 +4643,7 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     
     
     
-    #tvList #embybtn {
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn {
         height: 50px !important;
         width: 150px;
         margin-top: -65px;
