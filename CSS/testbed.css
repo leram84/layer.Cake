@@ -421,7 +421,24 @@ div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div >
     
     
     
-    @-moz-document url-prefix(), @supports (-ms-ime-align: auto) {
+    @-moz-document url-prefix() {
+movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
+    right: calc(100vw - 557px) !important;
+}
+        tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
+    right: calc(100vw - 557px) !important;
+        }
+        div > #rootFolderBtn,
+        div > #changeQualityBtn {
+    margin-left: calc(873px - 100vw) !important;
+    }
+        div > #\/requests #markBtnGroup {
+    margin-left: calc(408px - 100vw) !important;
+}
+        
+    }
+	@supports (-ms-ime-align: auto) {
 movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 557px) !important;
 }
