@@ -421,7 +421,7 @@ div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div >
     
     
     
-    @-moz-document url-prefix(){
+    @-moz-document url-prefix(), @supports (-ms-ime-align: auto) {
 movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 557px) !important;
 }
