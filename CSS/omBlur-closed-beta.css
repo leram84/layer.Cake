@@ -458,11 +458,11 @@ div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div >
     
     @-moz-document url-prefix(){
 movie-search > div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
-    right: calc(100vw - 557px) !important;
+    right: calc(100vw - 557px);
 }
         tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
 tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
-    right: calc(100vw - 557px) !important;
+    right: calc(100vw - 557px);
         }
         div > #rootFolderBtn,
         div > #changeQualityBtn {
@@ -482,14 +482,52 @@ tv-search > div > #tvList > p-treetable > div > div > table > tbody > div > td >
     padding: 0 30px 0 0;
     max-width: calc(100% - 30px);
 }
+     div > .issue-details > .col-md-6 {
+         height: 510px;
+     }
+     div > .issue-details > .col-md-12 {
+         height: 500px;
+     }
 }
- @media only screen and (min-width: 1080.1px) and (max-width: 1300px) {   
+ @media only screen and (min-width: 1080.1px) and (max-width: 1400px) {   
     div > .issue-details > .myBg,
     div > .issue-details > .tint {
     height: 500px;
     }
      div > .issue-details > h1 {
     top: 540px;
+}
+     div > .issue-details > .col-md-6 {
+    margin-top: 350px;
+}
+     div > .issue-details > .col-md-12 {
+    position: absolute;
+    top: 350px;
+     }
+}
+ @media only screen and (min-width: 1400px) and (max-width: 1500px) {   
+    div > .issue-details > .myBg,
+    div > .issue-details > .tint {
+    height: 550px;
+    }
+     div > .issue-details > h1 {
+    top: 590px;
+}
+     div > .issue-details > .col-md-6 {
+    margin-top: 400px;
+}
+     div > .issue-details > .col-md-12 {
+    position: absolute;
+    top: 400px;
+     }
+}
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {   
+    div > .issue-details > .myBg,
+    div > .issue-details > .tint {
+    height: 600px;
+    }
+     div > .issue-details > h1 {
+    top: 640px;
 }
      div > .issue-details > .col-md-6 {
     margin-top: 450px;
@@ -2026,7 +2064,8 @@ i.fa-filter:before {
         margin-top: 60px;
 }
     .row.issue-details > .col-md-6 {
-    margin-top: 400px;
+    margin-top: 300px;
+        height: 515px;
 }
     .row.issue-details > .chat-window {
     margin: 20px 0 0 0 !important;
@@ -2050,7 +2089,8 @@ i.fa-filter:before {
 }
     .row.issue-details > .col-md-12 {
     position: absolute;
-    top: 400px;
+    top: 300px;
+        height: 505px;
     }
     div > #movieList>div:last-of-type, 
     div > #tvList > p-treetable > div > div > table > tbody:last-of-type, 
@@ -2078,7 +2118,7 @@ i.fa-filter:before {
     color: #eee;
     display: inline-block;
     padding: 0 30px;
-    top: -400px;
+    top: -300px;
     left: 0;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -2364,26 +2404,10 @@ div > #\2f requests > ng-component > div > div:nth-child(2) > tv-requests > div:
     
     
     
-    #\/landingpage {
-        z-index: 99999999;
-        width: 100vw;
-        height: 100vh;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
     
-    #\2f landingpage > ng-component > div > div > div > div > button {
-        background: var(--color-secondary);
-cursor: pointer;
-text-transform: uppercase;
-font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-        color: #fff !important;
-border-color: transparent !important;
-    }
-    #\2f landingpage > ng-component > div > div > div > div > button:hover {
-        background: var(--color-secondary-hover) !important;
+    
+    #\2f landingpage > ng-component > div {
+        z-index: 999;
     }
     #\2f landingpage > ng-component > div > div.bg.ng-trigger-fadeInOut {
         top: 0;
@@ -2391,8 +2415,7 @@ border-color: transparent !important;
     
     
     
-    #\2f login .form-control:active, #\2f login .form-control:focus,
-#\/login\/true	 .form-control:active, #\/login\/true .form-control:focus {
+    #\2f login .form-control:active, #\2f login .form-control:focus {
     background: #fff !important;
 }
 div > .dropdown-menu>li>a {
@@ -2461,8 +2484,7 @@ font-weight:
     font-weight: 400;
 
 }
-#\2f login > ng-component > div > div,
-#\/login\/true > ng-component > div > div {
+#\2f login > ng-component > div > div {
     z-index: 99999;
 }
 #login > div {
@@ -3508,12 +3530,10 @@ a:focus {
     outline-offset: 0;
 }
 #\2f login > ng-component > div > div.bg,
-#\/login\/true > ng-component > div > div.bg,
 #\2f reset > ng-component > div > div.bg {
     height: calc(100vh + 60px);
 }
-#\2f login .card-container.card,
-#\/login\/true .card-container.card {
+#\2f login .card-container.card {
     top: 40%;
 }
 
@@ -4623,7 +4643,7 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     
     
     /* emby */
-    #embybtn:nth-child(1):hover:before {
+    #embybt:nth-child(1):hover:before {
     content: ''!important;
     display: block;
     background-image: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-color.png") !important;
@@ -4649,11 +4669,9 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
         margin-top: 175px;
         padding: 0;
         transition: all 0s;
-        border-radius: 8px !important;
     }
     #movieList > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:nth-child(2):hover {
         border-color: var(--color-secondary) !important;
-        background: var(--color-secondary) !important;
     }
     
     #movieList > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:nth-child(2):hover:before {
@@ -4665,7 +4683,7 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     position: relative;
     background-color: #fff !important;
         background-position: center;
-    border-radius: 8px !important;
+    border-radius: 0 !important;
     margin: auto;
     background-repeat: no-repeat;
     background-size: 130px !important;
@@ -4678,10 +4696,10 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     
     
     
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn {
+    #tvList #embybtn {
         height: 50px !important;
         width: 150px;
-        margin-top: -65px;
+        margin-top: 0;
         padding: 0;
         transition: all 0s;
     }
@@ -4716,25 +4734,34 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
 }
     #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown) {
     right: calc(100vw - 614px);
-    top: 190px;
+    top: 140px;
     width: 150px;
-    height: 1px;
-    position: absolute;
-}
-   
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) {
+    height: 50px;
     
 }
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown):hover {
+        background-image: url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/emby-gray.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        
+        
+    }
+    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
     #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn {
-        border-radius: 8px !important;
+        border-radius: 0 !important;
         border: 2px solid rgba(0,0,0,0) !important;
         color: transparent !important;
-        top: -50px !important;
         
     }
     #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:hover {
         border-color: var(--color-secondary) !important;
-        background: var(--color-secondary) !important;
     }
     #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4) > #embybtn:hover:before {
         content: ''!important;
@@ -4745,7 +4772,7 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     position: relative;
     background-color: #fff !important;
         background-position: center;
-    border-radius: 8px !important;
+    border-radius: 0 !important;
     margin: auto;
     background-repeat: no-repeat;
     background-size: 130px !important;
@@ -4760,11 +4787,7 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
     }
     
     
-    #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(5) > .dropdown-menu {
-    top: -10px;
-    right: 110px;
-    left: auto;
-}
+    
     
     
     
@@ -4986,7 +5009,8 @@ movie-requests > div:nth-of-type(2) > div > div.row > div.col-sm-3,
 div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     right: calc(100vw - 617px);
 }
-        div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+        div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+div > #tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown)		{
     right: calc(100vw - 617px);
         }
     }
@@ -4998,7 +5022,8 @@ div > #movieList > div > div > div:nth-child(5) > div:nth-child(4) {
     position: absolute;
     left: auto;
 }
-#tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown) {
+#tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(3):not(.dropdown),
+#tvList > p-treetable > div > div > table > tbody > div > td > div > div > div:nth-child(5) > div:nth-child(4):not(.dropdown) {
     right: calc(100vw - 614px);
     top: -35px;
     width: 150px;
@@ -7878,24 +7903,32 @@ label {
         background-position: center center;
 }
 .issue-details > .col-md-6 {
-    margin-top: 650px;
+    margin-top: 550px;
     padding-left: 30px;
     padding-right: 0;
-    width: calc(100% - 30px)
+    width: calc(100% - 30px);
+    height: 750px;
 }
 .issue-details > .col-md-6 > .img-responsive {
     width: 200px;
     height: 300px;
     max-width: 200px;
     display: inline-block;
-
+    position: sticky;
+    top: 120px;
+    margin-bottom: 10px;
 }
+    .issue-details > .col-md-6 > .issue-status {
+        position: sticky;
+        top: 430px;
+        
+    }
 .issue-details > .col-md-6 > .issue-status > .label {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 310px;
-    margin-left: 30px;
+    margin-top: 0;
+    margin-left: 0;
     width: 200px;
     border-radius: 0;
     padding: 5px !important;
@@ -7914,7 +7947,7 @@ label {
 .issue-details > .col-md-6 > .reported-user > h3:first-of-type {
     position: absolute;
 background: transparent;
-top: 190px;
+top: 280px;
 left: 460px;
 font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
 -webkit-font-smoothing: antialiased;
@@ -7924,7 +7957,7 @@ font-size: 15px;
     .issue-details > .col-md-6 > .subject > h3:first-of-type {
     position: absolute;
 background: transparent;
-top: 250px;
+top: 348px;
 left: 460px;
 font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
 -webkit-font-smoothing: antialiased;
@@ -7948,7 +7981,7 @@ font-size: 15px;
 .issue-details > .col-md-6 > .label-success {
     position: absolute;
     background: transparent;
-    top: 170px;
+    top: 260px;
     left: 315px;
         font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -7957,7 +7990,7 @@ font-size: 15px;
     .issue-details > .col-md-6 > .reported-by > h3 {
     position: absolute;
     background: transparent;
-    top: 190px;
+    top: 280px;
     left: 320px;
         font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     -webkit-font-smoothing: antialiased;
@@ -7967,7 +8000,7 @@ font-size: 15px;
     .issue-details > .col-md-6 > .subject-category > h3 {
     position: absolute;
     background: transparent;
-    top: 230px;
+    top: 327px;
     left: 320px;
         font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
     -webkit-font-smoothing: antialiased;
@@ -7981,7 +8014,7 @@ font-size: 15px;
     width: calc(100vw - 639px);
     height: 2px;
     background: rgba(0,0,0,.3);
-    top: 160px;
+    top: 70px;
     left: -20px;
 }
 .issue-details > .col-md-6 > .issue-subject > h3:last-of-type {
@@ -7994,7 +8027,7 @@ font-size: 15px;
     margin: -150px 0 10px 430px;
 }
     .issue-details > .col-md-6 > div.form-group {
-        margin-top: 30px
+        margin-top: 60px
     }
 .issue-details > .col-md-6 > div.form-group > .control-label {
     font-size: 15px !important;
@@ -8030,7 +8063,7 @@ font-size: 15px;
     color: rgba(0,0,0,0);
 }
 .issue-details > .chat-window {
-    margin: 20px 0 0 320px !important;
+    margin: -200px 0 0 320px !important;
     float: left;
     padding: 0;
     width: calc(100vw - 665px);
@@ -8180,15 +8213,16 @@ font-size: 15px;
 
 .issue-details > .col-md-12 {
     position: absolute;
-    top: 650px;
+    top: 550px;
     left: 30px;
     width: 200px;
-    height: 300px;
+    height: 740px;
     padding: 0;
 }
 .issue-details > .col-md-12 > div {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .issue-details > .col-md-12 > div > div:after {
     position: absolute;
@@ -8249,9 +8283,10 @@ font-size: 15px;
 
 }
 .issue-details > .col-md-12 > div > div {
-    position: absolute;
+    position: sticky;
     width: 200px;
     height: 300px;
+    top: 120px;
 }
 .issue-details > .col-md-12 > div > div:hover .btn:after {
     opacity: 1;
