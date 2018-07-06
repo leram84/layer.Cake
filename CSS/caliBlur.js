@@ -1,5 +1,7 @@
 //Fuck Yeah! Thank you @hexeth!!
 
+var url = document.URL;
+
 if (url.substr(url.lastIndexOf('/') + 1).length > 0) {
     var url = document.URL;
     blur = url.substr(url.lastIndexOf('/') + 1);
