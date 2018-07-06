@@ -24,3 +24,6 @@ if ($('a[id^=btnGroupDrop]').length == 2) {
     $(firstDownload).prependTo(".blurslist li:first-child");
     $(lastDownload).prependTo(".blurslist li:last-child");
 }
+
+//remove the popup modals
+$( 'a' ).removeAttr( 'data-toggle', 'data-target', 'data-remote' );
