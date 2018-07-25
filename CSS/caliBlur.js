@@ -18,3 +18,7 @@ $('body.epub').on('DOMNodeInserted', 'iframe', function(e) {
 if (!$( "body" ).hasClass('admin')) {
 $(' a:not(.dropdown-toggle) ').removeAttr( 'data-toggle', 'data-target', 'data-remote' );
 }
+
+$( '#sendbtn' ).parent().addClass( 'sendBtn' );
+$( '[id*=btnGroupDrop]' ).parent().addClass( 'downloadBtn' );
+$( 'read-in-browser' ).parent().addClass( 'readBtn' );
