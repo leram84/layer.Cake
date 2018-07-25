@@ -1,31 +1,20 @@
-//Fuck Yeah! Thank you @hexeth!!
+//Split path name to array and remove blanks
+var urlWithBlanks = window.location.pathname.split( "/" );
+var url = urlWithBlanks.filter( function(v){return v!==''} );
 
-var url = document.URL;
 
-if (url.substr(url.lastIndexOf('/') + 1).length > 0) {
-    var url = document.URL;
-    blur = url.substr(url.lastIndexOf('/') + 1);
-    $("body").addClass(blur);
-} else {
-    $("body").addClass("home");
-};
-
-if ($('a[id^=btnGroupDrop]').length == 2) {
-    firstDownload = $('a[id^=btnGroupDrop]').first();
-    lastDownload = $('a[id^=btnGroupDrop]').last();
-    downloadItems = $('a[id^=btnGroupDrop]');
-    var arr = $.makeArray(downloadItems);
-    downloadItems.find('span').remove()
-    downloadItems.removeClass('btn btn-primary');
-    downloadItems.removeAttr('role');
-    $('<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-download"></span>Download :<span class="caret"></span></button><ul class="dropdown-menu blurslist aria-labelledby="btnGroupDrop1"></ul>').insertBefore(firstDownload);
-    $.each(downloadItems, function(i) {
-        var li = $('<li/>')
-            .appendTo('.blurslist');
-    });
-    $(firstDownload).prependTo(".blurslist li:first-child");
-    $(lastDownload).prependTo(".blurslist li:last-child");
+if ( jQuery.inArray( 'epub', url ) != -1 ) {
+        $( "body" ).addClass( url[3] );
 }
 
+//add class to iframe body after it loads.
+$('body.epub').on('DOMNodeInserted', 'iframe', function(e) {
+        setTimeout(function() {
+                $("iframe").contents().find("body").addClass( 'read-frame' );
+        }, 1000);
+});
+
 //remove the popup modals
-$( 'a' ).removeAttr( 'data-toggle', 'data-target', 'data-remote' );
+if (!$( "body" ).hasClass('admin')) {
+$(' a:not(.dropdown-toggle) ').removeAttr( 'data-toggle', 'data-target', 'data-remote' );
+}
