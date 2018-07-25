@@ -22,3 +22,7 @@ $(' a:not(.dropdown-toggle) ').removeAttr( 'data-toggle', 'data-target', 'data-r
 $( '#sendbtn' ).parent().addClass( 'sendBtn' );
 $( '[id*=btnGroupDrop]' ).parent().addClass( 'downloadBtn' );
 $( 'read-in-browser' ).parent().addClass( 'readBtn' );
+
+$( '[aria-label*="Delete book"]' ).prependTo( '[aria-label^="Download, send"]' );
+$( '.custom_columns' ).addClass(' btn-group' ).attr('role', 'group' ).removeClass( 'custom_columns' ).prependTo( '[aria-label^="Download, send"]' );
+$( '#have_read_cb' ).parent().add('label').addClass( 'readLbl' );
