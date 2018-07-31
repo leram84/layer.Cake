@@ -524,11 +524,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
 
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button {
     background-color: hsla(0, 0%, 100%, .08);
-    color: #eee;
+    color: #999;
     border: none;
     height: 40px;
 }
-
+body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button:hover {
+    color: #fff;
+}
 body > div.navbar.navbar-default.navbar-static-top > div > form {
     margin-left: -167px;
     padding: 0;
@@ -2505,4 +2507,103 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9.col-xs-12 > a:last-of-type:hover {
     background: hsla(0, 0%, 100%, .3);
+}
+
+
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
+    width: calc(100vw - 240px) !important;
+    height: 60px !important;
+    margin: 0 !important;
+    padding-left: 25px !important;
+    color: hsla(0,0%,100%,.7) !important;
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 60px !important;
+    text-size-adjust: 100% !important;
+    white-space: nowrap !important;
+    -webkit-box-direction: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    font-weight: 400 !important;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+    position: fixed !important;
+    top: 60px !important;
+    left: 240px !important;
+    text-align: left !important;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"] {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    background: transparent;
+    color: transparent;
+    overflow: hidden;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"]:before {
+    content: "\EA6A";
+    font-family: plex-icons-new;
+    position: absolute;
+    color: hsla(0,0%,100%,.7);
+    font-size: 20px;
+    padding: 6px 0 0 2px
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"]:hover {
+    background: #ce3d2a;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"]:hover:before {
+    color: #fff;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"] {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    background: transparent;
+    color: transparent;
+    overflow: hidden;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"]:before {
+    content: "\EA5d";
+    font-family: plex-icons;
+    position: absolute;
+    color: hsla(0,0%,100%,.7);
+    font-size: 20px;
+    padding: 6px 0 0 2px
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"]:hover:before {
+    color: #fff;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"]:hover {
+    background: transparent;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"] {
+    position: fixed;
+    top: 60px;
+    right: 120px;
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    background: transparent;
+    color: transparent;
+    overflow: hidden;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"]:before {
+    content: "\E409";
+    font-family: Glyphicons Regular;
+    position: absolute;
+    color: hsla(0,0%,100%,.7);
+    font-size: 20px;
+    padding: 6px 0 0 2px
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"]:hover:before {
+    color: #fff;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"]:hover {
+    background: transparent;
 }
