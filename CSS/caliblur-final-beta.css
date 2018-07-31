@@ -128,7 +128,9 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:before {
 div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     color: #fff;
 }
-
+.download-text {
+    display: none !important;
+}
 /*
 .testclass {
     display: none;
