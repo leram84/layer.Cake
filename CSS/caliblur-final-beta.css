@@ -40,7 +40,7 @@ cursor: pointer;
     display: inline-block;
 }
 
-#have_read_cb + label:before{
+#have_read_cb:checked + label:before {
     content: "\e105";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
@@ -61,7 +61,7 @@ color: var(--color-primary);
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
 
-#have_read_cb:checked + label:before{
+#have_read_cb + label:before {
     content: "\e106";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
