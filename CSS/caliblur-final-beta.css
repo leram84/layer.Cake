@@ -714,6 +714,12 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     content: "\EA26";
     font-family: plex-icons-new;
 }
+.glyphicon-tags::before,
+#nav_cat .glyphicon-inbox::before{
+    content: "\E067";
+    font-family: Glyphicons Regular;
+    margin-left: 2px;
+}
 .navigation .create-shelf a {
     
     width: 150px;
@@ -2144,6 +2150,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     -webkit-transition: background-color 0.2s,color 0.2s;
     transition: background-color 0.2s,color 0.2s;
     margin: 2px 3px 0 0;
+    text-transform: none;
 }
 .book-meta > .tags .btn-info:hover {
     color: #fff;
