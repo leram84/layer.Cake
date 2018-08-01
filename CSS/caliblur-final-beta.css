@@ -123,7 +123,7 @@ cursor: pointer;
 height: 40px;
     width: 60px;
 color: var(--color-primary);
-   top: -48px;
+   top: -45px;
     left: 20px;
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
@@ -144,7 +144,7 @@ color: var(--color-primary);
 height: 40px;
     width: 60px;
 color: hsla(0,0%,100%,.7);
-top: -48px;
+top: -45px;
     left: 20px;
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
