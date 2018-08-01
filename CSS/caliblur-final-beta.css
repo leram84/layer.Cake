@@ -738,9 +738,11 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+.navigation li:not(ul > li) {
+    border-radius: 0 4px 4px 0;
+}
 .navigation li {
     min-height: 30px;
-    border-radius: 0 4px 4px 0;
     max-width: 265px;
     padding: 0 25px;
     overflow: visible;
