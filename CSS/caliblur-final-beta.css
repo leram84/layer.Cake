@@ -794,9 +794,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 }
 .navigation .create-shelf a {
     
-    width: 150px;
-    color: #fff !important;
-    background-color: hsla(0, 0%, 100%, .25);
+    width: 25px;
+    color: hsla(0,0%,100%,.7) !important;
+    background-color: transparent;
     padding: 5px 7px 2px 7px;
     font-size: 12px;
     line-height: 1;
@@ -810,6 +810,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     margin: auto;
     text-transform: uppercase;
     max-height: 22px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 #scnd-nav .dropdown-menu > li > a:hover {
     color: #fff;
@@ -819,20 +822,22 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     left: 5px;
 }
 .navigation .create-shelf a:hover {
-    background-color: hsla(0, 0%, 100%, .3);
-    border-radius: 3px;
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff !important;
 }
 .navigation .create-shelf a:before {
-    content: "\EA14";
+    content: "\EA13";
     font-family: plex-icons-new;
     font-size: 100%;
     padding-right: 10px;
     vertical-align: middle;
 }
 .navigation .create-shelf {
-    width: auto;
-    margin: 30px auto;
+    width: 20px;
+    margin: 0;
     min-height: auto;
+    float: right;
 }
 .navigation .create-shelf:hover {
     background: transparent;
