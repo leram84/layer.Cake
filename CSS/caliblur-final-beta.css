@@ -1,5 +1,66 @@
 @import "https://rawgit.com/leram84/layer.Cake/master/Resources/plex-fonts-old.css";
 
+#scnd-nav > li.active a,
+.catlist #nav_cat a,
+.serieslist #nav_serie a,
+.authorlist #nav_author a,
+.langlist #nav_lang a {
+    color: var(--color-primary);
+}
+#scnd-nav > li.active:hover a,
+.catlist #nav_cat:hover a,
+.serieslist #nav_serie:hover a,
+.authorlist #nav_author:hover a,
+.langlist #nav_lang:hover a {
+    color: #fff;
+    transition: all 0s;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: var(--color-primary);
+    background-color: transparent;
+}
+.oldest #scnd-nav > li.dropdown > a,
+.z-a #scnd-nav > li.dropdown > a,
+.a-z #scnd-nav > li.dropdown > a,
+.newest #scnd-nav > li.dropdown > a {
+    color: var(--color-primary);
+}
+.oldest #scnd-nav > li.dropdown:hover > a,
+.z-a #scnd-nav > li.dropdown:hover > a,
+.a-z #scnd-nav > li.dropdown:hover > a,
+.newest #scnd-nav > li.dropdown:hover > a {
+    color: #fff !important;
+    transition: all 0s;
+}
+.read #scnd-nav > li.active a[href*=unreadbooks] {
+    color: hsla(0,0%,100%,.7);
+}
+.read #scnd-nav > li.active a[href*=unreadbooks]:hover{
+    color: #fff;
+}
+.unread #scnd-nav > li.active a[href*=readbooks] {
+    color: hsla(0,0%,100%,.7);
+}
+.unread #scnd-nav > li.active a[href*=readbooks]:hover{
+    color: #fff;
+}
+.shelforder #sortTrue > .list-group-item {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.shelforder #sortTrue {
+    border-top: 2px solid rgba(0,0,0,.3);
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    background: hsla(0,0%,100%,.02);
+    padding: 0;
+}
+.shelforder #sortTrue > .list-group-item:nth-of-type(odd) {
+    background: hsla(0,0%,100%,.02);
+}
+
+
 
 #have_read_form {
     
@@ -527,12 +588,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > b
     color: #999;
     border: none;
     height: 40px;
+    border-radius: 0px 4px 4px 0px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button:hover {
     color: #fff;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form {
-    margin-left: -167px;
+    margin-left: -175px;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -2156,17 +2218,20 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     color: #fff;
     text-decoration: underline;
 }
-.book-meta > .tags {
+.book-meta > .tags,
+.book-meta > .identifiers {
     padding-left: 40px;
 }
 .book-meta > .tags a{
     max-width: 100%;
     text-overflow: ellipsis;
 }
-.book-meta > .tags .glyphicon-tags {
+.book-meta > .tags .glyphicon-tags,
+.book-meta > .identifiers .glyphicon-link {
     margin-left: -40px;
     margin-right: 17px;
     color: hsla(0, 0%, 100%, .45);
+    width: 20px;
 }
 .book-meta > h3:first-of-type {
     font-size: 14px;
@@ -2403,7 +2468,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     -webkit-transition: background-color 0.2s,color 0.2s;
     transition: background-color 0.2s,color 0.2s;
-    margin: 2px 3px 0 22px;
+    margin: 2px 3px 0 0;
     text-transform: none;
 }
 .book-meta > .identifiers > p > .btn-success:hover {
