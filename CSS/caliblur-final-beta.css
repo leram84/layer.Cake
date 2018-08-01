@@ -1,5 +1,11 @@
 @import "https://rawgit.com/leram84/layer.Cake/master/Resources/plex-fonts-old.css";
 
+@media (max-width: 991px) and (min-width: 768px) {
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a > span:before {
+    font-size: 20px;
+}
+}
+
 #scnd-nav > li.active a,
 .catlist #nav_cat a,
 .serieslist #nav_serie a,
@@ -617,12 +623,11 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a {
     height: 60px;
     padding: 20px 10px;
-    color: #999;
+    color: hsla(0,0%,100%,.7);
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > #top_admin > .glyphicon-dashboard::before {
     content: "\EA31";
     font-family: plex-icons-new;
-    font-size: 18px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > #top_admin > span:last-of-type {
     vertical-align: top;
@@ -2446,6 +2451,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     transition: opacity .15s ease-out,transform .15s cubic-bezier(.6,.4,.2,1.4),-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
     -webkit-transform-origin: center top;
     transform-origin: center top;
+    border: 0;
 }
 .dropdown-menu > li > a {
     color: hsla(0,0%,100%,.7);
