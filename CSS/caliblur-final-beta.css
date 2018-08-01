@@ -789,6 +789,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     font-family: Glyphicons Regular;
     margin-left: 2px;
 }
+.navigation #nav_cat a span {
+    margin-right: 8px;
+}
 .navigation .create-shelf a {
     
     width: 150px;
