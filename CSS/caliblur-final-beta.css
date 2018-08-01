@@ -1,5 +1,22 @@
 @import "https://rawgit.com/leram84/layer.Cake/master/Resources/plex-fonts-old.css";
 
+.dropdown-menu {
+    border-radius: 4px !important;
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0;
+    background-color: #191a1c !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,.35);
+    -webkit-transition: opacity .15s ease-out,-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
+    transition: opacity .15s ease-out,-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
+    transition: opacity .15s ease-out,transform .15s cubic-bezier(.6,.4,.2,1.4);
+    transition: opacity .15s ease-out,transform .15s cubic-bezier(.6,.4,.2,1.4),-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+}
+
 #scnd-nav > li.active a,
 .catlist #nav_cat a,
 .serieslist #nav_serie a,
