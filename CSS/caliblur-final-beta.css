@@ -434,7 +434,7 @@ body:not(.read-frame) {
     -o-background-size: auto, cover !important;
 }
 .navbar-default {
-    background-color: rgba(0,0,0,.7) !important;
+    background-color: rgba(0,0,0,.6) !important;
     border: none;
     position: fixed;
     width: 100%;
