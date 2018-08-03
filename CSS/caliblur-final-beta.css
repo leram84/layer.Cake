@@ -886,6 +886,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     margin: auto;
     text-transform: uppercase;
     max-height: 22px;
+    text-overflow: initial;
 }
 .navigation .create-shelf a:hover {
     color: #fff !important;
