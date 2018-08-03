@@ -452,10 +452,43 @@ body:not(.read-frame) {
 body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     width: 360px;
 }
+.profileDrop {
+    width: 60px;
+    height: 60px;
+    padding: 0 !important;
+}
+.profileDrop > span {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    top: 0;
+}
+.profileDrop > span:before {
+    content: '';
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgPHBhdGggZD0iTTE0NC4yOTEgNDkyLjMyNUMxNjYuNjI0IDQ3Ni4yNjUgMTkzLjE5NCA0NjYuMTU2IDIyNCA0NjJjMTIuNDQ0IDkuMzMzIDMxLjExMSAxNCA1NiAxNHM0My41NTYtNC42NjcgNTYtMTRjMzAuODA2IDQuMTU2IDU3LjM3NiAxNC4yNjQgNzkuNzA5IDMwLjMyNUMzNzYuNTI3IDUxNy40MzUgMzI5Ljk1MSA1MzIgMjgwIDUzMmMtNDkuOTUxIDAtOTYuNTI3LTE0LjU2NS0xMzUuNzA5LTM5LjY3NXoiIGZpbGwtb3BhY2l0eT0iLjYiLz4KICAgICAgICA8cGF0aCBkPSJNMjI0IDQ2MmwxMi44OC00MC4yNTFDMTk2LjQyOSAzOTcuNDYyIDE2OCAzNDAuMDM1IDE2OCAyNzMuMDU5YzAtMzUuMTkzIDcuODQ5LTY3Ljc1IDIxLjE2OC05NC4yNDggMTYuMTczIDQuOTc3IDM1LjMxNSA3Ljg1NiA1NS44MzIgNy44NTYgNTEuMTA0IDAgOTMuNjgtMTcuODYgMTAzLjA3Mi00MS41MTZDMzc0Ljc3OSAxNzQuNTg4IDM5MiAyMjAuOTMxIDM5MiAyNzMuMDU5YzAgNjYuOTc2LTI4LjQyOSAxMjQuNDAzLTY4Ljg4IDE0OC42OUwzMzYgNDYyYy0xMi40NDQgOS4zMzMtMzEuMTExIDE0LTU2IDE0LTI0LjY5NCAwLTQzLjI2My00LjU5NC01NS43MDctMTMuNzgyTDIyNCA0NjJ6IiBmaWxsLW9wYWNpdHk9Ii43NSIvPgogICAgICAgIDxwYXRoIGQ9Ik0xODAuMDY0IDM0NS44NDlDMTU1LjI4MiAzMTguMDY3IDE0MCAyNzkuOTk3IDE0MCAyMzhjMC04NS4wNTIgNjIuNjgtMTU0IDE0MC0xNTRzMTQwIDY4Ljk0OCAxNDAgMTU0YzAgNDEuOTk3LTE1LjI4MiA4MC4wNjctNDAuMDY0IDEwNy44NDkgNy43MTYtMjEuODYyIDEyLjA2NC00Ni41OTYgMTIuMDY0LTcyLjc5IDAtNTIuMTI4LTE3LjIyMS05OC40NzEtNDMuOTI4LTEyNy45MDgtOS4zOTIgMjMuNjU2LTUxLjk2OCA0MS41MTYtMTAzLjA3MiA0MS41MTYtMjAuNTE3IDAtMzkuNjU5LTIuODc5LTU1LjgzMi03Ljg1NkMxNzUuODQ5IDIwNS4zMDkgMTY4IDIzNy44NjYgMTY4IDI3My4wNTljMCAyNi4xOTQgNC4zNDggNTAuOTI4IDEyLjA2NCA3Mi43OXoiIGZpbGwtb3BhY2l0eT0iLjQ1Ii8+CiAgICAgICAgPHBhdGggZD0iTTI4MCA1MzJjMTM5LjE3NiAwIDI1Mi0xMTIuODI0IDI1Mi0yNTJTNDE5LjE3NiAyOCAyODAgMjggMjggMTQwLjgyNCAyOCAyODBzMTEyLjgyNCAyNTIgMjUyIDI1MnptMCAyOEMxMjUuMzYgNTYwIDAgNDM0LjY0IDAgMjgwUzEyNS4zNiAwIDI4MCAwczI4MCAxMjUuMzYgMjgwIDI4MC0xMjUuMzYgMjgwLTI4MCAyODB6IiBmaWxsLW9wYWNpdHk9Ii43NSIvPgogICAgPC9nPgo8L3N2Zz4K);
+    background-size: contain;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.profileDrop > span:after {
+    content: '';
+    display: inline-block;
+width: 0;
+height: 0;
+margin: 15px 0 0 33px;
+vertical-align: middle;
+border-top: 5px dashed;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+}
 #btn-upload {
     min-width: 1px;
     min-height: 1px;
-    width: 60px;
+    width: 50px;
     height: 60px;
     left: 0;
     line-height: 1;
@@ -471,7 +504,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
 #form-upload {
     position: relative;
     float: right;
-    width: 60px;
+    width: 50px;
     margin: 0;
     padding: 0;
     height: 60px;
@@ -487,14 +520,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     margin: 0;
     padding: 0;
     height: 60px;
+    width: 50px;
 }
 #form-upload:hover .form-group .btn:after {
-    color: var(--color-secondary-hover);
+    color: #fff;
+    background: rgba(0,0,0,.9);
 }
 #form-upload:hover .form-group .btn:before {
-    -webkit-box-shadow: inset 0 0 0 2px #fff;
-    box-shadow: inset 0 0 0 2px #fff;
-    background: var(--color-secondary-hover);
     color: #fff;
 }
 #form-upload .form-group .btn:before {
@@ -505,35 +537,39 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #eee;
-    font-size: 20px;
-    background: var(--color-secondary);
+    color: hsla(0,0%,100%,.7);
+    font-size: 16px;
+    background: transparent;
     border-radius: 50%;
-    line-height: 35px;
-    width: 35px;
-    height: 35px;
-    position: fixed;
-    top: 12.5px;
-    right: 25px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
     margin: 0;
-    padding: 0 2px 0 0;
+    padding: 23px 16px;
     z-index: -9;
 }
 #form-upload .form-group .btn:after {
-    content: "+";
-    font-size: 14px;
-    color: var(--color-secondary);
-    background: transparent;
+    content: "\EA13";
+    position: absolute;
+    font-family: plex-icons-new;
+    font-size: 8px;
+    background: rgba(0,0,0,.7);
+    color: #ccc;
     border-radius: 50%;
     padding: 0;
     z-index: 9;
-    position: fixed;
+    left: 18px;
+    top: 30px;
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    /* 
     line-height: 12px;
     width: 12px;
     height: 12px;
     top: 26px;
-    right: 38px;
-    /* 
+    right: 3px;
+
     content: "+";
     font-size: 14px;
     color: #fff;
@@ -548,6 +584,39 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     top: 10px;
     right: 20px;
     */
+}
+#top_tasks {
+    height: 60px;
+    width: 50px;
+    padding: 20px;
+}
+#top_tasks > span.hidden-sm {
+    display: none;
+}
+#top_tasks > .glyphicon-tasks::before {
+    content: "\EA2E";
+        text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-family: plex-icons-new;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    speak: none;
+    font-size: 20px;
+}
+#top_tasks > .glyphicon-tasks {
+        background-color: hsla(0,0%,100%,.15);
+    border-radius: 50%;
+}
+#top_admin {
+    height: 60px;
+    width: 50px;
+    padding: 20px;
+}
+#top_admin > span.hidden-sm {
+    display: none;
 }
 .form-control {
     background-image: none;
@@ -612,6 +681,9 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > .form-group > 
 #main-nav {
     margin-right: 15px;
 }
+#main-nav > li {
+    float: right;
+}
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul {
     height: 60px;
 
@@ -628,6 +700,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > #top_admin > .glyphicon-dashboard::before {
     content: "\EA31";
     font-family: plex-icons-new;
+    font-size: 20px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > #top_admin > span:last-of-type {
     vertical-align: top;
@@ -753,6 +826,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     max-width: 265px;
     padding: 0 25px;
     overflow: visible;
+    border-radius: 0 4px 4px 0;
 }
 .navigation li:hover {
     background-color: hsla(0,0%,100%,.08);
@@ -796,9 +870,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 }
 .navigation .create-shelf a {
     
-    width: 150px;
-    color: #fff !important;
-    background-color: hsla(0, 0%, 100%, .25);
+    width: 25px;
+    color: hsla(0,0%,100%,.7) !important;
+    background-color: transparent;
     padding: 5px 7px 2px 7px;
     font-size: 12px;
     line-height: 1;
@@ -813,6 +887,11 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     text-transform: uppercase;
     max-height: 22px;
 }
+.navigation .create-shelf a:hover {
+    color: #fff !important;
+    background: transparent !important;
+    border-radius: 0;
+}
 #scnd-nav .dropdown-menu > li > a:hover {
     color: #fff;
     background: transparent;
@@ -820,21 +899,18 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 #scnd-nav .dropdown-menu {
     left: 5px;
 }
-.navigation .create-shelf a:hover {
-    background-color: hsla(0, 0%, 100%, .3);
-    border-radius: 3px;
-}
 .navigation .create-shelf a:before {
-    content: "\EA14";
+    content: "\EA13";
     font-family: plex-icons-new;
     font-size: 100%;
     padding-right: 10px;
     vertical-align: middle;
 }
 .navigation .create-shelf {
-    width: auto;
-    margin: 30px auto;
+    width: 25px;
+    margin: 10px 0 0 0;
     min-height: auto;
+    float: right;
 }
 .navigation .create-shelf:hover {
     background: transparent;
