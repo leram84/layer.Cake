@@ -1484,7 +1484,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > form > .btn.bt
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     color: rgba(0,0,0,0);
-    font-family: 'Glyphicons Halflings';
+    font-family: plex-icons-new;
     font-style: normal;
     font-weight: 100;
     margin-left: 0px;
@@ -1497,10 +1497,11 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     position: absolute;
     top: 0;
     right: 0;
+    width: 65px;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
     color: rgba(0,0,0,0);
-    font-family: 'Glyphicons Halflings';
+    font-family: plex-icons-new;
     font-style: normal;
     font-weight: 100;
     margin-left: 0px;
@@ -1516,7 +1517,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
     right: 65px;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:before {
-    content: "\e092";
+    content: "\EA32";
     visibility: visible;
     color: hsla(0,0%,100%,.35);
     height: 60px;
@@ -1527,7 +1528,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:befor
     margin-right: -27px;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:before {
-    content: "\e091";
+    content: "\EA33";
     visibility: visible;
     color: hsla(0,0%,100%,.65);
     height: 60px;
@@ -1547,7 +1548,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:h
     display: none;
 }
 .pagination:after {
-    content: "\e092";
+    content: "\EA32";
     position: relative;
     top: 0;
     right: 0;
@@ -1556,8 +1557,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:h
     line-height: 60px;
     
     font-size: 15px;
-    padding: 0 25px;
-    font-family: 'Glyphicons Halflings';
+    padding: 0 23px;
+    font-family: plex-icons-new;
     font-style: normal;
     font-weight: 100;
     margin-left: 20px;
