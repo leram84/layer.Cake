@@ -456,6 +456,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     width: 60px;
     height: 60px;
     padding: 0 !important;
+    background: transparent !important;
 }
 .profileDrop > span {
     width: 30px;
@@ -485,6 +486,41 @@ border-top: 5px dashed;
 border-right: 4px solid transparent;
 border-left: 4px solid transparent;
 }
+.top_tasks {
+    float: left !important;;
+}
+/* 
+
+
+TESTTESTTEST
+TEST
+TEST
+TEST
+
+
+
+.profileDropli */
+.navbar {
+    z-index: 9 !important;
+}
+.profileDropli > li > a > span.glyphicon {
+    display: none;
+}
+.profileDropli > li > a > span.hidden-sm {
+    display: inline !important;;
+}
+#nav_about {
+    
+}
+#nav_about:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: hsla(0,0%,78%,.15);
+    display: block;
+    margin: 5px 0;
+}
+
 #btn-upload {
     min-width: 1px;
     min-height: 1px;
@@ -588,7 +624,7 @@ border-left: 4px solid transparent;
 #top_tasks {
     height: 60px;
     width: 50px;
-    padding: 20px;
+    padding: 20px 15px;
 }
 #top_tasks > span.hidden-sm {
     display: none;
@@ -613,7 +649,7 @@ border-left: 4px solid transparent;
 #top_admin {
     height: 60px;
     width: 50px;
-    padding: 20px;
+    padding: 20px 15px;
 }
 #top_admin > span.hidden-sm {
     display: none;
