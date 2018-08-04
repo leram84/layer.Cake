@@ -535,7 +535,10 @@ TEST
 }
 #main-nav > li:nth-child(1) {
     float: right;
-    margin-left: 13px;
+    margin-left: 10px;
+}
+.glyphicon {
+    top: 0;
 }
 #form-upload {
     position: relative;
