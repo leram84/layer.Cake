@@ -2924,6 +2924,6 @@ body.book {
 .plexBack > a:before {
         content: "\EA2F";
 }
-.plexBack > a:hover {
+.plexBack:hover > a {
     color: #fff;
 }
