@@ -560,7 +560,6 @@ TEST
 }
 #form-upload:hover .form-group .btn:after {
     color: #fff;
-    background: rgba(0,0,0,.9);
 }
 #form-upload:hover .form-group .btn:before {
     color: #fff;
@@ -585,6 +584,23 @@ TEST
     z-index: -9;
 }
 #form-upload .form-group .btn:after {
+        content: "\EA13";
+    position: absolute;
+    font-family: plex-icons-new;
+    font-size: 8px;
+    background: #3c444a;
+    color: hsla(0,0%,100%,.7);
+    border-radius: 50%;
+    padding: .25px .25px 0 0;
+    z-index: 9;
+    left: 13px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    text-align: center;
+        /* 
     content: "\EA13";
     position: absolute;
     font-family: plex-icons-new;
@@ -599,7 +615,7 @@ TEST
     width: 8px;
     height: 8px;
     line-height: 8px;
-    /* 
+
     line-height: 12px;
     width: 12px;
     height: 12px;
