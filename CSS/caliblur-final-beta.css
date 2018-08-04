@@ -38,16 +38,16 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     color: #fff !important;
     transition: all 0s;
 }
-.read #scnd-nav > li.active a[href*=unreadbooks] {
+.readbooks #scnd-nav > li.active a[href*=unreadbooks] {
     color: hsla(0,0%,100%,.7);
 }
-.read #scnd-nav > li.active a[href*=unreadbooks]:hover{
+.readbooks #scnd-nav > li.active a[href*=unreadbooks]:hover{
     color: #fff;
 }
-.unread #scnd-nav > li.active a[href*=readbooks] {
+.unreadbooks #scnd-nav > li.active a[href*=readbooks] {
     color: hsla(0,0%,100%,.7);
 }
-.unread #scnd-nav > li.active a[href*=readbooks]:hover{
+.unreadbooks #scnd-nav > li.active a[href*=readbooks]:hover{
     color: #fff;
 }
 .shelforder #sortTrue > .list-group-item {
