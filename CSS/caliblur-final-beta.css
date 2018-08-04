@@ -480,7 +480,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     display: inline-block;
 width: 0;
 height: 0;
-margin: 15px 0 0 33px;
+margin: 15px 0 0 35px;
 vertical-align: middle;
 border-top: 5px dashed;
 border-right: 4px solid transparent;
@@ -535,7 +535,7 @@ TEST
 }
 #main-nav > li:nth-child(1) {
     float: right;
-
+    margin-left: 13px;
 }
 #form-upload {
     position: relative;
