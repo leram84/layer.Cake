@@ -2,7 +2,7 @@
 
 @media (max-width: 991px) and (min-width: 768px) {
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a > span:before {
-    font-size: 20px;
+    font-size: 18px;
 }
 }
 
@@ -391,7 +391,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
     width: 25px;
     height: 25px;
     top: 20px;
-    left: 18px;
+    left: 20px;
     color: hsla(0,0%,100%,.7)
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover:before {
@@ -945,7 +945,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 }
 .navigation .create-shelf {
     width: 25px;
-    margin: 10px 0 0 0;
+    margin: 10px -15px 0 0;
     min-height: auto;
     float: right;
 }
@@ -2845,4 +2845,85 @@ body > div.navbar.navbar-default:before {
 }
 body.book {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png) !important;
+}
+#scnd-nav > li.nav-head:first-child {
+    margin-top: 10px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #ac3323;
+    border-color: #ac3323;
+}
+.btn-danger:hover {
+    background-color: #ce3d2a;
+    border-color: #641e14;
+}
+.caret {
+    border-top: 5px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.plexBack {
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 34.2857px;
+    margin: 0;
+    padding: 0 10px;
+    position: absolute;
+    width: 40px;
+    top: 0;
+    left: 50px;
+}
+.plexBack > a {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: block;
+    font-family: plex-icons-new;
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 20px;
+    letter-spacing: normal;
+    line-height: 20px;
+    position: relative;
+    speak: none;
+    text-align: start;
+    text-decoration-color: hsla(0,0%,100%,.7);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-rendering: optimizeLegibility;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    top: 20px;
+    user-select: none;
+    vertical-align: middle;
+    width: 20px;
+    word-spacing: 0;
+    writing-mode: horizontal-tb;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.plexBack > a:before {
+        content: "\EA2F";
+}
+.plexBack > a:hover {
+    color: #fff;
 }
