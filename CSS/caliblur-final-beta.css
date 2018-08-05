@@ -2621,7 +2621,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     font-variant-ligatures: normal;
     font-variant-numeric: normal;
     font-weight: 400;
-    padding: 4px 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 .dropdown-menu > li > a:hover {
     color: #fff;
