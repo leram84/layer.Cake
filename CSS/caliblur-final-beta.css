@@ -50,6 +50,10 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .unreadbooks #scnd-nav > li.active a[href*=readbooks]:hover{
     color: #fff;
 }
+.unreadbooks #scnd-nav > li.active a[href*=unreadbooks] {
+    color: var(--color-primary);
+}
+
 .shelforder #sortTrue > .list-group-item {
     background: transparent;
     border-radius: 0;
