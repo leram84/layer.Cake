@@ -2869,8 +2869,60 @@ body > div.navbar.navbar-default:before {
     left: 0;
 }
 body.book {
-    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png) !important;
+    background-image: none !important;
 }
+.blur-wrapper:after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png) !important;
+    background-repeat: repeat !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-size: auto !important;
+    -webkit-background-size: auto !important;
+}
+.blur-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.blur-wrapper > div {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    overflow: hidden;
+}
+.bg-blur {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    max-width: 100% !important;
+    filter: blur(110px) contrast(130%);
+    opacity: .23;
+}
+
+
 #scnd-nav > li.nav-head:first-child {
     margin-top: 10px;
 }
