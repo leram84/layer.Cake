@@ -6,6 +6,30 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 }
 
+@-webkit-keyframes fade {
+0% {opacity: 0.2} 
+50% {opacity: 1}
+100% {opacity:0.2}
+}
+
+@-moz-keyframes fade{
+    0% {opacity: 0.2} 
+  50% {opacity: 1}
+  100% {opacity:0}  
+}
+
+@keyframes fade {
+  0% {opacity: 0.2} 
+  50% {opacity: 1}
+  100%{opacity: 0.2}
+    }
+@-o-keyframes fade {
+0% {opacity: 0.2} 
+  50% {opacity: 1}
+  100%{opacity: 0.2}
+
+}
+
 #scnd-nav > li.active a,
 .catlist #nav_cat a,
 .serieslist #nav_serie a,
@@ -2873,8 +2897,6 @@ body > div.navbar.navbar-default:before {
 }
 body.book {
     background-image: none !important;
-    -webkit-transition: background-image 2s ease-in-out;
-    transition: background-image 2s ease-in-out;
 }
 .blur-wrapper:after {
     content: '';
@@ -2925,8 +2947,10 @@ body.book {
     max-width: 100% !important;
     filter: blur(100px) contrast(175%);
     opacity: .23;
-    -webkit-transition: background-image 2s ease-in-out;
-    transition: background-image 2s ease-in-out;
+    -webkit-animation: fade 3s;
+animation: fade 3s;
+-moz-animation: fade 3s;
+-o-animation: fade 3s;
 }
 
 
@@ -3073,4 +3097,8 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-10::before {
 }
 body.login:not(.read-frame) {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") !important;
+    -webkit-animation: fade 3s;
+animation: fade 3s;
+-moz-animation: fade 3s;
+-o-animation: fade 3s;
 }
