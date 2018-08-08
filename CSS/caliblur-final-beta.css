@@ -7,26 +7,24 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0} 
-    50% {opacity: 0.5}
-    100% {opacity: 1}
+    0% {opacity: 0.03} 
+    50% {opacity: 0.13}
+    100% {opacity: 0.23}
 }
-
 @-moz-keyframes fade{
-    0% {opacity: 0} 
-    50% {opacity: 0.5}
-    100% {opacity: 1}
+    0% {opacity: 0.03} 
+    50% {opacity: 0.13}
+    100% {opacity: 0.23}
 }
-
 @keyframes fade {
-    0% {opacity: 0} 
-    50% {opacity: 0.5}
-    100% {opacity: 1}
+    0% {opacity: 0.03} 
+    50% {opacity: 0.13}
+    100% {opacity: 0.23}
     }
 @-o-keyframes fade {
-    0% {opacity: 0} 
-    50% {opacity: 0.5}
-    100% {opacity: 1}
+    0% {opacity: 0.03} 
+    50% {opacity: 0.13}
+    100% {opacity: 0.23}
 }
 .plexBack.noBack > a {
     color: hsla(0,0%,100%,.45);
