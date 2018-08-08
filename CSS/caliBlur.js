@@ -20,7 +20,7 @@
 description = $( "h3:contains('Description:')" ).nextUntil( '.morestuff' ).slice(0,-1)
 $( "h3:contains('Description:')" ).hide();
 $( description ).detach();
-$( "h3:contains('Description:')" ).after( "<div class='hr'></div><div class='description'></div>" );
+$( '.languages' ).after( "<div class='hr'></div><div class='description'></div>" );
 $( 'div.description' ).hide();
 
 /*if book description is not in html format, Remove extra line breaks
@@ -200,4 +200,4 @@ $.each(languages, function (i,val) {
   $( '.languages' ).append('<span>' + languages[i] + '</span>')
 });
 
-$( '.book-meta h2:first').clone().appendTo('.book-meta h2:first'); 
+$( '.book-meta h2:first').clone().appendTo('.book-meta h2:first');
