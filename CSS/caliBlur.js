@@ -199,3 +199,5 @@ $( '.languages p span' ).remove();
 $.each(languages, function (i,val) {
   $( '.languages' ).append('<span>' + languages[i] + '</span>')
 });
+
+$( '.book-meta h2:first').clone().appendTo('.book-meta h2:first'); 
