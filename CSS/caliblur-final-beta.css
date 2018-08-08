@@ -1644,7 +1644,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > 
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: 0 auto;
     padding: 60px;
 }
 /* .well > h2 {
@@ -3036,4 +3036,41 @@ body.book {
 
 .login :-ms-input-placeholder {  
    color:transparent;
+}
+body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
+    
+    width: 100vw;
+    height: 120px;
+    margin: 0 !important;
+    text-align: center;
+    padding: 60px 0 0 0;
+    background: transparent;
+    color: #ccc !important;
+    font-size: 20px;
+}
+body.login > .container-fluid {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+body.login > div.container-fluid > div.row-fluid > div.col-sm-10 {
+    width: 100%;
+    height: 100%;
+    
+}
+body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse {
+    
+    display: none !important;
+}
+.login .navbar-default {
+    background: transparent !important;
+}
+body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a::before {
+    display: none;
+}
+body.login > div.container-fluid > div.row-fluid > div.col-sm-10::before {
+    display: none;
+}
+body.login:not(.read-frame) {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") !important;
 }
