@@ -23,17 +23,23 @@ bookInfo = $( '.author' ).nextUntil( "h3:contains('Description:')" )
 $( "h3:contains('Description:')" ).hide();
 $( description ).detach();
 $( bookInfo ).wrapAll( '<div class="bookinfo"></div' );
-$( "h3:contains('Description:')"  ).after( "<div class='hr'></div><div class='description'></div>" );
-$( '.languages' ).insertBefore( "h3:contains('Description:')" );
-$( 'div.description' ).hide();
+$( "h3:contains('Description:')"  ).after( "<div class='description'></div>" );
+$( '.languages' ).appendTo( ".bookinfo" );
+if ( $( '.identifiers ').length > 0 ) {
+  $( '.identifiers' ).before( '<div class="hr"></div>' );
 }
+else {
+  $( '.bookinfo' ).append( '<div class="hr"></div>' );
+}
+$( 'div.description' ).hide();
+
 /*if book description is not in html format, Remove extra line breaks
 Remove blank lines/unnecessary spaces, split by line break to array
 Push array into .description div. If there is still a wall of text,
 find sentences and split wall into groups of three sentence paragraphs.
 If the book format is in html format, Keep html, but strip away inline
 styles and empty elements*/
-if ( $('body.book').length > 0 ) {
+
   //If text is sitting in div as text node
   if ( description[0] === undefined ) {
     textValue = $('.book-meta')
@@ -86,33 +92,26 @@ if ( $('body.book').length > 0 ) {
     });
       $( 'div.description' ).fadeIn(100);
   }
-}
-//Collapse long text into read-more
-$( 'div.description' ).readmore( {
-  collapsedHeight: 150,
-  heightMargin: 50,
-  speed: 300,
-  moreLink: '<a href="#">READ MORE</a>',
-  lessLink: '<a href="#">READ LESS</a>'
-});
 
-//Sexy blurred backgrounds
-if ( $( 'body.book' ).length > 0 ) {
-  cover = $( '.cover img').attr('src');
-  $( '#loader + .container-fluid').prepend("<div class='blur-wrapper'></div");
-  $( '.blur-wrapper' ).prepend("<div><img class='bg-blur' src='" + cover + "'></div>");
-}
-if ( $( 'body.author').length >0 ) {
-  cover = $( '.author-bio img').attr('src');
-  $( '#loader + .container-fluid').prepend("<div class='blur-wrapper'></div");
-  $( '.blur-wrapper' ).prepend("<img class='bg-blur' src='" + cover + "'>");
-}
 
+
+  //Sexy blurred backgrounds
+  if ( $( 'body.book' ).length > 0 ) {
+    cover = $( '.cover img').attr('src');
+    $( '#loader + .container-fluid').prepend("<div class='blur-wrapper'></div");
+    $( '.blur-wrapper' ).prepend("<div><img class='bg-blur' src='" + cover + "'></div>");
+  }
+  if ( $( 'body.author').length >0 ) {
+    cover = $( '.author-bio img').attr('src');
+    $( '#loader + .container-fluid').prepend("<div class='blur-wrapper'></div");
+    $( '.blur-wrapper' ).prepend("<img class='bg-blur' src='" + cover + "'>");
+  }
+}
 //Back button
 var curHref = window.location.href.split('/');
 var prevHref = document.referrer.split('/');
 $( '.navbar-form.navbar-left' ).before('<div class="plexBack"><a href="##" onClick="history.go(-1); return false;"></a></div>');
-if ( history.length === 1 || curHref[0] + curHref[1] + curHref[2] != prevHref[0] + prevHref[1] + prevHref[2] ) {
+if ( history.length === 1 || curHref[0] + curHref[1] + curHref[2] != prevHref[0] + prevHref[1] + prevHref[2] || $( 'body.root' )>length > 0 ) {
   $( '.plexBack').addClass('noBack');
 }
 
@@ -216,3 +215,15 @@ $('input#query').focus(function() {
 $( 'input#query').focusout(function() {
     $( 'form.navbar-form.navbar-left span.input-group-btn' ).hide();
 });
+
+//Collapse long text into read-more
+  $( 'div.description' ).readmore( {
+    collapsedHeight: 150,
+    heightMargin: 50,
+    speed: 300,
+    moreLink: '<a href="#">READ MORE</a>',
+    lessLink: '<a href="#">READ LESS</a>'
+  });
+
+//Add class to random book discover
+  $( 'h2:contains("Discover (Random Books")' ).parent().addClass( 'random-books' );
