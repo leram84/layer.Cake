@@ -93,8 +93,6 @@ styles and empty elements*/
       $( 'div.description' ).fadeIn(100);
   }
 
-
-
   //Sexy blurred backgrounds
   if ( $( 'body.book' ).length > 0 ) {
     cover = $( '.cover img').attr('src');
