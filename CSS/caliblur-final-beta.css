@@ -868,7 +868,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation li a {
     color: hsla(0,0%,100%,.7);
     text-decoration: none;
-    padding: 4px 0;
+    padding: 4px 25px;
     font-size: 13px;
     height: 30px;
     line-height: 21px;
@@ -883,7 +883,6 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
 .navigation li {
     min-height: 30px;
     max-width: 265px;
-    padding: 0 25px;
     overflow: visible;
     border-radius: 0 4px 4px 0;
 }
