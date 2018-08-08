@@ -850,6 +850,12 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
+.login .form-group > label {
+    font-weight: 400;
+    color: hsla(0,0%,100%,.45);
+    font-family: Open Sans bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
 .navbar > .container-fluid {
     margin: 0;
     padding: 0;
@@ -1640,7 +1646,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row > 
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 0 auto;
+    margin: auto;
     padding: 60px;
 }
 /* .well > h2 {
@@ -3006,4 +3012,30 @@ body.book {
 }
 .plexBack:hover > a {
     color: #fff;
+}
+.login .well > h2 {
+    display: none;
+}
+.login .well > form {
+    margin-top: 0;
+    max-width:  480px;
+    margin:  auto;
+}
+.login .well > form input {
+    background-color: hsla(0,0%,100%,.25);
+}
+.login ::-webkit-input-placeholder {
+   color:transparent;
+}
+
+.login :-moz-placeholder {
+   color:transparent; 
+}
+
+.login ::-moz-placeholder {
+   color:transparent; 
+}
+
+.login :-ms-input-placeholder {  
+   color:transparent;
 }
