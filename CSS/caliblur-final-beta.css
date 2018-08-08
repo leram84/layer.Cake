@@ -1341,13 +1341,11 @@ body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type {
     left: 240px;
     text-align: left;
 }
-body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before {
-    content: "Book Details";
+.book .book-meta > h2 > h2 {
     width: calc(100vw - 540px);
     height: 60px;
     margin: 0;
     padding-left: 25px;
-    /* background: rgba(0,0,0,.15); */
     color: hsla(0,0%,100%,.7);
     font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
