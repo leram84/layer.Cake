@@ -2870,8 +2870,8 @@ body > div.navbar.navbar-default:before {
 }
 body.book {
     background-image: none !important;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
+    -webkit-transition: background-image 2s ease-in-out;
+    transition: background-image 2s ease-in-out;
 }
 .blur-wrapper:after {
     content: '';
@@ -2922,8 +2922,8 @@ body.book {
     max-width: 100% !important;
     filter: blur(110px) contrast(130%);
     opacity: .23;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
+    -webkit-transition: background-image 2s ease-in-out;
+    transition: background-image 2s ease-in-out;
 }
 
 
