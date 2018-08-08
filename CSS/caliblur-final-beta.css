@@ -2921,8 +2921,8 @@ body.book {
     max-width: 100% !important;
     filter: blur(100px) contrast(175%);
     opacity: .23;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
+    -webkit-transition: background-image 2s ease-in-out;
+    transition: background-image 2s ease-in-out;
 }
 
 
