@@ -109,9 +109,11 @@ if ( $( 'body.author').length >0 ) {
 }
 
 //Back button
+var curHref = window.location.href.split('/');
+var prevHref = document.referrer.split('/');
 $( '.navbar-form.navbar-left' ).before('<div class="plexBack"><a href="##" onClick="history.go(-1); return false;"></a></div>');
-if ( history.length === 1 ) {
-  $( 'plexBack').addClass('noBack');
+if ( history.length === 1 || curHref[0] + curHref[1] + curHref[2] != prevHref[0] + prevHref[1] + prevHref[2] ) {
+  $( '.plexBack').addClass('noBack');
 }
 
 //Split path name to array and remove blanks
