@@ -3003,12 +3003,12 @@ body.book {
     height: 100% !important;
     position: absolute;
     max-width: 100% !important;
-    filter: blur(100px) contrast(175%);
-    opacity: .23;
+    filter: blur(175px) contrast(150%) saturate(125%);
+    opacity: .175;
     -webkit-animation: fade 3s;
-animation: fade 3s;
--moz-animation: fade 3s;
--o-animation: fade 3s;
+    animation: fade 3s;
+    -moz-animation: fade 3s;
+    -o-animation: fade 3s;
     object-fit: cover;
 }
 
