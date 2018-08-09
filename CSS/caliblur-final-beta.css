@@ -280,7 +280,7 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     color: #fff;
 }
 .download-text {
-    display: none !important;
+    /* display: none !important; */
 }
 /*
 .testclass {
