@@ -186,7 +186,7 @@ div[aria-label="Download, send to Kindle, reading"] > .btn-group:first-child >  
 #have_read_cb {
     opacity:0;
     height: 60px;
-    width: 60px;
+    width: 50px;
 cursor: pointer;
     margin: 0;
     display: inline-block;
@@ -196,7 +196,7 @@ cursor: pointer;
     content: "\e105";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -217,7 +217,7 @@ color: var(--color-primary);
     content: "\e106";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -229,35 +229,34 @@ color: var(--color-primary);
 height: 40px;
     width: 60px;
 color: hsla(0,0%,100%,.7);
-top: -45px;
-    left: 20px;
+top: -46px;
+    left: 16px;
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
 
-div[aria-label="Edit/Delete book"] {
+div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > .downloadBtn {
     border-left: 2px solid rgba(0,0,0,.15);
-    border-right: 2px solid rgba(0,0,0,.15);
 }
 div[aria-label="Edit/Delete book"] > .btn-warning {
-    visibility: hidden;
-    width: 60px;
+    width: 50px;
 height: 60px;
 margin: 0;
 overflow: hidden;
     display: inline-block;
-padding: 6px 16px;
+padding: 0;
     
     line-height: 1.71428571;
 text-align: center;
 vertical-align: middle;
 cursor: pointer;
+    background: transparent;
+    color: transparent;
 }
 div[aria-label="Edit/Delete book"] > .btn-warning > span {
     visibility: visible;
     position: relative;
 
 display: inline-block;
-font-family: 'Glyphicons Halflings';
 font-style: normal;
 font-weight: 400;
 line-height: 1;
@@ -267,15 +266,15 @@ line-height: 1;
     text-align: center;
 cursor: pointer;
 white-space: nowrap;
-    font-size: 18px;
-    top: 11px;
-    left: 5px;
     cursor: pointer;
+    margin: auto;
 }
 div[aria-label="Edit/Delete book"] > .btn-warning > span:before {
     content: "\EA5d";
     font-family: plex-icons;
     font-size: 20px;
+    padding: 18px 12px;
+    display: inline-block;
 }
 div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     color: #fff;
@@ -2515,58 +2514,50 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 .book-meta > .more-stuff > br {
     display: none;
 }
-.book-meta > .more-stuff > .btn-toolbar:not(#shelf-actions) {
-    position: fixed;
-    top: 0;
-    right: 240px;
+.btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group {
+
+    margin-left: 0px;
+
 }
-.col-sm-10 .book-meta > .more-stuff > .btn-toolbar:not(#shelf-actions) {
-    position: fixed;
-    top: 60px;
-    right: 240px;
+div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] {
+    
+    white-space: nowrap;
+    display: flex;
+}
+div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > * {
+    
+    height: 60px;
+    width: 50px;
+}
+div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > div.btn-group[role="group"] > p {
+    display: none;
 }
 #shelf-actions {
-    position: fixed;
-    top: 415px;
-    left: 0;
-    padding: 0 15px 0 30px;
-    margin: 0;
-    width: calc(25%);
-}
-.col-sm-10 #shelf-actions {
-    left: 240px;
-    top: 475px;
-    width: calc(25% - 60px);
-}
-#shelf-actions .btn-group {
-    width: 100%;
-}
-.book-meta > .more-stuff > .btn-toolbar {
-    
-}
-.book-meta > .more-stuff > .btn-toolbar:nth-of-type(2) {
-    
+    float: left;
 }
 .book-meta .btn-toolbar > .btn-group > .btn-warning,
 .btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2,
 #btnGroupDrop1,
 #sendbtn,
 #read-in-browser,
+#add-to-shelf,
 .btn-toolbar > .btn-group > #btnGroupDrop2,
 .book-meta .btn-toolbar > .btn-group > .btn-group:nth-child(1) > a:first-of-type {
     background: transparent;
     color: transparent;
-    width: 60px;
+    width: 50px;
     height: 60px;
     margin: 0;
     overflow: hidden;
 
+    padding: 0;
 }
 .book-meta .btn-toolbar > .btn-group > .btn-warning > span,
 .btn-toolbar > .btn-group > .btn-group > #btnGroupDrop2 > span,
 #btnGroupDrop1 > span,
 #sendbtn > span,
 #read-in-browser > span,
+#add-to-shelf > span,
 .btn-toolbar > .btn-group > #btnGroupDrop2 > span,
 .book-meta .btn-toolbar > .btn-group > .btn-group:nth-child(1) > a:first-of-type > span {
     color: hsla(0,0%,100%,.7);
@@ -2594,8 +2585,17 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     margin-left: -89px;
     padding-bottom: 5px;
 }
-.book-meta .btn-toolbar > .btn-group {
-    margin: 0;
+#add-to-shelf > span.caret {
+    margin-left: -100px;
+    padding-bottom: 5px;
+}
+#add-to-shelf > span.glyphicon.glyphicon-list:before {
+    content: "\EA59";
+    font-family: plex-icons;
+    font-size: 18px;
+}
+#add-to-shelf:hover span {
+    color: #fff;
 }
 .book-meta > div.btn-toolbar > div > div:nth-child(1) > button:not(#btnGroupDrop1) {
     /* -edit display: none;*/
@@ -2603,8 +2603,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 .book-meta .btn-toolbar > .btn-group > .btn-warning > span.glyphicon-edit,
 #sendbtn > span,
 .book-meta .btn-toolbar > .btn-group > .btn-group:nth-child(1) > a:first-of-type > span {
-    font-size: 18px;
-    line-height: 42px;
+    font-size: 16px;
+    line-height: 54px;
     width: 100%;
 
 }
@@ -2625,17 +2625,36 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     content: "\ea66";
     font-family: plex-icons;
 }
-.book-meta > div.btn-toolbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 0;
-}
+
 .col-sm-10 .book-meta > div.btn-toolbar {
     position: fixed;
     top: 60px;
     right: 0;
     margin: 0;
+    width: calc(100vw - 240px);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.book-meta .btn-toolbar > h2 {
+    
+    height: 60px;
+    margin: 0;
+    padding-left: 25px;
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+    white-space: nowrap;
+    font-weight: 400;
+    order: -1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 25px;
+}
+.book-meta .btn-toolbar > .btn-group {
+    margin: 0;
+    order: 1;
 }
 .book-meta > div.btn-toolbar ul.dropdown-menu {
     margin-left: -110px;
@@ -2643,28 +2662,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 #bookDetailsModal > div > div > div.modal-body > div > div > div > div.col-sm-9.col-lg-9.book-meta > div.btn-toolbar > div > div.btn-group.open > div.dropdown-backdrop {
     display: none;
 }
-#add-to-shelf {
-    margin-bottom: 0;
-    padding: 6px 7px;
-    line-height: 1.2;
-    border-radius: 3px;
-    font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
-    border: 0;
-    -webkit-transition: background-color 0.1s;
-    transition: background-color 0.1s;
-    font-weight: 400;
-    white-space: nowrap;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-#add-to-shelf > span.glyphicon.glyphicon-list:before {
-    content: "\EA59";
-    font-family: plex-icons;
-    font-weight: 100 !important;
-    font-size: 12px;
-    padding: 0 3px;
-}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
     background-color: hsla(0, 0%, 100%, .3);
 }
