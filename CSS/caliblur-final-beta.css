@@ -7,23 +7,39 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0.03} 
-    50% {opacity: 0.13}
+    0% {opacity: 0} 
+    50% {opacity: 0.03}
+    75% {opacity: 0.05}
+    85% {opacity: 0.09}
+    90% {opacity: 0.1}
+    95% {opacity: 0.2}
     100% {opacity: 0.23}
 }
 @-moz-keyframes fade{
-    0% {opacity: 0.03} 
-    50% {opacity: 0.13}
+    0% {opacity: 0} 
+    50% {opacity: 0.03}
+    75% {opacity: 0.05}
+    85% {opacity: 0.09}
+    90% {opacity: 0.1}
+    95% {opacity: 0.2}
     100% {opacity: 0.23}
 }
 @keyframes fade {
-    0% {opacity: 0.03} 
-    50% {opacity: 0.13}
+    0% {opacity: 0} 
+    50% {opacity: 0.03}
+    75% {opacity: 0.05}
+    85% {opacity: 0.09}
+    90% {opacity: 0.1}
+    95% {opacity: 0.2}
     100% {opacity: 0.23}
     }
 @-o-keyframes fade {
-    0% {opacity: 0.03} 
-    50% {opacity: 0.13}
+    0% {opacity: 0} 
+    50% {opacity: 0.03}
+    75% {opacity: 0.05}
+    85% {opacity: 0.09}
+    90% {opacity: 0.1}
+    95% {opacity: 0.2}
     100% {opacity: 0.23}
 }
 .plexBack.noBack > a {
@@ -3110,8 +3126,4 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-10::before {
 }
 body.login:not(.read-frame) {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") !important;
-    -webkit-animation: fade 3s;
-animation: fade 3s;
--moz-animation: fade 3s;
--o-animation: fade 3s;
 }
