@@ -2720,6 +2720,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     font-weight: 400;
     padding-top: 4px;
     padding-bottom: 4px;
+    line-height: 1.71428571;
 }
 .dropdown-menu > li > a:hover {
     color: #fff;
