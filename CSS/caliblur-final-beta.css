@@ -1108,8 +1108,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 }
 #books > .cover > a:before, 
 #books_rand > .cover > a:before, 
-.book.isotope-item > .cover > a:before, 
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {
+.book.isotope-item > .cover > a:before {
     content: "\e352";
     display: inline-block;
     position: absolute;
@@ -1130,6 +1129,29 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     margin: auto;
     opacity: 0;
 }
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {
+    content: "\e352";
+    display: inline-block;
+    position: absolute;
+    font-family: Glyphicons Regular;
+    background: var(--color-secondary);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    padding-left: 16px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    z-index: 9;
+    zoom: .7;
+}
 #books > .cover > a:hover:before, 
 #books_rand > .cover > a:hover:before, 
 .book.isotope-item > .cover > a:hover:before, 
@@ -1148,8 +1170,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 }
 #books > .cover > a:after, 
 #books_rand > .cover > a:after, 
-.book.isotope-item > .cover > a:after,
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:after {
+.book.isotope-item > .cover > a:after {
     position: absolute;
     content: '';
     width: 100%;
@@ -1160,6 +1181,17 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     background: -webkit-radial-gradient(50% 50% farthest-corner,rgba(50,50,50,.5) 0,#323232 100%);
     background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
     z-index: -9;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:after {
+    position: absolute;
+    content: '';
+    width: calc(100% - 30px);
+    height: 100%;
+    top: 0;
+    left: 15px;
+    opacity: 0;
+    background: -webkit-radial-gradient(50% 50% farthest-corner,rgba(50,50,50,.5) 0,#323232 100%);
+    background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
 }
 #books > .cover > a:hover:after, 
 #books_rand > .cover > a:hover:after, 
