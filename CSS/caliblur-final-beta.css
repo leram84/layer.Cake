@@ -1133,7 +1133,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 #books > .cover > a:hover:before, 
 #books_rand > .cover > a:hover:before, 
 .book.isotope-item > .cover > a:hover:before, 
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:hover:before {
     transition: opacity .2s;
     -webkit-transition: opacity .2s;
     opacity: 1;
