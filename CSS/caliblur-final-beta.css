@@ -292,7 +292,7 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:before {
 div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     color: #fff;
 }
-.download-text {
+.download-text:not(#btnGroupDrop1) {
     display: none !important;
 }
 /*
