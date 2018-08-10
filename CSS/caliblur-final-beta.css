@@ -70,6 +70,19 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     99% {opacity: 0.39}
     100% {opacity: 0.4}
 }
+
+
+.col-sm-10 .book-meta > div.btn-toolbar:after {
+    content: '';
+    direction: block;
+    position: fixed;
+    top: 120px;
+    right: 0;
+    width: 300px;
+    height: 7px;
+    z-index: 999999999999999999999999999999999999999999999999999999;
+}
+
 .plexBack.noBack > a {
     color: hsla(0,0%,100%,.45);
     pointer-events: none;
