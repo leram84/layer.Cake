@@ -2454,13 +2454,55 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 
 
 
+.book-meta > .description {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #eee
+}
+.book-meta .bookinfo p {
+    margin: 0;
+}
 
+.book-meta > .bookinfo > .publishers {
+    margin-top: 24px
+}
 
-
-
-
-
-
+.book-meta > .bookinfo > .publishers > span:first-of-type {
+    color: hsla(0,0%,100%,.45);
+    text-transform: uppercase;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.book-meta > .bookinfo > .published-date > span:first-of-type {
+    color: hsla(0,0%,100%,.45);
+    text-transform: uppercase;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.book-meta > .bookinfo > .publishers > span:last-of-type {
+    font-size: 15px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    padding-left: 90px;
+}
+.book-meta > .bookinfo > .published-date > span:last-of-type {
+    font-size: 15px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    padding-left: 41px;
+}
+.book-meta > .bookinfo > .languages > span:first-of-type {
+    color: hsla(0,0%,100%,.45);
+    text-transform: uppercase;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.book-meta > .bookinfo > .languages > span:last-of-type {
+    font-size: 15px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    padding-left: 85px;
+}
 
 #bookDetailsModal .book-meta > h2 {
     margin-top: 15px;
@@ -2476,25 +2518,41 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     max-width: calc(100% - 100px);
     padding: 15px 0;
 }
-.book-meta > .author:before {
-    content: "Author:";
-    padding-right: 4px;
+.book-meta > .author > a:before {
+    content: "Author ";
+    padding-right: px;
     color: #eee;
 }
 .book-meta > .author > a {
     color: #eee;
 }
-.book-meta > .rating {
+.book-meta > .bookinfo > .rating {
     float: right;
     position: relative;
-    margin-top: -60px;
     z-index: -1;
+    
+    margin-top: -25px;
+}
+.book-meta > .bookinfo > .rating .glyphicon-star {
+    color: hsla(0, 0%, 100%, .25);
+}
+.author {
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: -5px;
 }
 .book-meta > p {
     color: hsla(0, 0%, 100%, .45);
 }
-.book-meta > .rating > p > .glyphicon-star {
-    color: #eee;
+.book-meta > .bookinfo > p:first-of-type {
+        color: hsla(0,0%,100%,.45);
+    font-size: 15px;
+        margin-top: -10px;
+}
+
+.bookinfo .rating .glyphicon-star.good {
+    color: hsla(0,0%,100%,.7);
 }
 .book-meta > .languages > p > .label-default {
     background: transparent;
@@ -2502,10 +2560,16 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     padding: 0;
     font-size: 14px;
 }
-.book-meta > .languages > p:first-letter {
+.book-meta > .bookinfo > .languages > span:first-letter {
     text-transform: uppercase;
 }
-.book-meta > .tags .btn-info {
+.book-meta > .bookinfo > .hr {
+    margin: 24px -15px;
+    height: 2px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.book-meta > .bookinfo > .tags .btn-info {
     background-color: rgba(0,0,0,.15);
     color: hsla(0,0%,100%,.7);
     padding: 0 10px;
@@ -2522,24 +2586,26 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     margin: 2px 3px 0 0;
     text-transform: none;
 }
-.book-meta > .tags .btn-info:hover {
+.book-meta > .bookinfo > .tags .btn-info:hover {
     color: #fff;
     text-decoration: underline;
 }
-.book-meta > .tags,
-.book-meta > .identifiers {
+.book-meta > .bookinfo > .tags,
+.book-meta > .bookinfo > .identifiers {
     padding-left: 40px;
+    margin: 10px 0;
 }
-.book-meta > .tags a{
+.book-meta > .bookinfo > .tags a{
     max-width: 100%;
     text-overflow: ellipsis;
 }
-.book-meta > .tags .glyphicon-tags,
-.book-meta > .identifiers .glyphicon-link {
+.book-meta > .bookinfo > .tags .glyphicon-tags,
+.book-meta > .bookinfo > .identifiers .glyphicon-link {
     margin-left: -40px;
     margin-right: 17px;
     color: hsla(0, 0%, 100%, .45);
     width: 20px;
+    vertical-align: text-bottom;
 }
 .book-meta > h3:first-of-type {
     font-size: 14px;
@@ -2775,7 +2841,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.book-meta > .identifiers > p > .btn-success {
+.book-meta > .bookinfo > .identifiers > p > .btn-success {
     background-color: rgba(0,0,0,.15);
     color: hsla(0,0%,100%,.7);
     padding: 0 10px;
@@ -2792,7 +2858,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     margin: 2px 3px 0 0;
     text-transform: none;
 }
-.book-meta > .identifiers > p > .btn-success:hover {
+.book-meta > .bookinfo > .identifiers > p > .btn-success:hover {
     color: #fff;
     text-decoration: underline;
 }
@@ -2802,10 +2868,10 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.book-meta .publishers {
+.book-meta > .bookinfo .publishers {
     color: hsla(0,0%,100%,.45);
 }
-.book-meta > .identifiers > p > .glyphicon-link {
+.book-meta > .bookinfo > .identifiers > p > .glyphicon-link {
     color: hsla(0,0%,100%,.45);
 }
 .rating .glyphicon-star.good {
@@ -2834,7 +2900,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:l
     max-width: 100%;
     
 }
-.book-meta > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] > a {
+.book-meta > .bookinfo > div.more-stuff > .btn-toolbar > .btn-group[aria-label="Remove from shelves"] > a {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
