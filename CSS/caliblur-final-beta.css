@@ -862,6 +862,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > h2 {
 .navigation .nav-head:nth-child(1n+2) {
     border-top: none;
     padding-top: 0;
+    width: 200px;
 }
 .btn-default {
     border-color: var(--color-secondary);
