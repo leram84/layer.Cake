@@ -3001,6 +3001,9 @@ body > div.navbar.navbar-default:before {
 body.book {
     background-image: none !important;
 }
+.author .blur-wrapper:after {
+    background-image: none !important;
+}
 .blur-wrapper:after {
     content: '';
     display: block;
