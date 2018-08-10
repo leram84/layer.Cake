@@ -959,7 +959,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     padding: 4px 25px;
     font-size: 13px;
     height: 30px;
-    line-height: 21px;
+    line-height: 1.71428571;
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
