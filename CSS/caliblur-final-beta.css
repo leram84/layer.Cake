@@ -3101,7 +3101,7 @@ body.book {
 .plexBack > a:before {
         content: "\EA2F";
 }
-.plexBack:hover > a {
+.plexBack:not(.noBack):hover > a {
     color: #fff;
 }
 .login .well > h2 {
