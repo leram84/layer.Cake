@@ -516,6 +516,7 @@ body:not(.read-frame) {
     -webkit-background-size: auto, cover !important;
     -moz-background-size: auto, cover !important;
     -o-background-size: auto, cover !important;
+    line-height: 1.71428571;
 }
 .navbar-default {
     background-color: rgba(0,0,0,.6) !important;
