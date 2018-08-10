@@ -3285,3 +3285,66 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-10::before {
 body.login:not(.read-frame) {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") !important;
 }
+
+
+.book-meta > .description[aria-expanded="true"] + a:after {
+    content: '';
+    display: inline-block;
+    border-color: hsla(0,0%,100%,.45);
+    width: 10px;
+    height: 10px;
+        border-top-width: 0;
+    border-right: 4px solid transparent;
+    border-bottom-width: 5px;
+    border-left: 4px solid transparent;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-style: solid;
+    vertical-align: middle;
+    -webkit-transition: border .2s,-webkit-transform .4s;
+    transition: border .2s,-webkit-transform .4s;
+    transition: border .2s,transform .4s;
+    transition: border .2s,transform .4s,-webkit-transform .4s;
+    margin: 9px 6px
+}
+.book-meta > .description[aria-expanded="false"] + a:after {
+    content: '';
+    display: inline-block;
+    border-color: hsla(0,0%,100%,.45);
+    width: 0;
+    height: 0;
+        border-bottom-width: 0;
+    border-right: 4px solid transparent;
+    border-top-width: 5px;
+    border-left: 4px solid transparent;
+    position: absolute;
+        -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-style: solid;
+    vertical-align: middle;
+    -webkit-transition: border .2s,-webkit-transform .4s;
+    transition: border .2s,-webkit-transform .4s;
+    transition: border .2s,transform .4s;
+    transition: border .2s,transform .4s,-webkit-transform .4s;
+    margin: 12px 6px
+}
+.book-meta > .description + a {
+    width: 100px;
+    margin-top: 10px
+}
+.book-meta > .description + a:hover {
+    text-decoration: none;
+}
+.book-meta > .description[aria-expanded="false"] + a:hover:after {
+    border-color: #fff;
+    border-right: 4px solid transparent;
+    border-top-width: 5px;
+    border-left: 4px solid transparent;
+}
+.book-meta > .description[aria-expanded="true"] + a:hover:after {
+    border-color: #fff;
+    border-right: 4px solid transparent;
+    border-bottom-width: 5px;
+    border-left: 4px solid transparent;
+}
