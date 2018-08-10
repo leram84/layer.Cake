@@ -9,66 +9,66 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 @-webkit-keyframes fade {
     0% {opacity: 0} 
     75% {opacity: 0}
-    85% {opacity: 0.05}
-    90% {opacity: 0.08}
-    91% {opacity: 0.09}
-    92% {opacity: 0.1}
-    93% {opacity: 0.11}
-    94% {opacity: 0.12}
-    95% {opacity: 0.13}
-    96% {opacity: 0.14}
-    97% {opacity: 0.15}
-    98% {opacity: 0.16}
-    99% {opacity: 0.17}
-    100% {opacity: 0.175}
+    85% {opacity: 0.1}
+    90% {opacity: 0.15}
+    91% {opacity: 0.16}
+    92% {opacity: 0.17}
+    93% {opacity: 0.18}
+    94% {opacity: 0.19}
+    95% {opacity: 0.20}
+    96% {opacity: 0.21}
+    97% {opacity: 0.22}
+    98% {opacity: 0.23}
+    99% {opacity: 0.24}
+    100% {opacity: 0.25}
 }
 @-moz-keyframes fade{
     0% {opacity: 0} 
     75% {opacity: 0}
-    85% {opacity: 0.05}
-    90% {opacity: 0.08}
-    91% {opacity: 0.09}
-    92% {opacity: 0.1}
-    93% {opacity: 0.11}
-    94% {opacity: 0.12}
-    95% {opacity: 0.13}
-    96% {opacity: 0.14}
-    97% {opacity: 0.15}
-    98% {opacity: 0.16}
-    99% {opacity: 0.17}
-    100% {opacity: 0.175}
+    85% {opacity: 0.1}
+    90% {opacity: 0.15}
+    91% {opacity: 0.16}
+    92% {opacity: 0.17}
+    93% {opacity: 0.18}
+    94% {opacity: 0.19}
+    95% {opacity: 0.20}
+    96% {opacity: 0.21}
+    97% {opacity: 0.22}
+    98% {opacity: 0.23}
+    99% {opacity: 0.24}
+    100% {opacity: 0.25}
 }
 @keyframes fade {
     0% {opacity: 0} 
     75% {opacity: 0}
-    85% {opacity: 0.05}
-    90% {opacity: 0.08}
-    91% {opacity: 0.09}
-    92% {opacity: 0.1}
-    93% {opacity: 0.11}
-    94% {opacity: 0.12}
-    95% {opacity: 0.13}
-    96% {opacity: 0.14}
-    97% {opacity: 0.15}
-    98% {opacity: 0.16}
-    99% {opacity: 0.17}
-    100% {opacity: 0.175}
+    85% {opacity: 0.1}
+    90% {opacity: 0.15}
+    91% {opacity: 0.16}
+    92% {opacity: 0.17}
+    93% {opacity: 0.18}
+    94% {opacity: 0.19}
+    95% {opacity: 0.20}
+    96% {opacity: 0.21}
+    97% {opacity: 0.22}
+    98% {opacity: 0.23}
+    99% {opacity: 0.24}
+    100% {opacity: 0.25}
     }
 @-o-keyframes fade {
     0% {opacity: 0} 
     75% {opacity: 0}
-    85% {opacity: 0.05}
-    90% {opacity: 0.08}
-    91% {opacity: 0.09}
-    92% {opacity: 0.1}
-    93% {opacity: 0.11}
-    94% {opacity: 0.12}
-    95% {opacity: 0.13}
-    96% {opacity: 0.14}
-    97% {opacity: 0.15}
-    98% {opacity: 0.16}
-    99% {opacity: 0.17}
-    100% {opacity: 0.175}
+    85% {opacity: 0.1}
+    90% {opacity: 0.15}
+    91% {opacity: 0.16}
+    92% {opacity: 0.17}
+    93% {opacity: 0.18}
+    94% {opacity: 0.19}
+    95% {opacity: 0.20}
+    96% {opacity: 0.21}
+    97% {opacity: 0.22}
+    98% {opacity: 0.23}
+    99% {opacity: 0.24}
+    100% {opacity: 0.25}
 }
 .plexBack.noBack > a {
     color: hsla(0,0%,100%,.45);
@@ -3014,8 +3014,8 @@ body.book {
     height: 100% !important;
     position: absolute;
     max-width: 100% !important;
-    filter: blur(175px) contrast(150%) saturate(125%);
-    opacity: .175;
+    filter: blur(150px) contrast(150%) saturate(150%);
+    opacity: .25;
     -webkit-animation: fade 3s;
     animation: fade 2s;
     -moz-animation: fade 2s;
