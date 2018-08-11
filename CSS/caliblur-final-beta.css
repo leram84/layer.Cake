@@ -829,7 +829,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > b
         position: absolute;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button {
-    background-color: #eee;
+    background-color: transparent;
     color: transparent;
     border: none;
     height: 40px;
