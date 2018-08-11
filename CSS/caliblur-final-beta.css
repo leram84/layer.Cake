@@ -286,8 +286,9 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:before {
     content: "\EA5d";
     font-family: plex-icons;
     font-size: 20px;
-    padding: 18px 12px;
+    padding: 16px 15px;
     display: inline-block;
+    height: 60px;
 }
 div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     color: #fff;
