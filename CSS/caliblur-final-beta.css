@@ -472,24 +472,25 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:before {
         content: "\EA30";
-            text-transform: none;
-    font-weight: 400;
-    font-style: normal;
-    font-family: plex-icons-new;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 20px;
-    line-height: 1;
-    text-rendering: optimizeLegibility;
-    speak: none;
-    position: absolute;
-    display: block;
-    overflow: visible;
-    width: 25px;
-    height: 25px;
-    top: 20px;
-    left: 20px;
-    color: hsla(0,0%,100%,.7)
+        text-transform: none;
+        font-weight: 400;
+        font-style: normal;
+        font-family: plex-icons-new;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 20px;
+        line-height: 60px;
+        text-rendering: optimizeLegibility;
+        speak: none;
+        position: absolute;
+        display: block;
+        overflow: visible;
+        width: 40px;
+        height: 60px;
+        top: 0px;
+        left: 10px;
+        color: hsla(0,0%,100%,.7);
+        padding: 0 10px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover:before {
     color: #fff;
@@ -3244,7 +3245,7 @@ body.book {
     letter-spacing: normal;
     line-height: 34.2857px;
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     position: absolute;
     width: 40px;
     top: 0;
@@ -3264,12 +3265,12 @@ body.book {
     font-variant-ligatures: normal;
     font-variant-numeric: normal;
     font-weight: 400;
-    height: 20px;
+    height: 60px;
     letter-spacing: normal;
-    line-height: 20px;
+    line-height: 60px;
     position: relative;
     speak: none;
-    text-align: start;
+    text-align: center;
     text-decoration-color: hsla(0,0%,100%,.7);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3277,14 +3278,15 @@ body.book {
     text-shadow: none;
     text-size-adjust: 100%;
     text-transform: none;
-    top: 20px;
+    top: 0;
     user-select: none;
     vertical-align: middle;
-    width: 20px;
+    width: 100%;
     word-spacing: 0;
     writing-mode: horizontal-tb;
     -webkit-box-direction: normal;
     -webkit-font-smoothing: antialiased;
+    padding:  0 10px;
 }
 .plexBack > a:before {
         content: "\EA2F";
