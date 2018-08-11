@@ -3211,7 +3211,9 @@ body.book {
     -o-animation: fade 2s;
     object-fit: cover;
 }
-
+.authorlist .blur-wrapper {
+    background: transparent;
+}
 
 #scnd-nav > li.nav-head:first-child {
     margin-top: 10px;
