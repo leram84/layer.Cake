@@ -829,12 +829,11 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > b
         position: absolute;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button {
-    background-color: transparent;
+    background-color: #eee;
     color: transparent;
     border: none;
     height: 40px;
     border-radius: 0px 4px 4px 0px;
-    width: 45px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form:before {
     content: "\EA4F";
@@ -862,7 +861,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.inp
         display: block;
         font-family: plex-icons;
         position: absolute;
-        left: -293px;
+        left: -298px;
         top: 8px;
         width: 40px;
         height: 40px;
@@ -872,9 +871,9 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.inp
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn {
     position: absolute;
-    left: 315px;
+    left: 320px;
     height: 40px;
-    width: 45px;
+    width: 40px;
     border-radius:  4px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button:hover {
@@ -1762,8 +1761,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:befor
     height: 60px;
     line-height: 60px;
     border-left: 2px solid rgba(0,0,0,0);
-    font-size: 15px;
-    padding: 20px 0 20px 25px;
+    font-size: 20px;
+    padding: 20px 0 20px 20px;
     margin-right: -27px;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:before {
@@ -1772,10 +1771,9 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:b
     color: hsla(0,0%,100%,.65);
     height: 60px;
     line-height: 60px;
-
-    font-size: 15px;
+    font-size: 20px;
     padding: 20px 25px 20px 25px;
-    margin-right: ;
+    margin-right:;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:hover:before {
     color: #fff;
@@ -1794,8 +1792,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:h
     display: inline-block;
     color: hsla(0,0%,100%,.55);
     line-height: 60px;
-    
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 23px;
     font-family: plex-icons-new;
     font-style: normal;
