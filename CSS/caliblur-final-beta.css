@@ -842,7 +842,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form:before {
         color: #eee;
         font-weight: 400;
         font-size: 14px;
-        top: 17px;
+        top: 18px;
         left: 122px;
 }
 #query {
@@ -861,7 +861,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.inp
         font-family: plex-icons;
         position: absolute;
         left: -298px;
-        top: 7px;
+        top: 8px;
         width: 40px;
         height: 40px;
         color: #555;
