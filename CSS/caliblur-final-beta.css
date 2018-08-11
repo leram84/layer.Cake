@@ -1759,7 +1759,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:befor
     color: hsla(0,0%,100%,.35);
     height: 60px;
     line-height: 60px;
-    border-left: 2px solid rgba(0,0,0,.3);
+    border-left: 2px solid rgba(0,0,0,0);
     font-size: 15px;
     padding: 20px 0 20px 25px;
     margin-right: -27px;
