@@ -3148,7 +3148,7 @@ body > div.navbar.navbar-default:before {
     left: 0;
 }
 body.book {
-    background-image: none !important;
+    
 }
 .author .blur-wrapper:after {
     background-image: none !important;
@@ -3175,6 +3175,8 @@ body.book {
     bottom: 0;
     left: 0;
     background-color: #3f4245;
+    transition: background-color 3s ease-in;
+    -webkit-transition: background-color 3s ease-in;
 }
 .blur-wrapper > div {
     -webkit-font-smoothing: antialiased;
