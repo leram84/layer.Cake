@@ -92,7 +92,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     cursor: default;
 }
 .root .plexBack > a {
-    color: hsla(0,0%,100%,.45);
+    color: hsla(0,0%,100%,.45) !important;
     pointer-events: none;
     cursor: default;
 }
