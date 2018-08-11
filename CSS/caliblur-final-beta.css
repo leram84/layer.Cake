@@ -542,7 +542,7 @@ body:not(.read-frame) {
     z-index: -9;
 }
 body:not(.read-frame) {
-    background: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), var(--color-background);
+    /* background: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), var(--color-background); */
     color: hsla(0, 0%, 100%, .45);
     font-family: Open Sans Semibold, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 400;
