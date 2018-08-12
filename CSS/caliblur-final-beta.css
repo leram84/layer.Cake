@@ -1235,7 +1235,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     margin: auto;
     opacity: 0;
     z-index: 9;
-    zoom: .7;
+    zoom: .8;
 }
 #books > .cover > a:hover:before, 
 #books_rand > .cover > a:hover:before, 
