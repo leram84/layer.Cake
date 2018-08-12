@@ -221,8 +221,8 @@ cursor: pointer;
 height: 40px;
     width: 60px;
 color: var(--color-primary);
-   top: -45px;
-    left: 20px;
+   top: -48px;
+    left: 16px;
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
 
@@ -242,7 +242,7 @@ color: var(--color-primary);
 height: 40px;
     width: 60px;
 color: hsla(0,0%,100%,.7);
-top: -46px;
+top: -48px;
     left: 16px;
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
