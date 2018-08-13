@@ -206,10 +206,10 @@ $( '#form-upload' ).parent().addClass( 'form-upload' );
 
 //Search button work
 $('input#query').focus(function() {
-      $( 'form.navbar-form.navbar-left span.input-group-btn' ).show();
+      $( 'form.navbar-form.navbar-left span.input-group-btn' ).addClass("search-focus");
 });
 $( 'input#query').focusout(function() {
-    $( 'form.navbar-form.navbar-left span.input-group-btn' ).hide();
+    $( 'form.navbar-form.navbar-left span.input-group-btn' ).removeClass("search-focus");
 });
 
 //Add class to random book discover
