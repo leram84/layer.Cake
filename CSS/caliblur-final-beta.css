@@ -1129,7 +1129,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     background: transparent;
 }
 #scnd-nav .dropdown-menu {
-    left: 5px;
+    left: 15px !important;
 }
 .navigation .create-shelf a:before {
     content: "\EA13";
