@@ -105,211 +105,237 @@
 // Start of Book Details Work //
 ///////////////////////////////
 
-//Wrap book description in div container
+// Wrap book description in div container
 if ( $( 'body.book' ).length > 0 ) {
-description = $( "h3:contains('Description:')" ).nextUntil( '.morestuff' ).slice(0,-1)
-bookInfo = $( '.author' ).nextUntil( "h3:contains('Description:')" )
-$( "h3:contains('Description:')" ).hide();
-$( description ).detach();
-$( bookInfo ).wrapAll( '<div class="bookinfo"></div' );
-$( "h3:contains('Description:')"  ).after( "<div class='description'></div>" );
-$( '.languages' ).appendTo( ".bookinfo" );
-if ( $( '.identifiers ').length > 0 ) {
-  $( '.identifiers' ).before( '<div class="hr"></div>' );
-}
-else {
-  $( '.bookinfo' ).append( '<div class="hr"></div>' );
-}
-$( '.rating' ).insertBefore( '.hr' );
-$( 'div.description' ).hide();
+  description = $( 'h3:contains("Description:")' ).nextUntil( '.morestuff' ).slice(0,-1);
+  bookInfo = $( '.author' ).nextUntil( 'h3:contains("Description:")');
+  $( 'h3:contains("Description:")' ).hide();
+  $( description ).detach();
+  $( bookInfo ).wrapAll( '<div class="bookinfo"></div>' );
+  $( 'h3:contains("Description:")' ).after( '<div class="description"></div>' );
+  $( '.languages' ).appendTo( '.bookinfo' );
+  if ( $( '.identifiers ').length > 0 ) {
+    $( '.identifiers' ).before( '<div class="hr"></div>' );
+  } else {
+    $( '.bookinfo' ).append( '<div class="hr"></div>' );
+  }
+  $( '.rating' ).insertBefore( '.hr' );
+  $( 'div.description' ).hide();
 
-/*if book description is not in html format, Remove extra line breaks
-Remove blank lines/unnecessary spaces, split by line break to array
-Push array into .description div. If there is still a wall of text,
-find sentences and split wall into groups of three sentence paragraphs.
-If the book format is in html format, Keep html, but strip away inline
-styles and empty elements*/
+  /* if book description is not in html format, Remove extra line breaks
+  Remove blank lines/unnecessary spaces, split by line break to array
+  Push array into .description div. If there is still a wall of text,
+  find sentences and split wall into groups of three sentence paragraphs.
+  If the book format is in html format, Keep html, but strip away inline
+  styles and empty elements */
 
-  //If text is sitting in div as text node
+  // If text is sitting in div as text node
   if ( description[0] === undefined ) {
-    textValue = $('.book-meta')
+    textValue = $( '.book-meta' )
       .contents()
       .filter(function() {
         return this.nodeType == Node.TEXT_NODE;
       }).text();
-    description = $.makeArray( textValue.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "") );
-    $('.book-meta').contents().filter(function(){
+    description = $.makeArray(
+      textValue.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "")
+    );
+    $( '.book-meta' ).contents().filter(function() {
       return this.nodeType === 3;
-  }).remove();
+    }).remove();
   }
   if ( description[1] === undefined ) {
-    newdesc = description.toString().replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
-    $.each(newdesc, function (i,val) {
-    $('div.description').append( '<p>' + newdesc[i] + '</p>' );
+    newdesc = description.toString()
+    .replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
+    $.each(newdesc, function(i, val) {
+    $( 'div.description' ).append( '<p>' + newdesc[i] + '</p>' );
     });
     $( '.description' ).fadeIn(100);
     //If still a wall of text create 3 sentence paragraphs.
-    if( $( '.description p').length === 1 ) {
-      if ( description.context != undefined ) {
-      newdesc = description.text().replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
-      }
-      else {
-        newdesc = description.toString();
-      }
-      doc = nlp ( newdesc.toString() );
-      sentences = doc.map((m)=> m.out('text'));
-      $( '.description p' ).remove();
-      var size = 3; var sentenceChunks = [];
-      for (var i=0; i<sentences.length; i+=size) {
-        sentenceChunks.push(sentences.slice(i,i+size));
-      }
-      var output = '';
-      $.each(sentenceChunks, function (i,val) {
-          var preOutput = '';
-          $.each(val, function (i,val) {
-          preOutput += val;
-        });
-        output += '<p>' + preOutput + '</p>';
-      });
-      $('div.description').append( output);
-    }
-  }
-  else {
-      $.each(description, function (i,val) {
+   if( $( '.description p' ).length === 1 ) {
+     if ( description.context != undefined ) {
+     newdesc = description.text()
+      .replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
+     }
+     else {
+       newdesc = description.toString();
+     }
+     doc = nlp ( newdesc.toString() );
+     sentences = doc.map((m)=> m.out( 'text' ));
+     $( '.description p' ).remove();
+     let size = 3; let sentenceChunks = [];
+     for (var i=0; i<sentences.length; i+=size) {
+       sentenceChunks.push(sentences.slice(i,i+size));
+     }
+     let output = '';
+     $.each(sentenceChunks, function(i, val) {
+         let preOutput = '';
+         $.each(val, function(i, val) {
+         preOutput += val;
+       });
+       output += '<p>' + preOutput + '</p>';
+     });
+     $( 'div.description' ).append( output );
+   }
+  } else {
+      $.each(description, function(i, val) {
       $( description[i].outerHTML ).appendTo( '.description' );
       $( 'div.description :empty' ).remove();
       $( 'div.description ').attr( 'style', '' );
-    });
-      $( 'div.description' ).fadeIn(100);
-  }
+      });
+    $( 'div.description' ).fadeIn( 100 );
+    }
 
-  //Sexy blurred backgrounds
-  cover = $( '.cover img').attr('src');
-  $( '#loader + .container-fluid').prepend("<div class='blur-wrapper'></div");
-  $( '.blur-wrapper' ).prepend("<div><img class='bg-blur' src='" + cover + "'></div>");
+  // Sexy blurred backgrounds
+  cover = $( '.cover img' ).attr( 'src' );
+  $( '#loader + .container-fluid' )
+    .prepend( '<div class="blur-wrapper"></div' );
+  $( '.blur-wrapper' )
+    .prepend( '<div><img class="bg-blur" src="' + cover + '"></div>' );
 
-  //Fix-up book detail headings
-  publisher = $( '.publishers p span' ).text().split(": ");
+  // Fix-up book detail headings
+  publisher = $( '.publishers p span' ).text().split( ': ' );
   $( '.publishers p span' ).remove();
-  $.each(publisher, function (i,val) {
-    $( '.publishers' ).append('<span>' + publisher[i] + '</span>')
+  $.each(publisher, function(i, val) {
+    $( '.publishers' ).append( '<span>' + publisher[i] + '</span>' );
   });
-  published = $( '.book-meta p:contains("Publishing date")' ).text().split(": ");
-  $( '.book-meta p:contains("Publishing date")').before("<div class='published-date'></div>");
+  published = $( '.book-meta p:contains("Publishing date")' )
+  .text().split(': ');
+  $( '.book-meta p:contains("Publishing date")' )
+  .before( '<div class="published-date"></div>' );
   $( '.book-meta p:contains("Publishing date")' ).remove();
-  $.each(published, function (i,val) {
-    $( '.published-date' ).append('<span>' + published[i] + '</span>')
+  $.each(published, function(i, val) {
+    $( '.published-date' ).append( '<span>' + published[i] + '</span>' );
   });
-  languages = $( '.languages p span' ).text().split(": ");
+  languages = $( '.languages p span' ).text().split( ': ' );
   $( '.languages p span' ).remove();
-  $.each(languages, function (i,val) {
-    $( '.languages' ).append('<span>' + languages[i] + '</span>')
+  $.each(languages, function(i, val) {
+    $( '.languages' ).append( '<span>' + languages[i] + '</span>' );
   });
 
-  $( '.book-meta h2:first').clone().prependTo( '.book-meta > .btn-toolbar:first' );
+  $( '.book-meta h2:first' ).clone()
+  .prependTo( '.book-meta > .btn-toolbar:first' );
 
-  //Collapse long text into read-more
+  // Collapse long text into read-more
   $( 'div.description' ).readmore( {
     collapsedHeight: 140,
     heightMargin: 45,
     speed: 300,
     moreLink: '<a href="#">READ MORE</a>',
-    lessLink: '<a href="#">READ LESS</a>'
+    lessLink: '<a href="#">READ LESS</a>',
   });
 
-  //If only one download type exists still put the items into a drop-drown list.
+  // If only one download type exists still put the items into a drop-drown list.
   downloads = $( 'a[id^=btnGroupDrop]' ).get();
   if ( $( downloads ).length === 1 ) {
   	$( '<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-download"></span>Download :<span class="caret"></span></button><ul class="dropdown-menu leramslist aria-labelledby="btnGroupDrop1"></ul>' ).insertBefore( downloads[downloads.length-1] );
-  	$( downloads ).detach();
-  	$.each(downloads, function (i,val) {
-  		$("<li>" + downloads[i].outerHTML + "</li>").appendTo( ".leramslist" );
-  	});
-  	$( ".leramslist" ).find( 'span' ).remove();
-  	$( ".leramslist a" ).removeClass( 'btn btn-primary' ).removeAttr( 'role' );
+    $( downloads ).detach();
+    $.each(downloads, function(i, val) {
+      $( '<li>' + downloads[i].outerHTML + '</li>' ).appendTo( '.leramslist' );
+    });
+    $( '.leramslist' ).find( 'span' ).remove();
+    $( '.leramslist a' ).removeClass( 'btn btn-primary' ).removeAttr( 'role' );
   }
 
-  //Add classes to buttons
+  // Add classes to buttons
   $( '#sendbtn' ).parent().addClass( 'sendBtn' );
   $( '[id*=btnGroupDrop]' ).parent().addClass( 'downloadBtn' );
   $( 'read-in-browser' ).parent().addClass( 'readBtn' );
-  $( '.downloadBtn button:first' ).addClass( 'download-text');
+  $( '.downloadBtn button:first' ).addClass( 'download-text' );
 
-  //Move all options in book details page to the same group
-  $( '[aria-label*="Delete book"]' ).prependTo( '[aria-label^="Download, send"]' ).children().removeClass( 'btn-sm' );
-  $( '.custom_columns' ).addClass(' btn-group' ).attr('role', 'group' ).removeClass( 'custom_columns' ).prependTo( '[aria-label^="Download, send"]' );
-  $( '#have_read_cb' ).after( '<label class="block-label readLbl" for="#have_read_cb"></label>' );
-  $( '#shelf-actions').prependTo( '.btn-group.sendBtn' );
+  // Move all options in book details page to the same group
+  $( '[aria-label*="Delete book"]' )
+    .prependTo( '[aria-label^="Download, send"]' )
+    .children().removeClass( 'btn-sm' );
+  $( '.custom_columns' )
+    .addClass(' btn-group' )
+    .attr('role', 'group' )
+    .removeClass( 'custom_columns' )
+    .prependTo( '[aria-label^="Download, send"]' );
+  $( '#have_read_cb' )
+    .after( '<label class="block-label readLbl" for="#have_read_cb"></label>' );
+  $( '#shelf-actions' ).prependTo( '.btn-group.sendBtn' );
 }
-//////////////////////////////
-//End of Book Details Work //
-////////////////////////////
+///////////////////////////////
+// End of Book Details Work //
+/////////////////////////////
 
 /////////////////////////////////
 //    Start of Global Work    //
 ///////////////////////////////
 
-//Back button
-var curHref = window.location.href.split('/');
-var prevHref = document.referrer.split('/');
-$( '.navbar-form.navbar-left' ).before('<div class="plexBack"><a href="##" onClick="history.go(-1); return false;"></a></div>');
-if ( history.length === 1 || curHref[0] + curHref[1] + curHref[2] != prevHref[0] + prevHref[1] + prevHref[2] || $( 'body.root' )>length > 0 ) {
-  $( '.plexBack').addClass('noBack');
+// Back button
+curHref = window.location.href.split('/');
+prevHref = document.referrer.split('/');
+$( '.navbar-form.navbar-left' )
+  .before( '<div class="plexBack"><a href="##" onClick="history.go(-1); return false;"></a></div>' );
+if ( history.length === 1 ||
+    curHref[0] +
+    curHref[1] +
+    curHref[2] !=
+    prevHref[0] +
+    prevHref[1] +
+    prevHref[2] ||
+  $( 'body.root' )>length > 0 ) {
+    $( '.plexBack' ).addClass( 'noBack' );
 }
 
-//Split path name to array and remove blanks
-var url = window.location.pathname.split( "/" ).filter( function(v){return v!==''} );
-//add classes to some body elements that don't have it
+// Split path name to array and remove blanks
+url = window.location.pathname
+  .split( "/" ).filter( function(v){return v!==''} );
+// Add classes to some body elements that don't have it
 if ( jQuery.inArray( 'epub', url ) != -1 ) {
-  $( "body" ).addClass( url[3] );
-}
-else {
-  $( "body" ).addClass( url[1] );
+  $( 'body' ).addClass( url[3] );
+} else {
+  $( 'body' ).addClass( url[1] );
 }
 if ( $( 'body.shelf' ).length > 0 ) {
-  $( 'a[href*= "'+url[1]+"/"+url[2]+'"]' ).parent().addClass( "active" );
+  $( 'a[href*= "'+url[1]+"/"+url[2]+'"]' )
+    .parent()
+    .addClass( 'active' );
 }
 
-//Move create shelf
-$( '#nav_createshelf' ).prependTo( "li:contains('Your Shelves')" );
+// Move create shelf
+$( '#nav_createshelf' ).prependTo( 'li:contains("Your Shelves")' );
 
-//Create drop-down for profile and move elements to it
-$( '#main-nav' ).prepend( '<li class="dropdown"><a href="#" class="dropdown-toggle profileDrop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a><ul class="dropdown-menu profileDropli"></ul></li>' );
+// Create drop-down for profile and move elements to it
+$( '#main-nav' )
+  .prepend( '<li class="dropdown"><a href="#" class="dropdown-toggle profileDrop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a><ul class="dropdown-menu profileDropli"></ul></li>' );
 $( '#top_user' ).parent().addClass( 'dropdown' ).appendTo( '.profileDropli' );
 $( '#nav_about' ).addClass( 'dropwdown' ).appendTo( '.profileDropli' );
 $( '#logout' ).parent().addClass( 'dropdown' ).appendTo( '.profileDropli' );
 
-//remove the modals except from some areas where they are needed
-var bodyClass = $( 'body' ).attr("class").split(' ')
-var modalWanted = [ "admin", "editbook" ]
+// Remove the modals except from some areas where they are needed
+bodyClass = $( 'body' ).attr( 'class' ).split(' ');
+modalWanted = ['admin', 'editbook'];
 
 if ( $.inArray( bodyClass[0], modalWanted) === 1 ) {
-	console.log( "body contains one of the following classes: \"" + modalWanted + "\". Not removing modals" );
-}
-else{
-	$(' a:not(.dropdown-toggle) ').removeAttr( 'data-toggle', 'data-target', 'data-remote' );
+} else {
+  $(' a:not(.dropdown-toggle) ')
+    .removeAttr( 'data-toggle', 'data-target', 'data-remote' );
 }
 
-//Add classes to global buttons
+// Add classes to global buttons
 $( '#top_tasks' ).parent().addClass( 'top_tasks' );
 $( '#top_admin' ).parent().addClass( 'top_admin' );
 $( '#form-upload' ).parent().addClass( 'form-upload' );
 
-//Search button work
-$('input#query').focus(function() {
+// Search button work
+$( 'input#query' ).focus(function() {
       $( 'form[role="search"]' ).addClass( 'search-focus' );
 });
-$( 'input#query').focusout(function() {
+$( 'input#query' ).focusout(function() {
     $( 'form[role="search"]' ).removeClass( 'search-focus' );
 });
 
-//Move advanced search to side-menu
+// Move advanced search to side-menu
 $( 'a[href*="advanced"]' ).parent().insertAfter( '#nav_new' );
 
-//Add class to random book discover
-$( 'h2:contains("Discover (Random Books")' ).parent().addClass( 'random-books' );
+// Add class to random book discover
+$( 'h2:contains("Discover (Random Books")' )
+  .parent()
+  .addClass( 'random-books' );
 
-//Check if dropdown goes out of viewport and add class
+// Check if dropdown goes out of viewport and add class
 if ( $( '.dropdown-menu' ).visible() === false ) {
   $( '.dropdown.open > .dropdown-menu' ).addClass( 'offscreen' );
 }
@@ -318,16 +344,20 @@ if ( $( '.dropdown-menu' ).visible() === false ) {
 //     End of Global Work     //
 ///////////////////////////////
 
-//Author Page Background Blur
-if ( $( 'body.author').length >0 ) {
-  cover = $( '.author-bio img').attr('src');
-  $( '#loader + .container-fluid').prepend("<div class='blur-wrapper'></div");
-  $( '.blur-wrapper' ).prepend("<img class='bg-blur' src='" + cover + "'>");
+// Author Page Background Blur
+if ( $( 'body.author' ).length >0 ) {
+  cover = $( '.author-bio img' ).attr( 'src' );
+  $( '#loader + .container-fluid' )
+    .prepend( '<div class="blur-wrapper"></div>' );
+  $( '.blur-wrapper' ).prepend( '<img class="bg-blur" src="' + cover + '">' );
 }
 
-//Ereader Page - add class to iframe body on ereader page after it loads.
-$('body.epub').on('DOMNodeInserted', 'iframe', function(e) {
+// Ereader Page - add class to iframe body on ereader page after it loads.
+$( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
         setTimeout(function() {
-                $("iframe").contents().find("body").addClass( 'read-frame' );
+                $( 'iframe' )
+                  .contents()
+                  .find( 'body' )
+                  .addClass( 'read-frame' );
         }, 1000);
 });
