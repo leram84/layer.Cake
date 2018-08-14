@@ -3424,3 +3424,6 @@ body.login:not(.read-frame) {
     border-bottom-width: 5px;
     border-left: 4px solid transparent;
 }
+.navigation > ul > li > a > span.hidden-sm {
+    display: inline-block !important;
+}
