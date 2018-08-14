@@ -2840,7 +2840,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     order: 1;
 }
 .book-meta > div.btn-toolbar ul.dropdown-menu {
-    margin-left: -110px;
+    /* margin-left: -110px; */
 }
 #bookDetailsModal > div > div > div.modal-body > div > div > div > div.col-sm-9.col-lg-9.book-meta > div.btn-toolbar > div > div.btn-group.open > div.dropdown-backdrop {
     display: none;
@@ -2859,7 +2859,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     margin-left: -100px;
 }
 .book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
-    margin-left: -200px;
+    /* margin-left: -200px; */
     max-width: 200px;
 }
 .book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
@@ -2888,6 +2888,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     -webkit-transform-origin: center top;
     transform-origin: center top;
     border: 0;
+    left: 0 !important;
 }
 .dropdown-menu > li > a {
     color: hsla(0,0%,100%,.7);
