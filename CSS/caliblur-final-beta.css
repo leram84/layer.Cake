@@ -3465,3 +3465,6 @@ body.login:not(.read-frame) {
 .navigation > ul > li > a > span.hidden-sm {
     display: inline-block !important;
 }
+.row-fluid .col-sm-10 {
+display: none
+}
