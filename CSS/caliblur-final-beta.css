@@ -1687,7 +1687,7 @@ body > div.container-fluid > div > div.col-sm-10 > h2 {
 } */
 /* body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before,
 .well > h2:before */
-body > div.container-fluid > div.row-fluid > div.col-sm-10:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-2:after {
     width: 100%;
     height: 60px;
     background: rgba(0,0,0,.15);
@@ -3214,8 +3214,8 @@ body.book {
     bottom: 0;
     left: 0;
     background-color: #3f4245;
-    transition: background-color 3s ease-in;
-    -webkit-transition: background-color 3s ease-in;
+    transition: background-color 1s ease-in;
+    -webkit-transition: background-color 1s ease-in;
 }
 .blur-wrapper > div {
     -webkit-font-smoothing: antialiased;
@@ -3244,10 +3244,10 @@ body.book {
     max-width: 100% !important;
     filter: blur(75px) brightness(85%);
     opacity: .4;
-    -webkit-animation: fade 3s;
-    animation: fade 2s;
-    -moz-animation: fade 2s;
-    -o-animation: fade 2s;
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+    -moz-animation: fade 1s;
+    -o-animation: fade 1s;
     object-fit: cover;
 }
 .authorlist .blur-wrapper {
