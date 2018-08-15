@@ -7,67 +7,27 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0} 
-    75% {opacity: 0}
-    85% {opacity: 0.25}
-    90% {opacity: 0.3}
-    91% {opacity: 0.31}
-    92% {opacity: 0.32}
-    93% {opacity: 0.33}
-    94% {opacity: 0.34}
-    95% {opacity: 0.35}
-    96% {opacity: 0.36}
-    97% {opacity: 0.37}
-    98% {opacity: 0.38}
-    99% {opacity: 0.39}
+    0% {opacity: 0.1} 
+    50% {opacity: 0.2}
+    75% {opacity: 0.3}
     100% {opacity: 0.4}
 }
 @-moz-keyframes fade{
-    0% {opacity: 0} 
-    75% {opacity: 0}
-    85% {opacity: 0.25}
-    90% {opacity: 0.3}
-    91% {opacity: 0.31}
-    92% {opacity: 0.32}
-    93% {opacity: 0.33}
-    94% {opacity: 0.34}
-    95% {opacity: 0.35}
-    96% {opacity: 0.36}
-    97% {opacity: 0.37}
-    98% {opacity: 0.38}
-    99% {opacity: 0.39}
+    0% {opacity: 0.1} 
+    50% {opacity: 0.2}
+    75% {opacity: 0.3}
     100% {opacity: 0.4}
 }
 @keyframes fade {
-    0% {opacity: 0} 
-    75% {opacity: 0}
-    85% {opacity: 0.25}
-    90% {opacity: 0.3}
-    91% {opacity: 0.31}
-    92% {opacity: 0.32}
-    93% {opacity: 0.33}
-    94% {opacity: 0.34}
-    95% {opacity: 0.35}
-    96% {opacity: 0.36}
-    97% {opacity: 0.37}
-    98% {opacity: 0.38}
-    99% {opacity: 0.39}
+    0% {opacity: 0.1} 
+    50% {opacity: 0.2}
+    75% {opacity: 0.3}
     100% {opacity: 0.4}
     }
 @-o-keyframes fade {
-    0% {opacity: 0} 
-    75% {opacity: 0}
-    85% {opacity: 0.25}
-    90% {opacity: 0.3}
-    91% {opacity: 0.31}
-    92% {opacity: 0.32}
-    93% {opacity: 0.33}
-    94% {opacity: 0.34}
-    95% {opacity: 0.35}
-    96% {opacity: 0.36}
-    97% {opacity: 0.37}
-    98% {opacity: 0.38}
-    99% {opacity: 0.39}
+    0% {opacity: 0.1} 
+    50% {opacity: 0.2}
+    75% {opacity: 0.3}
     100% {opacity: 0.4}
 }
 
