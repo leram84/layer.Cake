@@ -296,6 +296,10 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
 .download-text:not(#btnGroupDrop1) {
     display: none !important;
 }
+
+.advanced_search a[href*=advanced_search] {
+    color: var(--color-primary)
+}
 /*
 .testclass {
     display: none;
