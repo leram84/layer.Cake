@@ -553,8 +553,11 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     width: 360px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn {
-    display: none;
-    z-index:  9999999999999999999999999;
+    opacity: 0;
+    z-index:  9999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn {
+    opacity: 1;
 }
 .profileDrop {
     width: 60px;
@@ -856,7 +859,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form:before {
     background: #eee !important;
     color: #555 !important;
 }
-body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn:before {
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn:before {
         content: "\EA4F";
         display: block;
         font-family: plex-icons;
@@ -1129,7 +1132,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > a:hover {
     background: transparent;
 }
 #scnd-nav .dropdown-menu {
-    left: 5px;
+    left: 15px !important;
 }
 .navigation .create-shelf a:before {
     content: "\EA13";
@@ -2840,7 +2843,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     order: 1;
 }
 .book-meta > div.btn-toolbar ul.dropdown-menu {
-    margin-left: -110px;
+    /* margin-left: -110px; */
 }
 #bookDetailsModal > div > div > div.modal-body > div > div > div > div.col-sm-9.col-lg-9.book-meta > div.btn-toolbar > div > div.btn-group.open > div.dropdown-backdrop {
     display: none;
@@ -2859,7 +2862,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     margin-left: -100px;
 }
 .book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
-    margin-left: -200px;
+    /* margin-left: -200px; */
     max-width: 200px;
 }
 .book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
@@ -2888,6 +2891,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     -webkit-transform-origin: center top;
     transform-origin: center top;
     border: 0;
+    left: 0 !important;
 }
 .dropdown-menu > li > a {
     color: hsla(0,0%,100%,.7);
@@ -3422,4 +3426,7 @@ body.login:not(.read-frame) {
     border-right: 4px solid transparent;
     border-bottom-width: 5px;
     border-left: 4px solid transparent;
+}
+.navigation > ul > li > a > span.hidden-sm {
+    display: inline-block !important;
 }
