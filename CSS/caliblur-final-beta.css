@@ -1632,6 +1632,35 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h
     max-width: calc(100vw - 550px) !important;
     overflow: hidden !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 8/14 for author
 body > div.container-fluid > div > div.col-sm-10 > h2 {
     width: calc(100vw - 240px) !important;
     height: 60px !important;
@@ -1655,7 +1684,7 @@ body > div.container-fluid > div > div.col-sm-10 > h2 {
     text-overflow: ellipsis !important;
     max-width: calc(100vw - 550px) !important;
     overflow: hidden !important;
-}
+} */
 /* body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before,
 .well > h2:before */
 body > div.container-fluid > div.row-fluid > div.col-sm-10:before {
