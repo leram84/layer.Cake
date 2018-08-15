@@ -3474,7 +3474,7 @@ background-size: auto, cover !important;
 
 
 
-h2:before {
+.author > .container-fluid > .row-fluid > .col-sm-10 > h2:before {
     content: "About Author";
     width: calc(100vw - 240px);
     height: 60px;
