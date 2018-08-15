@@ -554,10 +554,12 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn {
     opacity: 0;
+    pointer-events: none;
     z-index:  9999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn {
     opacity: 1;
+    pointer-events: auto;
 }
 .profileDrop {
     width: 60px;
