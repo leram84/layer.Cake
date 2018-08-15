@@ -3527,7 +3527,7 @@ background-size: auto, cover !important;
     color: var(--color-secondary-hover);
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .discover > .row {}
-body.author > div.container-fluid > div > div.col-sm-10 {
+body.author:not(.authorlist) > div.container-fluid > div > div.col-sm-10 {
         width: calc(75% - 240px);
     left: 240px;
     margin-left: 25%;
