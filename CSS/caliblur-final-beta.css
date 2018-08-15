@@ -553,8 +553,11 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div {
     width: 360px;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn {
-    display: none;
-    z-index:  9999999999999999999999999;
+    opacity: 0;
+    z-index:  9999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn {
+    opacity: 1;
 }
 .profileDrop {
     width: 60px;
@@ -856,7 +859,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form:before {
     background: #eee !important;
     color: #555 !important;
 }
-body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn:before {
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn:before {
         content: "\EA4F";
         display: block;
         font-family: plex-icons;
