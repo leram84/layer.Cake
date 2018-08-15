@@ -324,7 +324,9 @@ $( 'input#query' ).focus(function() {
       $( 'form[role="search"]' ).addClass( 'search-focus' );
 });
 $( 'input#query' ).focusout(function() {
-    $( 'form[role="search"]' ).removeClass( 'search-focus' );
+  setTimeout(function() {
+            $( 'form[role="search"]' ).removeClass( 'search-focus' );
+  }, 100);
 });
 
 // Move advanced search to side-menu
@@ -336,10 +338,9 @@ $( 'h2:contains("Discover (Random Books")' )
   .addClass( 'random-books' );
 
 // Check if dropdown goes out of viewport and add class
-if ( $( '.dropdown-menu' ).visible() === false ) {
-  $( '.dropdown.open > .dropdown-menu' ).addClass( 'offscreen' );
-}
-
+  if ( $( '.dropdown-menu' ).visible() === false ) {
+    $( '.dropdown.open > .dropdown-menu' ).addClass( 'offscreen' );
+  }
 /////////////////////////////////
 //     End of Global Work     //
 ///////////////////////////////
