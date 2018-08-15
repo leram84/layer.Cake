@@ -3508,7 +3508,7 @@ background-size: auto, cover !important;
     padding: 15px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio {
-
+    border-top: 2px solid rgba(0,0,0,.3);
     padding: 15px;
     font-size: 15px;
     color: hsla(0,0%,100%,.65);
@@ -3526,12 +3526,11 @@ background-size: auto, cover !important;
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > .author-link:hover {
     color: var(--color-secondary-hover);
 }
-.author > .container-fluid > .row-fluid > .col-sm-10 > .discover > .row {}
 body.author:not(.authorlist) > div.container-fluid > div > div.col-sm-10 {
         width: calc(75% - 240px);
     left: 240px;
     margin-left: 25%;
-
+    padding-right: 30px;
 }
 body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
     width: 100%;
