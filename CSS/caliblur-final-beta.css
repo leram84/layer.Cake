@@ -2617,6 +2617,9 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     position: relative;
     z-index: -1;
     
+    margin-top: -50px;
+}
+.book-meta > .bookinfo > p + .rating {
     margin-top: -25px;
 }
 .book-meta > .bookinfo > .rating .glyphicon-star {
