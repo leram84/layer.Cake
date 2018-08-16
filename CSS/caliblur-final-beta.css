@@ -117,11 +117,105 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .shelforder #sortTrue {
     border-top: 2px solid rgba(0,0,0,.3);
     border-bottom: 2px solid rgba(0,0,0,.3);
-    background: hsla(0,0%,100%,.02);
     padding: 0;
 }
-.shelforder #sortTrue > .list-group-item:nth-of-type(odd) {
+.shelforder #sortTrue > .list-group-item:nth-of-type(even) {
     background: hsla(0,0%,100%,.02);
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6 {
+    width: calc(75% - 10.5px);
+    margin-left: calc(25% + 3.3333px);
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6:before {
+    
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2:before {
+    content: "Reorder Shelf";
+    width: calc(100vw - 240px);
+    height: 60px;
+    margin: 0;
+    padding-left: 25px;
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+    text-size-adjust: 100%;
+    white-space: nowrap;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    position: fixed;
+    top: 60px;
+    left: 240px;
+    text-align: left;
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 {
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding: 60px 15px 40px;
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    position: relative;
+    border-bottom: 2px solid rgba(0,0,0,.3);
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 + div {
+    margin-top: 90px;
+        font-size: 15px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 24px;
+    padding: 15px;
+    color: #eee;
+    text-transform: uppercase;
+}
+.shelforder #sortTrue > div {
+    padding: 0 15px;
+    margin: 0;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 50px;
+    line-height: 50px;
+    color: hsla(0,0%,100%,.6);
+}
+.shelforder #sortTrue > div:hover {
+    background-color: hsla(0,0%,100%,.06) !important;
+    cursor: grab;
+    color: #eee;
+}
+.shelforder #sortTrue > div:before {
+    content: "\EA53";
+    font-family: plex-icons-new;
+    margin-right: 30px;
+    margin-left: 15px;
+    vertical-align: bottom;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0;
+}
+.shelforder #sortTrue > div:hover:before {
+    opacity: 1;
+    transition: all .2s;
+}
+.shelforder #ChangeOrder {
+    float: right;
+    margin: 30px 0 60px 0;
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > a {
+    float: right;
+    background-color: hsla(0,0%,100%,.3);
+color: #fff;
+    margin: 30px 10px 60px 0;
 }
 
 
