@@ -3518,7 +3518,7 @@ background-size: auto, cover !important;
     position: fixed;
     left: 270px;
     top: 150px;
-    width: calc(25% - 90px);
+    width: calc(20% - 60px);
     max-width: 250px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > .author-link {
