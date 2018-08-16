@@ -3508,10 +3508,11 @@ background-size: auto, cover !important;
     padding: 15px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio {
-    border-top: 2px solid rgba(0,0,0,.3);
-    padding: 15px;
+    padding: 35px 15px 15px 15px;
     font-size: 15px;
     color: hsla(0,0%,100%,.65);
+    border-top: 2px solid rgba(0,0,0,.3);
+    margin-top: 20px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > img {
     position: fixed;
