@@ -3531,7 +3531,7 @@ background-size: auto, cover !important;
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > .author-link:hover {
     color: var(--color-secondary-hover);
 }
-body.author > div.container-fluid > div > div.col-sm-10 {
+body.author:not(.authorlist) > div.container-fluid > div > div.col-sm-10 {
     width: calc(80% - 240px);
     left: 240px;
     margin-left: 20%;
