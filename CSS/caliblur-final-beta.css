@@ -257,7 +257,7 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     display: none !important;
 }
 
-.advanced_search a[href*=advanced_search] {
+.advanced_search #scnd-nav > li > a[href*=advanced_search] {
     color: var(--color-primary)
 }
 /*
@@ -2910,7 +2910,8 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     padding-bottom: 4px;
     line-height: 1.71428571;
 }
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
     color: #fff;
     background: hsla(0, 0%, 100%, .08);
 }
