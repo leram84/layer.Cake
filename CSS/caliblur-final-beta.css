@@ -125,6 +125,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6 {
     width: calc(75% - 10.5px);
     margin-left: calc(25% + 3.3333px);
+    padding-right: 60px;
 }
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6:before {
     
