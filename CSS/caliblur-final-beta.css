@@ -448,8 +448,8 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
     min-width: 225px;
     display: block;
 }
-body > div.container-fluid > div > div.col-sm-10 > div.discover > div:before,
-body > div.container-fluid > div > div.col-sm-10 > div.discover > div:after {
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope:before,
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope:after {
     display: none;
 }
 
