@@ -1447,20 +1447,20 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
 }
 
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
-    display: grid !important;
+        display: grid !important;
     overflow: hidden !important;
     height: auto !important;
     width: 100%;
     margin: 0;
     justify-content: start;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+    grid-gap: 10px 0;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     height: auto;
-    width: calc(100vw - 257px);
+    width: calc(100vw - 254px);
     margin: 40px 0 !important;
-    padding: 0 0 0 25px !important;
+    padding: 0 10px 0 40px !important;
 
 }
 body > div.container-fluid > div > div.col-sm-10 > div.single {
@@ -1473,7 +1473,10 @@ body > div.container-fluid > div > div.col-sm-10 > div.single {
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     margin-top: 0;
 }
-
+.container-fluid .book .meta > p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > h2 {
     color: #eee;
     font-size: 15px;
