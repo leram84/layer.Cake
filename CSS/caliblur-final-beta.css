@@ -347,6 +347,16 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
 .book {
     width: 225px;
     max-width: 225px;
+        position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    min-width: 225px;
+    flex: 1;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div:before,
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div:after {
+    display: none;
 }
 
 #infscr-loading img {
@@ -1437,7 +1447,11 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
 }
 
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div {
-    overflow: visible !important;
+    display: flex !important;
+    justify-content: space-around;
+    overflow: hidden !important;
+    height: auto !important;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0;
 }
