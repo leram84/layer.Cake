@@ -2885,12 +2885,13 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     overflow: hidden;
 }
 .dropdown-menu.offscreen {
-    right: 5px;
+    right: 0;
     left: auto !important;
 }
 div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] .dropdown-menu.offscreen {
     position: fixed;
     top: 120px;
+    right: 5px;
 }
 .dropdown-menu {
     border-radius: 4px !important;
