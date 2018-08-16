@@ -3442,17 +3442,20 @@ body.login:not(.read-frame) {
 .row-fluid .col-sm-10 {
 display: none
 }
-.shelfcreate .col-sm-10 > .discover > form {
+.shelfcreate .col-sm-10 > .discover > form,
+.shelfedit .col-sm-10 > .discover > form {
     width: 500px;
     height: 500px;
     margin: auto;
     max-width: calc(100vw - 300px);
     max-height: calc(100vh - 200px);
 }
-body.shelfcreate > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.form-group {
+body.shelfcreate > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.form-group,
+body.shelfedit > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.form-group {
     padding-left: 0;
 }
-body.shelfcreate {
+body.shelfcreate,
+body.shelfedit {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png") !important;
 background-repeat: repeat, no-repeat !important;
 background-attachment: fixed, fixed !important;
