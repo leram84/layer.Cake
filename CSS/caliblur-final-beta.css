@@ -2885,7 +2885,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     overflow: hidden;
 }
 .dropdown-menu.offscreen {
-    right: 0;
+    right: 5px;
     left: auto !important;
 }
 div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] .dropdown-menu.offscreen {
