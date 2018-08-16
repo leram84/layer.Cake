@@ -347,12 +347,12 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
 .book {
     width: 225px;
     max-width: 225px;
-        position: relative !important;
+    position: relative !important;
     left: auto !important;
     top: auto !important;
     transform: none !important;
     min-width: 225px;
-    flex: 1;
+    display: block;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div:before,
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div:after {
@@ -1446,14 +1446,15 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     overflow-y: auto !important;
 }
 
-body > div.container-fluid > div > div.col-sm-10 > div.discover > div {
-    display: flex !important;
-    justify-content: space-around;
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
+    display: grid !important;
     overflow: hidden !important;
     height: auto !important;
-    flex-wrap: wrap;
     width: 100%;
     margin: 0;
+    justify-content: start;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     height: auto;
