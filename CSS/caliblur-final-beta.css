@@ -70,7 +70,32 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     99% {opacity: 0.39}
     100% {opacity: 0.4}
 }
+@-webkit-keyframes fadeIn {    
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
 
+@-moz-keyframes fadeIn {    
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-o-keyframes fadeIn {    
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeIn {    
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.row-fluid .col-sm-10{
+    -webkit-animation: fadeIn 1s linear 1; /* Safari & Chrome */
+    -moz-animation: fadeIn 1s linear 1; /* Firefox */
+    -o-animation: fadeIn 1s linear 1;  /* Opera */
+    animation: fadeIn 1s linear 1;
+}
 
 .col-sm-10 .book-meta > div.btn-toolbar:after {
     content: '';
