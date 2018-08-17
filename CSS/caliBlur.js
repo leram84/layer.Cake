@@ -134,6 +134,7 @@ if ( $( 'body.book' ).length > 0 ) {
   $( bookInfo ).wrapAll( '<div class="bookinfo"></div>' );
   $( 'h3:contains("Description:")' ).after( '<div class="description"></div>' );
   $( '.languages' ).appendTo( '.bookinfo' );
+<<<<<<< HEAD
   $('.hr').detach();
   if ( $( '.identifiers ').length > 0 ) {
       $( '.identifiers' ).before( '<div class="hr"></div>' );
@@ -148,6 +149,15 @@ if ( $( 'body.book' ).length > 0 ) {
   $( '#remove-from-shelves' ).insertAfter( '.hr' );
   $( 'div.description' ).hide();
 
+=======
+  if ( $( '.identifiers ').length > 0 ) {
+    $( '.identifiers' ).before( '<div class="hr"></div>' );
+  } else {
+    $( '.bookinfo' ).append( '<div class="hr"></div>' );
+  }
+  $( '.rating' ).insertBefore( '.hr' );
+  $( 'div.description' ).hide();
+>>>>>>> e42c0340cae8b733b5a101f50098068ec20812fe
 
   /* if book description is not in html format, Remove extra line breaks
   Remove blank lines/unnecessary spaces, split by line break to array
@@ -242,6 +252,17 @@ if ( $( 'body.book' ).length > 0 ) {
   $( '.book-meta h2:first' ).clone()
   .prependTo( '.book-meta > .btn-toolbar:first' );
 
+<<<<<<< HEAD
+=======
+  // Collapse long text into read-more
+  $( 'div.description' ).readmore( {
+    collapsedHeight: 140,
+    heightMargin: 45,
+    speed: 300,
+    moreLink: '<a href="#">READ MORE</a>',
+    lessLink: '<a href="#">READ LESS</a>',
+  });
+>>>>>>> e42c0340cae8b733b5a101f50098068ec20812fe
 
   // If only one download type exists still put the items into a drop-drown list.
   downloads = $( 'a[id^=btnGroupDrop]' ).get();
@@ -282,6 +303,25 @@ if ( $( 'body.book' ).length > 0 ) {
 //    Start of Global Work    //
 ///////////////////////////////
 
+<<<<<<< HEAD
+=======
+// Back button
+curHref = window.location.href.split('/');
+prevHref = document.referrer.split('/');
+$( '.navbar-form.navbar-left' )
+  .before( '<div class="plexBack"><a href="##" onClick="history.go(-1); return false;"></a></div>' );
+if ( history.length === 1 ||
+    curHref[0] +
+    curHref[1] +
+    curHref[2] !=
+    prevHref[0] +
+    prevHref[1] +
+    prevHref[2] ||
+  $( 'body.root' )>length > 0 ) {
+    $( '.plexBack' ).addClass( 'noBack' );
+}
+
+>>>>>>> e42c0340cae8b733b5a101f50098068ec20812fe
 // Split path name to array and remove blanks
 url = window.location.pathname
   .split( "/" ).filter( function(v){return v!==''} );
@@ -317,7 +357,10 @@ if ( $.inArray( bodyClass[0], modalWanted) === 1 ) {
     .removeAttr( 'data-toggle', 'data-target', 'data-remote' );
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e42c0340cae8b733b5a101f50098068ec20812fe
 // Add classes to global buttons
 $( '#top_tasks' ).parent().addClass( 'top_tasks' );
 $( '#top_admin' ).parent().addClass( 'top_admin' );
@@ -333,6 +376,7 @@ $( 'input#query' ).focusout(function() {
   }, 100);
 });
 
+<<<<<<< HEAD
 // Add class to random book discover
 $( 'h2:contains("Discover (Random Books")' )
   .parent()
@@ -384,6 +428,20 @@ $( 'div.description' ).readmore( {
   moreLink: '<a href="#">READ MORE</a>',
   lessLink: '<a href="#">READ LESS</a>',
 });
+=======
+// Move advanced search to side-menu
+$( 'a[href*="advanced"]' ).parent().insertAfter( '#nav_new' );
+
+// Add class to random book discover
+$( 'h2:contains("Discover (Random Books")' )
+  .parent()
+  .addClass( 'random-books' );
+
+// Check if dropdown goes out of viewport and add class
+  if ( $( '.dropdown-menu' ).visible() === false ) {
+    $( '.dropdown.open > .dropdown-menu' ).addClass( 'offscreen' );
+  }
+>>>>>>> e42c0340cae8b733b5a101f50098068ec20812fe
 /////////////////////////////////
 //     End of Global Work     //
 ///////////////////////////////
