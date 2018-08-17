@@ -3665,4 +3665,9 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover > h3 {
     text-transform: uppercase;
     color: #eee;
 }
-
+.author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio a {
+    color: var(--color-secondary)
+}
+.author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio a:hover {
+    color: var(--color-secondary-hover)
+}
