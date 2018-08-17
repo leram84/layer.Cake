@@ -1564,7 +1564,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2 {
     overflow-y: auto;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
-    width: calc(100vw - 240px);
+    width: calc(100vw - 237px);
     height: calc(100vh - 120px);
     padding: 0;
     position: fixed;
