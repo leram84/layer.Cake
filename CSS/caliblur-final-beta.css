@@ -1341,13 +1341,37 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
     z-index: -9;
 }
+body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
+    width: 80%;
+    left: 240px;
+    margin: 40px 0 0 20% !important;
+    padding: 0 30px 0 !important;
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #submit {
+    float: right;
+    margin-left: 0;
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+    width: auto;
+    height: 200px;
+    padding: 0;
+    margin: 15px
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a {
+    width: 100%;
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
+    height: 100%;
+    width: auto;
+}
+
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:after {
     position: absolute;
     content: '';
-    width: calc(100% - 30px);
+    width: 100%;
     height: 100%;
     top: 0;
-    left: 15px;
+    left: 0;
     opacity: 0;
     background: -webkit-radial-gradient(50% 50% farthest-corner,rgba(50,50,50,.5) 0,#323232 100%);
     background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
