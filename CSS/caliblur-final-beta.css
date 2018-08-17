@@ -3705,3 +3705,107 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover > h3 {
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio a:hover {
     color: var(--color-secondary-hover)
 }
+
+
+body.shelf.modal-open > .container-fluid {
+    z-index: 9;
+}
+#DeleteShelfDialog .text-center {
+    text-align: left;
+}
+#DeleteShelfDialog {
+    top: 0;
+    overflow: hidden;
+    padding-top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
+#DeleteShelfDialog > .modal-dialog {
+    width: 100%;
+    margin: 0;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content {
+    max-height: calc(100vh - 90px);
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border-radius: 3px;
+
+    z-index: 9999999999999999999999;
+    left: calc(50% - 225px);
+    right: auto;
+    width: 450px;
+
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-header {
+    padding: 15px 20px;
+    border-radius: 3px 3px 0 0;
+    line-height: 1.71428571;
+    vertical-align: bottom;
+    font-family: Open Sans Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #eee;
+    border-bottom: 1px solid #222;
+    background-color: #323232;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-header:before {
+    content: "\E197";
+    padding-right: 10px;
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    font-family: Glyphicons Regular;
+    font-style: normal;
+    font-weight: 400;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-header:after {
+    content: "Delete Shelf";
+    display: inline-block;
+    font-size: 20px;
+
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-header > span {
+    display: none;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body {
+    padding: 20px 20px 40px;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: Open Sans Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    background: #282828;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > span:before {
+    content: "Are you sure you want to delete this shelf?";
+    display: inline-block;
+    padding-right: 5px;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    background-color: #323232;
+    border-radius: 0 0 3px 3px;
+    left: 0;
+    margin-top: 40px;
+    z-index: 0;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > .btn {
+    float: right;
+    z-index: 9;
+    position: relative;
+    margin: 55px 0 0 10px;
+    min-width: 80px;
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 3px;
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > .btn-default {
+    background-color: hsla(0,0%,100%,.25);
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > .btn-default:hover {
+    background-color: hsla(0,0%,100%,.3);
+}
