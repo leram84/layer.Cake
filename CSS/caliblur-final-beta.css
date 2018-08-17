@@ -3838,3 +3838,51 @@ body.shelf.modal-open > .container-fluid {
     background-color: initial;
     border-color: initial;
 }
+#remove-from-shelves:before {
+    content: "\EA4D";
+    font-family: plex-icons-new;
+    float: left;
+    color: hsla(0,0%,100%,.45);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 27px;
+}
+#remove-from-shelves > .btn {
+    background-color: rgba(0,0,0,.15);
+    color: hsla(0,0%,100%,.7);
+    padding: 0 7px 0 10px;
+    font-size: 13px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-transition: background-color 0.2s,color 0.2s;
+    transition: background-color 0.2s,color 0.2s;
+    margin: 2px 6px 0 0;
+    text-transform: none;
+}
+#remove-from-shelves > .btn > span {
+    float: right;
+    font-size: 10px;
+    display: inline-block;
+    top: 3px;
+    line-height: inherit;
+}
+#remove-from-shelves > .btn > span:before {
+    content: "\EA52";
+    font-family: plex-icons-new;
+    color: #f53;
+    padding-left: 5px;
+}
+#remove-from-shelves > .btn:hover {
+    background: #ce3d2a;
+    color: #fff;
+}
+#remove-from-shelves > .btn:hover span:before {
+    color: #fff;
+    transition: all 0.2s;
+}
