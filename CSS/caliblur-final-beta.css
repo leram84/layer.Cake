@@ -3809,3 +3809,8 @@ body.shelf.modal-open > .container-fluid {
 #DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > .btn-default:hover {
     background-color: hsla(0,0%,100%,.3);
 }
+.btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, .btn-warning:active.focus, .btn-warning:active:focus, .btn-warning:active:hover, .open > .dropdown-toggle.btn-warning.focus, .open > .dropdown-toggle.btn-warning:focus, .open > .dropdown-toggle.btn-warning:hover {
+    color: initial;
+    background-color: initial;
+    border-color: initial;
+}
