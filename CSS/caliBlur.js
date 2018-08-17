@@ -145,7 +145,9 @@ if ( $( 'body.book' ).length > 0 ) {
       }
   }
   $( '.rating' ).insertBefore( '.hr' );
+  $( '#remove-from-shelves' ).insertAfter( '.hr' );
   $( 'div.description' ).hide();
+
 
   /* if book description is not in html format, Remove extra line breaks
   Remove blank lines/unnecessary spaces, split by line break to array
