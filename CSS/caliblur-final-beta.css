@@ -222,11 +222,13 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > a {
     float: right;
-    background-color: hsla(0,0%,100%,.3);
+    background-color: hsla(0,0%,100%,.25);
 color: #fff;
     margin: 30px 10px 60px 0;
 }
-
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > a:hover {
+    background-color: hsla(0,0%,100%,.3);
+}
 
 
 #have_read_form {
