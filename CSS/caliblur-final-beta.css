@@ -190,8 +190,16 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .shelforder #sortTrue > div:hover {
     background-color: hsla(0,0%,100%,.06) !important;
+    cursor: move;
     cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
     color: #eee;
+}
+.shelforder #sortTrue > div:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 .shelforder #sortTrue > div:before {
     content: "\EA53";
