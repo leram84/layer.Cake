@@ -3740,15 +3740,15 @@ body.shelf.modal-open > .container-fluid {
 #DeleteShelfDialog {
     top: 0;
     overflow: hidden;
-    padding-top: 60px;
+    padding-top: 70px;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,.5);
 }
 #DeleteShelfDialog > .modal-dialog {
-    width: 100%;
-    margin: 0;
+    width: 450px;
+    margin: auto;
 }
 #DeleteShelfDialog > .modal-dialog > .modal-content {
     max-height: calc(100vh - 90px);
@@ -3793,7 +3793,7 @@ body.shelf.modal-open > .container-fluid {
     display: none;
 }
 #DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body {
-    padding: 20px 20px 40px;
+    padding: 20px 20px 30px;
     font-size: 16px;
     line-height: 1.6em;
     font-family: Open Sans Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -3806,21 +3806,22 @@ body.shelf.modal-open > .container-fluid {
     padding-right: 5px;
 }
 #DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body:after {
-    content: '';
+        content: '';
     position: absolute;
     width: 100%;
     height: 72px;
     background-color: #323232;
     border-radius: 0 0 3px 3px;
     left: 0;
-    margin-top: 40px;
+    margin-top: 30px;
     z-index: 0;
+    border-top: 1px solid #222;
 }
 #DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > .btn {
-    float: right;
+        float: right;
     z-index: 9;
     position: relative;
-    margin: 55px 0 0 10px;
+    margin: 45px 0 0 10px;
     min-width: 80px;
     padding: 10px 18px;
     font-size: 16px;
@@ -3872,11 +3873,19 @@ body.shelf.modal-open > .container-fluid {
     top: 3px;
     line-height: inherit;
 }
-#remove-from-shelves > .btn > span:before {
-    content: "\EA52";
+#remove-from-shelves > a:first-of-type {
+    margin-left: 40px;
+    overflow: visible;
+}
+#remove-from-shelves > a:first-of-type:before {
+    content: "\EA4D";
     font-family: plex-icons-new;
-    color: #f53;
-    padding-left: 5px;
+    position: absolute;
+    color: hsla(0,0%,100%,.45);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    left: -40px
 }
 #remove-from-shelves > .btn:hover {
     background: #ce3d2a;
@@ -3885,4 +3894,37 @@ body.shelf.modal-open > .container-fluid {
 #remove-from-shelves > .btn:hover span:before {
     color: #fff;
     transition: all 0.2s;
+}
+#DeleteShelfDialog:before {
+    content: "\E208";
+    padding-right: 10px;
+    font-size: 18px;
+    color: #999;
+    display: block;
+    font-family: Glyphicons Regular;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    left: calc(50% + 185px);
+    top: 88px;
+    font-size: 16px;
+    color: #eee;
+    opacity: .5;
+        -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-60px);
+    -ms-transform: translate(0,-60px);
+    -o-transform: translate(0,-60px);
+    transform: translate(0,-60px);
+    z-index: 99
+}
+#DeleteShelfDialog.modal.in:before {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+#DeleteShelfDialog:hover:before {
+    cursor: pointer;
 }
