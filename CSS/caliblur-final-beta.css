@@ -3843,7 +3843,7 @@ body.shelf.modal-open > .container-fluid {
 #remove-from-shelves > .btn {
     background-color: rgba(0,0,0,.15);
     color: hsla(0,0%,100%,.7);
-    padding: 0 7px 0 10px;
+    padding: 0 10px;
     font-size: 13px;
     display: inline-block;
     overflow: hidden;
@@ -3857,12 +3857,22 @@ body.shelf.modal-open > .container-fluid {
     margin: 2px 6px 0 0;
     text-transform: none;
 }
+#remove-from-shelves > .btn:hover {
+    padding-right: 20px
+}
 #remove-from-shelves > .btn > span {
-    float: right;
     font-size: 10px;
     display: inline-block;
     top: 3px;
     line-height: inherit;
+    position: absolute;
+    right: 5px;
+}
+#remove-from-shelves > .btn > span:before {
+    content: "\EA52";
+    font-family: plex-icons-new;
+    color: transparent;
+    padding-left: 5px;
 }
 #remove-from-shelves > a:first-of-type {
     margin-left: 40px;
@@ -3881,11 +3891,13 @@ body.shelf.modal-open > .container-fluid {
 #remove-from-shelves > .btn:hover {
     background: #ce3d2a;
     color: #fff;
+    transition: all 0.2s;
 }
 #remove-from-shelves > .btn:hover span:before {
     color: #fff;
-    transition: all 0.2s;
+    transition: all 0.2s ease-out;
 }
+
 #DeleteShelfDialog:before {
     content: "\E208";
     padding-right: 10px;
