@@ -3839,16 +3839,7 @@ body.shelf.modal-open > .container-fluid {
     background-color: initial;
     border-color: initial;
 }
-#remove-from-shelves:before {
-    content: "\EA4D";
-    font-family: plex-icons-new;
-    float: left;
-    color: hsla(0,0%,100%,.45);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    margin-right: 27px;
-}
+
 #remove-from-shelves > .btn {
     background-color: rgba(0,0,0,.15);
     color: hsla(0,0%,100%,.7);
