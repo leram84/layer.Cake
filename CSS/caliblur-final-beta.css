@@ -4050,3 +4050,10 @@ body.shelf.modal-open > .container-fluid {
 #DeleteShelfDialog:hover:before {
     cursor: pointer;
 }
+
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    border-color: var(--color-secondary-hover);
+    color: #fff;
+    background-color: var(--color-secondary-hover);
+}
