@@ -1927,6 +1927,12 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > form > .btn.bt
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff !important;
 }
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a[href*="page"] {
+    display: none;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous + a {
+    display: none;
+}
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     color: rgba(0,0,0,0);
     font-family: plex-icons-new;
@@ -1943,6 +1949,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     top: 0;
     right: 0;
     width: 65px;
+    display: block !important;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
     color: rgba(0,0,0,0);
@@ -1960,6 +1967,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
     position: absolute;
     top: 0;
     right: 65px;
+    display: block !important;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:before {
     content: "\EA32";
