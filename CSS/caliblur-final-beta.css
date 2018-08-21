@@ -4177,3 +4177,10 @@ body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 
 body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div.row:nth-child(4) {
     margin-bottom: 30px;
 }
+
+.me .dropdown-menu > li > #top_user {
+    color: var(--color-primary);
+}
+.navbar-right > li > ul.dropdown-menu.offscreen {
+    right: -10px;
+}
