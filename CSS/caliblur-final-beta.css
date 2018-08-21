@@ -1391,9 +1391,10 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 }
 body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
     left: 240px;
-    margin: 60px 0 0 20% !important;
-    padding: 0 !important;
-    width: calc(80% - 60px);
+    margin: 120px 0 0 20% !important;
+    padding: 30px 15px 15px 15px !important;
+    width: calc(80% - 30px);
+    border-top: 2px solid rgba(0,0,0,.3);
 }
 body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #submit {
     float: right;
@@ -2038,13 +2039,13 @@ text-align: center;
 
 body > div.container-fluid > div > div.col-sm-10 > div.container {
     
-    width: calc(80% - 60px);
-margin: 60px 0 60px 20%;
+    width: calc(80% - 30px);
+margin: 120px 0 30px 20%;
     border-top: 2px solid rgba(0,0,0,.3);
 border-bottom: 2px solid rgba(0,0,0,.3);
 
-padding: 0 0 0 0;
-    max-width: calc(80% - 60px);
+padding: 0;
+    max-width: calc(80% - 30px);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container > div {
     padding: 0;
@@ -2106,6 +2107,90 @@ line-height: 1;
     width: calc(20% - 55px);
     text-align: center;
 }
+body.authorlist > div.container-fluid > div > div.col-sm-10 > div.container:before {
+    content: "Authors";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 15px;
+}
+body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before {
+    content: "Categories";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 15px;
+}
+body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before {
+    content: "Categories";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 15px;
+}
+body.serieslist > div.container-fluid > div > div.col-sm-10 > div.container:before {
+    content: "Series";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 15px;
+}
+body.langlist > div.container-fluid > div > div.col-sm-10 > div.container:before {
+    content: "Languages";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 15px;
+}
+body.advanced_search > div.container-fluid > div > div.col-sm-10:before {
+    content: "Advanced Search";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 20%;
+    padding-left: 15px;
+}
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
+    padding: 20px 0 60px 0;
+    margin-top: 120px;
+    border-top: 2px solid rgba(0,0,0,.3);
+}
+body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
+    content: "My Profile";
+    position: absolute;
+    top: 60px;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 15px;
+}
+
 /* Login */
 .well {
     max-height: 520px;
@@ -2302,7 +2387,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-
 }
 body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
     margin-left: calc(20%);
-    width: calc(80% - 60px);
+    width: calc(80% - 30px);
 }
 .advanced_search #search > .row > .form-group.col-sm-6:first-of-type {
     padding-left: 0;
