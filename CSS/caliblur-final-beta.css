@@ -4199,3 +4199,12 @@ body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div
 .navbar-right > li > ul.dropdown-menu.offscreen {
     right: -10px;
 }
+.login .plexBack {
+    display: none;
+}
+body.login > div.navbar.navbar-default.navbar-static-top > div > form {
+    display: none;
+}
+body.login > div.container-fluid > div.row-fluid > div.col-sm-2 {
+    display: none;
+}
