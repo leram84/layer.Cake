@@ -145,7 +145,6 @@ if ( $( 'body.book' ).length > 0 ) {
       }
   }
   $( '.rating' ).insertBefore( '.hr' );
-  $( '#remove-from-shelves' ).insertAfter( '.hr' );
   $( 'div.description' ).hide();
 
 
@@ -402,3 +401,7 @@ $( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
                   .addClass( 'read-frame' );
         }, 1000);
 });
+
+$(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
+
+$( '#remove-from-shelves' ).insertAfter( '.hr' );
