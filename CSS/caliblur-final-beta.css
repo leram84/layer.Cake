@@ -4142,3 +4142,49 @@ body.shelf.modal-open > .container-fluid {
     color: #fff;
     background-color: var(--color-secondary-hover);
 }
+
+
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
+    padding: 20px 0 60px 0;
+    margin-top: 120px;
+    border-top: 2px solid rgba(0,0,0,.3);
+    width: calc(80% - 30px);
+}
+
+body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div,
+body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > label {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div .rating-input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > .btn.btn-default {
+    margin-right: 15px;
+}
+
+.advanced_search #search > .row > .form-group.col-sm-6 {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.advanced_search #search > .row > .form-group.col-sm-6 > label[for="ratinglow"] {
+    color: hsla(0, 0%, 100%, .45);
+    font-family: Open Sans Semibold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.advanced_search #search > .row > .form-group.col-sm-6 > label[for="ratinghigh"] {
+    color: hsla(0, 0%, 100%, .45);
+    font-family: Open Sans Semibold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.glyphicon-remove:before {
+    content: "\EA52";
+    font-family: plex-icons-new;
+    font-weight: 400;
+}
+body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div.row:nth-child(4) {
+    margin-bottom: 30px;
+}
