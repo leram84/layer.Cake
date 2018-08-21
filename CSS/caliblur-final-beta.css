@@ -150,7 +150,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6 {
     margin-left: calc(20%);
-width: calc(80% - 60px);
+width: calc(80% - 30px);
     
 }
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6:before {
