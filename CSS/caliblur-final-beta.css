@@ -2162,6 +2162,7 @@ body.advsearch > div.container-fluid > div > div.col-sm-10:before {
     line-height: 1;
     margin-left: 20%;
     padding-left: 15px;
+    left: 0;
 }
 body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
     padding: 20px 0 60px 0;
