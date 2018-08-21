@@ -1690,7 +1690,7 @@ body > div.container-fluid > div > div.col-sm-10 > h3:not(:first-of-type) {
     width: calc(100% - 30px);
     max-width: 800px;
     margin: 60px auto 10px;
-    text-align: right;
+    text-align: left;
 }
 body > div.container-fluid > div > div.col-sm-10 > p {
     margin: 0;
