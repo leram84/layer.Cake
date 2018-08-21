@@ -1933,6 +1933,9 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a[href*="pag
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous + a {
     display: none;
 }
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a {
+    display: none;
+}
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     color: rgba(0,0,0,0);
     font-family: plex-icons-new;
@@ -3207,7 +3210,9 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     order: 1;
 }
 .book-meta > div.btn-toolbar ul.dropdown-menu {
-    /* margin-left: -110px; */
+    position: fixed;
+    top: 120px;
+    right: 5px;
 }
 #bookDetailsModal > div > div > div.modal-body > div > div > div > div.col-sm-9.col-lg-9.book-meta > div.btn-toolbar > div > div.btn-group.open > div.dropdown-backdrop {
     display: none;
