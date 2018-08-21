@@ -2129,17 +2129,6 @@ body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before 
     line-height: 1;
     padding-left: 15px;
 }
-body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before {
-    content: "Categories";
-    position: absolute;
-    top: 60px;
-    font-size: 24px;
-    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: #eee;
-    font-weight: 400;
-    line-height: 1;
-    padding-left: 15px;
-}
 body.serieslist > div.container-fluid > div > div.col-sm-10 > div.container:before {
     content: "Series";
     position: absolute;
@@ -2162,7 +2151,7 @@ body.langlist > div.container-fluid > div > div.col-sm-10 > div.container:before
     line-height: 1;
     padding-left: 15px;
 }
-body.advanced_search > div.container-fluid > div > div.col-sm-10:before {
+body.advsearch > div.container-fluid > div > div.col-sm-10:before {
     content: "Advanced Search";
     position: absolute;
     top: 60px;
