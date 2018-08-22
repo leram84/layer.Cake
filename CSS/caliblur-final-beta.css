@@ -3877,7 +3877,7 @@ body.author .bg-blur[src="undefined"] {
     opacity: 1;
     filter:none;
 }
-body.author .bg-blur[src="undefined"]:before {
+body.author:not(.authorlist) .bg-blur[src="undefined"]:before {
     content: "\e008";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
