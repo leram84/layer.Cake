@@ -121,8 +121,8 @@ if ( history.length === 1 ||
     $( '.plexBack' ).addClass( 'noBack' );
 }
 // Home button
-//$( '.plexBack' ).insertBefore( '<div class="home-btn"></div>' );
-//$( 'a.navbar-brand' ).clone().appendTo( '.home-btn' );
+$( '.plexBack' ).before( '<div class="home-btn"></div>' );
+$( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navbar-brand');
 
 /////////////////////////////////
 // Start of Book Details Work //
@@ -409,11 +409,11 @@ $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
 $( '#remove-from-shelves' ).insertAfter( '.hr' );
 
-/*Check if link is external and force _blank attribute
+Check if link is external and force _blank attribute
 $(function(){ // document ready
     $('a').filter(function () {
         return this.hostname && this.hostname !== location.hostname;
     }).each(function () {
         $(this).addClass("external").attr( 'target', '_blank' );
     });
-});*/
+});
