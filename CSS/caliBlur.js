@@ -105,14 +105,7 @@
 $( 'a[href*="advanced"]' ).parent().insertAfter( '#nav_new' );
 $( 'body' ).addClass('blur');
 
-//Check if link is external and force _blank attribute
-$(function(){ // document ready
-    $('a').filter(function () {
-        return this.hostname && this.hostname !== location.hostname;
-    }).each(function () {
-        $(this).addClass("external").attr( 'target', '_blank' );
-    });
-});
+
 
 // Back button
 curHref = window.location.href.split('/');
