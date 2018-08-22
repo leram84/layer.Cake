@@ -4619,3 +4619,78 @@ body.config.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.di
 body.uiconfig.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > a:hover {
     background-color: hsla(0,0%,100%,.3);
 }
+
+
+
+body.admin {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+    color: hsla(0, 0%, 100%, .65);
+}
+body.admin td {
+    font-family: Open Sans regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    
+}
+body.admin td > a {
+    color: hsla(0, 0%, 100%, .65);
+}
+body.admin td > a:hover {
+    color: #fff;
+}
+.glyphicon-ok::before {
+    content: "\EA55";
+    font-family: plex-icons-new;
+font-weight: 400;
+    
+}
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > h1 {
+    width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: rgba(0,0,0,.15);
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
+}
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover {
+    padding: 0 30px !important;
+}
+body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type::before,
+body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type::before {
+    content: none;
+}
+body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type,
+body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type {
+    width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: rgba(0,0,0,.15);
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
+}
