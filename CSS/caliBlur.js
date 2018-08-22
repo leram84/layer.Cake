@@ -129,6 +129,9 @@ if ( history.length === 1 ||
   $( 'body.root' )>length > 0 ) {
     $( '.plexBack' ).addClass( 'noBack' );
 }
+// Home button
+$( '.plexBack' ).insertBefore( '<div class="home-btn"></div>' );
+$( 'a.navbar-brand' ).clone().appendTo( '.home-btn' );
 
 /////////////////////////////////
 // Start of Book Details Work //
