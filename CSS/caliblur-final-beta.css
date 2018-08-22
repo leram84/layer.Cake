@@ -50,7 +50,9 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     0% { opacity:0; }
     100% { opacity:1; }
 }
-
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
+    display: none;
+}
 .row-fluid .col-sm-10{
     -webkit-animation: fadeIn 1s linear 1; /* Safari & Chrome */
     -moz-animation: fadeIn 1s linear 1; /* Firefox */
