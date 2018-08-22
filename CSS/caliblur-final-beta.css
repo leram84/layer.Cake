@@ -4135,10 +4135,11 @@ body.shelf.modal-open > .container-fluid {
     transition: all 0.2s ease-out;
 }
 #remove-from-shelves + .identifiers,
-#remove-from-shelves + .publishers,
-#remove-from-shelves + .published-date,
+#remove-from-shelves + .tags,
+#remove-from-shelves + .publishers, 
+#remove-from-shelves + .published-date, 
 #remove-from-shelves + .languages {
-    margin-top: -25px
+    margin-top: -25px;
 }
 #remove-from-shelves > a.btn:last-of-type {
     margin-bottom: 35px;
