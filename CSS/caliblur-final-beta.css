@@ -1779,7 +1779,7 @@ body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2 {
 }
 /* body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2, */
 .well > h2,
-body > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2 {
+body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2 {
     width: calc(100vw - 240px) !important;
     height: 60px !important;
     margin: 0;
@@ -1868,9 +1868,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2:after {
     top: 60px;
     left: 240px;
 }
-body > div.container-fluid > div > div.col-sm-10 > div.discover > h2, 
+body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h2,
 body > div.container-fluid > div > div.col-sm-10 > h1,
-body > div.container-fluid > div > div.col-sm-10 > div.discover > h1,
+body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h1,
 body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 {
    width: calc(100vw - 240px);
    height: 60px;
@@ -4295,15 +4295,14 @@ body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
-body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li:first-of-type > #form-upload {
-    margin-right: 70px;
+body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li:not(.form-upload) > #form-upload {
+    display: none;
 }
 body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li:not(.top_tasks) > #top_tasks {
-    margin-right: 50px;
+    display: none;
 }
 body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li:not(.top_admin) > #top_admin {
-    position: fixed;
-    right: 140px;
+    display: none;
 }
 body:not(.blur) #nav_new {
     margin-bottom: 30px;
@@ -4333,4 +4332,365 @@ body:not(.blur) #nav_new:after {
 body:not(.blur) #nav_createshelf,
 body:not(.blur) #scnd-nav > #nav_about {
     display: none;
+}
+
+
+
+
+
+
+
+
+
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before {
+    content: "Admin Settings";
+width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: transparent;
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before {
+    content: "User Settings";
+width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: transparent;
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
+}
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before {
+    content: "New User";
+width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: transparent;
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
+}
+
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
+    font-size: 24px;
+font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+color: #eee;
+font-weight: 400;
+line-height: 1;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+
+    background-color: transparent;
+
+}
+
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .btn > a {
+    text-decoration: none;
+    color: #fff;
+}
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .table > tbody > tr > td {
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.3);
+    border: collapse
+}
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .table > tbody > tr > th {
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.3);
+    border: collapse
+}
+
+
+
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10::before,
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10::before {
+    content: '';
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+    position: fixed;
+    left: 240px;
+    top: 180px;
+    width: calc(20% - 55px);
+    text-align: center;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgPHBhdGggZD0iTTE0NC4yOTEgNDkyLjMyNUMxNjYuNjI0IDQ3Ni4yNjUgMTkzLjE5NCA0NjYuMTU2IDIyNCA0NjJjMTIuNDQ0IDkuMzMzIDMxLjExMSAxNCA1NiAxNHM0My41NTYtNC42NjcgNTYtMTRjMzAuODA2IDQuMTU2IDU3LjM3NiAxNC4yNjQgNzkuNzA5IDMwLjMyNUMzNzYuNTI3IDUxNy40MzUgMzI5Ljk1MSA1MzIgMjgwIDUzMmMtNDkuOTUxIDAtOTYuNTI3LTE0LjU2NS0xMzUuNzA5LTM5LjY3NXoiIGZpbGwtb3BhY2l0eT0iLjYiLz4KICAgICAgICA8cGF0aCBkPSJNMjI0IDQ2MmwxMi44OC00MC4yNTFDMTk2LjQyOSAzOTcuNDYyIDE2OCAzNDAuMDM1IDE2OCAyNzMuMDU5YzAtMzUuMTkzIDcuODQ5LTY3Ljc1IDIxLjE2OC05NC4yNDggMTYuMTczIDQuOTc3IDM1LjMxNSA3Ljg1NiA1NS44MzIgNy44NTYgNTEuMTA0IDAgOTMuNjgtMTcuODYgMTAzLjA3Mi00MS41MTZDMzc0Ljc3OSAxNzQuNTg4IDM5MiAyMjAuOTMxIDM5MiAyNzMuMDU5YzAgNjYuOTc2LTI4LjQyOSAxMjQuNDAzLTY4Ljg4IDE0OC42OUwzMzYgNDYyYy0xMi40NDQgOS4zMzMtMzEuMTExIDE0LTU2IDE0LTI0LjY5NCAwLTQzLjI2My00LjU5NC01NS43MDctMTMuNzgyTDIyNCA0NjJ6IiBmaWxsLW9wYWNpdHk9Ii43NSIvPgogICAgICAgIDxwYXRoIGQ9Ik0xODAuMDY0IDM0NS44NDlDMTU1LjI4MiAzMTguMDY3IDE0MCAyNzkuOTk3IDE0MCAyMzhjMC04NS4wNTIgNjIuNjgtMTU0IDE0MC0xNTRzMTQwIDY4Ljk0OCAxNDAgMTU0YzAgNDEuOTk3LTE1LjI4MiA4MC4wNjctNDAuMDY0IDEwNy44NDkgNy43MTYtMjEuODYyIDEyLjA2NC00Ni41OTYgMTIuMDY0LTcyLjc5IDAtNTIuMTI4LTE3LjIyMS05OC40NzEtNDMuOTI4LTEyNy45MDgtOS4zOTIgMjMuNjU2LTUxLjk2OCA0MS41MTYtMTAzLjA3MiA0MS41MTYtMjAuNTE3IDAtMzkuNjU5LTIuODc5LTU1LjgzMi03Ljg1NkMxNzUuODQ5IDIwNS4zMDkgMTY4IDIzNy44NjYgMTY4IDI3My4wNTljMCAyNi4xOTQgNC4zNDggNTAuOTI4IDEyLjA2NCA3Mi43OXoiIGZpbGwtb3BhY2l0eT0iLjQ1Ii8+CiAgICAgICAgPHBhdGggZD0iTTI4MCA1MzJjMTM5LjE3NiAwIDI1Mi0xMTIuODI0IDI1Mi0yNTJTNDE5LjE3NiAyOCAyODAgMjggMjggMTQwLjgyNCAyOCAyODBzMTEyLjgyNCAyNTIgMjUyIDI1MnptMCAyOEMxMjUuMzYgNTYwIDAgNDM0LjY0IDAgMjgwUzEyNS4zNiAwIDI4MCAwczI4MCAxMjUuMzYgMjgwIDI4MC0xMjUuMzYgMjgwLTI4MCAyODB6IiBmaWxsLW9wYWNpdHk9Ii43NSIvPgogICAgPC9nPgo8L3N2Zz4K);
+    background-size: 6vw;
+    background-position-x: center;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+body.edituser.admin > div.container-fluid > div > div.col-sm-10 > div.discover,
+body.newuser.admin > div.container-fluid > div > div.col-sm-10 > div.discover {
+    left: 240px;
+    margin: 120px 0 0 20% !important;
+    padding: 30px 15px 15px 15px !important;
+    width: calc(80% - 30px);
+    border-top: 2px solid rgba(0,0,0,.3);
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1,
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1 {
+    width: auto;
+position: absolute;
+top: 60px;
+    left: 20%;
+font-size: 24px;
+font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+color: #eee;
+font-weight: 400;
+line-height: 1;
+padding-left: 30px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #submit,
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #submit {
+    float: right;
+    margin-left: 10px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #back,
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #back {
+    float: right;
+    margin-left: 0;
+    background-color: hsla(0,0%,100%,.25);
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #back:hover,
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #back:hover {
+    background-color: hsla(0,0%,100%,.3);
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 {
+    margin-bottom: 10px;
+
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+    padding: 0;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2 {
+    color: #eee;
+    font-size: 15px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 24px;
+    overflow: hidden;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 {
+    width: auto;
+height: 200px;
+padding: 0;
+margin: 15px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a {
+    width: 100%;
+    display: inline-block;
+height: 100%;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover {
+    outline: 2px solid var(--color-secondary);
+font-size: 50px;
+transition: outline 0s;
+-webkit-transition: outline 0s;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img {
+    height: 100%;
+width: auto;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:before {
+    content: "\e352";
+display: inline-block;
+position: absolute;
+font-family: Glyphicons Regular;
+background: var(--color-secondary);
+color: #fff;
+border-radius: 50%;
+font-weight: 400;
+font-size: 18px;
+line-height: 50px;
+width: 50px;
+height: 50px;
+padding-left: 16px;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+opacity: 0;
+z-index: 9;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:before {
+    transition: opacity .2s;
+-webkit-transition: opacity .2s;
+opacity: 1;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:after {
+    position: absolute;
+content: '';
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+background: -webkit-radial-gradient(50% 50% farthest-corner,rgba(50,50,50,.5) 0,#323232 100%);
+background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:after {
+    opacity: 1;
+transition: opacity .2s;
+-webkit-transition: opacity .2s;
+}
+body.admin .panel {
+    background: rgba(0,0,0,.15);
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+}
+
+body.admin .panel-default > .panel-heading {
+    color: hsla(0, 0%, 100%, .65);
+    background-color: transparent;
+    border: none;
+}
+body.admin .panel-default > .panel-collapse > .panel-body {
+    color: hsla(0, 0%, 100%, .65);
+    background-color: transparent;
+    border: none;
+}
+body.config.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > *,
+body.uiconfig.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > * {
+    float: right;
+}
+body.config.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > a,
+body.uiconfig.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > a {
+    background-color: hsla(0,0%,100%,.25);
+    margin-right: 10px;
+}
+body.config.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > a:hover,
+body.uiconfig.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > a:hover {
+    background-color: hsla(0,0%,100%,.3);
+}
+
+
+
+body.admin {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+    color: hsla(0, 0%, 100%, .65);
+}
+body.admin td {
+    font-family: Open Sans regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    
+}
+body.admin td > a {
+    color: hsla(0, 0%, 100%, .65);
+}
+body.admin td > a:hover {
+    color: #fff;
+}
+.glyphicon-ok::before {
+    content: "\EA55";
+    font-family: plex-icons-new;
+font-weight: 400;
+    
+}
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > h1 {
+    width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: rgba(0,0,0,.15);
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
+}
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover {
+    padding: 0 30px !important;
+}
+body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type::before,
+body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type::before {
+    content: none;
+}
+body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type,
+body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type {
+    width: calc(100vw - 240px);
+height: 60px;
+margin: 0;
+padding-left: 25px;
+background: rgba(0,0,0,.15);
+color: hsla(0,0%,100%,.7);
+font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 60px;
+text-size-adjust: 100%;
+white-space: nowrap;
+-webkit-box-direction: normal;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+font-weight: 400;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+position: fixed;
+top: 60px;
+left: 240px;
 }
