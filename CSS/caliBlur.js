@@ -105,8 +105,6 @@
 $( 'a[href*="advanced"]' ).parent().insertAfter( '#nav_new' );
 $( 'body' ).addClass('blur');
 
-
-
 // Back button
 curHref = window.location.href.split('/');
 prevHref = document.referrer.split('/');
@@ -123,8 +121,8 @@ if ( history.length === 1 ||
     $( '.plexBack' ).addClass( 'noBack' );
 }
 // Home button
-$( '.plexBack' ).insertBefore( '<div class="home-btn"></div>' );
-$( 'a.navbar-brand' ).clone().appendTo( '.home-btn' );
+//$( '.plexBack' ).insertBefore( '<div class="home-btn"></div>' );
+//$( 'a.navbar-brand' ).clone().appendTo( '.home-btn' );
 
 /////////////////////////////////
 // Start of Book Details Work //
@@ -410,3 +408,12 @@ $( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
 $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
 $( '#remove-from-shelves' ).insertAfter( '.hr' );
+
+/*Check if link is external and force _blank attribute
+$(function(){ // document ready
+    $('a').filter(function () {
+        return this.hostname && this.hostname !== location.hostname;
+    }).each(function () {
+        $(this).addClass("external").attr( 'target', '_blank' );
+    });
+});*/
