@@ -50,7 +50,9 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     0% { opacity:0; }
     100% { opacity:1; }
 }
-
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
+    display: none;
+}
 .row-fluid .col-sm-10{
     -webkit-animation: fadeIn 1s linear 1; /* Safari & Chrome */
     -moz-animation: fadeIn 1s linear 1; /* Firefox */
@@ -1927,6 +1929,15 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > form > .btn.bt
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff !important;
 }
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a[href*="page"] {
+    display: none;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous + a {
+    display: none;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a {
+    display: none;
+}
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     color: rgba(0,0,0,0);
     font-family: plex-icons-new;
@@ -1943,6 +1954,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
     top: 0;
     right: 0;
     width: 65px;
+    display: block !important;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
     color: rgba(0,0,0,0);
@@ -1960,6 +1972,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {
     position: absolute;
     top: 0;
     right: 65px;
+    display: block !important;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:before {
     content: "\EA32";
@@ -2162,6 +2175,7 @@ body.advsearch > div.container-fluid > div > div.col-sm-10:before {
     line-height: 1;
     margin-left: 20%;
     padding-left: 15px;
+    left: 0;
 }
 body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
     padding: 20px 0 60px 0;
@@ -2712,6 +2726,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     margin: 2px 3px 0 0;
     padding: 0 10px;
     background: hsla(0,0%,100%,.25);
+        overflow: hidden;
+    text-overflow: ellipsis;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn:hover {
     background: hsla(0,0%,100%,.3);
@@ -3198,7 +3214,10 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     order: 1;
 }
 .book-meta > div.btn-toolbar ul.dropdown-menu {
-    /* margin-left: -110px; */
+    position: fixed;
+    top: 120px;
+    right: 5px;
+    left: auto !important;
 }
 #bookDetailsModal > div > div > div.modal-body > div > div > div > div.col-sm-9.col-lg-9.book-meta > div.btn-toolbar > div > div.btn-group.open > div.dropdown-backdrop {
     display: none;
@@ -3799,6 +3818,7 @@ body.login:not(.read-frame) {
 }
 .navigation > ul > li > a > span.hidden-sm {
     display: inline-block !important;
+    padding-left: 4px;
 }
 
 .shelfcreate .col-sm-10 > .discover > form,
@@ -3835,7 +3855,42 @@ background-size: auto, cover !important;
 
 
 
-
+body.author .bg-blur[src="undefined"]:after {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+    opacity: 1;
+    filter:none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+}
+body.author .bg-blur[src="undefined"] {
+    opacity: 1;
+    filter:none;
+}
+body.author:not(.authorlist) .bg-blur[src="undefined"]:before {
+    content: "\e008";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 6vw;
+    position: fixed;
+    left: 240px;
+    top: 180px;
+    width: 20%;
+    text-align: center;
+    z-index: 9;
+}
 
 .author > .container-fluid > .row-fluid > .col-sm-10 > h2:before {
     content: "About Author";
@@ -3867,15 +3922,13 @@ background-size: auto, cover !important;
     font-weight: 400;
     line-height: 1;
     margin: 10px 0 0;
-    max-width: calc(100% - 100px);
-    padding: 15px;
+    padding: 15px 15px 35px;
+    border-bottom: 2px solid rgba(0,0,0,.3);
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio {
     padding: 35px 15px 15px 15px;
     font-size: 15px;
     color: hsla(0,0%,100%,.65);
-    border-top: 2px solid rgba(0,0,0,.3);
-    margin-top: 20px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > img {
     position: fixed;
@@ -4082,10 +4135,11 @@ body.shelf.modal-open > .container-fluid {
     transition: all 0.2s ease-out;
 }
 #remove-from-shelves + .identifiers,
-#remove-from-shelves + .publishers,
-#remove-from-shelves + .published-date,
+#remove-from-shelves + .tags,
+#remove-from-shelves + .publishers, 
+#remove-from-shelves + .published-date, 
 #remove-from-shelves + .languages {
-    margin-top: -25px
+    margin-top: -25px;
 }
 #remove-from-shelves > a.btn:last-of-type {
     margin-bottom: 35px;
@@ -4183,4 +4237,13 @@ body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div
 }
 .navbar-right > li > ul.dropdown-menu.offscreen {
     right: -10px;
+}
+.login .plexBack {
+    display: none;
+}
+body.login > div.navbar.navbar-default.navbar-static-top > div > form {
+    display: none;
+}
+body.login > div.container-fluid > div.row-fluid > div.col-sm-2 {
+    display: none;
 }
