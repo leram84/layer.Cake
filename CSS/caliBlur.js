@@ -103,7 +103,7 @@
 
 // Move advanced search to side-menu
 $( 'a[href*="advanced"]' ).parent().insertAfter( '#nav_new' );
-
+$( 'body' ).addClass('blur');
 
 // Back button
 curHref = window.location.href.split('/');
