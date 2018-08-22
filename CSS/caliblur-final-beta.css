@@ -3855,7 +3855,42 @@ background-size: auto, cover !important;
 
 
 
-
+body.author .bg-blur[src="undefined"]:after {
+    background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+    opacity: 1;
+    filter:none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+}
+body.author .bg-blur[src="undefined"] {
+    opacity: 1;
+    filter:none;
+}
+body.author .bg-blur[src="undefined"]:before {
+    content: "\e008";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 6vw;
+    position: fixed;
+    left: 240px;
+    top: 180px;
+    width: 20%;
+    text-align: center;
+    z-index: 9;
+}
 
 .author > .container-fluid > .row-fluid > .col-sm-10 > h2:before {
     content: "About Author";
@@ -3887,15 +3922,13 @@ background-size: auto, cover !important;
     font-weight: 400;
     line-height: 1;
     margin: 10px 0 0;
-    max-width: calc(100% - 100px);
-    padding: 15px;
+    padding: 15px 15px 35px;
+    border-bottom: 2px solid rgba(0,0,0,.3);
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio {
     padding: 35px 15px 15px 15px;
     font-size: 15px;
     color: hsla(0,0%,100%,.65);
-    border-top: 2px solid rgba(0,0,0,.3);
-    margin-top: 20px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > img {
     position: fixed;
