@@ -2726,6 +2726,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     margin: 2px 3px 0 0;
     padding: 0 10px;
     background: hsla(0,0%,100%,.25);
+        overflow: hidden;
+    text-overflow: ellipsis;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > .form-group > .btn-toolbar-lg > label.btn:hover {
     background: hsla(0,0%,100%,.3);
