@@ -311,7 +311,7 @@ $( '#logout' ).parent().addClass( 'dropdown' ).appendTo( '.profileDropli' );
 
 // Remove the modals except from some areas where they are needed
 bodyClass = $( 'body' ).attr( 'class' ).split(' ');
-modalWanted = ['admin', 'editbook'];
+modalWanted = ['admin', 'editbook', 'config', 'uiconfig'];
 
 if ( $.inArray( bodyClass[0], modalWanted) === 1 ) {
 } else {
