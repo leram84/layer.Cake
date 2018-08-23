@@ -357,7 +357,6 @@ if ( $.trim( $('.leramslist').html() ).length === 0 )
   $('#btnGroupDrop1').addClass('empty-ul');
 }
 
-/*
 $( '.home-btn > a' ).attr({
     'data-toggle': 'tooltip',
     'title': 'Home',
@@ -371,44 +370,57 @@ $( '.plexBack > a' ).attr({
 $( '#top_tasks' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Tasks',
-   'data-placement': 'bottom' })
+   'data-placement': 'bottom',
+   'data-viewport': '.btn-group' })
    .addClass('tasks-btn-tooltip');
 $( '#top_admin' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Administration',
-  'data-placement': 'bottom' })
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
   .addClass('admin-btn-tooltip');
 $( '#btn-upload' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Upload',
-  'data-placement': 'bottom' })
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
   .addClass('upload-btn-tooltip');
 $( '#add-to-shelf' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Add to Shelf',
-  'data-placement': 'bottom' })
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
   .addClass('addtoshelf-btn-tooltip');
 $( '#have_read_cb' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Read/Unread',
-  'data-placement': 'bottom'})
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
   .addClass('readunread-btn-tooltip');
 $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Edit/Delete Book',
-   'data-placement': 'bottom' })
+   'data-placement': 'bottom',
+   'data-viewport': '.btn-group' })
    .addClass('edit-btn-tooltip');
 $( '#sendbtn' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Send to Kindle',
-  'data-placement': 'bottom',})
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
   .addClass('send-btn-tooltip');
 $( '#read-in-browser' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Read in Browser',
-  'data-placement': 'bottom'})
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group'})
+  .addClass('send-btn-tooltip');
+$( '#btnGroupDrop1' ).attr({
+  'data-toggle': 'tooltip',
+  'title': 'Download',
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
   .addClass('send-btn-tooltip');
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
 });
-*/
