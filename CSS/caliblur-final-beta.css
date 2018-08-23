@@ -4718,6 +4718,7 @@ body:not(.blur):not(.login):not(.author):not(.shelfedit):not(.langlist):not(.aut
     position: fixed;
     top: 60px;
     left: 240px;
+    z-index: 99999999999999999999999999999999999
 }
 body:not(.blur):not(.author):not(.shelfedit):not(.admin) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
@@ -4793,5 +4794,8 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:f
     left: calc(50% + 120px);
     position: fixed;
     z-index: 999999999999999999999999999999999999
+}
+body.read:not(.blur) a[href*="readbooks"] {
+    color: hsla(0,0%,100%,.7) !important;
 }
 /* test */
