@@ -1,4 +1,4 @@
-$(function($){
+(function($){
 
     /**
      * Copyright 2012, Digital Fusion
