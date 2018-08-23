@@ -409,7 +409,7 @@ $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
 $( '#remove-from-shelves' ).insertAfter( '.hr' );
 
-Check if link is external and force _blank attribute
+// Check if link is external and force _blank attribute
 $(function(){ // document ready
     $('a').filter(function () {
         return this.hostname && this.hostname !== location.hostname;
