@@ -3213,7 +3213,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     margin: 0;
     order: 1;
 }
-.book-meta > div.btn-toolbar ul.dropdown-menu {
+.book-meta > div.btn-toolbar ul.dropdown-menu.offscreen {
     position: fixed;
     top: 120px;
     right: 14px;
