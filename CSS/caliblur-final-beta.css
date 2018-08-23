@@ -53,7 +53,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
     display: none;
 }
-.row-fluid .col-sm-10{
+body.blur .row-fluid .col-sm-10{
     -webkit-animation: fadeIn 1s linear 1; /* Safari & Chrome */
     -moz-animation: fadeIn 1s linear 1; /* Firefox */
     -o-animation: fadeIn 1s linear 1;  /* Opera */
