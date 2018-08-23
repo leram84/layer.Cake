@@ -401,7 +401,7 @@ $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
 $( '#sendbtn' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Send to Kindle',
-  'data-placement': 'bottom'})
+  'data-placement': 'bottom',})
   .addClass('send-btn-tooltip');
 $( '#read-in-browser' ).attr({
   'data-toggle': 'tooltip',
