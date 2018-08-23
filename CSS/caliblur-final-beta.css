@@ -3216,7 +3216,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
 .book-meta > div.btn-toolbar ul.dropdown-menu {
     position: fixed;
     top: 120px;
-    right: 5px;
+    right: 14px;
     left: auto !important;
 }
 #bookDetailsModal > div > div > div.modal-body > div > div > div > div.col-sm-9.col-lg-9.book-meta > div.btn-toolbar > div > div.btn-group.open > div.dropdown-backdrop {
