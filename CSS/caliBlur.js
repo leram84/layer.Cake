@@ -50,9 +50,8 @@ if ( history.length === 1 ||
     $( '.plexBack' ).addClass( 'noBack' );
 }
 // Home button
-$( '.plexBack' ).before( '<div class="home-btn tooltip-wrapper"></div>' );
+$( '.plexBack' ).before( '<div class="home-btn"></div>' );
 $( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navbar-brand');
-$( 'body' ).append('<div class="home-btn tooltip-text">Home</div>' );
 /////////////////////////////////
 // Start of Book Details Work //
 ///////////////////////////////
