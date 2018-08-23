@@ -4694,3 +4694,100 @@ position: fixed;
 top: 60px;
 left: 240px;
 }
+
+
+
+
+
+
+
+/* test */
+body:not(.blur):not(.author) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
+    background-repeat: no-reapeat, repeat, no-repeat !important;
+    background-attachment: fixed, fixed, fixed !important;
+    background-position: center center, center center, center center !important;
+    background-size: auto, auto, cover !important;
+    -webkit-background-size: auto, auto, cover !important;
+    -moz-background-size: autom, auto, cover !important;
+    -o-background-size: auto, auto, cover !important;
+    width: 100%;
+    height: 60px;
+    display: block;
+    content: '';
+    position: fixed;
+    top: 60px;
+    left: 240px;
+}
+body:not(.blur):not(.author) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
+body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before {
+    background: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+    width: calc(100vw - 240px);
+    height: calc(100vh - 120px);
+    display: block;
+    content: '';
+    position: fixed;
+    top: 120px;
+    left: 240px;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999999999999999999999999999999
+}
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@-moz-keyframes loading {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+body:not(.blur):not(.author) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
+body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid var(--color-secondary);
+    border-right: 2px solid var(--color-secondary);
+    width: 24px;
+    height: 24px;
+    -webkit-animation: loading 0.5s linear infinite;
+    animation: loading 0.5s linear infinite;
+    display: block;
+    margin: ;
+    top: 240px;
+    left: calc(50% + 120px);
+    position: fixed;
+    z-index: 999999999999999999999999999999999999
+}
+/* test */
