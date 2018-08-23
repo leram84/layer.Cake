@@ -4857,6 +4857,7 @@ body.read:not(.blur) a[href*="readbooks"] {
     transform: translate(0) scale(1);
     -webkit-transform-origin: center top;
     transform-origin: center top;
+    white-space: nowrap;
 }
 .tooltip.bottom .tooltip-arrow {
         width: 0;
@@ -4869,4 +4870,7 @@ body.read:not(.blur) a[href*="readbooks"] {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
+}
+#sendbtn > span {
+    height: 60px;
 }
