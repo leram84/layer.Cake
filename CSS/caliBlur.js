@@ -357,6 +357,7 @@ if ( $.trim( $('.leramslist').html() ).length === 0 )
   $('#btnGroupDrop1').addClass('empty-ul');
 }
 
+/*
 $( '.home-btn > a' ).attr({
     'data-toggle': 'tooltip',
     'title': 'Home',
@@ -410,3 +411,4 @@ $( '#read-in-browser' ).attr({
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
+*/
