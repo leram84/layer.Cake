@@ -420,6 +420,11 @@ $( '#btnGroupDrop1' ).attr({
   'title': 'Download',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
+  $( '.profileDrop' ).attr({
+    'data-toggle': 'tooltip',
+    'title': 'Account',
+    'data-placement': 'bottom',
+    'data-viewport': '.btn-group' })
   .addClass('send-btn-tooltip');
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
