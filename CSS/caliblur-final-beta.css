@@ -4702,7 +4702,7 @@ left: 240px;
 
 
 /* test */
-body:not(.blur):not(.login):not(.author):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
+body:not(.blur):not(.login):not(.author):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
     background: linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
     background-repeat: no-reapeat, repeat, no-repeat !important;
     background-attachment: fixed, fixed, fixed !important;
@@ -4720,7 +4720,7 @@ body:not(.blur):not(.login):not(.author):not(.shelfedit):not(.langlist):not(.aut
     left: 240px;
     z-index: 99999999999999999999999999999999999
 }
-body:not(.blur):not(.author):not(.shelfedit):not(.admin) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
+body:not(.blur):not(.author):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:before,
 body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before {
@@ -4773,7 +4773,7 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:befor
         transform: rotate(1turn)
     }
 }
-body:not(.blur):not(.author):not(.shelfedit):not(.admin) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
+body:not(.blur):not(.author):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:after,
 body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:first-of-type:after {
