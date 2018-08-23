@@ -4857,6 +4857,7 @@ body.read:not(.blur) a[href*="readbooks"] {
     transform: translate(0) scale(1);
     -webkit-transform-origin: center top;
     transform-origin: center top;
+    whitespace: nowrap;
 }
 .tooltip.bottom .tooltip-arrow {
         width: 0;
