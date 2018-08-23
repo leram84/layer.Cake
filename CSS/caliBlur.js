@@ -50,9 +50,9 @@ if ( history.length === 1 ||
     $( '.plexBack' ).addClass( 'noBack' );
 }
 // Home button
-$( '.plexBack' ).before( '<div class="home-btn"></div>' );
+$( '.plexBack' ).before( '<div class="home-btn tooltip-wrapper"></div>' );
 $( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navbar-brand');
-
+$( 'body' ).append('<div class="home-btn tooltip-text">Home</div>' );
 /////////////////////////////////
 // Start of Book Details Work //
 ///////////////////////////////
@@ -357,3 +357,17 @@ if ( $.trim( $('.leramslist').html() ).length === 0 )
 {
   $('#btnGroupDrop1').addClass('empty-ul');
 }
+
+$( '.home-btn > a' ).attr({ 'data-toggle': 'tooltip', 'title': 'Home', 'data-placement': 'bottom'});
+$( '.plexBack > a' ).attr({ 'data-toggle': 'tooltip', 'title': 'Back', 'data-placement': 'bottom'});
+$( '#top_tasks' ).attr({ 'data-toggle': 'tooltip', 'title': 'Tasks', 'data-placement': 'bottom'});
+$( '#top_admin' ).attr({ 'data-toggle': 'tooltip', 'title': 'Administration', 'data-placement': 'bottom'});
+$( '#btn-upload' ).attr({ 'data-toggle': 'tooltip', 'title': 'Upload', 'data-placement': 'bottom'});
+$( '#add-to-shelf' ).attr({ 'data-toggle': 'tooltip', 'title': 'Add to Shelf', 'data-placement': 'bottom'});
+$( '#have_read_cb' ).attr({ 'data-toggle': 'tooltip', 'title': 'Read/Unread', 'data-placement': 'bottom'});
+$( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({ 'data-toggle': 'tooltip', 'title': 'Edit/Delete Book', 'data-placement': 'bottom'});
+$( '#sendbtn' ).attr({ 'data-toggle': 'tooltip', 'title': 'Send to Kindle', 'data-placement': 'bottom'});
+$( '#read-in-browser' ).attr({ 'data-toggle': 'tooltip', 'title': 'Read in Browser', 'data-placement': 'bottom'});
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
