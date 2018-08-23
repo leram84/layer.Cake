@@ -339,8 +339,6 @@ $( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
 
 $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
-
-
 // Check if link is external and force _blank attribute
 $(function(){ // document ready
     $('a').filter(function () {
@@ -349,3 +347,13 @@ $(function(){ // document ready
         $(this).addClass("external").attr( 'target', '_blank' );
     });
 });
+
+// Check if lists are empty and add class to buttons
+if ( $.trim( $('#add-to-shelves').html() ).length === 0 )
+{
+  $('#add-to-shelf').addClass('empty-ul');
+}
+if ( $.trim( $('.leramslist').html() ).length === 0 )
+{
+  $('#btnGroupDrop1').addClass('empty-ul');
+}
