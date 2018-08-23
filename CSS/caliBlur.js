@@ -68,17 +68,20 @@ if ( $( 'body.book' ).length > 0 ) {
   $( '.languages' ).appendTo( '.bookinfo' );
   $('.hr').detach();
   if ( $( '.identifiers ').length > 0 ) {
+    console.log(".identifiers does not exist");
       $( '.identifiers' ).before( '<div class="hr"></div>' );
     } else {
   	if ( $( '.bookinfo > p' ).length > 0 ) {
+      console.log(".bookinfo > p does not exist");
       $( '.bookinfo > p' ).first().after( '<div class="hr"></div>' );
       } else{
+        console.log("prepending hr div to top of .bookinfo");
   		$( '.bookinfo' ).prepend( '<div class="hr"></div>' );
       }
   }
   $( '.rating' ).insertBefore( '.hr' );
   $( 'div.description' ).hide();
-
+  $( '#remove-from-shelves' ).insertAfter( '.hr' );
 
   /* if book description is not in html format, Remove extra line breaks
   Remove blank lines/unnecessary spaces, split by line break to array
@@ -336,7 +339,7 @@ $( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
 
 $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
-$( '#remove-from-shelves' ).insertAfter( '.hr' );
+
 
 // Check if link is external and force _blank attribute
 $(function(){ // document ready
