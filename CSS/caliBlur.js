@@ -68,11 +68,11 @@ if ( $( 'body.book' ).length > 0 ) {
   $( '.languages' ).appendTo( '.bookinfo' );
   $('.hr').detach();
   if ( $( '.identifiers ').length > 0 ) {
-    console.log(".identifiers does not exist");
+    console.log(".identifiers length " + $( '.identifiers ').length );
       $( '.identifiers' ).before( '<div class="hr"></div>' );
     } else {
   	if ( $( '.bookinfo > p' ).length > 0 ) {
-      console.log(".bookinfo > p does not exist");
+      console.log(".bookinfo > p length " +  $( '.bookinfo > p' ).length );
       $( '.bookinfo > p' ).first().after( '<div class="hr"></div>' );
       } else{
         console.log("prepending hr div to top of .bookinfo");
