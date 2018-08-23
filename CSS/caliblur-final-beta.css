@@ -4871,3 +4871,6 @@ body.read:not(.blur) a[href*="readbooks"] {
     transform: translateX(-50%);
     position: absolute;
 }
+#sendbtn > span {
+    height: 60px;
+}
