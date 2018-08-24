@@ -430,14 +430,14 @@ $( '#sendbtn' ).attr({
   .addClass('send-btn-tooltip');
 
 $( '#read-in-browser' ).attr({
-  'data-toggle': 'tooltip',
+  'data-toggle-two': 'tooltip',
   'title': 'Read in Browser',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group'})
   .addClass('send-btn-tooltip');
 
 $( '#btnGroupDrop1' ).attr({
-  'data-toggle': 'tooltip',
+  'data-toggle-two': 'tooltip',
   'title': 'Download',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' });
