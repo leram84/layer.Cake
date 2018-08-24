@@ -4985,9 +4985,12 @@ body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.boot
     border-bottom: none;
     border-radius: 0;
     background-color: hsla(0,0%,100%,.1);
-    border-right: 2px solid rgba(0,0,0,.3);
+    border-right: 2px solid rgba(0,0,0,.2);
     text-align: left !important;
     position: relative;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th:last-of-type {
+    border-right: none;
 }
 body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th:hover {
     background-color: hsla(0,0%,100%,.15);
