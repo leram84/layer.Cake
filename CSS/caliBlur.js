@@ -373,7 +373,7 @@ $( '.plexBack > a' ).attr({
 $( '#top_tasks' ).attr({
       'data-toggle': 'tooltip',
       'title': 'Tasks',
-      'data-placement': 'bottom'})
+      'data-placement': 'bottom'});
       .addClass('tasks-btn-tooltip');
 if ( !$( 'body.search' ).length === 1 ) {
   $( '#top_tasks' ).attr({
@@ -386,14 +386,14 @@ if ( !$( 'body.search' ).length === 1 ) {
 $( '#top_admin' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Administration',
-  'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
+  'data-placement': 'bottom'})
+  'data-viewport': '#main-nav' })
   .addClass('admin-btn-tooltip');
 $( '#btn-upload' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Upload',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
+  'data-viewport': '#main-nav' })
   .addClass('upload-btn-tooltip');
 
 if ( !$( 'body.search' ).length === 1 ) {
@@ -404,6 +404,7 @@ $( '#add-to-shelf' ).attr({
   'data-viewport': '.btn-group' })
   .addClass('addtoshelf-btn-tooltip');
 }
+
 $( '#have_read_cb' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Read/Unread',
