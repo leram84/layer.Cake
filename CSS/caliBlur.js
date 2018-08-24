@@ -381,7 +381,7 @@ $( '#top_tasks' ).attr({
 $( '#top_admin' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Administration',
-  'data-placement': 'bottom'})
+  'data-placement': 'bottom',
   'data-viewport': '#main-nav' })
   .addClass('admin-btn-tooltip');
 
