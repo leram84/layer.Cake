@@ -4382,7 +4382,46 @@ body:not(.blur) #nav_createshelf,
 body:not(.blur) #scnd-nav > #nav_about {
     display: none;
 }
-
+body:not(.blur) > .navbar > .container-fluid > .navbar-header:before {
+    content: "\EA30";
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    display: block;
+    font-family: plex-icons-new;
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 60px;
+    position:absolute;
+    left: 20px;
+}
+body:not(.blur) > .navbar > .container-fluid > .navbar-header:after {
+    content: "\EA2F";
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    display: block;
+    font-family: plex-icons-new;
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 60px;
+    position:absolute;
+    left: 60px;
+}
 
 
 
