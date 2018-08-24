@@ -871,6 +871,7 @@ TEST
     line-height: 10px;
     font-weight: 400;
     text-align: center;
+    pointer-events: none;
         /* 
     content: "\EA13";
     position: absolute;
