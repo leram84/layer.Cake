@@ -448,5 +448,5 @@ $(document).ready(function(){
     $( '#btn-upload' ).attr('title', " ");
 });
 $( '[data-toggle-two="tooltip"]' ).click(function(){
-     $('[data-toggle-two="tooltip"]').tooltip('destroy'); // destroy
+     $('[data-toggle-two="tooltip"]').tooltip('hide'); // destroy
    });
