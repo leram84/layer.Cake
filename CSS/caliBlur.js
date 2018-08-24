@@ -407,10 +407,16 @@ $( '#add-to-shelf' ).attr({
   'data-viewport': '.btn-group' })
   .addClass('addtoshelf-btn-tooltip');
 }
-
 $( '#have_read_cb' ).attr({
   'data-toggle': 'tooltip',
-  'title': 'Read/Unread',
+  'title': 'Mark As Read',
+  'data-placement': 'bottom',
+  'data-viewport': '.btn-group' })
+  .addClass('readunread-btn-tooltip');
+
+$( '#have_read_cb:checked' ).attr({
+  'data-toggle': 'tooltip',
+  'title': 'Mark As Unread',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('readunread-btn-tooltip');
