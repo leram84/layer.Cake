@@ -4164,11 +4164,8 @@ body.shelf.modal-open > .container-fluid {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    left: -40px
+    left: -40px;
     pointer-events: none;
-}
-body.book #remove-from-shelves {
-    width: 1px;
 }
 #remove-from-shelves > .btn:hover {
     background: #ce3d2a;
@@ -4185,6 +4182,8 @@ body.book #remove-from-shelves {
 #remove-from-shelves + .published-date, 
 #remove-from-shelves + .languages {
     margin-top: -25px;
+        z-index: 9;
+    position: relative;
 }
 #remove-from-shelves > a.btn:last-of-type {
     margin-bottom: 35px;
