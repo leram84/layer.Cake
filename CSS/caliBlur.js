@@ -433,14 +433,12 @@ $( '#btnGroupDrop1' ).attr({
   'title': 'Download',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
-  $( '.profileDrop' ).attr({
-
+  /*$( '.profileDrop' ).attr({
     'title': 'Account',
     'data-placement': 'bottom',
     'data-viewport': '.btn-group' })
-  .addClass('send-btn-tooltip dropdown');
+  .addClass('send-btn-tooltip dropdown');*/
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-    $('.send-btn-tooltip.dropdown').dropdown();
     $( '#btn-upload' ).attr('title', " ");
 });
