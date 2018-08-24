@@ -398,7 +398,7 @@ $( '#have_read_cb' ).attr({
   'title': 'Read/Unread',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
-  .addClass('readunread-btn-tooltip');
+  .addClass('readunread-btn-tooltip');)
 $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Edit/Delete Book',
@@ -430,4 +430,5 @@ $( '#btnGroupDrop1' ).attr({
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
     $('.send-btn-tooltip.dropdown').dropdown();
+    $( '#btn-upload' ).attr('title', " ");
 });
