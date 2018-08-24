@@ -364,6 +364,7 @@ $( '.home-btn > a' ).attr({
     'title': 'Home',
     'data-placement': 'bottom' })
     .addClass('home-btn-tooltip');
+
 $( '.plexBack > a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Back',
@@ -371,17 +372,11 @@ $( '.plexBack > a' ).attr({
    .addClass('back-btn-tooltip');
 
 $( '#top_tasks' ).attr({
-      'data-toggle': 'tooltip',
-      'title': 'Tasks',
-      'data-placement': 'bottom'});
-      .addClass('tasks-btn-tooltip');
-if ( !$( 'body.search' ).length === 1 ) {
-  $( '#top_tasks' ).attr({
-   'data-viewport': '.btn-group' })
- } else {
-  $( '#top_tasks' ).attr({
+    'data-toggle': 'tooltip',
+    'title': 'Tasks',
+    'data-placement': 'bottom',
     'data-viewport': '#main-nav' })
-  }
+    .addClass('tasks-btn-tooltip');
 
 $( '#top_admin' ).attr({
   'data-toggle': 'tooltip',
@@ -389,6 +384,14 @@ $( '#top_admin' ).attr({
   'data-placement': 'bottom'})
   'data-viewport': '#main-nav' })
   .addClass('admin-btn-tooltip');
+
+$( '.profileDrop' ).attr({
+  'title': 'Account',
+  'data-placement': 'bottom',
+  'data-toggle-two': 'tooltip',
+  'data-viewport': '#main-nav' })
+  .addClass('send-btn-tooltip dropdown');
+
 $( '#btn-upload' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Upload',
@@ -411,35 +414,36 @@ $( '#have_read_cb' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('readunread-btn-tooltip');
+
 $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Edit/Delete Book',
    'data-placement': 'bottom',
    'data-viewport': '.btn-group' })
    .addClass('edit-btn-tooltip');
+
 $( '#sendbtn' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Send to Kindle',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('send-btn-tooltip');
+
 $( '#read-in-browser' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Read in Browser',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group'})
   .addClass('send-btn-tooltip');
+
 $( '#btnGroupDrop1' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Download',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
-  /*$( '.profileDrop' ).attr({
-    'title': 'Account',
-    'data-placement': 'bottom',
-    'data-viewport': '.btn-group' })
-  .addClass('send-btn-tooltip dropdown');*/
+  'data-viewport': '.btn-group' });
+
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('[data-toggle-two="tooltip"]').tooltip({container: 'body'});
     $( '#btn-upload' ).attr('title', " ");
 });
