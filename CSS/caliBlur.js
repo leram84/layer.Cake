@@ -444,7 +444,10 @@ $( '#btnGroupDrop1' ).attr({
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-    $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'}).on('click mousedown mouseup', '[data-toggle="tooltip"], [title]:not([data-toggle="popover"])', function () {
+    $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'})
+    .on('click mousedown mouseup', '[data-toggle="tooltip"], [title]:not([data-toggle="popover"])',
+    function () {
         $('[data-toggle="tooltip"], [title]:not([data-toggle="popover"])').tooltip('destroy');
     $( '#btn-upload' ).attr('title', " ");
+       });
 });
