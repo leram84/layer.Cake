@@ -2710,7 +2710,7 @@ input.pill + label:hover {
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 > div:nth-child(10) > label:before {
     content: "Edit Metadata";
-    width: calc(100vw - 240px);
+    width: calc(100vw - 290px);
     height: 60px;
     margin: 0;
     padding-left: 25px;
@@ -4914,4 +4914,54 @@ body.search > div.container-fluid > div > div.col-sm-10 > div.discover > h2 + p:
     font-size: 20px;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #eee;
+}
+
+
+body.login .home-btn {
+    display: none;
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 {
+    max-width: calc(25% - 75px);
+    position: fixed;
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 {
+    margin-left: 25% !important;
+    width: 75%;
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 50px;
+    height: 60px;
+    color: transparent;
+    background: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0;
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:before {
+    content: "\EA6D";
+    font-family: plex-icons-new;
+        font-size: 18px;
+    color: hsla(0,0%,100%,.7);
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover {
+    background: #ce3d2a;
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover:before {
+    color: #fff;
+}
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center.more-stuff > h4 {
+    color: #eee;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.editbook .form-control.tt-hint {
+    background: hsla(0, 0%, 100%, .08) !important;
+}
+.checkbox input[type=checkbox] {
+    margin-left: -19px;
+    margin-top: 5px
 }
