@@ -5106,3 +5106,50 @@ body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.boot
 .search #shelf-actions {
     display: none;
 }
+
+
+
+.epub-back {
+    width: 18px;
+height: 19px;
+line-height: 20px;
+overflow: hidden;
+display: inline-block;
+opacity: .5;
+padding: 4px;
+border-radius: 4px;
+    position: relative;
+    /*! border: 1px solid transparent; */
+}
+.epub-back > input {
+    opacity: 0;
+    width: 26px;
+    height: 27px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+.epub-back:before {
+    content: "\EA1C";
+    font-family: plex-icons-new;
+    font-weight: 400;
+    color: #4f4f4f;
+    position: absolute;
+overflow: hidden;
+display: inline-block;
+opacity: .5;
+    font-size: 16px;
+    left: 5px;
+    top: 4px;
+}
+.epub-back:hover:before {
+    top: 3px;
+    left: 4px;
+        opacity: 1;
+}
+.epub-back:hover {
+border: 1px rgba(0,0,0,.2) solid;
+    padding: 3px;
+}
