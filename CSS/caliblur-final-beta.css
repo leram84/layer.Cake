@@ -5034,6 +5034,13 @@ body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.boot
 body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr > td {
     background: transparent;
     border: none;
+    text-align: left !important;
+    padding: 8px 20px;
+    color: hsla(0,0%,100%,.65);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr:nth-of-type(even) {
     background-color: hsla(0,0%,100%,.02) !important;
