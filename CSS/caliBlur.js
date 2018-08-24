@@ -447,6 +447,12 @@ $(document).ready(function(){
     $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
     $( '#btn-upload' ).attr('title', " ");
 });
-$( '[data-toggle-two="tooltip"]' ).click(function(){
-     $('[data-toggle-two="tooltip"]').tooltip('hide'); // destroy
+$( '#btnGroupDrop1' ).click(function(){
+  $('#btnGroupDrop1').tooltip('hide'); // destroy
    });
+$( '.profileDrop' ).click(function(){
+  $('.profileDrop').tooltip('hide'); // destroy
+  });
+$( '#read-in-browser' ).click(function(){
+  $('#read-in-browser').tooltip('hide'); // destroy
+ });
