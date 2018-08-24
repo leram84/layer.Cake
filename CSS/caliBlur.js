@@ -205,7 +205,9 @@ if ( $( 'body.book' ).length > 0 ) {
     .prependTo( '[aria-label^="Download, send"]' );
   $( '#have_read_cb' )
     .after( '<label class="block-label readLbl" for="#have_read_cb"></label>' );
-  $( '#shelf-actions' ).prependTo( '.btn-group.sendBtn' );
+    if ( !$( 'body.search' ).length === 1 ) {
+      $( '#shelf-actions' ).prependTo( '.btn-group.sendBtn' );
+    }
 }
 ///////////////////////////////
 // End of Book Details Work //
@@ -385,14 +387,12 @@ $( '#btn-upload' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('upload-btn-tooltip');
-if ( !$( 'body.search' ).length === 1 ) {
 $( '#add-to-shelf' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Add to Shelf',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('addtoshelf-btn-tooltip');
-}
 $( '#have_read_cb' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Read/Unread',
