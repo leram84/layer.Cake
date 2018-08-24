@@ -205,9 +205,7 @@ if ( $( 'body.book' ).length > 0 ) {
     .prependTo( '[aria-label^="Download, send"]' );
   $( '#have_read_cb' )
     .after( '<label class="block-label readLbl" for="#have_read_cb"></label>' );
-    if ( !$( 'body.search' ).length === 1 ) {
       $( '#shelf-actions' ).prependTo( '.btn-group.sendBtn' );
-    }
 }
 ///////////////////////////////
 // End of Book Details Work //
