@@ -327,6 +327,8 @@ if ( $( 'body.author' ).length >0 ) {
 }
 
 // Ereader Page - add class to iframe body on ereader page after it loads.
+$( 'body.epub #title-controls' )
+  .append('<input action="action" onclick="window.history.go(-1); return false;" type="button" value="Back" class="epub-back"/>')
 $( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
         setTimeout(function() {
                 $( 'iframe' )
