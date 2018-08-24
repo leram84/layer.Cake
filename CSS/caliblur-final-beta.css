@@ -4165,6 +4165,10 @@ body.shelf.modal-open > .container-fluid {
     font-weight: 400;
     font-size: 14px;
     left: -40px
+    pointer-events: none;
+}
+body.book #remove-from-shelves {
+    width: 1px;
 }
 #remove-from-shelves > .btn:hover {
     background: #ce3d2a;
