@@ -418,6 +418,14 @@ $( '#have_read_cb:checked' ).attr({
   'data-viewport': '.btn-group' })
   .addClass('readunread-btn-tooltip');
 
+$( '#have_read_cb' ).click(function() {
+  if ( $( '#have_read_cb:checked' ).length > 0 ) {
+      $( this ).attr('data-original-title', 'Mark as Unread');
+  } else {
+      $( this).attr('data-original-title', 'Mark as Read');
+  }
+});
+
 $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Edit/Delete Book',
