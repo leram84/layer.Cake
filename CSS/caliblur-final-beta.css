@@ -4887,3 +4887,31 @@ body.read:not(.blur) a[href*="readbooks"] {
 #sendbtn > span {
     height: 60px;
 }
+body.search > div.container-fluid > div > div.col-sm-10 > div.discover > h2 + p {
+    border-top: 2px solid rgba(0,0,0,.3);
+    margin: 90px 27px 0 20px;
+    text-align: center;
+    padding-top: 100px;
+    color: hsla(0,0%,100%,.45);
+    font-size: 18px;
+    line-height: 1.5;
+}
+body.search > div.container-fluid > div > div.col-sm-10 > div.discover > h2 + p:before {
+    content: "Library";
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    color: #fff;
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.71428571;
+}
+body.search > div.container-fluid > div > div.col-sm-10 > div.discover > h2 + p:after {
+    content: "No Results";
+    position: absolute;
+    margin-left: -170px;
+    margin-top: -40px;
+    font-size: 20px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+}
