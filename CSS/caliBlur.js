@@ -483,7 +483,7 @@ $( '#read-in-browser' ).attr({
   'data-viewport': '.btn-toolbar'})
   .addClass('send-btn-tooltip');
 
-$( '#btnGroupDrop1' ).attr({
+$( '#btnGroupDrop1[expanded-aria="false"]' ).attr({
   'data-toggle-two': 'tooltip',
   'title': 'Download',
   'data-placement': 'bottom',
