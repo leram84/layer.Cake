@@ -434,21 +434,21 @@ $( '#add-to-shelf' ).attr({
   'data-toggle-two': 'tooltip',
   'title': 'Add to Shelf',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
+  'data-viewport': '.btn-toolbar' })
   .addClass('addtoshelf-btn-tooltip');
 
 $( '#have_read_cb' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Mark As Read',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
+  'data-viewport': '.btn-toolbar' })
   .addClass('readunread-btn-tooltip');
 
 $( '#have_read_cb:checked' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Mark As Unread',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
+  'data-viewport': '.btn-toolbar' })
   .addClass('readunread-btn-tooltip');
 
 $( '#have_read_cb' ).click(function() {
@@ -463,28 +463,28 @@ $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Edit/Delete Book',
    'data-placement': 'bottom',
-   'data-viewport': '.btn-group' })
+   'data-viewport': '.btn-toolbar' })
    .addClass('edit-btn-tooltip');
 
 $( '#sendbtn' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Send to Kindle',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' })
+  'data-viewport': '.btn-toolbar' })
   .addClass('send-btn-tooltip');
 
 $( '#read-in-browser' ).attr({
   'data-toggle-two': 'tooltip',
   'title': 'Read in Browser',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group'})
+  'data-viewport': '.btn-toolbar'})
   .addClass('send-btn-tooltip');
 
 $( '#btnGroupDrop1' ).attr({
   'data-toggle-two': 'tooltip',
   'title': 'Download',
   'data-placement': 'bottom',
-  'data-viewport': '.btn-group' });
+  'data-viewport': '.btn-toolbar' });
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
