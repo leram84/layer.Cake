@@ -327,9 +327,9 @@ if ( $( 'body.author' ).length >0 ) {
 }
 
 // Ereader Page - add class to iframe body on ereader page after it loads.
-backurl = '/../../book' + url[2]
+backurl = '../../book/' + url[2]
 $( 'body.epub #title-controls' )
-  .append('<div class="epub-back"><a href=' + backurl + '>Back</a></div>')
+  .append('<div class="epub-back"><input action="action" onclick="location.href=backurl; return false;" type="button" value="Back" /></div>')
 $( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
         setTimeout(function() {
                 $( 'iframe' )
