@@ -4965,3 +4965,76 @@ body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div
     margin-left: -19px;
     margin-top: 5px
 }
+
+
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover {
+    width: calc(100% - 3px);
+    margin: 0 0 0 3px !important;
+    padding: 0 !important;
+    border-collapse: collapse;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container {
+    border: none;
+    border-radius: 0;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table {
+    border: none;
+    border-radius: 0;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th {
+    border-bottom: none;
+    border-radius: 0;
+    background-color: hsla(0,0%,100%,.1);
+    border-right: 2px solid rgba(0,0,0,.3);
+    text-align: left !important;
+    position: relative;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th:hover {
+    background-color: hsla(0,0%,100%,.15);
+    color: #fff;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th:hover .th-inner {
+    color: #fff;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner {
+    font-size: 13px;
+    color: hsla(0,0%,100%,.7);
+        -webkit-tap-highlight-color: transparent;
+        font-family: Open Sans Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-image: none;
+    text-align: left;
+    padding: 8px 20px;
+    white-space: nowrap;
+    width: 100%;
+    transition: color .2s;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.asc,
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.desc {
+    color: #fff;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.asc:after {
+    content: "\EA58";
+    font-family: plex-icons-new;
+    font-weight: 400;
+    right: 20px;
+    position: absolute;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.desc:after {
+    content: "\EA57";
+    font-family: plex-icons-new;
+    font-weight: 400;
+    right: 20px;
+    position: absolute;
+    
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr:hover {
+    background: transparent !important;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr > td {
+    background: transparent;
+    border: none;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr:nth-of-type(even) {
+    background-color: hsla(0,0%,100%,.02) !important;
+}
