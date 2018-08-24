@@ -356,7 +356,7 @@ if ( $.trim( $('.leramslist').html() ).length === 0 )
 {
   $('#btnGroupDrop1').addClass('empty-ul');
 }
-
+/*
 if ( $( 'body.shelf' ).length > 0 ) {
   $( 'div[data-target="#DeleteShelfDialog"]' )
     .before( '<div class=".btn-group shelf-btn-group"></div>' )
@@ -388,7 +388,7 @@ if ( $( 'body.shelf' ).length > 0 ) {
       'title': 'Order Shelf',
       'data-placement': 'bottom' })
       .addClass('order-btn-tooltip');
-}
+}*/
 
 $( '.home-btn > a' ).attr({
     'data-toggle': 'tooltip',
