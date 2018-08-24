@@ -444,6 +444,6 @@ $( '#btnGroupDrop1' ).attr({
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-    $('[data-toggle-two="tooltip"]').tooltip({container: 'body'});
+    $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
     $( '#btn-upload' ).attr('title', " ");
 });
