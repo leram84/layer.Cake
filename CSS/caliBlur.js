@@ -385,12 +385,14 @@ $( '#btn-upload' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('upload-btn-tooltip');
+if ( !$( 'body.search' ).length === 1 ) {
 $( '#add-to-shelf' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Add to Shelf',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   .addClass('addtoshelf-btn-tooltip');
+}
 $( '#have_read_cb' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Read/Unread',
