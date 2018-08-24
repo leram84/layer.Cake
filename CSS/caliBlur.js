@@ -423,11 +423,11 @@ $( '#btnGroupDrop1' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   $( '.profileDrop' ).attr({
-    'data-toggle': 'tooltip',
     'title': 'Account',
     'data-placement': 'bottom',
     'data-viewport': '.btn-group' })
-  .addClass('send-btn-tooltip');
+  .addClass('send-btn-tooltip dropdown');
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.send-btn-tooltip.dropdown').dropdown();
 });
