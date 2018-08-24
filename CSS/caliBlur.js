@@ -488,14 +488,16 @@ $( '#btnGroupDrop1' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-toolbar' });
 
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
-    $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
-    $( '#btn-upload' ).attr('title', " ");
-});
-$( '[data-toggle-two="tooltip"]' ).click(function(){
-     $('[data-toggle-two="tooltip"]').tooltip('hide');
-   });
-   $( '[data-toggle="tooltip"]' ).click(function(){
-        $('[data-toggle="tooltip"]').tooltip('hide');
-      });
+if ( $( 'body.epub').length === 0 ) {
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
+      $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
+      $( '#btn-upload' ).attr('title', " ");
+  });
+  $( '[data-toggle-two="tooltip"]' ).click(function(){
+       $('[data-toggle-two="tooltip"]').tooltip('hide');
+     });
+  $( '[data-toggle="tooltip"]' ).click(function(){
+      $('[data-toggle="tooltip"]').tooltip('hide');
+        });
+}
