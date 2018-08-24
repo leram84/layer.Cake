@@ -3468,7 +3468,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9
 
 
 body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
-    width: calc(100vw - 240px) !important;
+    width: calc(100vw - 390px) !important;
     height: 60px !important;
     margin: 0 !important;
     padding-left: 25px !important;
@@ -3488,11 +3488,18 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
     top: 60px !important;
     left: 240px !important;
     text-align: left !important;
+    overflow:  hidden;
+    text-overflow:  ellipsis;
+    padding-right:  25px !important;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"] {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group {
     position: fixed;
     top: 60px;
     right: 0;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"] {
+    position: relative;
+    float: right;
     width: 50px;
     height: 60px;
     border-radius: 0;
@@ -3501,7 +3508,7 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-ta
     overflow: hidden;
     padding: 6px 11px;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"]:before {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"]:before {
     content: "\EA6A";
     font-family: plex-icons-new;
     position: absolute;
@@ -3509,16 +3516,15 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-ta
     font-size: 20px;
     padding: 6px 0 0 2px
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"]:hover {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"]:hover {
     background: #ce3d2a;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [data-target="#DeleteShelfDialog"]:hover:before {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"]:hover:before {
     color: #fff;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"] {
-    position: fixed;
-    top: 60px;
-    right: 60px;
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"] {
+    position: relative;
+    float: right;
     width: 50px;
     height: 60px;
     border-radius: 0;
@@ -3528,7 +3534,7 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="
     margin: 0;
     padding: 6px 13px;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"]:before {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"]:before {
     content: "\EA5d";
     font-family: plex-icons;
     position: absolute;
@@ -3536,16 +3542,15 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="
     font-size: 20px;
     padding: 6px 0 0 2px
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"]:hover:before {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"]:hover:before {
     color: #fff;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="edit"]:hover {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"]:hover {
     background: transparent;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"] {
-    position: fixed;
-    top: 60px;
-    right: 120px;
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"] {
+    position: relative;
+    float: right;
     width: 50px;
     height: 60px;
     border-radius: 0;
@@ -3555,7 +3560,7 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="
     margin: 0;
     padding: 6px 11px;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"]:before {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"]:before {
     content: "\E409";
     font-family: Glyphicons Regular;
     position: absolute;
@@ -3563,10 +3568,10 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="
     font-size: 20px;
     padding: 6px 0 0 2px
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"]:hover:before {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"]:hover:before {
     color: #fff;
 }
-body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > [href*="order"]:hover {
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"]:hover {
     background: transparent;
 }
 
@@ -4164,11 +4169,8 @@ body.shelf.modal-open > .container-fluid {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    left: -40px
+    left: -40px;
     pointer-events: none;
-}
-body.book #remove-from-shelves {
-    width: 1px;
 }
 #remove-from-shelves > .btn:hover {
     background: #ce3d2a;
@@ -4185,6 +4187,8 @@ body.book #remove-from-shelves {
 #remove-from-shelves + .published-date, 
 #remove-from-shelves + .languages {
     margin-top: -25px;
+        z-index: 9;
+    position: relative;
 }
 #remove-from-shelves > a.btn:last-of-type {
     margin-bottom: 35px;
