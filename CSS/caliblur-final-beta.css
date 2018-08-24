@@ -3122,11 +3122,11 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     white-space: nowrap;
     display: flex;
 }
-div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > * {
+/* div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > * {
     
     height: 60px;
     width: 50px;
-}
+} */
 div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > div.btn-group[role="group"] > p {
     display: none;
 }
