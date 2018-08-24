@@ -398,7 +398,7 @@ $( '#btn-upload' ).attr({
   .addClass('upload-btn-tooltip');
 
 $( '#add-to-shelf' ).attr({
-  'data-toggle': 'tooltip',
+  'data-toggle-two': 'tooltip',
   'title': 'Add to Shelf',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
