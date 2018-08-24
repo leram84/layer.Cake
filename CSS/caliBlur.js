@@ -330,14 +330,14 @@ if ( $( 'body.author' ).length >0 ) {
 backurl = '../../book/' + url[2]
 $( 'body.epub #title-controls' )
   .append('<div class="epub-back"><input action="action" onclick="location.href=backurl; return false;" type="button" value="Back" /></div>')
-$( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
+/*$( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
         setTimeout(function() {
                 $( 'iframe' )
                   .contents()
                   .find( 'body' )
                   .addClass( 'read-frame' );
         }, 1000);
-});
+});*/
 
 $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
