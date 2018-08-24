@@ -5048,3 +5048,11 @@ body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.boot
 body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr:nth-of-type(even) {
     background-color: hsla(0,0%,100%,.02) !important;
 }
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > tbody > tr.no-records-found > td:before {
+    content: "No Records Found";
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 66px);
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, .65);
+}
