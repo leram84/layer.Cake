@@ -5056,3 +5056,6 @@ body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.boot
     font-size: 14px;
     color: hsla(0, 0%, 100%, .65);
 }
+.search #shelf-actions {
+    display: none;
+}
