@@ -4839,25 +4839,36 @@ body.read:not(.blur) a[href*="readbooks"] {
     color: hsla(0,0%,100%,.7) !important;
 }
 /* test */
-.tooltip.bottom .tooltip-inner {
-    font-size: 13px;
-    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding: 2px 10px;
-    border-radius: 4px;
-    background-color: #191a1c;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,.35);
+.tooltip {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+}
+.tooltip.in {
     opacity: 1;
+        opacity: 1;
     -webkit-transition: opacity .15s ease-out,-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
     transition: opacity .15s ease-out,-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
     transition: opacity .15s ease-out,transform .15s cubic-bezier(.6,.4,.2,1.4);
     transition: opacity .15s ease-out,transform .15s cubic-bezier(.6,.4,.2,1.4),-webkit-transform .15s cubic-bezier(.6,.4,.2,1.4);
     -webkit-transform: translate(0) scale(1);
     transform: translate(0) scale(1);
-    -webkit-transform-origin: center top;
-    transform-origin: center top;
+    pointer-events: none;
+}
+.tooltip.bottom .tooltip-inner {
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: #191a1c;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.35);
+    opacity: 1;
+    
     white-space: nowrap;
+    margin-top: -16px !important;
+        line-height: 1.71428571;
+    color: #eee;
 }
 .tooltip.bottom .tooltip-arrow {
         width: 0;
@@ -4870,6 +4881,7 @@ body.read:not(.blur) a[href*="readbooks"] {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
+    margin-top: -16px !important;
 }
 #sendbtn > span {
     height: 60px;
