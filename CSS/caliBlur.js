@@ -357,6 +357,39 @@ if ( $.trim( $('.leramslist').html() ).length === 0 )
   $('#btnGroupDrop1').addClass('empty-ul');
 }
 
+if ( $( 'body.shelf' ).length > 0 ) {
+  $( 'div[data-target="#DeleteShelfDialog"]' )
+    .before( '<div class=".btn-group shelf-btn-group"></div>' )
+    .appendTo( '.shelf-btn-group' )
+    .addClass( 'delete-shelf-btn' );
+
+  $( 'a[href*="edit"]' )
+    .appendTo( '.shelf-btn-group' )
+    .addClass( 'edit-shelf-btn' );
+
+  $( 'a[href*="order"]' )
+    .appendTo( '.shelf-btn-group' )
+    .addClass( 'order-shelf-btn' );
+
+  $( '.delete-shelf-btn' ).attr({
+      'data-toggle-two': 'tooltip',
+      'title': 'Delete Shelf',
+      'data-placement': 'bottom' })
+      .addClass('delete-btn-tooltip');
+
+  $( '.edit-shelf-btn' ).attr({
+      'data-toggle-two': 'tooltip',
+      'title': 'Edit Shelf',
+      'data-placement': 'bottom' })
+      .addClass('edit-btn-tooltip');
+
+  $( '.order-shelf-btn' ).attr({
+      'data-toggle-two': 'tooltip',
+      'title': 'Order Shelf',
+      'data-placement': 'bottom' })
+      .addClass('order-btn-tooltip');
+}
+
 $( '.home-btn > a' ).attr({
     'data-toggle': 'tooltip',
     'title': 'Home',
