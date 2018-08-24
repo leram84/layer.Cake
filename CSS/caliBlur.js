@@ -369,12 +369,20 @@ $( '.plexBack > a' ).attr({
    'title': 'Back',
    'data-placement': 'bottom' })
    .addClass('back-btn-tooltip');
+
 $( '#top_tasks' ).attr({
-   'data-toggle': 'tooltip',
-   'title': 'Tasks',
-   'data-placement': 'bottom',
+      'data-toggle': 'tooltip',
+      'title': 'Tasks',
+      'data-placement': 'bottom'})
+      .addClass('tasks-btn-tooltip');
+if ( !$( 'body.search' ).length === 1 ) {
+  $( '#top_tasks' ).attr({
    'data-viewport': '.btn-group' })
-   .addClass('tasks-btn-tooltip');
+ } else {
+  $( '#top_tasks' ).attr({
+    'data-viewport': '#main-nav' })
+  }
+
 $( '#top_admin' ).attr({
   'data-toggle': 'tooltip',
   'title': 'Administration',
@@ -398,7 +406,7 @@ $( '#have_read_cb' ).attr({
   'title': 'Read/Unread',
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
-  .addClass('readunread-btn-tooltip');)
+  .addClass('readunread-btn-tooltip');
 $( '.btn-group[aria-label="Edit/Delete book"] a' ).attr({
    'data-toggle': 'tooltip',
    'title': 'Edit/Delete Book',
@@ -423,6 +431,7 @@ $( '#btnGroupDrop1' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-group' })
   $( '.profileDrop' ).attr({
+
     'title': 'Account',
     'data-placement': 'bottom',
     'data-viewport': '.btn-group' })
