@@ -283,7 +283,7 @@ $(document).on('click','.dropdown-toggle',function() {
 
 // Fade out content on page unload
 // delegate all clicks on "a" tag (links)
-$(document).on("click", "a", function () {
+$(document).on("click", "a:not(.btn-toolbar a)", function () {
 
     // get the href attribute
     var newUrl = $(this).attr("href");
