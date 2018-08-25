@@ -4977,16 +4977,16 @@ border: 1px rgba(0,0,0,.2) solid;
  
  
  
- /* normalize posters */
+/* normalize posters */
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
         grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)) !important;
 }
-.book {
+.book:not(body) {
     width: 180px !important;
     max-width: 180px !important;
     min-width: 180px !important;
 }
-#books .cover img, #books_rand .cover img, .book .cover img {
+#books .cover img, #books_rand .cover img, .book.isotope-item .cover img   {
     width: 150px !important;
 }
 .container-fluid .book .meta .title {
