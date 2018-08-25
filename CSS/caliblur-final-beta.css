@@ -134,7 +134,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     font-size: 18px;
 }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 768px) {
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
     display: none;
 }
@@ -1031,7 +1031,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > form > h2 {
     margin-top: 50px;
     margin-bottom: 30px;
 }
-/* clean up */
+
 .navigation .nav-head:nth-child(1n+2) {
     border-top: none;
     padding-top: 0;
