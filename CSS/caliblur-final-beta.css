@@ -3419,17 +3419,24 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
 
 
 body > div.navbar.navbar-default:before {
-    content: '';
+    /* content: '';
     display: block;
     width: 240px;
     height: 60px;
     position: fixed;
     top: 60px;
-    left: 0;
+    left: 0; */
 }
-body.book {
-    
+ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover {
+    color: #fff !important;
+    transition: color .2s;
+    background-color: rgba(0,0,0,.55) !important;
 }
+ 
+ 
+ 
+ 
+
 .author .blur-wrapper:after {
     background-image: none !important;
 }
@@ -4964,5 +4971,41 @@ opacity: .5;
 .epub-back:hover {
 border: 1px rgba(0,0,0,.2) solid;
     padding: 3px;
+}
+ 
+ 
+ 
+ 
+ 
+ /* normalize posters */
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)) !important;
+}
+.book {
+    width: 180px !important;
+    max-width: 180px !important;
+    min-width: 180px !important;
+}
+#books .cover img, #books_rand .cover img, .book .cover img {
+    width: 150px !important;
+}
+.container-fluid .book .meta .title {
+    white-space: nowrap !important;
+}
+.container-fluid .book .meta .author {
+    white-space: nowrap !important;
+}
+.container-fluid .book .meta .rating {
+    display: none !important;
+}
+.container-fluid .book .meta {
+    margin-top: 0 !important;
+}
+/* kill themes */
+#theme {
+    display: none;
+}
+label[for="theme"] {
+    display: none;
 }
 }
