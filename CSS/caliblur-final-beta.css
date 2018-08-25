@@ -1,11 +1,10 @@
 @import "https://rawgit.com/leram84/layer.Cake/master/Resources/plex-fonts-old.css";
-
-@media (max-width: 991px) and (min-width: 768px) {
-body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a > span:before {
-    font-size: 18px;
+ :root {
+    --color-background: #474747;
+    --color-primary: #F9BE03;
+    --color-secondary: #CC7B19;
+    --color-secondary-hover: #E59029;
 }
-}
-
 @-webkit-keyframes fade {
     0% {opacity: 0.1} 
     50% {opacity: 0.2}
@@ -50,6 +49,92 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     0% { opacity:0; }
     100% { opacity:1; }
 }
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@-moz-keyframes loading {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a > span:before {
+    font-size: 18px;
+}
+}
+@media only screen and (min-width: 1500px) {
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
     display: none;
 }
@@ -405,89 +490,7 @@ div[aria-label="Edit/Delete book"] > .btn-warning > span:hover {
 .advanced_search #scnd-nav > li > a[href*=advanced_search] {
     color: var(--color-primary)
 }
-/*
-.testclass {
-    display: none;
-}
-.testclass + label{
-    background:url('https://imge.com/wp-content/uploads/2017/08/IMGE-Logo-Color-transparent-background.png') no-repeat;
-    height: 16px;
-    width: 16px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-    
-}
 
-.testclass:checked + label{
-    background:url('https://imge.com/wp-content/uploads/2017/08/IMGE-Logo-Color-transparent-background.png') no-repeat;
-    height: 16px;
-    width: 16px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-}
-
- #have_read_form {
-    width: 1px;
-    height: 1px;
-    position: fixed;
-    top: 5px;
-    right: 185px;
-}
-#have_read_form #have_read_cb {
-    visibility: hidden;
-}
-#have_read_form #have_read_cb:hover:before {
-    cursor: pointer;
-    color: #fff;
-}
-#have_read_form #have_read_cb:before {
-    content: "\e106";
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    top: 0;
-    right: 180px;
-    visibility: visible;
-    border-right: 2px solid rgba(0,0,0,.3);
-    border-left: 2px solid rgba(0,0,0,.3);
-    padding: 20px 39px 40px 19px;
-    color: hsla(0,0%,100%,.7);
-    z-index: 999;
-}
-#have_read_form #have_read_cb:checked:before {
-    content: "\e105";
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    top: 0;
-    right: 180px;
-    visibility: visible;
-    color: var(--color-primary);
-    padding: 20px 39px 40px 19px;
-    z-index: 999;
-}
-.col-sm-10 #have_read_form #have_read_cb:before,
-.col-sm-10 #have_read_form #have_read_cb:checked:before {
-    top: 60px;
-}
-#have_read_form #have_read_cb:checked:hover:before {
-    color: #fff;
-}
-#have_read_form span {
-    display: none;
-}
-#have_read_cb {
-
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
 
 .book {
     width: 225px;
@@ -525,24 +528,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope:af
     left: calc(50% - 12px);
     z-index: 999999;
 }
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
+
 a {
     color: hsla(0, 0%, 100%, .45);
 }
@@ -662,25 +648,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.home-btn > a:hove
     font-family: plex-icons;
 }
 
-/* body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover {
-    background: rgba(0,0,0,.45);
-    color: #fff !important;
-} */
- :root {
-    --color-background: #474747;
-    --color-primary: #F9BE03;
-    --color-secondary: #CC7B19;
-    --color-secondary-hover: #E59029;
-}
-/* Root For Emby */
-/* :root {
-    --color-background: #333333;
-    --color-primary: #22aadc;
-    --color-secondary: #52b54b;
-    --color-secondary-hover: #71c26b;
-}     color: hsla(0,0%,100%,.45);*/
 
-/* Blur Background */
 body:not(.read-frame) {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") !important;
     background-repeat: repeat, no-repeat !important;
@@ -757,17 +725,7 @@ border-left: 4px solid transparent;
 .top_tasks {
     float: left !important;;
 }
-/* 
 
-
-TESTTESTTEST
-TEST
-TEST
-TEST
-
-
-
-.profileDropli */
 .navbar {
     z-index: 9 !important;
 }
@@ -872,42 +830,6 @@ TEST
     font-weight: 400;
     text-align: center;
     pointer-events: none;
-        /* 
-    content: "\EA13";
-    position: absolute;
-    font-family: plex-icons-new;
-    font-size: 8px;
-    background: rgba(0,0,0,.7);
-    color: #ccc;
-    border-radius: 50%;
-    padding: 0;
-    z-index: 9;
-    left: 18px;
-    top: 30px;
-    width: 8px;
-    height: 8px;
-    line-height: 8px;
-
-    line-height: 12px;
-    width: 12px;
-    height: 12px;
-    top: 26px;
-    right: 3px;
-
-    content: "+";
-    font-size: 14px;
-    color: #fff;
-    background: var(--color-secondary);
-    border-radius: 50%;
-    padding: 0;
-    z-index: 9;
-    position: fixed;
-    line-height: 14px;
-    width: 14px;
-    height: 14px;
-    top: 10px;
-    right: 20px;
-    */
 }
 #top_tasks {
     height: 60px;
@@ -1515,7 +1437,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     background-color: rgba(0,0,0,.15);
     border-radius: 3px;
 }
-/* clean up */
+
 
 app-loading-container {
     background: #3f4245;
@@ -1543,24 +1465,7 @@ app-loading-container {
     display: block;
     margin: 20px auto;
 }
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
+
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar {
     width: 14px;
@@ -1818,7 +1723,7 @@ body > div.container-fluid > div > div.col-sm-10 > div:nth-of-type(2) > h2 {
     top: 60px;
     left: 240px;
 }
-/* body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2, */
+
 .well > h2,
 body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2 {
     width: calc(100vw - 240px) !important;
@@ -1872,33 +1777,7 @@ body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only
 
 
 
-/* 8/14 for author
-body > div.container-fluid > div > div.col-sm-10 > h2 {
-    width: calc(100vw - 240px) !important;
-    height: 60px !important;
-    margin: 0;
-    padding-left: 25px !important;
-    color: hsla(0,0%,100%,.7) !important;
-    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-size: 15px !important;
-    line-height: 60px !important;
-    text-size-adjust: 100%;
-    white-space: nowrap !important;
-    -webkit-box-direction: normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-weight: 400 !important;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    position: fixed !important;
-    top: 60px !important;
-    left: 240px !important;
-    text-overflow: ellipsis !important;
-    max-width: calc(100vw - 550px) !important;
-    overflow: hidden !important;
-} */
-/* body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta > h2:before,
-.well > h2:before */
+
 body > div.container-fluid > div.row-fluid > div.col-sm-2:after {
     width: 100%;
     height: 60px;
@@ -2235,7 +2114,6 @@ body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
     padding-left: 15px;
 }
 
-/* Login */
 .well {
     max-height: 520px;
     height: auto;
@@ -2254,10 +2132,7 @@ body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
     margin: 0 auto;
     padding: 60px;
 }
-/* .well > h2 {
-    color: #eee;
-    text-align: center;
-} */
+
 .well > form {
     background: rgba(0,0,0,.4);
     color: hsla(0,0%,100%,.45);
@@ -2296,9 +2171,7 @@ body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
 .well > form > .btn:hover {
     background-color: var(--color-secondary-hover);
 }
-/* Login */
 
-/* Alert */
 body > div.row-fluid {
     margin-top: 0 !important;
 }
@@ -2334,36 +2207,20 @@ body > div.row-fluid {
 
     z-index: 99999;
     -moz-animation: cssAnimation 0s ease-in 10s forwards;
-    /* Firefox */
     -webkit-animation: cssAnimation 0s ease-in 10s forwards;
-    /* Safari and Chrome */
     -o-animation: cssAnimation 0s ease-in 10s forwards;
-    /* Opera */
     animation: cssAnimation 0s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     
 }
-@keyframes cssAnimation {
-    to {
-        width: 0;
-        height: 0;
-        overflow: hidden;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        width: 0;
-        height: 0;
-        visibility: hidden;
-    }
-}
+
 
 .alert-danger {
     background-color: rgba(255,85,51,.3);
     color: #fff;
 }
-/* Alert */
+
 
 .table>thead>tr>th {
     border-bottom: 0;
@@ -2486,9 +2343,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > .btn.bt
 }
 textarea {
     resize: none;
-    /* Safari */
     resize: vertical;
-    /* Chrome */
 }
 .modal-backdrop.in {
     display: none;
@@ -2821,10 +2676,6 @@ line-height: 1;
     display: none;
 }
 #bookDetailsModal .modal-footer {
-    /* width: 100px;
-    position: fixed;
-    top: 800px;
-    left: 0; */
     display: none;
 }
 a:focus {
@@ -3122,11 +2973,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     white-space: nowrap;
     display: flex;
 }
-/* div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > * {
-    
-    height: 60px;
-    width: 50px;
-} */
+
 div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > div.btn-group[role="group"] > p {
     display: none;
 }
@@ -3196,7 +3043,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     color: #fff;
 }
 .book-meta > div.btn-toolbar > div > div:nth-child(1) > button:not(#btnGroupDrop1) {
-    /* -edit display: none;*/
+
 }
 .book-meta .btn-toolbar > .btn-group > .btn-warning > span.glyphicon-edit,
 #sendbtn > span,
@@ -3277,7 +3124,6 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     margin-left: -100px;
 }
 .book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
-    /* margin-left: -200px; */
     max-width: 200px;
 }
 .book-meta .btn-toolbar > .btn-group > ul.dropdown-menu {
@@ -3425,12 +3271,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > .btn-primary:l
     content: "\ea64";
     font-family: plex-icons;
 }
-/* body > div.container-fluid > div > div.col-sm-10 > div.single > div.row > div.col-sm-3.col-lg-3.col-xs-5 > div.cover > img {
-    max-height: 300px;
-    max-width: 100%;
-    width: auto;
-    margin: 0;
-} */
+
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > .col-sm-6 {
     width: 100%;
 }
@@ -3641,7 +3482,7 @@ body.book {
     height: 100% !important;
     position: absolute;
     max-width: 100% !important;
-    filter: blur(75px) brightness(85%);
+    filter: blur(125px) brightness(85%);
     opacity: .4;
     -webkit-animation: fade 1s;
     animation: fade 1s;
@@ -4831,36 +4672,7 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:befor
     bottom: 0;
     z-index: 99999999999999999999999999999999999
 }
-@-webkit-keyframes loading {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn)
-    }
-}
 
-@-moz-keyframes loading {
-    0% {
-        -moz-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -moz-transform: rotate(1turn);
-        transform: rotate(1turn)
-    }
-}
-
-@keyframes loading {
-    0% {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(1turn)
-    }
-}
 body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:after,
@@ -4886,7 +4698,7 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:f
 body.read:not(.blur) a[href*="readbooks"] {
     color: hsla(0,0%,100%,.7) !important;
 }
-/* test */
+
 .tooltip {
     -webkit-transform: translate(0) scale(1);
     transform: translate(0) scale(1);
@@ -5119,7 +4931,6 @@ opacity: .5;
 padding: 4px;
 border-radius: 4px;
     position: relative;
-    /*! border: 1px solid transparent; */
 }
 .epub-back > input {
     opacity: 0;
@@ -5152,4 +4963,5 @@ opacity: .5;
 .epub-back:hover {
 border: 1px rgba(0,0,0,.2) solid;
     padding: 3px;
+}
 }
