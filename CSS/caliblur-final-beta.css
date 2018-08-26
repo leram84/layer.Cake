@@ -5001,6 +5001,46 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
 .container-fluid .book .meta {
     margin-top: 0 !important;
 }
+ 
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > h2 {
+    position: absolute;
+    margin-top: -30px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
+    display: grid;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 {
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
+    display: grid;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before,
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: 2px;
+    background: rgba(0,0,0,.3);
+    margin-left: -15px;
+    margin-top: -65px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2,
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+    width: 135px !important;
+    max-width: 135px !important;
+    min-width: 135px !important;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img,
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
+    width: 135px !important;
+    height: 203px !important;
+}
 /* kill themes */
 #theme {
     display: none;
