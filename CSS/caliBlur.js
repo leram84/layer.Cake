@@ -529,7 +529,7 @@ $(window).resize(function() {
       $( '#read-in-browser' ).attr('target',"");
 
     }
-}
+
 // code
-}
+  }
 });
