@@ -364,11 +364,11 @@ $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );
 
-  $('#add-to-shelves li').each(function(i){
+  /*$('#add-to-shelves li').each(function(i){
     if(!$(this).text().trim() == ""){
     $( this ).remove();
     }
-  });
+  });*/
 
   setTimeout(function() {
     if ( ( '#add-to-shelves' ).is( ':empty' ) ) {
