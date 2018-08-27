@@ -243,7 +243,8 @@ $( '#nav_createshelf' ).prependTo( 'li:contains("Your Shelves")' );
 $( '#main-nav' )
   .prepend( '<li class="dropdown"><a href="#" class="dropdown-toggle profileDrop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a><ul class="dropdown-menu profileDropli"></ul></li>' );
 $( '#top_user' ).parent().addClass( 'dropdown' ).appendTo( '.profileDropli' );
-$( '#nav_about' ).addClass( 'dropwdown' ).appendTo( '.profileDropli' );
+$( '#nav_about' ).addClass( 'dropdown' ).appendTo( '.profileDropli' );
+$( '#register' ).parent().addClass( 'dropdown' ).appendTo( '.profileDropli' );
 $( '#logout' ).parent().addClass( 'dropdown' ).appendTo( '.profileDropli' );
 
 // Remove the modals except from some areas where they are needed
