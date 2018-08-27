@@ -2864,10 +2864,13 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     max-width: calc(100% - 100px);
     padding: 15px 0;
 }
-.book-meta > .author > a:before {
+.book-meta > .author > a:first-of-type:before {
     content: "Author ";
     padding-right: px;
-    color: #eee;
+    color: hsla(0, 0%, 100%, .45);
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
 }
 .book-meta > .author > a {
     color: #eee;
@@ -2890,6 +2893,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     font-size: 15px;
     line-height: 30px;
     margin-top: -5px;
+    max-width: calc(100% - 190px);
+    margin-left: 90px;
 }
 .book-meta > p {
     color: hsla(0, 0%, 100%, .45);
