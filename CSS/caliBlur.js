@@ -361,7 +361,7 @@ $('#add-to-shelves').on('click','li a',function(){
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
-            console.log('list is not empty; removing empty-ul class' );
+      console.log('list is not empty; removing empty-ul class' );
       $( '#add-to-shelf' ).removeClass( 'empty-ul' );
     }
   },100);
