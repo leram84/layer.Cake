@@ -375,12 +375,6 @@ if ( $( 'body.shelf' ).length > 0 ) {
     .appendTo( '.shelf-btn-group' )
     .addClass( 'delete-shelf-btn' );
 
-  if ( $( '.edit-shelf-btn').length > 0 ) {
-    $( '.edit-shelf-btn:first').remove();
-  }
-  if ( $( '.order-shelf-btn').length > 0 ) {
-    $( '.order-shelf-btn:first').remove();
-  }
     $( 'a[href*="edit"]' )
       .appendTo( '.shelf-btn-group' )
       .addClass( 'edit-shelf-btn' );
@@ -527,7 +521,9 @@ if ( $( 'body.epub').length === 0 ) {
 
 $( '#read-in-browser' ).attr('target',"");
 
-//Double icon bug workaround
-if ( $( 'body.shelfedit' ).length > 0 || $( 'body.shelforder' ).length > 0 ) {
-  $( 'a:contains("Back")' ).attr( 'href','javascript:window.history.back()' );
+if ( $( '.edit-shelf-btn').length > 0 ) {
+  $( '.edit-shelf-btn:first').remove();
+}
+if ( $( '.order-shelf-btn').length > 0 ) {
+  $( '.order-shelf-btn:first').remove();
 }
