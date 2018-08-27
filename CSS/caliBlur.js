@@ -81,6 +81,7 @@ if ( $( 'body.book' ).length > 0 ) {
         console.log("prepending hr div to top of .bookinfo");
   		$( '.bookinfo' ).prepend( '<div class="hr"></div>' );
       }
+    }
   }
   $( '.rating' ).insertBefore( '.hr' );
   $( 'div.description' ).hide();
