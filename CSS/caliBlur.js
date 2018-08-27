@@ -333,7 +333,7 @@ if ( $( 'body.author' ).length >0 ) {
   $( '.blur-wrapper' ).prepend( '<img class="bg-blur" src="' + cover + '">' );
   // Place undefined cover images inside container
   if ( $( '.bg-blur[src="undefined"]' ).length > 0 ) {
-    $( '.bg-blur' ).before( '<div class="bg-blur undefined-img"></div>'
+    $( '.bg-blur' ).before( '<div class="bg-blur undefined-img"></div>' );
     $( 'img.bg-blur' ).appendTo( '.undefined-img' );
   }
 }
