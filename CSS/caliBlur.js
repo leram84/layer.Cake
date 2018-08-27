@@ -515,3 +515,5 @@ if ( $( 'body.epub').length === 0 ) {
       $('[data-toggle="tooltip"]').tooltip('hide');
         });
 }
+
+$( '#read-in-browser' ).attr('target',"");
