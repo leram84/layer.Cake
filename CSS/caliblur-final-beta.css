@@ -4991,6 +4991,10 @@ border: 1px rgba(0,0,0,.2) solid;
     color: #ccc !important;
     background-color: transparent !important;
 }
+ .empty-ul {
+    opacity: .6;
+    pointer-events: none;
+}
  
  
  
