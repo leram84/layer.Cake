@@ -364,9 +364,8 @@ $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );
 
-  emptyCalc = 0
-
   $('#add-to-shelves li').each(function(i){
+    emptyCalc = 0
     if(!$(this).text().trim() == ""){
       emptyCalc++
     }
