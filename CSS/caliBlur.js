@@ -354,9 +354,12 @@ if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
 $(document).on('change','#remove-from-shelves',function(){
+  console.log('#remove-from-shelves change registered' );
   if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
+      console.log('list is empty; adding empty-ul class' );
     $( '#add-to-shelf' ).addClass( 'empty-ul' );
   } else {
+          console.log('list is not empty; removing empty-ul class' );
     $( '#add-to-shelf' ).removeClass( 'empty-ul' );
   }
 });
