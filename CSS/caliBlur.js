@@ -337,31 +337,23 @@ if ( $( 'body.author' ).length >0 ) {
 backurl = '../../book/' + url[2]
 $( 'body.epub #title-controls' )
   .append('<div class="epub-back"><input action="action" onclick="location.href=backurl; return false;" type="button" value="Back" /></div>')
-/*$( 'body.epub' ).on( 'DOMNodeInserted', 'iframe', function(e) {
-        setTimeout(function() {
-                $( 'iframe' )
-                  .contents()
-                  .find( 'body' )
-                  .addClass( 'read-frame' );
-        }, 1000);
-});*/
 
 $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
 // Check if link is external and force _blank attribute
 $(function(){ // document ready
-    $( 'a' ).filter(function () {
-        return this.hostname && this.hostname !== location.hostname;
-    }).each(function () {
-        $(this).addClass("external").attr( 'target', '_blank' );
-    });
+  $( 'a' ).filter(function () {
+      return this.hostname && this.hostname !== location.hostname;
+  }).each(function () {
+      $(this).addClass("external").attr( 'target', '_blank' );
+  });
 });
 
 // Check if lists are empty and add class to buttons
 if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
-    $( '#add-to-shelf' ).addClass( 'empty-ul' );
+  $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
-$( '#add-to-shelf' ).click( function() {
+$( '#add-to-shelves a' ).click( function() {
   if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
     $( '#add-to-shelf' ).addClass( 'empty-ul' );
   } else {
@@ -526,7 +518,7 @@ if ( $( 'body.epub').length === 0 ) {
         });
 }
 
-$( '#read-in-browser' ).attr('target',"");
+$( '#read-in-browser a' ).attr('target',"");
 
 if ( $( '.edit-shelf-btn').length > 1 ) {
   $( '.edit-shelf-btn:first').remove();
