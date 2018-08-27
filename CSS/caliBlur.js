@@ -367,7 +367,12 @@ if ( $( 'body.shelf' ).length > 0 ) {
     .appendTo( '.shelf-btn-group' )
     .addClass( 'delete-shelf-btn' );
 
-  if ( $( '.edit-shelf-btn').length === 0 ) {
+  if ( $( '.edit-shelf-btn').length > 0 ) {
+    $( '.edit-shelf-btn:first').remove();
+  }
+  if ( $( '.order-shelf-btn').length > 0 ) {
+    $( '.order-shelf-btn:first').remove();
+  }
     $( 'a[href*="edit"]' )
       .appendTo( '.shelf-btn-group' )
       .addClass( 'edit-shelf-btn' );
@@ -375,7 +380,6 @@ if ( $( 'body.shelf' ).length > 0 ) {
     $( 'a[href*="order"]' )
       .appendTo( '.shelf-btn-group' )
       .addClass( 'order-shelf-btn' );
-  }
   $( '.delete-shelf-btn' ).attr({
       'data-toggle-two': 'tooltip',
       'title': 'Delete Shelf',
