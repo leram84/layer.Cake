@@ -361,9 +361,19 @@ if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
 
 //
 $('#add-to-shelves').on('click','li a',function(){
+
   console.log('#remove-from-shelves change registered' );
+
+  emptyCalc = 0
+
+  $('#add-to-shelves li').each(function(i){
+    if(!$(this).text().trim() == ""){
+      emptyCalc++
+    }
+  });
+
   setTimeout(function() {
-    if ( $('#add-to-shelves li').html().trim().length === 0 ) {
+    if ( emptyCalc === 0 ) {
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
