@@ -356,13 +356,14 @@ $(function(){ // document ready
 });
 
 // Check if lists are empty and add class to buttons
-if ( $.trim( $('#add-to-shelves').html() ).length === 0 )
-{
+if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $('#add-to-shelf').addClass('empty-ul');
 }
-if ( $.trim( $('.leramslist').html() ).length === 0 )
-{
+if ( $.trim( $('.leramslist').html() ).length === 0 ) {
   $('#btnGroupDrop1').addClass('empty-ul');
+}
+if ( $.trim( $( 'ul[aria-labelledby="read-in-browser"]:empty' ).html() ).length > 0 ) {
+  $('#read-in-browser').addClass('empty-ul');
 }
 
 // Shelf Buttons and Tooltips
