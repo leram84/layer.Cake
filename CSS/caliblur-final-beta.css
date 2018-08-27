@@ -2888,7 +2888,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 .book-meta > .bookinfo > .rating .glyphicon-star {
     color: hsla(0, 0%, 100%, .25);
 }
-.author {
+body.book .author {
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
     line-height: 30px;
