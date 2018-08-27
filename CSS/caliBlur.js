@@ -359,10 +359,11 @@ if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
 
+//
 $('#add-to-shelves').on('click','li a',function(){
   console.log('#remove-from-shelves change registered' );
   setTimeout(function() {
-    if ( $.trim( $('ul#add-to-shelves').html() ).length === 45 ) {
+    if ( $('#add-to-shelves li').html().trim().length === 0 ) {
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
