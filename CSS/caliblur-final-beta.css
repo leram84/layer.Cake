@@ -2865,15 +2865,11 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     padding: 15px 0;
 }
 .book-meta > .author > a:first-of-type:before {
-    content: "Author ";
-    padding-right: px;
+        content: "Author — ";
     color: hsla(0, 0%, 100%, .45);
     position: absolute;
     left: 15px;
     pointer-events: none;
-}
-.book-meta > .author > a {
-    color: #eee;
 }
 .book-meta > .bookinfo > .rating {
     float: right;
@@ -2893,8 +2889,8 @@ body.book .author {
     font-size: 15px;
     line-height: 30px;
     margin-top: -5px;
-    max-width: calc(100% - 190px);
-    margin-left: 90px;
+    max-width: calc(100% - 176px);
+    margin-left: 76px;
 }
 .book-meta > p {
     color: hsla(0, 0%, 100%, .45);
@@ -4998,7 +4994,7 @@ border: 1px rgba(0,0,0,.2) solid;
 }
  .empty-ul {
     opacity: .6;
-    pointer-events: none;
+    cursor: default;
 }
  
  
