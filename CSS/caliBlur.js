@@ -289,7 +289,7 @@ $(document).on('click','.dropdown-toggle',function() {
 });
 
 // Fade out content on page unload
-// delegate all clicks on "a" tag (links)
+/* delegate all clicks on "a" tag (links)
 $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identifiers a, .bookinfo , .btn-group > a )", function () {
 
     // get the href attribute
@@ -311,7 +311,7 @@ $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identif
 
     // prevent the default browser behavior.
     return false;
-});
+});*/ 
 
 // Collapse long text into read-more
 $( 'div.description' ).readmore( {
@@ -359,7 +359,6 @@ if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
 
-//
 $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );

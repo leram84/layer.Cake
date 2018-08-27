@@ -2865,15 +2865,11 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     padding: 15px 0;
 }
 .book-meta > .author > a:first-of-type:before {
-    content: "Author ";
-    padding-right: px;
+        content: "Author — ";
     color: hsla(0, 0%, 100%, .45);
     position: absolute;
     left: 15px;
     pointer-events: none;
-}
-.book-meta > .author > a {
-    color: #eee;
 }
 .book-meta > .bookinfo > .rating {
     float: right;
@@ -2888,13 +2884,13 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 .book-meta > .bookinfo > .rating .glyphicon-star {
     color: hsla(0, 0%, 100%, .25);
 }
-.author {
+body.book .author {
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
     line-height: 30px;
     margin-top: -5px;
-    max-width: calc(100% - 190px);
-    margin-left: 90px;
+    max-width: calc(100% - 176px);
+    margin-left: 76px;
 }
 .book-meta > p {
     color: hsla(0, 0%, 100%, .45);
@@ -3767,7 +3763,7 @@ background-size: auto, cover !important;
 
 
 
-body.author .bg-blur[src="undefined"]:after {
+body.author .undefined-img {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") !important;
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
@@ -3785,11 +3781,10 @@ body.author .bg-blur[src="undefined"]:after {
     left: 0;
     content: '';
 }
-body.author .bg-blur[src="undefined"] {
-    opacity: 1;
-    filter:none;
+body.author img.bg-blur[src="undefined"] {
+    display: none;
 }
-body.author:not(.authorlist) .bg-blur[src="undefined"]:before {
+body.author:not(.authorlist) .undefined-img:before {
     content: "\e008";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
@@ -4998,7 +4993,7 @@ border: 1px rgba(0,0,0,.2) solid;
 }
  .empty-ul {
     opacity: .6;
-    pointer-events: none;
+    cursor: default;
 }
  
  
