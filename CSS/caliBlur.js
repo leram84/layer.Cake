@@ -367,12 +367,12 @@ $('#add-to-shelves').on('click','li a',function(){
   $('#add-to-shelves li').each(function(i){
     emptyCalc = 0
     if(!$(this).text().trim() == ""){
-      emptyCalc++
+    $( this ).remove();
     }
   });
 
   setTimeout(function() {
-    if ( emptyCalc === 0 ) {
+    if ( '#add-to-shelves' ).is( ':empty' ) {
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
