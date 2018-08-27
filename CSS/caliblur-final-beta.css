@@ -134,6 +134,18 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     font-size: 18px;
 }
 }
+@media only screen and (max-height: 600px) and (min-width: 768px) {
+body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
+    padding: 0 !important;
+    height: 60px !important;
+}
+body.login > div.container-fluid > div.row-fluid > div.col-sm-10 {
+    top: 60px !important;
+}
+body.login .well {
+    padding: 0 60px !important;
+}
+}
 @media only screen and (min-width: 768px) {
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
     display: none;
@@ -4974,6 +4986,10 @@ border: 1px rgba(0,0,0,.2) solid;
 }
  .col-sm-10 .book-meta > div.btn-toolbar > div.btn-group > div.btn-group > p:first-child {
     margin: 0;
+}
+ body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a:hover {
+    color: #ccc !important;
+    background-color: transparent !important;
 }
  
  
