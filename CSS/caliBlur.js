@@ -353,16 +353,20 @@ $(function(){ // document ready
 if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
-$(document).on('change','#remove-from-shelves',function(){
+
+$('#add-to-shelves').on('click','li a',function(){
   console.log('#remove-from-shelves change registered' );
-  if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
-      console.log('list is empty; adding empty-ul class' );
-    $( '#add-to-shelf' ).addClass( 'empty-ul' );
-  } else {
-          console.log('list is not empty; removing empty-ul class' );
-    $( '#add-to-shelf' ).removeClass( 'empty-ul' );
-  }
+  setTimeout(function() {
+    if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
+        console.log('list is empty; adding empty-ul class' );
+      $( '#add-to-shelf' ).addClass( 'empty-ul' );
+    } else {
+            console.log('list is not empty; removing empty-ul class' );
+      $( '#add-to-shelf' ).removeClass( 'empty-ul' );
+    }
+  },100);
 });
+
 if ( $.trim( $('.leramslist').html() ).length === 0 ) {
   $('#btnGroupDrop1').addClass('empty-ul');
 }
