@@ -529,5 +529,7 @@ $(window).resize(function() {
       }
 
       $( '#read-in-browser' ).attr('target',"");
+  } else {
+    console.log( 'window width < 768px - Not running scripts' );
   }
 });
