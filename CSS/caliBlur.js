@@ -467,6 +467,13 @@ $( '#have_read_cb:checked' ).attr({
   'data-viewport': '.btn-toolbar' })
   .addClass('readunread-btn-tooltip');
 
+  $( 'button#delete' ).attr({
+    'data-toggle': 'tooltip',
+    'title': 'Delete',
+    'data-placement': 'bottom',
+    'data-viewport': '.btn-toolbar' })
+    .addClass('delete-book-btn-tooltip');
+
 $( '#have_read_cb' ).click(function() {
   if ( $( '#have_read_cb:checked' ).length > 0 ) {
       $( this ).attr('data-original-title', 'Mark as Unread');
