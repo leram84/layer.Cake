@@ -331,6 +331,11 @@ if ( $( 'body.author' ).length >0 ) {
   $( '#loader + .container-fluid' )
     .prepend( '<div class="blur-wrapper"></div>' );
   $( '.blur-wrapper' ).prepend( '<img class="bg-blur" src="' + cover + '">' );
+  // Place undefined cover images inside container
+  if ( $( '.bg-blur[src="undefined"]' ).length > 0 ) {
+    $( '.bg-blur' ).before( '<div class="bg-blur undefined-img"></div>'
+    $( 'img.bg-blur' ).appendTo( '.undefined-img' );
+  }
 }
 
 // Ereader Page - add class to iframe body on ereader page after it loads.
