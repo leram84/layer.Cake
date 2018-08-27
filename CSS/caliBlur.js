@@ -358,6 +358,9 @@ $(function(){ // document ready
 });
 
 // Check if lists are empty and add class to buttons
+if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
+    $( '#add-to-shelf' ).addClass( 'empty-ul' );
+}
 $( '#add-to-shelf' ).click( function() {
   if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
     $( '#add-to-shelf' ).addClass( 'empty-ul' );
