@@ -353,7 +353,7 @@ $(function(){ // document ready
 if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
-$('#remove-from-shelves').bind("DOMSubtreeModified",function(){
+$(document).on('change','#remove-from-shelves',function(){
   if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
     $( '#add-to-shelf' ).addClass( 'empty-ul' );
   } else {
