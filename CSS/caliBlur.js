@@ -525,3 +525,8 @@ if ( $( 'body.epub').length === 0 ) {
 }
 
 $( '#read-in-browser' ).attr('target',"");
+
+//Double icon bug workaround
+if ( $( 'body.shelfedit' ).length > 0 || $( 'body.shelforder' ).length > 0 ) {
+  $( 'a:contains("Back")' ).attr( 'href','javascript:window.history.back()' );
+}
