@@ -521,9 +521,9 @@ if ( $( 'body.epub').length === 0 ) {
 
 $( '#read-in-browser' ).attr('target',"");
 
-if ( $( '.edit-shelf-btn').length > 0 ) {
+if ( $( '.edit-shelf-btn').length > 1 ) {
   $( '.edit-shelf-btn:first').remove();
 }
-if ( $( '.order-shelf-btn').length > 0 ) {
+if ( $( '.order-shelf-btn').length > 1 ) {
   $( '.order-shelf-btn:first').remove();
 }
