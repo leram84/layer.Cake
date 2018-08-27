@@ -347,7 +347,7 @@ $(  'body.stats .col-sm-10 p:first' ).insertAfter( '#libs' );
 
 // Check if link is external and force _blank attribute
 $(function(){ // document ready
-    $('a').filter(function () {
+    $( 'a:not(a[href*="/read/"]' ).filter(function () {
         return this.hostname && this.hostname !== location.hostname;
     }).each(function () {
         $(this).addClass("external").attr( 'target', '_blank' );
