@@ -372,7 +372,7 @@ $('#add-to-shelves').on('click','li a',function(){
   });
 
   setTimeout(function() {
-    if ( '#add-to-shelves' ).is( ':empty' ) {
+    if ( ( '#add-to-shelves' ).is( ':empty' ) {
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
