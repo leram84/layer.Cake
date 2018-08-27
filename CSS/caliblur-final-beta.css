@@ -437,7 +437,7 @@ top: -48px;
     z-index: -999999999999999999999999999999999999999999999999999999;
 }
 
-div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > .downloadBtn {
+div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] > .downloadBtn {
     border-left: 2px solid rgba(0,0,0,.15);
 }
 div[aria-label="Edit/Delete book"] > .btn-warning {
@@ -2969,13 +2969,13 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
     margin-left: 0px;
 
 }
-div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] {
+div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] {
     
     white-space: nowrap;
     display: flex;
 }
 
-div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] > div.btn-group[role="group"] > p {
+div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] > div.btn-group[role="group"] > p {
     display: none;
 }
 #shelf-actions {
@@ -3141,7 +3141,7 @@ div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, readin
     right: 0;
     left: auto !important;
 }
-div.btn-group.sendBtn[role="group"][aria-label="Download, send to Kindle, reading"] .dropdown-menu.offscreen {
+div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] .dropdown-menu.offscreen {
     position: fixed;
     top: 120px;
     right: 5px;
