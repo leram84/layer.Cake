@@ -3763,7 +3763,7 @@ background-size: auto, cover !important;
 
 
 
-body.author .bg-blur[src="undefined"]:after {
+body.author .undefined-img {
     background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url("https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png") !important;
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
@@ -3781,11 +3781,10 @@ body.author .bg-blur[src="undefined"]:after {
     left: 0;
     content: '';
 }
-body.author .bg-blur[src="undefined"] {
-    opacity: 1;
-    filter:none;
+body.author img.bg-blur[src="undefined"] {
+    display: none;
 }
-body.author:not(.authorlist) .bg-blur[src="undefined"]:before {
+body.author:not(.authorlist) .undefined-img:before {
     content: "\e008";
     font-family: 'Glyphicons Halflings';
     font-style: normal;
