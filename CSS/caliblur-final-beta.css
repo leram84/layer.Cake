@@ -4972,6 +4972,9 @@ opacity: .5;
 border: 1px rgba(0,0,0,.2) solid;
     padding: 3px;
 }
+ .col-sm-10 .book-meta > div.btn-toolbar > div.btn-group > div.btn-group > p:first-child {
+    margin: 0;
+}
  
  
  
