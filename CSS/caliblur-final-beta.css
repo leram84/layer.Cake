@@ -4115,6 +4115,7 @@ body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div
 }
 body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > .btn.btn-default {
     margin-right: 15px;
+     margin-top: 20px;
 }
 
 .advanced_search #search > .row > .form-group.col-sm-6 {
@@ -4446,7 +4447,7 @@ body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.d
     background-color: hsla(0,0%,100%,.3);
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
@@ -4615,6 +4616,7 @@ left: 240px;
 }
 body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover {
     padding: 0 30px !important;
+    margin-bottom: 120px !important;
 }
 body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type::before,
 body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type::before {
@@ -5033,7 +5035,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
     display: grid;
-    margin-top: 90px;
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 {
