@@ -554,15 +554,15 @@ $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
 $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
 $( '#read-in-browser' ).click( function() {
-$(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
+$(  'ul[aria-labelledby="read-in-browser"]' ).toggle().addClass("open-drop");
 });
 
 $('.downloadBtn' ).click( function() {
-$(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
+$(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle().addClass("open-drop");
 });
 
 $('div[aria-label="Add to shelves"]' ).click( function() {
-$(  '#add-to-shelves' ).toggle();
+$(  '#add-to-shelves' ).toggle('drop',300).addClass("open-drop");
 });
 
 // Fix formatting error on book detail languages
