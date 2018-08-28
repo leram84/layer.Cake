@@ -363,9 +363,10 @@ $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );
 
+  // For some reason this code kills
   $('#add-to-shelves li').each(function(i){
-    if(!$(this).text().trim() == ""){
-    $( this ).remove();
+    if(!$('#add-to-shelves li').text().trim() == ""){
+    $( '#add-to-shelves li' ).detach();
     }
   });
 
