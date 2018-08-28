@@ -377,7 +377,7 @@ $('#add-to-shelves').on('click','li a',function(){
   },100);
 });
 
-if ( $.trim( $( 'ul[aria-labelledby="read-in-browser"]:empty' ).html() ).length === 0 ) {
+if ( $.trim( $( 'ul[aria-labelledby="read-in-browser"] li' ).html() ).length === 0 ) {
   $('#read-in-browser').addClass('empty-ul');
 }
 
