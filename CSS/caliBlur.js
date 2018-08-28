@@ -542,20 +542,19 @@ if ( $( '.order-shelf-btn').length > 1 ) {
 }
 
 // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
-$( 'ul[aria-labelledby="read-in-browser"]' ).insertAfter( '.blur-wrapper > div' );
-$( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper > div' );
-$( '#add-to-shelves' ).insertAfter( '.blur-wrapper > div' );
+$( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
+$( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
+$( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
 $('#read-in-browser' ).click( function() {
-//e.stopPropagation();
 $(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
 });
+
 $('.downloadBtn' ).click( function() {
-//e.stopPropagation();
 $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
 });
+
 $('div[aria-label="Add to shelves"]' ).click( function() {
-//e.stopPropagation();
 $(  '#add-to-shelves' ).toggle();
 });
 
