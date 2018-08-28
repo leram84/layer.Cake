@@ -546,15 +546,15 @@ $( 'ul[aria-labelledby="read-in-browser"]' ).insertAfter( '.blur-wrapper > div' 
 $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper > div' );
 $( '#add-to-shelves' ).insertAfter( '.blur-wrapper > div' );
 
-$('#read-in-browser' ).click( function(e) {
+$('#read-in-browser' ).click( function() {
 //e.stopPropagation();
 $(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
 });
-$('btn#btnGroupDrop1' ).click( function(e) {
+$('.downloadBtn' ).click( function() {
 //e.stopPropagation();
 $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
 });
-$('btn#add-to-shelf' ).click( function(e) {
+$('div[aria-label="Add to shelves"]' ).click( function() {
 //e.stopPropagation();
 $(  '#add-to-shelves' ).toggle();
 });
