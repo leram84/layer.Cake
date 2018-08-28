@@ -553,7 +553,7 @@ $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
 $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
 $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
-$('#read-in-browser' ).click( function() {
+$( '#read-in-browser' ).click( function() {
 $(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
 });
 
@@ -568,4 +568,35 @@ $(  '#add-to-shelves' ).toggle();
 // Fix formatting error on book detail languages
 if ( !$( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().startsWith(" ") ) {
     $( '.book-meta > .bookinfo > .languages > span:last-of-type' ).prepend(" ");
+}
+
+
+position = $( '#read-in-browser'  ).offset().left
+
+if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
+  positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
+  ribPosition = position - positionOff
+  $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: 9%");
+} else {
+    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+}
+
+position = $( '.downloadBtn'  ).offset().left
+
+if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
+  positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
+  dlPosition = position - positionOff
+  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto; top: 9%");
+} else {
+  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+}
+
+position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
+
+if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
+  positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
+  adsPosition = position - positionOff
+  $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto; top: 9%");
+} else {
+  $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
 }
