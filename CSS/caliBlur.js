@@ -377,9 +377,6 @@ $('#add-to-shelves').on('click','li a',function(){
   },100);
 });
 
-if ( $.trim( $('.leramslist').html() ).length === 0 ) {
-  $('#btnGroupDrop1').addClass('empty-ul');
-}
 if ( $.trim( $( 'ul[aria-labelledby="read-in-browser"]:empty' ).html() ).length === 0 ) {
   $('#read-in-browser').addClass('empty-ul');
 }
