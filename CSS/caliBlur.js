@@ -363,12 +363,12 @@ $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );
 
-  // For some reason this code kills
-  $('#add-to-shelves li').each(function(i){
-    if(!$('#add-to-shelves li').text().trim() == ""){
+  // For some reason this code kills the proper AJAX fuction. Lets figure out why.
+
+  if(!$('#add-to-shelves li').text().trim() == ""){
     $( '#add-to-shelves li' ).detach();
-    }
-  });
+  }
+
 
   setTimeout(function() {
     if ( ( '#add-to-shelves:empty' ).length > 0 ) {
