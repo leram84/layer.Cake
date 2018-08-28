@@ -361,12 +361,11 @@ if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
 
 shelfLength = $('#add-to-shelves').length
 emptyLength = 0
+
 $('#add-to-shelves').on('click','li a',function(){
-
   console.log('#remove-from-shelves change registered' );
-
   emptyLength++
-  }
+});
 
 
   setTimeout(function() {
