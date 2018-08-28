@@ -540,3 +540,20 @@ if ( $( '.edit-shelf-btn').length > 1 ) {
 if ( $( '.order-shelf-btn').length > 1 ) {
   $( '.order-shelf-btn:first').remove();
 }
+
+$( 'ul[aria-labelledby="read-in-browser"]' ).insertAfter( '.blur-wrapper' );
+$( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper' );
+$( '#add-to-shelves' ).insertAfter( '.blur-wrapper' );
+
+$('#read-in-browser' ).click( function(e) {
+e.stopPropagation();
+$(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
+});
+$('btn#btnGroupDrop1' ).click( function(e) {
+e.stopPropagation();
+$(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
+});
+$('btn#add-to-shelf' ).click( function(e) {
+e.stopPropagation();
+$(  '#add-to-shelves' ).toggle();
+});
