@@ -562,7 +562,11 @@ $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle().addClass("open-drop");
 });
 
 $('div[aria-label="Add to shelves"]' ).click( function() {
+<<<<<<< HEAD
 $(  '#add-to-shelves' ).toggle().addClass("open-drop");
+=======
+$(  '#add-to-shelves' ).toggle('drop',300).addClass("open-drop");
+>>>>>>> b6a713eef27acbcb9faa0487239d22e344cef933
 });
 
 // Fix formatting error on book detail languages
