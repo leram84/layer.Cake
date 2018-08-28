@@ -359,19 +359,18 @@ if ( $.trim( $('#add-to-shelves').html() ).length === 0 ) {
   $( '#add-to-shelf' ).addClass( 'empty-ul' );
 }
 
+shelfLength = $('#add-to-shelves').length
+emptyLength = 0
 $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );
 
-  // For some reason this code kills the proper AJAX fuction. Lets figure out why.
-
-  if(!$('#add-to-shelves li').text().trim() == ""){
-    $( '#add-to-shelves li' ).detach();
+  emptyLength++
   }
 
 
   setTimeout(function() {
-    if ( ( '#add-to-shelves:empty' ).length > 0 ) {
+    if ( emptyLength >= shelfLength ) {
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
