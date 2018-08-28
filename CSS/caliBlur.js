@@ -342,12 +342,6 @@ $(document).on('click','.dropdown-toggle',function() {
   }).each(function(){
     $(this).addClass('offscreen');
   });
-  // Remove .offscreen if all visible
-  $('.dropdown-menu:visible').filter(function(){
-    return $(this).visible() === true;
-  }).each(function(){
-    $(this).removeClass('offscreen');
-  });
 });
 
 // Fade out content on page unload
