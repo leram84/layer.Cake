@@ -541,6 +541,7 @@ if ( $( '.order-shelf-btn').length > 1 ) {
   $( '.order-shelf-btn:first').remove();
 }
 
+// Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
 $( 'ul[aria-labelledby="read-in-browser"]' ).insertAfter( '.blur-wrapper' );
 $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper' );
 $( '#add-to-shelves' ).insertAfter( '.blur-wrapper' );
