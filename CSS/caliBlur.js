@@ -212,6 +212,61 @@ if ( $( 'body.book' ).length > 0 ) {
   $( '#have_read_cb' )
     .after( '<label class="block-label readLbl" for="#have_read_cb"></label>' );
   $( '#shelf-actions' ).prependTo( '[aria-label^="Download, send"]' );
+
+
+  // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
+  $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
+  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
+  $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
+
+  $( '#read-in-browser' ).click( function() {
+    $(  'ul[aria-labelledby="read-in-browser"]' ).toggle().addClass("open-drop");
+  });
+
+  $('.downloadBtn' ).click( function() {
+    $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle().addClass("open-drop");
+  });
+
+  $('div[aria-label="Add to shelves"]' ).click( function() {
+    $(  '#add-to-shelves' ).toggle().addClass("open-drop");
+  });
+
+  // Fix formatting error on book detail languages
+  if ( !$( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().startsWith(" ") ) {
+      $( '.book-meta > .bookinfo > .languages > span:last-of-type' ).prepend(" ");
+  }
+
+  //Work to reposition dropdowns. Does not currently solve for
+  //screen resizing
+  position = $( '#read-in-browser'  ).offset().left
+
+  if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
+    positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
+    ribPosition = position - positionOff
+    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: 9%");
+  } else {
+      $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+  }
+
+  position = $( '.downloadBtn'  ).offset().left
+
+  if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
+    positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
+    dlPosition = position - positionOff
+    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto; top: 9%");
+  } else {
+    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+  }
+
+  position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
+
+  if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
+    positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
+    adsPosition = position - positionOff
+    $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto; top: 9%");
+  } else {
+    $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+  }
 }
 ///////////////////////////////
 // End of Book Details Work //
@@ -546,61 +601,4 @@ if ( $( '.edit-shelf-btn').length > 1 ) {
 }
 if ( $( '.order-shelf-btn').length > 1 ) {
   $( '.order-shelf-btn:first').remove();
-}
-
-// Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
-$( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
-$( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
-$( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
-
-$( '#read-in-browser' ).click( function() {
-$(  'ul[aria-labelledby="read-in-browser"]' ).toggle().addClass("open-drop");
-});
-
-$('.downloadBtn' ).click( function() {
-$(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle().addClass("open-drop");
-});
-
-$('div[aria-label="Add to shelves"]' ).click( function() {
-<<<<<<< HEAD
-$(  '#add-to-shelves' ).toggle().addClass("open-drop");
-=======
-$(  '#add-to-shelves' ).toggle('drop',300).addClass("open-drop");
->>>>>>> b6a713eef27acbcb9faa0487239d22e344cef933
-});
-
-// Fix formatting error on book detail languages
-if ( !$( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().startsWith(" ") ) {
-    $( '.book-meta > .bookinfo > .languages > span:last-of-type' ).prepend(" ");
-}
-
-
-position = $( '#read-in-browser'  ).offset().left
-
-if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
-  positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
-  ribPosition = position - positionOff
-  $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: 9%");
-} else {
-    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
-}
-
-position = $( '.downloadBtn'  ).offset().left
-
-if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
-  positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
-  dlPosition = position - positionOff
-  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto; top: 9%");
-} else {
-  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
-}
-
-position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
-
-if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
-  positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
-  adsPosition = position - positionOff
-  $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto; top: 9%");
-} else {
-  $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
 }
