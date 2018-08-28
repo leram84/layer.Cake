@@ -560,7 +560,6 @@ $(  '#add-to-shelves' ).toggle();
 });
 
 // Fix formatting error on book detail languages
-if ( $( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().endsWith(" ") && !$( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().startsWith(" ") ) {
-    $( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().trim();
+if ( !$( '.book-meta > .bookinfo > .languages > span:last-of-type' ).text().startsWith(" ") ) {
     $( '.book-meta > .bookinfo > .languages > span:last-of-type' ).prepend(" ");
 }
