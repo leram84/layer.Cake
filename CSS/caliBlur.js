@@ -547,14 +547,14 @@ $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper > div' );
 $( '#add-to-shelves' ).insertAfter( '.blur-wrapper > div' );
 
 $('#read-in-browser' ).click( function(e) {
-e.stopPropagation();
+//e.stopPropagation();
 $(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
 });
 $('btn#btnGroupDrop1' ).click( function(e) {
-e.stopPropagation();
+//e.stopPropagation();
 $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
 });
 $('btn#add-to-shelf' ).click( function(e) {
-e.stopPropagation();
+//e.stopPropagation();
 $(  '#add-to-shelves' ).toggle();
 });
