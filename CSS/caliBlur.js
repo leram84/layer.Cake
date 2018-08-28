@@ -365,8 +365,6 @@ emptyLength = 0
 $('#add-to-shelves').on('click','li a',function(){
   console.log('#remove-from-shelves change registered' );
   emptyLength++
-});
-
 
   setTimeout(function() {
     if ( emptyLength >= shelfLength ) {
