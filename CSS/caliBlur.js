@@ -281,10 +281,17 @@ $( 'h2:contains("Discover (Random Books")' )
 // Check if dropdown goes out of viewport and add class
 
 $(document).on('click','.dropdown-toggle',function() {
+ // Add .offscreen if part of container not visible
   $('.dropdown-menu:visible').filter(function(){
     return $(this).visible() === false;
   }).each(function(){
     $(this).addClass('offscreen');
+  });
+  // Remove .offscreen if all visible
+  $('.dropdown-menu:visible').filter(function(){
+    return $(this).visible() === true;
+  }).each(function(){
+    $(this).removeClass('offscreen');
   });
 });
 
