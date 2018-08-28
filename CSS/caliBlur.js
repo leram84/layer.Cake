@@ -311,7 +311,7 @@ $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identif
 
     // prevent the default browser behavior.
     return false;
-});*/ 
+});*/
 
 // Collapse long text into read-more
 $( 'div.description' ).readmore( {
@@ -363,14 +363,14 @@ $('#add-to-shelves').on('click','li a',function(){
 
   console.log('#remove-from-shelves change registered' );
 
-  /*$('#add-to-shelves li').each(function(i){
+  $('#add-to-shelves li').each(function(i){
     if(!$(this).text().trim() == ""){
     $( this ).remove();
     }
-  });*/
+  });
 
   setTimeout(function() {
-    if ( ( '#add-to-shelves' ).is( ':empty' ) ) {
+    if ( ( '#add-to-shelves:empty' ).length > 0 ) {
         console.log('list is empty; adding empty-ul class' );
       $( '#add-to-shelf' ).addClass( 'empty-ul' );
     } else {
