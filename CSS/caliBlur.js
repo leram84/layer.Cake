@@ -289,7 +289,7 @@ $(document).on('click','.dropdown-toggle',function() {
 });
 
 // Fade out content on page unload
-/* delegate all clicks on "a" tag (links)
+ delegate all clicks on "a" tag (links)
 $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identifiers a, .bookinfo , .btn-group > a )", function () {
 
     // get the href attribute
@@ -311,7 +311,7 @@ $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identif
 
     // prevent the default browser behavior.
     return false;
-});*/
+});
 
 // Collapse long text into read-more
 $( 'div.description' ).readmore( {
@@ -542,9 +542,9 @@ if ( $( '.order-shelf-btn').length > 1 ) {
 }
 
 // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
-$( 'ul[aria-labelledby="read-in-browser"]' ).insertAfter( '.blur-wrapper' );
-$( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper' );
-$( '#add-to-shelves' ).insertAfter( '.blur-wrapper' );
+$( 'ul[aria-labelledby="read-in-browser"]' ).insertAfter( '.blur-wrapper > div' );
+$( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertAfter( '.blur-wrapper > div' );
+$( '#add-to-shelves' ).insertAfter( '.blur-wrapper > div' );
 
 $('#read-in-browser' ).click( function(e) {
 e.stopPropagation();
