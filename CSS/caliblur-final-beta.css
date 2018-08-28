@@ -2777,6 +2777,7 @@ a:focus {
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 {
     padding: 15px;
     height: 300px;
+ pointer-events: none;
 }
 #bookDetailsModal > .modal-dialog.modal-lg > .modal-content > .modal-body> div > div > div > div.col-sm-3.col-lg-3.col-xs-5 > div.cover,
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 > div.cover {
@@ -3851,9 +3852,9 @@ body.author:not(.authorlist) .undefined-img:before {
     color: var(--color-secondary-hover);
 }
 body.author:not(.authorlist) > div.container-fluid > div > div.col-sm-10 {
-    width: calc(80% - 240px);
+    width: calc(100% - 240px);
     left: 240px;
-    margin-left: 20%;
+    padding-left: 20%;
     padding-right: 30px;
     padding-bottom: 20px;
 }
@@ -4997,6 +4998,7 @@ border: 1px rgba(0,0,0,.2) solid;
  .empty-ul {
     opacity: .6;
     cursor: default;
+  pointer-events: none;
 }
  
  
