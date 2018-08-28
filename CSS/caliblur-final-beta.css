@@ -5003,6 +5003,11 @@ border: 1px rgba(0,0,0,.2) solid;
 .lDutch {
     padding-left: 90px !important
 }
+.blur-wrapper + .dropdown-menu {
+    position: fixed;
+    top: 118px;
+    right: 5px;
+}
  
  
  
