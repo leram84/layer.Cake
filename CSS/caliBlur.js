@@ -242,8 +242,8 @@ if ( $( 'body.book' ).length > 0 ) {
   topPos = $( '#read-in-browser' ).offset().top
   if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
     positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
-    ribPosition = position - positionOff
-    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition - 5 + "px !important; right: auto; top: " + topPos + "px");
+    ribPosition = position - positionOff - 5
+    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
   } else {
       $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
   }
@@ -252,8 +252,8 @@ if ( $( 'body.book' ).length > 0 ) {
 
   if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
     positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
-    dlPosition = position - positionOff
-    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition - 5 + "px !important; right: auto;  top: " + topPos + "px");
+    dlPosition = position - positionOff - 5
+    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
   } else {
     $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
   }
@@ -262,8 +262,8 @@ if ( $( 'body.book' ).length > 0 ) {
 
   if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
     positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
-    adsPosition = position - positionOff
-    $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition - 5 + "px !important; right: auto;  top: " + topPos + "px");
+    adsPosition = position - positionOff - 5
+    $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto;  top: " + topPos + "px");
   } else {
     $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
   }
