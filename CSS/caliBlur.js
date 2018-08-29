@@ -217,6 +217,7 @@ if ( $( 'body.book' ).length > 0 ) {
   // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
   $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
   $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
+  $( '.leramslist' ).insertBefore( '.blur-wrapper' );
   $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
   $( '#read-in-browser' ).click( function() {
