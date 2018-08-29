@@ -5010,7 +5010,8 @@ border: 1px rgba(0,0,0,.2) solid;
 }
 #read-in-browser[aria-expanded="true"],
 .downloadBtn.open,
-#shelf-actions > .btn-group.open {
+#shelf-actions > .btn-group.open,
+.profileDrop[aria-expanded="true"] {
     pointer-events: none;
 }
 #read-in-browser[aria-expanded="true"] > span,
