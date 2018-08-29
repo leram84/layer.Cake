@@ -220,15 +220,15 @@ if ( $( 'body.book' ).length > 0 ) {
   $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
   $( '#read-in-browser' ).click( function() {
-    $(  'ul[aria-labelledby="read-in-browser"]' ).toggle().addClass("open-drop");
+    $(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
   });
 
   $('.downloadBtn' ).click( function() {
-    $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle().addClass("open-drop");
+    $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
   });
 
   $('div[aria-label="Add to shelves"]' ).click( function() {
-    $(  '#add-to-shelves' ).toggle().addClass("open-drop");
+    $(  '#add-to-shelves' ).toggle();
   });
 
   // Fix formatting error on book detail languages
@@ -239,13 +239,13 @@ if ( $( 'body.book' ).length > 0 ) {
   //Work to reposition dropdowns. Does not currently solve for
   //screen resizing
   position = $( '#read-in-browser'  ).offset().left
-
+  topPos = $( '#read-in-browser' ).offset().top
   if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
     positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
     ribPosition = position - positionOff
-    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: 9%");
+    $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
   } else {
-      $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+      $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
   }
 
   position = $( '.downloadBtn'  ).offset().left
@@ -253,9 +253,9 @@ if ( $( 'body.book' ).length > 0 ) {
   if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
     positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
     dlPosition = position - positionOff
-    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto; top: 9%");
+    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
   } else {
-    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+    $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
   }
 
   position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
@@ -263,9 +263,9 @@ if ( $( 'body.book' ).length > 0 ) {
   if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
     positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
     adsPosition = position - positionOff
-    $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto; top: 9%");
+    $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto;  top: " + topPos + "px");
   } else {
-    $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto; top: 9%");
+    $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
   }
 }
 ///////////////////////////////
