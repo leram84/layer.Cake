@@ -225,7 +225,7 @@ if ( $( 'body.book' ).length > 0 ) {
   });
 
   $('.downloadBtn' ).click( function() {
-    $(  'ul[aria-labelledby="btnGroupDrop1"]' ).toggle();
+    $(  '.leramslist' ).toggle();
   });
 
   $('div[aria-label="Add to shelves"]' ).click( function() {
@@ -258,7 +258,7 @@ if ( $( 'body.book' ).length > 0 ) {
 
       position = $( '.downloadBtn'  ).offset().left
 
-      if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() || position + $(  '.leramslist' ).width() > $( window ).width() ) {
+      if ( position + $(  '.leramslist' ).width() > $( window ).width() ) {
         positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
         dlPosition = position - positionOff - 5
         $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
