@@ -239,34 +239,44 @@ if ( $( 'body.book' ).length > 0 ) {
   //Work to reposition dropdowns. Does not currently solve for
   //screen resizing
   function dropdownToggle() {
-    position = $( '#read-in-browser'  ).offset().left
-    topPos = $( '#read-in-browser' ).offset().top
-    if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
-      positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
-      ribPosition = position - positionOff - 5
-      $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
-    } else {
-        $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
+
+    topPos = $( '#have_read_cb' ).offset().top
+
+    if ( $( '#read-in-browser' ).length > 0 ) {
+      position = $( '#read-in-browser'  ).offset().left
+      if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
+        positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
+        ribPosition = position - positionOff - 5
+        $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
+      } else {
+          $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
+      }
     }
 
-    position = $( '.downloadBtn'  ).offset().left
+    if ( $( '.downloadBtn' ).length > 0 ) {
 
-    if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
-      positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
-      dlPosition = position - positionOff - 5
-      $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
-    } else {
-      $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
+      position = $( '.downloadBtn'  ).offset().left
+
+      if ( position + $(  'ul[aria-labelledby="btnGroupDrop1"]' ).width() > $( window ).width() ) {
+        positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
+        dlPosition = position - positionOff - 5
+        $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
+      } else {
+        $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
+      }
     }
 
-    position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
+    if ( $( 'ul[aria-labelledby="btnGroupDrop1"]' ).length > 0 ) {
 
-    if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
-      positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
-      adsPosition = position - positionOff - 5
-      $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto;  top: " + topPos + "px");
-    } else {
-      $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
+      position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
+
+      if ( position + $(  '#add-to-shelves' ).width() > $( window ).width() ) {
+        positionOff = position + $( '#add-to-shelves' ).width() - $( window ).width();
+        adsPosition = position - positionOff - 5
+        $(  '#add-to-shelves' ).attr("style", "left: " + adsPosition + "px !important; right: auto;  top: " + topPos + "px");
+      } else {
+        $(  '#add-to-shelves' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
+      }
     }
   }
 }
