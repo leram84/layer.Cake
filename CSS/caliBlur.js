@@ -284,6 +284,21 @@ if ( $( 'body.book' ).length > 0 ) {
   $( window ).on( 'resize', function() {
     dropdownToggle();
   });
+
+  $(document).mouseup(function (e) {
+    var container = new Array();
+    container.push($('ul[aria-labelledby="read-in-browser"]'));
+    container.push($('ul[aria-labelledby="btnGroupDrop1"]'));
+	   container.push($('#add-to-shelves'));
+
+    $.each(container, function(key, value) {
+        if (!$(value).is(e.target) // if the target of the click isn't the container...
+            && $(value).has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $(value).hide();
+        }
+    });
+  });
 }
 
 ///////////////////////////////
@@ -599,13 +614,14 @@ if ( $( 'body.epub').length === 0 ) {
       $( '#btn-upload' ).attr('title', " ");
   });
 
+
   $( '[data-toggle-two="tooltip"]' ).click(function(){
        $('[data-toggle-two="tooltip"]').tooltip('hide');
-     });
+  });
 
   $( '[data-toggle="tooltip"]' ).click(function(){
       $('[data-toggle="tooltip"]').tooltip('hide');
-        });
+  });
 }
 
 $( '#read-in-browser a' ).attr('target',"");
