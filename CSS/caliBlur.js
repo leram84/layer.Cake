@@ -592,13 +592,6 @@ $( '#btnGroupDrop1' ).attr({
   'data-placement': 'bottom',
   'data-viewport': '.btn-toolbar' });
 
-$( '#btnGroupDrop1' ).click( function() {
-  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).focus();
-});
-$( 'ul[aria-labelledby="btnGroupDrop1"]' ).blur( function() {
-  console.log('boom');
-  $( this ).hide();
-});
 
 if ( $( 'body.epub').length === 0 ) {
   $(document).ready(function(){
