@@ -5008,7 +5008,16 @@ border: 1px rgba(0,0,0,.2) solid;
     top: 118px;
     right: 5px;
 }
- 
+#read-in-browser[aria-expanded="true"],
+.downloadBtn.open,
+#shelf-actions > .btn-group.open {
+    pointer-events: none;
+}
+#read-in-browser[aria-expanded="true"] > span,
+#btnGroupDrop1[aria-expanded="true"] > span,
+#shelf-actions > .btn-group.open > #add-to-shelf > span {
+    color: #fff
+}
  
  
  
