@@ -266,7 +266,7 @@ if ( $( 'body.book' ).length > 0 ) {
       }
     }
 
-    if ( $( 'ul[aria-labelledby="btnGroupDrop1"]' ).length > 0 ) {
+    if ( $( 'div[aria-label="Add to shelves"]' ).length > 0 ) {
 
       position = $( 'div[aria-label="Add to shelves"]'  ).offset().left
 
@@ -591,7 +591,6 @@ $( '#btnGroupDrop1' ).attr({
   'title': 'Download',
   'data-placement': 'bottom',
   'data-viewport': '.btn-toolbar' });
-
 
 if ( $( 'body.epub').length === 0 ) {
   $(document).ready(function(){
