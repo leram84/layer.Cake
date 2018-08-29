@@ -393,7 +393,7 @@ $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identif
 
     // now, fadeout the html (whole page)
       $( '.blur-wrapper' ).fadeOut(500);
-    $(".row-fluid .col-sm-10").fadeOut(1000,function () {
+    $(".row-fluid .col-sm-10").fadeOut(750,function () {
         // when the animation is complete, set the new location
         location = newUrl;
     });
