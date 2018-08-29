@@ -2900,6 +2900,7 @@ body.book .author {
         color: hsla(0,0%,100%,.45);
     font-size: 15px;
         margin-top: -10px;
+     max-width: calc(100% - 100px);
 }
 
 .bookinfo .rating .glyphicon-star.good {
@@ -5020,6 +5021,21 @@ border: 1px rgba(0,0,0,.2) solid;
     color: #fff
 }
  
+ 
+ 
+ 
+#shelf-actions {
+    pointer-events: none;
+}
+#shelf-actions > .btn-group {
+    pointer-events: none;
+}
+#shelf-actions > .btn-group > .empty-ul {
+    pointer-events: none;
+}
+#shelf-actions > .btn-group > #add-to-shelf[aria-expanded="false"]:not(.empty-ul) {
+    pointer-events: auto ;
+} 
  
  
  
