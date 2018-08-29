@@ -279,13 +279,13 @@ if ( $( 'body.book' ).length > 0 ) {
       }
     }
   }
+  dropdownToggle();
+
+  $( window ).on( 'resize', function() {
+    dropdownToggle();
+  });
 }
 
-dropdownToggle();
-
-$( window ).on( 'resize', function() {
-  dropdownToggle();
-});
 ///////////////////////////////
 // End of Book Details Work //
 /////////////////////////////
@@ -586,21 +586,19 @@ $( '#read-in-browser' ).attr({
   'data-viewport': '.btn-toolbar'})
   .addClass('send-btn-tooltip');
 
-$( '.send-btn-toolip' ).click( function() {
-  if ( $( 'ul[aria-labelledby="read-in-browser"]:visible' ).length > 0 ) {
-    $( '#read-in-browser' ).attr({
-      'data-toggle-two': ''})
-  } else {
-    $( '#read-in-browser' ).attr({
-      'data-toggle-two': 'tooltip'})
-  }
-});
-
 $( '#btnGroupDrop1' ).attr({
   'data-toggle-two': 'tooltip',
   'title': 'Download',
   'data-placement': 'bottom',
   'data-viewport': '.btn-toolbar' });
+
+$( '#btnGroupDrop1' ).click( function() {
+  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).focus();
+});
+$( 'ul[aria-labelledby="btnGroupDrop1"]' ).blur( function() {
+  console.log('boom');
+  $( this ).hide();
+});
 
 if ( $( 'body.epub').length === 0 ) {
   $(document).ready(function(){
@@ -608,9 +606,11 @@ if ( $( 'body.epub').length === 0 ) {
       $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
       $( '#btn-upload' ).attr('title', " ");
   });
+
   $( '[data-toggle-two="tooltip"]' ).click(function(){
        $('[data-toggle-two="tooltip"]').tooltip('hide');
      });
+
   $( '[data-toggle="tooltip"]' ).click(function(){
       $('[data-toggle="tooltip"]').tooltip('hide');
         });
