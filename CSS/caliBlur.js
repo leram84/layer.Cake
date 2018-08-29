@@ -289,7 +289,7 @@ if ( $( 'body.book' ).length > 0 ) {
   $(document).mouseup(function (e) {
     var container = new Array();
     container.push($('ul[aria-labelledby="read-in-browser"]'));
-    container.push($('ul[aria-labelledby="btnGroupDrop1"]'));
+    container.push($('.leramslist'));
 	   container.push($('#add-to-shelves'));
 
     $.each(container, function(key, value) {
