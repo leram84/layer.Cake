@@ -216,8 +216,8 @@ if ( $( 'body.book' ).length > 0 ) {
 
   // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
   $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
-  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' );
   $( '.leramslist' ).insertBefore( '.blur-wrapper' );
+  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' ).addClass('.leramslist');
   $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
   $( '#read-in-browser' ).click( function() {
@@ -245,12 +245,12 @@ if ( $( 'body.book' ).length > 0 ) {
 
     if ( $( '#read-in-browser' ).length > 0 ) {
       position = $( '#read-in-browser'  ).offset().left
-      if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
-        positionOff = position + $( 'ul[aria-labelledby="read-in-browser"]' ).width() - $( window ).width();
+      if ( position + $(  '.leramslist' ).width() > $( window ).width() ) {
+        positionOff = position + $( '.leramslist' ).width() - $( window ).width();
         ribPosition = position - positionOff - 5
-        $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
+        $( '.leramslist' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
       } else {
-          $( 'ul[aria-labelledby="read-in-browser"]' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
+          $( '.leramslist' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
       }
     }
 
