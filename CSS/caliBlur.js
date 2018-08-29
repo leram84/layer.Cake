@@ -568,6 +568,16 @@ $( '#read-in-browser' ).attr({
   'data-viewport': '.btn-toolbar'})
   .addClass('send-btn-tooltip');
 
+$( '.send-btn-toolip' ).click( function() {
+  if ( $( 'ul[aria-labelledby="read-in-browser"]:visible' ).length > 0 ) {
+    $( '#read-in-browser' ).attr({
+      'data-toggle-two': ''})
+  } else {
+    $( '#read-in-browser' ).attr({
+      'data-toggle-two': 'tooltip'})
+  }
+});
+
 $( '#btnGroupDrop1' ).attr({
   'data-toggle-two': 'tooltip',
   'title': 'Download',
