@@ -238,7 +238,7 @@ if ( $( 'body.book' ).length > 0 ) {
 
   //Work to reposition dropdowns. Does not currently solve for
   //screen resizing
-  function(dropdownToggle) {
+  function dropdownToggle() {
     position = $( '#read-in-browser'  ).offset().left
     topPos = $( '#read-in-browser' ).offset().top
     if ( position + $(  'ul[aria-labelledby="read-in-browser"]' ).width() > $( window ).width() ) {
