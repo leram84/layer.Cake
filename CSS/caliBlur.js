@@ -405,7 +405,7 @@ $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identif
 
 // Collapse long text into read-more
 $( 'div.description' ).readmore( {
-  collapsedHeight: 140,
+  collapsedHeight: 134,
   heightMargin: 45,
   speed: 300,
   moreLink: '<a href="#">READ MORE</a>',
