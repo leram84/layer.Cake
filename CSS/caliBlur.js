@@ -217,14 +217,14 @@ if ( $( 'body.book' ).length > 0 ) {
   // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
   $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' ).addClass('readinbrowser-drop');
   $( '.leramslist' ).insertBefore( '.blur-wrapper' );
-  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' ).addClass('.leramslist');
+  $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' ).addClass('leramslist');
   $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
   $( '#read-in-browser' ).click( function() {
     $(  '.readinbrowser-drop' ).toggle();
   });
 
-  $('#btnGroupDrop1' ).click( function() {
+  $('.downloadBtn' ).click( function() {
     $(  '.leramslist' ).toggle();
   });
 
