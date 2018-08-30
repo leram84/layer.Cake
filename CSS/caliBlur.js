@@ -610,7 +610,6 @@ $( '#btnGroupDrop1' ).attr({
 
 if ( $( 'body.epub').length === 0 ) {
   $(document).ready(function(){
-    if
       $('[data-toggle="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
       $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
       $( '#btn-upload' ).attr('title', " ");
