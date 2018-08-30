@@ -5036,6 +5036,11 @@ border: 1px rgba(0,0,0,.2) solid;
 #shelf-actions > .btn-group > #add-to-shelf[aria-expanded="false"]:not(.empty-ul) {
     pointer-events: auto ;
 } 
+
+
+.description {
+    height: 134px !important;
+}
  
  
  
