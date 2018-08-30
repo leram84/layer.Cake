@@ -36,12 +36,13 @@ if ( $( window ).width() < 769 ) {
     $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
 
   // Sexy blurred backgrounds
+  if ( $( 'body.book' ).length >0 ) {
     cover = $( '.cover img' ).attr( 'src' );
     $( '#loader + .container-fluid' )
       .prepend( '<div class="blur-wrapper"></div' );
     $( '.blur-wrapper' )
       .prepend( '<div><img class="bg-blur" src="' + cover + '"></div>' );
-
+    }
   // Author Page Background Blur
   if ( $( 'body.author' ).length >0 ) {
     cover = $( '.author-bio img' ).attr( 'src' );
