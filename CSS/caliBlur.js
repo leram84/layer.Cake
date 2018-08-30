@@ -215,13 +215,13 @@ if ( $( 'body.book' ).length > 0 ) {
 
 
   // Move dropdown lists higher in dom, replace bootstrap toggle with own toggle.
-  $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' );
+  $( 'ul[aria-labelledby="read-in-browser"]' ).insertBefore( '.blur-wrapper' ).addClass('readinbrowser-drop');
   $( '.leramslist' ).insertBefore( '.blur-wrapper' );
   $( 'ul[aria-labelledby="btnGroupDrop1"]' ).insertBefore( '.blur-wrapper' ).addClass('.leramslist');
   $( '#add-to-shelves' ).insertBefore( '.blur-wrapper' );
 
   $( '#read-in-browser' ).click( function() {
-    $(  'ul[aria-labelledby="read-in-browser"]' ).toggle();
+    $(  '.readinbrowser-drop' ).toggle();
   });
 
   $('.downloadBtn' ).click( function() {
@@ -245,12 +245,12 @@ if ( $( 'body.book' ).length > 0 ) {
 
     if ( $( '#read-in-browser' ).length > 0 ) {
       position = $( '#read-in-browser'  ).offset().left
-      if ( position + $(  '.leramslist' ).width() > $( window ).width() ) {
-        positionOff = position + $( '.leramslist' ).width() - $( window ).width();
+      if ( position + $(  '.readinbrowser-drop' ).width() > $( window ).width() ) {
+        positionOff = position + $( '.readinbrowser-drop' ).width() - $( window ).width();
         ribPosition = position - positionOff - 5
-        $( '.leramslist' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
+        $( '.readinbrowser-drop' ).attr("style", "left: " + ribPosition + "px !important; right: auto; top: " + topPos + "px");
       } else {
-          $( '.leramslist' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
+          $( '.readinbrowser-drop' ).attr("style", "left: " + position + "px !important; right: auto; top: " + topPos + "px");
       }
     }
 
@@ -259,11 +259,11 @@ if ( $( 'body.book' ).length > 0 ) {
       position = $( '.downloadBtn'  ).offset().left
 
       if ( position + $(  '.leramslist' ).width() > $( window ).width() ) {
-        positionOff = position + $( 'ul[aria-labelledby="btnGroupDrop1"]' ).width() - $( window ).width();
+        positionOff = position + $( '.leramslist' ).width() - $( window ).width();
         dlPosition = position - positionOff - 5
-        $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
+        $( '.leramslist' ).attr("style", "left: " + dlPosition + "px !important; right: auto;  top: " + topPos + "px");
       } else {
-        $( 'ul[aria-labelledby="btnGroupDrop1"]' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
+        $( '.leramslist' ).attr("style", "left: " + position + "px !important; right: auto;  top: " + topPos + "px");
       }
     }
 
