@@ -146,7 +146,7 @@ body.login .well {
     padding: 0 60px !important;
 }
 }
-@media only screen and (min-width: 768px) {
+
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a[href*="advanced_search"] {
     display: none;
 }
@@ -5116,4 +5116,4 @@ body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > f
 label[for="theme"] {
     display: none;
 }
-}
+
