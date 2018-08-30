@@ -224,7 +224,7 @@ if ( $( 'body.book' ).length > 0 ) {
     $(  '.readinbrowser-drop' ).toggle();
   });
 
-  $('.downloadBtn' ).click( function() {
+  $('#btnGroupDrop1' ).click( function() {
     $(  '.leramslist' ).toggle();
   });
 
