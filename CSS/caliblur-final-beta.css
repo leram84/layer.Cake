@@ -5039,6 +5039,11 @@ border: 1px rgba(0,0,0,.2) solid;
 
  
  
+.description > p {
+    margin: 0 0 5px;
+}
+ 
+ 
  
 /* normalize posters */
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
