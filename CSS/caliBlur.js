@@ -256,7 +256,7 @@ if ( $( 'body.book' ).length > 0 ) {
 
     if ( $( '.downloadBtn' ).length > 0 ) {
 
-      position = $( '.downloadBtn'  ).offset().left
+      position = $( '#btnGroupDrop1'  ).offset().left
 
       if ( position + $(  '.leramslist' ).width() > $( window ).width() ) {
         positionOff = position + $( '.leramslist' ).width() - $( window ).width();
