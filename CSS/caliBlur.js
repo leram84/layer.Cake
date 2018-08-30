@@ -610,6 +610,7 @@ $( '#btnGroupDrop1' ).attr({
 
 if ( $( 'body.epub').length === 0 ) {
   $(document).ready(function(){
+    if
       $('[data-toggle="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
       $('[data-toggle-two="tooltip"]').tooltip({container: 'body', trigger: 'hover'});
       $( '#btn-upload' ).attr('title', " ");
@@ -640,7 +641,7 @@ if ( $( window ).width() < 769 ) {
     $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
    } else {
   //Move menu out of collapse
-    $( '.col-sm-2:first' ).prependTo( '.row-fluid:first');
+    $( '.col-sm-2:first' ).insertBefore( '.col-sm-10');
    }
 }
 
