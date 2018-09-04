@@ -241,7 +241,7 @@ if ( $( 'body.book' ).length > 0 ) {
   //screen resizing
   function dropdownToggle() {
 
-    topPos = $( '.btn-toolbar' ).offset().top
+    topPos = $( '.book-meta > .btn-toolbar:first' ).offset().top
 
     if ( $( '#read-in-browser' ).length > 0 ) {
       position = $( '#read-in-browser'  ).offset().left
