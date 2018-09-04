@@ -638,7 +638,7 @@ function mobileSupport() {
 if ( $( window ).width() < 769 ) {
   //Move menu to collapse
     $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
-    $( '.navbar-brand' ).insertBefore(  '.nav.navbar-nav' );
+    $( '.navbar-brand' ).insertBefore(  '.navbar-collapse > .nav.navbar-nav:first' );
    } else {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10');
