@@ -650,5 +650,5 @@ mobileSupport();
 var id;
 $( window ).on('resize',function() {
   clearTimeout(id);
-  id = setTimeout(doneResizing, 500);
+  id = setTimeout(mobileSupport, 500);
 });
