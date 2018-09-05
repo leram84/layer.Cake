@@ -647,7 +647,8 @@ if ( $( window ).width() < 769 ) {
 }
 
 mobileSupport();
-
+var id;
 $( window ).on('resize',function() {
-    mobileSupport();
+  clearTimeout(id);
+  id = setTimeout(doneResizing, 500);
 });
