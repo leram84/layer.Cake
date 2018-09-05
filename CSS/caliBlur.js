@@ -296,6 +296,7 @@ if ( $( 'body.book' ).length > 0 ) {
 //    Start of Global Work    //
 ///////////////////////////////
 
+// Hide dropdown and collapse menus on click-off
 $(document).mouseup(function (e) {
   var container = new Array();
   container.push($('ul[aria-labelledby="read-in-browser"]'));
@@ -307,7 +308,7 @@ $(document).mouseup(function (e) {
     if (!$(value).is(e.target) // if the target of the click isn't the container...
     && $(value).has(e.target).length === 0) // ... nor a descendant of the container
     {
-      if ( $(value).hasClass('dropdown-menu') )
+      if ( $(value).hasClass('dropdown-menu') ) 
       {
         $(value).hide();
       } else
@@ -320,6 +321,7 @@ $(document).mouseup(function (e) {
     }
   });
 });
+
 // Split path name to array and remove blanks
 url = window.location.pathname
   .split( "/" ).filter( function(v){return v!==''} );
