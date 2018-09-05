@@ -308,7 +308,7 @@ $(document).mouseup(function (e) {
     if (!$(value).is(e.target) // if the target of the click isn't the container...
     && $(value).has(e.target).length === 0) // ... nor a descendant of the container
     {
-      if ( $(value).hasClass('dropdown-menu') ) 
+      if ( $(value).hasClass('dropdown-menu') )
       {
         $(value).hide();
       } else
@@ -659,8 +659,9 @@ if ( $( window ).width() < 769 ) {
 mobileSupport();
 
 // Only call function once resize is complete
-var id;
+//var id;
 $( window ).on('resize',function() {
-  clearTimeout(id);
-  id = setTimeout(mobileSupport, 500);
+//  clearTimeout(id);
+//  id = setTimeout(mobileSupport, 500);
+mobileSupport();
 });
