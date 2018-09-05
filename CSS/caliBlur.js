@@ -642,7 +642,7 @@ if ( $( window ).width() < 769 ) {
    } else {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10');
-    $( '.movile-navbar-brand' ).remove();
+    $( '.mobile-navbar-brand' ).remove();
    }
 }
 
