@@ -312,7 +312,7 @@ $(document).mouseup(function (e) {
         $(value).hide();
       } else
       {
-        if ( $(value).hasClass('.collapse') )
+        if ( $(value).hasClass('collapse') )
         {
           $(value).collapse('toggle');
         }
