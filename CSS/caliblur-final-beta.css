@@ -5117,3 +5117,197 @@ label[for="theme"] {
     display: none;
 }
 
+
+
+
+
+@media only screen and (max-width: 768px) {
+body:not(.read-frame) {
+    background: grey !important;
+}
+.navbar-default {
+    height: 48px;
+    min-height: 48px;
+}
+.navbar > .container-fluid {
+    height: 48px;
+}
+.navbar > .container-fluid > .navbar-header {
+    margin: 0;
+}
+.navbar > .container-fluid > .navbar-header > button.navbar-toggle {
+    border: 0;
+    float: left;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    top: 0;
+}
+.navbar > .container-fluid > .navbar-header > button.navbar-toggle:hover,
+.navbar > .container-fluid > .navbar-header > button.navbar-toggle:active,
+.navbar > .container-fluid > .navbar-header > button.navbar-toggle:focus {
+    background: transparent;
+}
+.navbar > .container-fluid > .navbar-header > button.navbar-toggle:before {
+    content: '';
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgPHBhdGggZD0iTTE0NC4yOTEgNDkyLjMyNUMxNjYuNjI0IDQ3Ni4yNjUgMTkzLjE5NCA0NjYuMTU2IDIyNCA0NjJjMTIuNDQ0IDkuMzMzIDMxLjExMSAxNCA1NiAxNHM0My41NTYtNC42NjcgNTYtMTRjMzAuODA2IDQuMTU2IDU3LjM3NiAxNC4yNjQgNzkuNzA5IDMwLjMyNUMzNzYuNTI3IDUxNy40MzUgMzI5Ljk1MSA1MzIgMjgwIDUzMmMtNDkuOTUxIDAtOTYuNTI3LTE0LjU2NS0xMzUuNzA5LTM5LjY3NXoiIGZpbGwtb3BhY2l0eT0iLjYiLz4KICAgICAgICA8cGF0aCBkPSJNMjI0IDQ2MmwxMi44OC00MC4yNTFDMTk2LjQyOSAzOTcuNDYyIDE2OCAzNDAuMDM1IDE2OCAyNzMuMDU5YzAtMzUuMTkzIDcuODQ5LTY3Ljc1IDIxLjE2OC05NC4yNDggMTYuMTczIDQuOTc3IDM1LjMxNSA3Ljg1NiA1NS44MzIgNy44NTYgNTEuMTA0IDAgOTMuNjgtMTcuODYgMTAzLjA3Mi00MS41MTZDMzc0Ljc3OSAxNzQuNTg4IDM5MiAyMjAuOTMxIDM5MiAyNzMuMDU5YzAgNjYuOTc2LTI4LjQyOSAxMjQuNDAzLTY4Ljg4IDE0OC42OUwzMzYgNDYyYy0xMi40NDQgOS4zMzMtMzEuMTExIDE0LTU2IDE0LTI0LjY5NCAwLTQzLjI2My00LjU5NC01NS43MDctMTMuNzgyTDIyNCA0NjJ6IiBmaWxsLW9wYWNpdHk9Ii43NSIvPgogICAgICAgIDxwYXRoIGQ9Ik0xODAuMDY0IDM0NS44NDlDMTU1LjI4MiAzMTguMDY3IDE0MCAyNzkuOTk3IDE0MCAyMzhjMC04NS4wNTIgNjIuNjgtMTU0IDE0MC0xNTRzMTQwIDY4Ljk0OCAxNDAgMTU0YzAgNDEuOTk3LTE1LjI4MiA4MC4wNjctNDAuMDY0IDEwNy44NDkgNy43MTYtMjEuODYyIDEyLjA2NC00Ni41OTYgMTIuMDY0LTcyLjc5IDAtNTIuMTI4LTE3LjIyMS05OC40NzEtNDMuOTI4LTEyNy45MDgtOS4zOTIgMjMuNjU2LTUxLjk2OCA0MS41MTYtMTAzLjA3MiA0MS41MTYtMjAuNTE3IDAtMzkuNjU5LTIuODc5LTU1LjgzMi03Ljg1NkMxNzUuODQ5IDIwNS4zMDkgMTY4IDIzNy44NjYgMTY4IDI3My4wNTljMCAyNi4xOTQgNC4zNDggNTAuOTI4IDEyLjA2NCA3Mi43OXoiIGZpbGwtb3BhY2l0eT0iLjQ1Ii8+CiAgICAgICAgPHBhdGggZD0iTTI4MCA1MzJjMTM5LjE3NiAwIDI1Mi0xMTIuODI0IDI1Mi0yNTJTNDE5LjE3NiAyOCAyODAgMjggMjggMTQwLjgyNCAyOCAyODBzMTEyLjgyNCAyNTIgMjUyIDI1MnptMCAyOEMxMjUuMzYgNTYwIDAgNDM0LjY0IDAgMjgwUzEyNS4zNiAwIDI4MCAwczI4MCAxMjUuMzYgMjgwIDI4MC0xMjUuMzYgMjgwLTI4MCAyODB6IiBmaWxsLW9wYWNpdHk9Ii43NSIvPgogICAgPC9nPgo8L3N2Zz4K);
+    background-size: contain;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+}
+.navbar > .container-fluid > .navbar-header > button.navbar-toggle > span {
+    opacity: 0;
+    position: absolute;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
+    margin: 0 !important;
+    height: 48px;
+    line-height: 48px;
+    width: calc(100vw - 138px);
+    background: transparent !important;
+    color: hsla(0,0%,100%,.7) !important;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    pointer-events: none;
+}
+.home-btn {
+    height: 48px;
+    line-height: 28.2857px;
+    right: 10px;
+    left: auto;
+}
+.home-btn > a {
+    height: 48px;
+    line-height: 48px;
+}
+.plexBack {
+    height: 48px;
+    line-height: 28.2857px;
+    left: 48px;
+    display: none;
+}
+.plexBack > a {
+    height: 48px;
+    line-height: 48px;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    height: 48px;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form:before {
+    top: 12px;
+    left: auto;
+    right: 15px;
+    color: hsla(0,0%,100%,.7)
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form:hover:before {
+    color: #fff
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form > div {
+    width: 40px;
+    height: 48px;
+}
+#query {
+    width: 40px !important;
+    padding-right: 0;
+    padding-left: 0;
+    height: 48px;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100vw;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div.form-group {
+    width: 100vw;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > #query {
+    width: calc(100vw - 100px) !important;
+    margin: 0 !important
+}
+#query {
+    color: transparent;
+    opacity: 0;
+}
+#query:focus {
+    background: #555 !important;
+    color: #eee !important;
+    cursor: text;
+    left: 50px;
+    width: calc(100px) !important;
+    opacity: 1;
+    padding-left: 15px
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn:before {
+        content: "\EA33";
+        display: block;
+        font-family: plex-icons-new;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 48px;
+        color: #eee;
+        font-weight: 400;
+        font-size: 14px;
+    background: #555;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > div > span.input-group-btn:hover:before {
+    
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn {
+    background: #555;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.input-group-btn {
+    position: absolute;
+    left: auto;
+    right: 0;
+    height: 48px;
+    width: 50px;
+    border-radius:  4px;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button {
+    height: 48px;
+    width: 50px;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button::before {
+    color: #555;
+    background: #eee;
+}
+.navbar-collapse.collapse.in {
+    height: calc(100vh) !important;
+    width: 240px;
+    background: #555;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 48px;
+    left: 0;
+}
+.mobile-navbar-brand {
+    display: none;
+}
+}
