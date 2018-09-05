@@ -291,7 +291,6 @@ if ( $( 'body.book' ).length > 0 ) {
     container.push($('ul[aria-labelledby="read-in-browser"]'));
     container.push($('.leramslist'));
 	  container.push($('#add-to-shelves'));
-    container.push($('.navbar-collapse.collapse.in')); 
 
     $.each(container, function(key, value) {
         if (!$(value).is(e.target) // if the target of the click isn't the container...
