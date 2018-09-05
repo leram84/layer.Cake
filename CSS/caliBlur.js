@@ -652,3 +652,16 @@ $( window ).on('resize',function() {
   clearTimeout(id);
   id = setTimeout(mobileSupport, 500);
 });
+
+$(document).mouseup(function (e) {
+  var container = new Array();
+  container.push($('.navbar-collapse.collapse.in'));
+
+  $.each(container, function(key, value) {
+      if (!$(value).is(e.target) // if the target of the click isn't the container...
+          && $(value).has(e.target).length === 0) // ... nor a descendant of the container
+      {
+          $('.navbar-collapse.collapse.in').collapse();
+      }
+  });
+});
