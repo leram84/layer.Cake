@@ -638,11 +638,9 @@ function mobileSupport() {
 if ( $( window ).width() < 769 ) {
   //Move menu to collapse
     $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
-    $( '.navbar-brand' ).clone().addClass( 'mobile-navbar-brand' ).insertBefore(  '.navbar-collapse > .nav.navbar-nav:first' );
    } else {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10');
-    $( '.mobile-navbar-brand' ).remove();
    }
 }
 
