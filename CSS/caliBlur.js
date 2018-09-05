@@ -286,20 +286,6 @@ if ( $( 'body.book' ).length > 0 ) {
     dropdownToggle();
   });
 
-  $(document).mouseup(function (e) {
-    var container = new Array();
-    container.push($('ul[aria-labelledby="read-in-browser"]'));
-    container.push($('.leramslist'));
-	  container.push($('#add-to-shelves'));
-
-    $.each(container, function(key, value) {
-        if (!$(value).is(e.target) // if the target of the click isn't the container...
-            && $(value).has(e.target).length === 0) // ... nor a descendant of the container
-        {
-            $(value).hide();
-        }
-    });
-  });
 }
 
 ///////////////////////////////
@@ -310,6 +296,30 @@ if ( $( 'body.book' ).length > 0 ) {
 //    Start of Global Work    //
 ///////////////////////////////
 
+$(document).mouseup(function (e) {
+  var container = new Array();
+  container.push($('ul[aria-labelledby="read-in-browser"]'));
+  container.push($('.leramslist'));
+  container.push($('#add-to-shelves'));
+  container.push($('.navbar-collapse.collapse.in'));
+
+  $.each(container, function(key, value) {
+    if (!$(value).is(e.target) // if the target of the click isn't the container...
+    && $(value).has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      if ( $(value).hasClass('dropdown-menu') )
+      {
+        $(value).hide();
+      } else
+      {
+        if ( $(value).hasClass('.collapse') )
+        {
+          $(value).collapse('toggle');
+        }
+      }
+    }
+  });
+});
 // Split path name to array and remove blanks
 url = window.location.pathname
   .split( "/" ).filter( function(v){return v!==''} );
@@ -651,17 +661,4 @@ var id;
 $( window ).on('resize',function() {
   clearTimeout(id);
   id = setTimeout(mobileSupport, 500);
-});
-
-$(document).mouseup(function (e) {
-  var container = new Array();
-  container.push($('.navbar-collapse.collapse.in'));
-
-  $.each(container, function(key, value) {
-      if (!$(value).is(e.target) // if the target of the click isn't the container...
-          && $(value).has(e.target).length === 0) // ... nor a descendant of the container
-      {
-          $('.navbar-collapse.collapse.in').collapse('toggle');
-      }
-  });
 });
