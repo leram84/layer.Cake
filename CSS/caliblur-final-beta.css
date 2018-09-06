@@ -709,7 +709,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > d
 .profileDrop > span {
     width: 30px;
     height: 30px;
-    margin: 30px 15px;
+    margin: 15px;
     top: 0;
 }
 .profileDrop > span:before {
@@ -5344,6 +5344,12 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     left: 165px;
     top: 30px;
     color:  #fff;
+}
+.profileDrop > span {
+    width: 30px;
+    height: 30px;
+    margin: 30px 15px;
+    top: 0;
 }
 #main-nav > li {
     float: left;
