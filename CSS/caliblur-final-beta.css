@@ -5043,12 +5043,13 @@ border: 1px rgba(0,0,0,.2) solid;
     pointer-events: auto ;
 } 
 
- 
- 
 .description > p {
     margin: 0 0 5px;
 }
- 
+
+.profileDrop + span.hidden-sm {
+    display: none;
+}
  
  
 /* normalize posters */
@@ -5344,14 +5345,23 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .profileDrop > span:after {
     position: absolute;
     left: 165px;
-    top: 30px;
-    color:  #fff;
+    top: 35px;
+    color: #fff;
 }
 .profileDrop > span {
     width: 30px;
     height: 30px;
     margin: 30px 15px;
     top: 0;
+}
+.profileDrop + span.hidden-sm {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    color: #fff;
+    font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    pointer-events: none;
 }
 #main-nav > li {
     float: left;
@@ -5375,9 +5385,10 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     color: #fff;
     font-size: 13px !important;
     padding-left: 15px;
-    height:  60px;
-    line-height:  60px;
-    position:  absolute;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    font-family: Open Sans Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 #form-upload .form-group .btn {
     float: left;
