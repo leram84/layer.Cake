@@ -3967,6 +3967,8 @@ body.shelf.modal-open > .container-fluid {
     margin-top: 30px;
     z-index: 0;
     border-top: 1px solid #222;
+     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 #DeleteShelfDialog > .modal-dialog > .modal-content > .modal-body > .btn {
         float: right;
