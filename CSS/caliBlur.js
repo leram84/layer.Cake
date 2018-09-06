@@ -646,6 +646,9 @@ if ( $( '.order-shelf-btn').length > 1 ) {
   $( '.order-shelf-btn:first').remove();
 }
 
+$( '#top_user > span.hidden-sm' ).clone().insertBefore( '.profileDropli' );
+$( '.navbar-collapse.collapse.in').before('<div class="sidebar-backdrop"></div>');
+
 function mobileSupport() {
 if ( $( window ).width() < 769 ) {
   //Move menu to collapse
