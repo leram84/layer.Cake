@@ -709,7 +709,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > d
 .profileDrop > span {
     width: 30px;
     height: 30px;
-    margin: 15px;
+    margin: 30px 15px;
     top: 0;
 }
 .profileDrop > span:before {
@@ -1480,7 +1480,8 @@ app-loading-container {
 }
 
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar,
-body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar {
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar,
+.navbar-collapse.collapse.in::-webkit-scrollbar {
     width: 14px;
     max-height: calc(100% - 60px);
 }
@@ -1490,7 +1491,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar {
     width: 14px;
 }
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-track,
-body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-track {
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-track,
+.navbar-collapse.collapse.in::-webkit-scrollbar-track {
     background-color: transparent;
     max-height: calc(100% - 60px);
 }
@@ -1502,7 +1504,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-tra
     background-color: transparent;
 }
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb,
-body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb {
+body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb,
+.navbar-collapse.collapse.in::-webkit-scrollbar-thumb {
     min-height: 110px;
     border: 3px solid transparent;
     border-radius: 8px;
@@ -1523,7 +1526,8 @@ body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb:hover,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb:hover,
 #meta-info::-webkit-scrollbar-thumb:hover,
 #description::-webkit-scrollbar-thumb:hover,
-.book-meta::-webkit-scrollbar-thumb:hover {
+.book-meta::-webkit-scrollbar-thumb:hover,
+.navbar-collapse.collapse.in::-webkit-scrollbar-thumb:hover {
     background-color: hsla(0,0%,100%,.3);
 }
 ::-webkit-scrollbar-corner {
@@ -5284,30 +5288,312 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span.inp
     right: 0;
     height: 48px;
     width: 50px;
-    border-radius:  4px;
+    border-radius:  0;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button {
     height: 48px;
     width: 50px;
+    border-radius: 0;
 }
 body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > button::before {
     color: #555;
     background: #eee;
 }
+.navbar-collapse.collapse {
+    height: 0 !important;
+}
 .navbar-collapse.collapse.in {
     height: calc(100vh) !important;
     width: 240px;
-    background: #555;
+    background: #3f4245;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 48px;
+    top: 0;
     left: 0;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
 .mobile-navbar-brand {
     display: none;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul:first-of-type:not(.navbar-right) {
+    display: none;
+}
+#main-nav {
+    margin-right: 0;
+    height:  auto;
+}
+#main-nav > li:nth-child(1) {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid hsla(0,0%,78%,.15);
+    z-index:  99;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a.profileDrop {
+    height: 120px;
+    width:  100%;
+}
+.profileDrop > span:after {
+    position: absolute;
+    left: 165px;
+    top: 30px;
+    color:  #fff;
+}
+#main-nav > li {
+    float: left;
+}
+#main-nav > li.form-upload {
+    width: 100%;
+}
+#form-upload {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    margin-right: 0;
+    border-top: none;
+    border-bottom: 1px solid hsla(0,0%,78%,.15);
+}
+#form-upload > .form-group:before {
+    content: "Upload Book";
+    color: #fff;
+    font-size: 13px !important;
+    padding-left: 15px;
+    height:  60px;
+    line-height:  60px;
+    position:  absolute;
+}
+#form-upload .form-group .btn {
+    float: left;
+    width: 240px;
+}
+#btn-upload {
+    width:  100%;
+}
+#form-upload .form-group .btn:before {
+    content: "\e043";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 23px 0 23px 205px;
+    z-index: -9;
+}
+#form-upload .form-group .btn:after {
+    content: "\EA13";
+    position: absolute;
+    font-family: plex-icons-new;
+    font-size: 8px;
+    background: #3c444a;
+    color: #fff;
+    border-radius: 50%;
+    padding: .25px .25px 0 0;
+    z-index: 9;
+    left: 201px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    text-align: center;
+    pointer-events: none;
+}
+#main-nav > li.top_tasks:before {
+    content: "MANAGE";
+    color: hsla(0,0%,100%,.45);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 60px;
+    padding-left: 15px;
+    position: absolute;
+    top: -60px;
+}
+#main-nav > li.top_tasks {
+    min-height: 30px;
+    max-width: 265px;
+    overflow: visible;
+    border-radius: 0 4px 4px 0;
+    height: 45px;
+    width: 100%;
+    margin-top: 72px;
+}
+#main-nav > li.top_admin {
+    min-height: 30px;
+    max-width: 265px;
+    overflow: visible;
+    border-radius: 0 4px 4px 0;
+    height: 45px;
+    width: 100%;
+}
+#top_tasks,
+#top_admin {
+    text-decoration: none;
+    padding: 11.5px 15px;
+    font-size: 13px;
+    height: 45px;
+    line-height: 1.71428571;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color:  #fff;
+}
+#top_tasks > .glyphicon-tasks {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 7px;
+    border-radius:  0;
+    background:  transparent;
+}
+#top_admin > .glyphicon {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
+    border-radius:  0;
+    background:  transparent;
+}
+#top_tasks > .glyphicon-tasks::before {
+    content: "\EA2E";
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-family: plex-icons-new;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 22px;
+    text-rendering: optimizeLegibility;
+    speak: none;
+    font-size: 16px;
+    vertical-align: sub;
+}
+body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > #top_admin > .glyphicon-dashboard::before {
+    content: "\EA56";
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-family: plex-icons-new;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 22px;
+    text-rendering: optimizeLegibility;
+    speak: none;
+    font-size: 14px;
+    vertical-align: sub;
+}
+#top_tasks > span.hidden-sm,
+#top_admin > span.hidden-sm {
+    display: inline-block;
+    line-height:  22px;
+}
+
+.navigation > ul > li:hover {
+    background-color: transparent;
+}
+.navbar-collapse.collapse.in > .col-sm-2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.navigation > ul > li {
+    min-height: 45px;
+    max-width: 265px;
+    overflow: visible;
+    border-radius: 0 4px 4px 0;
+}
+.navigation > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 11.5px 15px;
+    font-size: 13px;
+    height: 45px;
+    line-height: 1.71428571;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.navigation .nav-head {
+    text-transform: uppercase;
+    margin: 0;
+    color: hsla(0,0%,100%,.45);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 60px;
+    padding-left: 15px;
+    height: 60px;
+    min-height: 60px;
+}
+.navigation .create-shelf {
+    width: 25px;
+    margin: 17.5px 0 0 0;
+    min-height: auto;
+    float: right;
+}
+.navigation .create-shelf a {
+    color: #fff !important;
+}
+.navigation li a .glyphicon-star {
+    color: #fff;
+}
+.navbar-nav .open .dropdown-menu.profileDropli {
+    width: 210px;
+    margin-left: 15px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: hsla(0,0%,100%,.7);
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fff;
+    background-color: hsla(0,0%,100%,.08);
+}
+
+
+.tooltip {
+    display: none !important;
+}
+.navbar-collapse.collapse.in .navigation li a span {
+    vertical-align: middle;
+}
+.navbar-collapse.collapse.in .hidden-xs {
+    display: initial !important;
+}
+.navbar-collapse.collapse.in:after {
+    display: none;
+}
+.tooltip {
+    display: none !important;
 }
 }
