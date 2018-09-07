@@ -5081,6 +5081,7 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > h2 {
     position: absolute;
     margin-top: -30px;
+    padding-left: 5px;
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
@@ -5614,5 +5615,156 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .tooltip {
     display: none !important;
+}
+
+
+body > div.container-fluid > div.row-fluid > div.col-sm-10 {
+    width:  100%;
+    top:  90px;
+    height: calc(100vh - 90px);
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover {
+    width:  100%;
+    margin: 0 !important;
+    padding:  10px !important;
+}
+body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h2, body > div.container-fluid > div > div.col-sm-10 > h1, body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h1, body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2,
+body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type {
+    top: 48px;
+    left: 0;
+    padding-left:  10px;
+    height:  42px;
+    width: calc(100%);
+    line-height:  42px;
+    padding-right: 130px;
+    overflow:  hidden;
+    text-overflow:  ellipsis;
+    white-space:  nowrap;
+    background:  rgba(0,0,0,.15);
+    font-size:  13px;
+}
+.pagination {
+    top: 48px;
+    height:  42px;
+    line-height: 42px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next {
+    line-height: 42px;
+    height: 42px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.next:before {height:  42px;line-height:  42px;padding: 11px 0 11px 20px;}
+.pagination:after {
+    line-height: 42px;
+    height: 42px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous {height:  42px;line-height:  42px;}
+body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:before {
+    height: 42px;
+    line-height: 42px;
+    padding: 11px 25px 11px 25px;
+}
+body > .container-fluid {
+    height: calc(100vh - 42px);
+    top: 48px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
+}
+.book:not(body) {width: 110px !important;max-width: 110px !important;min-width: 110px !important;padding: 0 5px;}
+.container-fluid .book .cover {height: 150px;}
+#books .cover img, #books_rand .cover img, .book.isotope-item .cover img {
+    width:  100px !important;
+}
+#books > .cover > a:before, #books_rand > .cover > a:before, .book.isotope-item > .cover > a:before {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 12px;
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background-size:  30px;
+}
+body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
+    left:  0;
+    width: auto;
+    margin: 75px 15px 0 15px !important;
+    padding: 20px 0 !important;
+}
+body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
+    top: 30px;
+    left: 70px;
+    font-size: 16px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.form-group {
+    padding-right: 15px;
+}
+.form-group > label {
+    font-size: 12px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 {
+    margin: 120px 0 0;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 {
+    float: left;
+    width: 100%;
+    margin-bottom:  10px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before, body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {width:  100%;margin-left: 0;}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+    width: 110px !important;
+    max-width: 110px !important;
+    min-width: 110px !important;
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+    width: auto;
+    height: 150px;
+    padding: 0;
+    margin: 7.5px 5px;
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {right: 12px;}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
+    width: 100px !important;
+    height: 150px !important;
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > #submit {
+    margin-right: 15px
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:after {
+    width: calc(100% - 10px);
+}
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a {
+    width: calc(100% - 10px);
+}
+body > div.container-fluid > div > div.col-sm-10 > h3:not(:first-of-type) {
+    margin: 15px auto 10px;
+    font-size:  16px;
+}
+body > div.container-fluid > div > div.col-sm-10 > p {
+    margin: auto auto 15px auto;
+}
+.well > h2, body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2 {
+    top: 48px !important;
+    left: 0 !important;
+    padding-left: 10px !important;
+    height: 42px !important;
+    width: calc(100%) !important;
+    line-height: 42px !important;
+    padding-right: 130px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    background: rgba(0,0,0,.15) !important;
+    font-size: 13px !important;
+    max-width:  100% !important;
+}
+body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.asc:after {
+    right: 2px;
 }
 }
