@@ -5670,8 +5670,20 @@ body > .container-fluid {
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
 }
-.book:not(body) {width: 110px !important;max-width: 110px !important;min-width: 110px !important;padding: 0 5px;}
-.container-fluid .book .cover {height: 150px;}
+.book:not(body) {
+     width: 110px !important;
+     max-width: 110px !important;
+     min-width: 110px !important;
+     padding: 0 5px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .container-fluid .book {
+    margin-top: 10px;
+ }
+.container-fluid .book .cover {
+     height: 150px;
+ }
 #books .cover img, #books_rand .cover img, .book.isotope-item .cover img {
     width:  100px !important;
 }
