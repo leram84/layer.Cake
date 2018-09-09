@@ -655,7 +655,7 @@ if ( $( window ).width() < 769 ) {
     $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
    } else {
   //Move menu out of collapse
-    $( '.col-sm-2:first' ).insertBefore( '.col-sm-10');
+    $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
    }
 }
 
