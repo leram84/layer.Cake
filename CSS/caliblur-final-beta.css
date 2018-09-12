@@ -4,7 +4,7 @@
     --color-primary: #F9BE03;
     --color-secondary: #CC7B19;
     --color-secondary-hover: #E59029;
-    --color-background-mobile: grey;
+    --color-background-mobile: #1f1f1f;
 }
 @-webkit-keyframes fade {
     0% {opacity: 0.1} 
@@ -5639,7 +5639,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover {
     padding:  10px !important;
 }
 body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h2, body > div.container-fluid > div > div.col-sm-10 > h1, body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h1, body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2,
-body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type {
+body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before {
     top: 48px;
     left: 0;
     padding-left:  10px;
@@ -5720,7 +5721,8 @@ body.catlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
 body.serieslist > div.container-fluid > div > div.col-sm-10:before,
 body.langlist > div.container-fluid > div > div.col-sm-10:before,
 body.authorlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
-body.shelforder > div.container-fluid > div.row-fluid > div.col-sm-10:before {
+body.shelforder > div.container-fluid > div.row-fluid > div.col-sm-10:before,
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8:before {
     position: fixed;
     top: 59px;
     right: 15px;
@@ -5749,7 +5751,8 @@ body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
 body.serieslist > div.container-fluid > div > div.col-sm-10 > div.container:before,
 body.langlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
 body.authorlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
-.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2:before {
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2:before,
+body.advsearch > div.container-fluid > div > div.col-sm-10:before {
     display: none;
 }
 body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
@@ -5917,6 +5920,34 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     color: var(--color-primary);
     background-color: transparent;
 }
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 {
+    border:  0;
+    width:  100%;
+    margin:  0;
+    padding:  10px;
+}
+.advanced_search #search > .row > .form-group.col-sm-6:first-of-type {
+    padding-right: 0;
+    margin-bottom:  15px;
+}
+body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > div.row:nth-child(4) {
+    margin-bottom: 15px
+}
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > .btn.btn-default {
+    margin-bottom: 20px;
+    margin-top:  10px;
+}
+
+
+
+
+
+
+
+
+
+
+
   .collapsing {
   transition: all 0s;
 }
