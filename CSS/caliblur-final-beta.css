@@ -5931,20 +5931,29 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
 }
 .navbar-collapse.collapse {
         visibility: visible;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0);
     transition: all .5s;
     height: 100vh;
+    width: 0px;
+    top: 0;
+    position: fixed;
 }
 .navbar-collapse {
     border: 0;
-    width: 0;
-    height: 100vh;
+    width: 0px;
+    height: 100vh !important;
     overflow: hidden;
     visibility: visible;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     transition: all .5s;
+    top: 0;
+    margin: 0;
+    position: fixed;
+}
+.navbar-collapse:not(.in) > * {
+    margin: 0 !important;
 }
 
 
