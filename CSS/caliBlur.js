@@ -677,7 +677,7 @@ if ( $( window ).width() <= 768 ) {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
     $( '.sidebar-backdrop' ).remove();
-    $( '.mobile-menu' )removeClass( 'mobile-menu' );
+    $( '.mobile-menu' ).removeClass( 'mobile-menu' );
    }
 }
 
