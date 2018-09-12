@@ -1482,7 +1482,7 @@ app-loading-container {
 
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar,
-.navbar-collapse.collapse.in::-webkit-scrollbar {
+.navbar-collapse.collapse::-webkit-scrollbar {
     width: 14px;
     max-height: calc(100% - 60px);
 }
@@ -1493,7 +1493,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar,
 }
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-track,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-track,
-.navbar-collapse.collapse.in::-webkit-scrollbar-track {
+.navbar-collapse.collapse::-webkit-scrollbar-track {
     background-color: transparent;
     max-height: calc(100% - 60px);
 }
@@ -1506,7 +1506,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-tra
 }
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb,
-.navbar-collapse.collapse.in::-webkit-scrollbar-thumb {
+.navbar-collapse.collapse::-webkit-scrollbar-thumb {
     min-height: 110px;
     border: 3px solid transparent;
     border-radius: 8px;
@@ -1528,7 +1528,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thu
 #meta-info::-webkit-scrollbar-thumb:hover,
 #description::-webkit-scrollbar-thumb:hover,
 .book-meta::-webkit-scrollbar-thumb:hover,
-.navbar-collapse.collapse.in::-webkit-scrollbar-thumb:hover {
+.navbar-collapse.collapse::-webkit-scrollbar-thumb:hover {
     background-color: hsla(0,0%,100%,.3);
 }
 ::-webkit-scrollbar-corner {
@@ -5312,9 +5312,6 @@ body > div.navbar.navbar-default.navbar-static-top > div > form > div > span > b
     background: #eee;
 }
 .navbar-collapse.collapse {
-    height: 0 !important;
-}
-.navbar-collapse.collapse.in {
     height: calc(100vh) !important;
     width: 240px;
     background: #3f4245;
@@ -5550,7 +5547,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .navigation > ul > li:hover {
     background-color: transparent;
 }
-.navbar-collapse.collapse.in > .col-sm-2 {
+.navbar-collapse.collapse > .col-sm-2 {
     padding-left: 0;
     padding-right: 0;
 }
@@ -5612,18 +5609,18 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 .tooltip {
     display: none !important;
 }
-.navbar-collapse.collapse.in .navigation li a span {
+.navbar-collapse.collapse .navigation li a span {
     vertical-align: middle;
 }
-.navbar-collapse.collapse.in .navigation li a span.caret {
+.navbar-collapse.collapse .navigation li a span.caret {
     position:  absolute;
     right: -5px;
     top: 20px;
 }
-.navbar-collapse.collapse.in .hidden-xs {
+.navbar-collapse.collapse .hidden-xs {
     display: initial !important;
 }
-.navbar-collapse.collapse.in:after {
+.navbar-collapse.collapse:after {
     display: none;
 }
 .tooltip {
@@ -5920,8 +5917,34 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     color: var(--color-primary);
     background-color: transparent;
 }
- .collapsing {
+  .collapsing {
   transition: all 0s;
+}
+.navbar-collapse.collapse.in {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s;
+ z-index: 99;
+}
+
+.navbar-collapse {
+    border: 0;
+    width: 240px;
+    height: 100vh !important;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-transform: translate3d(-240px, 0, 0);
+    transform: translate3d(-240px, 0, 0);
+    transition: transform .5s;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    display: block;
+    opacity: 1;
+}
+.navbar-collapse:not(.in) > * {
+    margin: 0 !important;
 }
  .navbar-collapse.collapse.in + .sidebar-backdrop {
     width: calc(100vw);
@@ -5931,41 +5954,11 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     left: 0px;
     background: rgba(0,0,0,.75);
     transition: all .5s;
-    z-index: 9
-}
-.navbar-collapse.collapse.in {
+    z-index: 9;
     visibility: visible;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    transition: all .5s;
- z-index: 99
+    opacity: 1;
 }
-.navbar-collapse.collapse {
-        visibility: visible;
-    -webkit-transform: translate3d(-100%, 100%, 0);
-    transform: translate3d(-100%, 100%, 0);
-    transition: all .5s;
-    height: 100vh;
-    width: 0px;
-    top: 0;
-    position: fixed;
-}
-.navbar-collapse {
-    border: 0;
-    width: 0px;
-    height: 100vh !important;
-    overflow: hidden;
-    visibility: visible;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    transition: all .5s;
-    top: 0;
-    margin: 0;
-    position: fixed;
-}
-.navbar-collapse:not(.in) > * {
-    margin: 0 !important;
-}
+
 
 
 
