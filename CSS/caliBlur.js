@@ -653,6 +653,9 @@ $( '.navbar-collapse.collapse.in').before('<div class="sidebar-backdrop"></div>'
 recentlyAdded = $( '#nav_new a:contains("Recently")' ).text().trim();
 $( '#nav_new a:contains("Recently")' ).text(recentlyAdded);
 
+// Change shelf textValue
+shelfText = $( '.shelf .discover h2:first' ).text().replace(':','—').replace(/\'/g,'');
+$( '.shelf .discover h2:first' ).text(shelfText);
 
 function mobileSupport() {
 if ( $( window ).width() <= 768 ) {
