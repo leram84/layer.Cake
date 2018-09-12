@@ -663,7 +663,7 @@ $( '.navbar-collapse.collapse.in' ).after( '<div class="sidebar-backdrop"></div>
 function mobileSupport() {
 if ( $( window ).width() <= 768 ) {
   //Move menu to collapse
-    $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
+    $( '.row-fluid > .col-sm-2:first' ).appendTo( '.navbar-collapse.collapse:first');
    } else {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
