@@ -5925,6 +5925,7 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: transform .5s;
+ z-index: 99;
 }
 
 .navbar-collapse {
@@ -5944,6 +5945,18 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
 }
 .navbar-collapse:not(.in) > * {
     margin: 0 !important;
+}
+ .navbar-collapse.collapse.in + .sidebar-backdrop {
+    width: calc(100vw);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    background: rgba(0,0,0,.75);
+    transition: all .5s;
+    z-index: 9;
+    visibility: visible;
+    opacity: 1;
 }
 
 
