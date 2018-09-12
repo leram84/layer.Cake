@@ -664,7 +664,9 @@ function mobileSupport() {
 if ( $( window ).width() <= 768 ) {
   //Move menu to collapse
     $( '.row-fluid > .col-sm-2:first' ).appendTo( '.navbar-collapse.collapse:first');
-    $( '.navbar-collapse.collapse' ).after( '<div class="sidebar-backdrop"></div>' );
+    if ( $( '.sidebar-backdrop' ).length < 1 ) {
+    $( '.navbar-collapse.collapse:first' ).after( '<div class="sidebar-backdrop"></div>' );
+  }
    } else {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
