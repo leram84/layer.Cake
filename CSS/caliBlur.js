@@ -654,8 +654,11 @@ recentlyAdded = $( '#nav_new a:contains("Recently")' ).text().trim();
 $( '#nav_new a:contains("Recently")' ).text(recentlyAdded);
 
 // Change shelf textValue
-shelfText = $( '.shelf .discover h2:first' ).text().replace(':','—').replace(/\'/g,'');
+shelfText = $( '.shelf .discover h2:first' ).text().replace(':',' —').replace(/\'/g,'');
 $( '.shelf .discover h2:first' ).text(shelfText);
+
+shelfText = $( '.shelforder .col-sm-10 .col-sm-6.col-lg-6.col-xs-6 h2:first' ).text().replace(':',' —').replace(/\'/g,'');
+$( '.shelforder .col-sm-10 .col-sm-6.col-lg-6.col-xs-6 h2:first' ).text(shelfText);
 
 $( '.navbar-collapse.collapse.in' ).after( '<div class="sidebar-backdrop"></div>' );
 
