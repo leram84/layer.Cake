@@ -660,16 +660,15 @@ $( '.shelf .discover h2:first' ).text(shelfText);
 shelfText = $( '.shelforder .col-sm-10 .col-sm-6.col-lg-6.col-xs-6 h2:first' ).text().replace(':',' —').replace(/\'/g,'');
 $( '.shelforder .col-sm-10 .col-sm-6.col-lg-6.col-xs-6 h2:first' ).text(shelfText);
 
-$( '.navbar-collapse.collapse.in' ).after( '<div class="sidebar-backdrop"></div>' );
-
-
 function mobileSupport() {
 if ( $( window ).width() <= 768 ) {
   //Move menu to collapse
     $( '.row-fluid > .col-sm-2:first' ).appendTo( '.navbar-collapse.collapse:first');
+    $( '.navbar-collapse.collapse' ).after( '<div class="sidebar-backdrop"></div>' );
    } else {
   //Move menu out of collapse
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
+    $( '.sidebar-backdrop' ).remove();
    }
 }
 
