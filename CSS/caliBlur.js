@@ -678,7 +678,8 @@ if ( $( window ).width() <= 768 ) {
    }
 }
 
-
+// Turn off bootstrap animations
+$(function() { $.support.transition = false; })
 
 mobileSupport();
 
