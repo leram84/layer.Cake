@@ -5916,7 +5916,10 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > a {
     margin: 0 10px 10px 0;
 }
-
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    color: var(--color-primary);
+    background-color: transparent;
+}
 
 
 
