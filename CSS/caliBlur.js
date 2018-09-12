@@ -650,8 +650,8 @@ $( '#top_user > span.hidden-sm' ).clone().insertBefore( '.profileDropli' );
 $( '.navbar-collapse.collapse.in').before('<div class="sidebar-backdrop"></div>');
 
 // Get rid of leading white space
-recentlyAdded = $( '#nav_new a:contains("Recently")' ).text().trim();
-$( '#nav_new a:contains("Recently")' ).text(recentlyAdded);
+//recentlyAdded = $( '#nav_new a:contains("Recently")' ).text().trim();
+//$( '#nav_new a:contains("Recently")' ).text(recentlyAdded);
 
 // Change shelf textValue
 shelfText = $( '.shelf .discover h2:first' ).text().replace(':',' —').replace(/\'/g,'');
