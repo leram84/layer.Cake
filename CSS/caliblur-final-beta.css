@@ -4,6 +4,7 @@
     --color-primary: #F9BE03;
     --color-secondary: #CC7B19;
     --color-secondary-hover: #E59029;
+    --color-background-mobile: grey;
 }
 @-webkit-keyframes fade {
     0% {opacity: 0.1} 
@@ -5137,7 +5138,7 @@ label[for="theme"] {
 @media only screen and (max-width: 768px) {
 body:not(.read-frame),
 body.login:not(.read-frame) {
-    background: grey !important;
+    background: var(--color-background-mobile) !important;
 }
 .navbar-default {
     height: 48px;
@@ -5647,7 +5648,7 @@ body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type {
     height:  42px;
     width: calc(100%);
     line-height:  42px;
-    padding-right: 130px;
+    padding-right: 50px;
     overflow:  hidden;
     text-overflow:  ellipsis;
     white-space:  nowrap;
@@ -5718,7 +5719,10 @@ body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     background-size:  30px;
 }
 body.catlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
-body.serieslist > div.container-fluid > div > div.col-sm-10:before  {
+body.serieslist > div.container-fluid > div > div.col-sm-10:before,
+body.langlist > div.container-fluid > div > div.col-sm-10:before,
+body.authorlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
+body.shelforder > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     position: fixed;
     top: 59px;
     right: 15px;
@@ -5744,7 +5748,10 @@ body > div.container-fluid > div > div.col-sm-10 > div.container  {
     border:  0;
 }
 body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
-body.serieslist > div.container-fluid > div > div.col-sm-10 > div.container:before  {
+body.serieslist > div.container-fluid > div > div.col-sm-10 > div.container:before,
+body.langlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
+body.authorlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2:before {
     display: none;
 }
 body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
@@ -5752,7 +5759,7 @@ body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
     left: 70px;
     font-size: 16px;
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.form-group {
+body:not(.shelfcreate):not(.shelfedit) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.form-group {
     padding-right: 15px;
 }
 .form-group > label {
@@ -5800,7 +5807,9 @@ body > div.container-fluid > div > div.col-sm-10 > h3:not(:first-of-type) {
 body > div.container-fluid > div > div.col-sm-10 > p {
     margin: auto auto 15px auto;
 }
-.well > h2, body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2 {
+.well > h2,
+body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only-of-type > h2,
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > h2  {
     top: 48px !important;
     left: 0 !important;
     padding-left: 10px !important;
@@ -5814,6 +5823,30 @@ body > div.container-fluid > div > div.col-sm-10 > p {
     background: rgba(0,0,0,.15) !important;
     font-size: 13px !important;
     max-width:  100% !important;
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 {
+    top: 48px;
+    left: 0;
+    padding-left: 10px;
+    height: 42px;
+    width: calc(100%);
+    line-height: 42px;
+    padding-right: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(0,0,0,.15);
+    font-size: 13px;
+    max-width:  100%;
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top:  0;
+    padding-bottom:  0;
+    padding-left: 10px;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    border: 0;
 }
 body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.asc:after {
     right: 2px;
@@ -5837,6 +5870,55 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-10 {
 .login .well > form > *{
     
 }
+body.author .undefined-img {
+    background: var(--color-background-mobile) !important;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group {
+    position: relative;
+    top:  0;
+    right:  auto;
+    left: auto;
+    width: 210px;
+    height:  60px;
+    margin:  auto;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"],
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"],
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"] {
+    margin: 0 10px;
+}
+#DeleteShelfDialog > .modal-dialog {
+    max-width: calc(100vw - 40px);
+}
+#DeleteShelfDialog > .modal-dialog > .modal-content {
+    max-width: calc(100vw - 40px);
+    left:  0;
+}
+.shelfcreate .col-sm-10 > .discover > form, .shelfedit .col-sm-10 > .discover > form {
+    max-width: calc(100vw - 30px);
+    max-height: calc(100vh - 200px);
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > .col-sm-6 {
+    margin:  0;
+    width:  100%;
+    padding:  10px;
+}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 + div {
+    margin-top:  0;
+    font-size: 13px;
+    font-family: Open Sans Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:  var(--color-primary);
+    text-align:  right;
+    text-transform:  none;
+}
+.shelforder #ChangeOrder {margin: 0 0 10px 0;}
+.shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > a {
+    margin: 0 10px 10px 0;
+}
+
+
+
+
 
 
 
@@ -5848,6 +5930,8 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-10 {
     padding: 15px 0 0 0;
     text-align: center;
     min-width: 40px;
+    pointer-events: none;
+    color: #;
 }
 .col-xs-12 > .row > .col-xs-10 {
     padding: 0;
@@ -5859,8 +5943,12 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-10 {
 .col-xs-12 > .row > .col-xs-10 > a {
     padding: 15px 15px 15px 16.66666667%;
     display: block;
+    color: #eee;
     
-    
+}
+.col-xs-12 > .row > .col-xs-10 > a:hover {
+    color: #eee;
+    text-decoration: none;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row:nth-of-type(even) {
     background: transparent;
@@ -5881,6 +5969,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     pointer-events: none;
+    color: #eee;
 }
 }
 @media only screen and (max-width: 500px) {
@@ -5889,6 +5978,12 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
     }
 
 
+}
+@media only screen and (max-width: 490px) {
+    #DeleteShelfDialog:before {
+        left: auto;
+        right: 34px;
+    }
 }
 @media only screen and (max-width: 500px) and (max-height: 600px) {
 
