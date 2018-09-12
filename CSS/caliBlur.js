@@ -649,8 +649,13 @@ if ( $( '.order-shelf-btn').length > 1 ) {
 $( '#top_user > span.hidden-sm' ).clone().insertBefore( '.profileDropli' );
 $( '.navbar-collapse.collapse.in').before('<div class="sidebar-backdrop"></div>');
 
+// Get rid of leading white space
+recentlyAdded = $( '#nav_new a:contains("Recently")' ).text().trim();
+$( '#nav_new a:contains("Recently")' ).text(recentlyAdded);
+
+
 function mobileSupport() {
-if ( $( window ).width() < 769 ) {
+if ( $( window ).width() <= 768 ) {
   //Move menu to collapse
     $( '.row-fluid > .col-sm-2' ).appendTo( '.navbar-collapse.collapse');
    } else {
@@ -658,6 +663,8 @@ if ( $( window ).width() < 769 ) {
     $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
    }
 }
+
+
 
 mobileSupport();
 
