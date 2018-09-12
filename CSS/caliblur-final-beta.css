@@ -5260,6 +5260,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > form.search-focus > d
 #query {
     color: transparent;
     opacity: 0;
+ transition: all 0s;
 }
 #query:focus {
     background: #555 !important;
