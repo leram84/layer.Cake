@@ -5920,6 +5920,32 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     color: var(--color-primary);
     background-color: transparent;
 }
+ .collapsing {
+  transition: all 0s;
+}
+.navbar-collapse.collapse.in {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all .5s;
+}
+.navbar-collapse.collapse {
+        visibility: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    transition: all .5s;
+    height: 100vh;
+}
+.navbar-collapse {
+    border: 0;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    transition: all .5s;
+}
 
 
 
