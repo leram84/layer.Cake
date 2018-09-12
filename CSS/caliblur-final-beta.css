@@ -134,7 +134,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     font-size: 18px;
 }
 }
-@media only screen and (max-height: 600px) and (min-width: 768px) {
+@media only screen and (max-height: 600px) {
 body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
     padding: 0 !important;
     height: 60px !important;
@@ -3732,7 +3732,7 @@ body.login:not(.read-frame) {
 }
 .navigation > ul > li > a > span.hidden-sm {
     display: inline-block !important;
-    padding-left: 4px;
+    /* padding-left: 4px; */
 }
 
 .shelfcreate .col-sm-10 > .discover > form,
@@ -5026,8 +5026,13 @@ border: 1px rgba(0,0,0,.2) solid;
 #shelf-actions > .btn-group.open > #add-to-shelf > span {
     color: #fff
 }
- 
- 
+.navigation li a span {
+    vertical-align: middle;
+    margin-bottom: 1px
+}
+.navigation li.active a .glyphicon-star {
+    color: var(--color-primary);
+}
  
  
 #shelf-actions {
@@ -5081,7 +5086,7 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > h2 {
     position: absolute;
     margin-top: -30px;
-    padding-left: 5px;
+    font-size: 14px;
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
@@ -5130,7 +5135,8 @@ label[for="theme"] {
 
 
 @media only screen and (max-width: 768px) {
-body:not(.read-frame) {
+body:not(.read-frame),
+body.login:not(.read-frame) {
     background: grey !important;
 }
 .navbar-default {
@@ -5345,7 +5351,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .profileDrop > span:after {
     position: absolute;
-    left: 165px;
+    left: 162px;
     top: 35px;
     color: #fff;
 }
@@ -5414,7 +5420,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     height: 20px;
     display: inline-block;
     margin: 0;
-    padding: 23px 0 23px 205px;
+    padding: 23px 0 23px 202px;
     z-index: -9;
 }
 #form-upload .form-group .btn:after {
@@ -5427,7 +5433,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     border-radius: 50%;
     padding: .25px .25px 0 0;
     z-index: 9;
-    left: 201px;
+    left: 198px;
     top: 32px;
     width: 10px;
     height: 10px;
@@ -5590,7 +5596,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .navbar-nav .open .dropdown-menu.profileDropli {
     width: 210px;
-    margin-left: 15px;
+    margin-left: 12px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: hsla(0,0%,100%,.7);
@@ -5606,6 +5612,11 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 }
 .navbar-collapse.collapse.in .navigation li a span {
     vertical-align: middle;
+}
+.navbar-collapse.collapse.in .navigation li a span.caret {
+    position:  absolute;
+    right: -5px;
+    top: 20px;
 }
 .navbar-collapse.collapse.in .hidden-xs {
     display: initial !important;
@@ -5683,6 +5694,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
  }
 .container-fluid .book .cover {
      height: 150px;
+     margin-bottom:  0;
  }
 #books .cover img, #books_rand .cover img, .book.isotope-item .cover img {
     width:  100px !important;
@@ -5694,6 +5706,9 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
     font-size: 16px;
     padding-left: 12px;
 }
+
+
+
 body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     position: absolute;
     top: 20px;
@@ -5702,11 +5717,35 @@ body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     height: 30px;
     background-size:  30px;
 }
+body.catlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
+body.serieslist > div.container-fluid > div > div.col-sm-10:before  {
+    position: fixed;
+    top: 59px;
+    right: 15px;
+    left: auto;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    color: hsla(0,0%,100%,.7);
+}
 body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
     left:  0;
     width: auto;
     margin: 75px 15px 0 15px !important;
     padding: 20px 0 !important;
+    max-width:  100% !important;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.container  {
+    left:  0;
+    width: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width:  100% !important;
+    border:  0;
+}
+body.catlist > div.container-fluid > div > div.col-sm-10 > div.container:before,
+body.serieslist > div.container-fluid > div > div.col-sm-10 > div.container:before  {
+    display: none;
 }
 body.me > div.container-fluid > div > div.col-sm-10 > div.discover:before {
     top: 30px;
@@ -5720,7 +5759,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     font-size: 12px;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 {
-    margin: 120px 0 0;
+    margin: 100px 0 0;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 {
@@ -5728,19 +5767,19 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     width: 100%;
     margin-bottom:  10px;
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before, body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {width:  100%;margin-left: 0;}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before, body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {width:  100%;margin-left: 0;margin-top: -45px;}
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
-    width: 110px !important;
-    max-width: 110px !important;
-    min-width: 110px !important;
+    width: 100px !important;
+    max-width: 100px !important;
+    min-width: 100px !important;
 }
 body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
     width: auto;
     height: 150px;
     padding: 0;
-    margin: 7.5px 5px;
+    margin: 7.5px auto;
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {right: 12px;}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {}
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
     width: 100px !important;
     height: 150px !important;
@@ -5749,14 +5788,14 @@ body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > f
     margin-right: 15px
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:after {
-    width: calc(100% - 10px);
+    width: calc(100%);
 }
 body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a {
-    width: calc(100% - 10px);
+    width: calc(100%);
 }
 body > div.container-fluid > div > div.col-sm-10 > h3:not(:first-of-type) {
     margin: 15px auto 10px;
-    font-size:  16px;
+    font-size: 14px;
 }
 body > div.container-fluid > div > div.col-sm-10 > p {
     margin: auto auto 15px auto;
@@ -5778,5 +5817,83 @@ body > div.container-fluid > div > div.col-sm-10 > p {
 }
 body.tasks > div.container-fluid > div > div.col-sm-10 > div.discover > div.bootstrap-table > div.fixed-table-container > div.fixed-table-body > #table > thead > tr > th > .th-inner.asc:after {
     right: 2px;
+}
+#libs {
+    margin-bottom: 5px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
+    padding: 0;
+}
+body.login .navbar > .container-fluid > .navbar-header > button.navbar-toggle {
+    display: none;
+}
+body.login > div.container-fluid > div.row-fluid > div.col-sm-10 {
+}
+.well {
+    padding: 60px 0;
+    max-width: calc(100% - 30px);
+    min-width: auto;
+}
+.login .well > form > *{
+    
+}
+
+
+
+
+
+
+.col-xs-12 > .row > .col-xs-2 {
+    position: absolute;
+    padding: 15px 0 0 0;
+    text-align: center;
+    min-width: 40px;
+}
+.col-xs-12 > .row > .col-xs-10 {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    float: right;
+    max-width: calc(100vw - 40px)
+}
+.col-xs-12 > .row > .col-xs-10 > a {
+    padding: 15px 15px 15px 16.66666667%;
+    display: block;
+    
+    
+}
+body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row:nth-of-type(even) {
+    background: transparent;
+}
+body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
+        border-bottom: 1px solid hsla(0,0%,78%,.15);
+}
+.col-xs-12 > .row > .col-xs-10:after {
+    content: '';
+    position: absolute;
+    position: ;
+    width: 0;
+    height: 0;
+    right: 10px;
+    top: 50%;
+    vertical-align: middle;
+    border-left: 5px dashed;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    pointer-events: none;
+}
+}
+@media only screen and (max-width: 500px) {
+    .login .well > form {
+        padding: 30px 15px
+    }
+
+
+}
+@media only screen and (max-width: 500px) and (max-height: 600px) {
+
+
+body.login .well {
+    padding: 0 !important;
 }
 }
