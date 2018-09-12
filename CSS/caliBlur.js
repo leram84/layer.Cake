@@ -657,6 +657,9 @@ $( '#nav_new a:contains("Recently")' ).text(recentlyAdded);
 shelfText = $( '.shelf .discover h2:first' ).text().replace(':','—').replace(/\'/g,'');
 $( '.shelf .discover h2:first' ).text(shelfText);
 
+$( '.navbar-collapse.collapse.in' ).after( '<div class="sidebar-backdrop"></div>' );
+
+
 function mobileSupport() {
 if ( $( window ).width() <= 768 ) {
   //Move menu to collapse
