@@ -5060,7 +5060,9 @@ border: 1px rgba(0,0,0,.2) solid;
 .profileDrop + span.hidden-sm {
     display: none;
 }
-
+#login {
+    display: none;
+}
 
 
 .admin #container > h2 {
@@ -5666,7 +5668,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     top: 20px;
 }
 .navbar-collapse.collapse .hidden-xs {
-    display: initial !important;
+    display: list-item !important;
 }
 .navbar-collapse.collapse:after {
     display: none;
