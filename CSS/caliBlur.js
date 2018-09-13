@@ -670,9 +670,6 @@ function mobileSupport() {
     $( '.row-fluid > .col-sm-2:first' ).appendTo( '.navbar-collapse.collapse:first');
     if ( $( '.sidebar-backdrop' ).length < 1 ) {
       $( '.navbar-collapse.collapse:first' ).after( '<div class="sidebar-backdrop"></div>' );
-      if ( $( window ).width() <510 ) {
-        $( '#scnd-nav' ).appendTo( '.col-sm-2 .navigation' );
-      }
      } else {
     //Move menu out of collapse
       $( '.col-sm-2:first' ).insertBefore( '.col-sm-10:first');
