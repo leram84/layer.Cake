@@ -201,9 +201,13 @@ body.blur .row-fluid .col-sm-10{
     color: #fff;
     transition: all 0s;
 }
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus {
     color: var(--color-primary);
     background-color: transparent;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    color: #fff;
+    background-color: hsla(0, 0%, 100%, .08);
 }
 .oldest #scnd-nav > li.dropdown > a,
 .z-a #scnd-nav > li.dropdown > a,
@@ -5056,6 +5060,50 @@ border: 1px rgba(0,0,0,.2) solid;
 .profileDrop + span.hidden-sm {
     display: none;
 }
+
+
+
+.admin #container > h2 {
+    font-size: 24px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
+}
+.admin #container > .col-xs-12 {
+    width: 100%;
+    background: rgba(0,0,0,.15);
+    padding: 0;
+    
+    border-collapse: collapse
+}
+.admin #container > .col-xs-12:last-of-type {
+    border-bottom: 2px solid rgba(0,0,0,.3);
+}
+.admin #container > .col-xs-12 > .Row > .col-xs-6 {
+    width: 50%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.admin #container > .col-xs-12 > .Row > .col-xs-6 {
+    border-top: 2px solid rgba(0,0,0,.3);
+
+}
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover .btn > a {
+    text-decoration: none;
+    color: #fff;
+}
+.admin #container + .col-xs-12 {
+    padding: 0;
+    margin: 10px 0 30px;
+}
+
+
+
+
+
+
+
  
  
 /* normalize posters */
@@ -5640,7 +5688,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover {
 }
 body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h2, body > div.container-fluid > div > div.col-sm-10 > h1, body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h1, body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2,
 body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type,
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before {
     top: 48px;
     left: 0;
     padding-left:  10px;
@@ -5653,6 +5702,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
     white-space:  nowrap;
     background:  rgba(0,0,0,.15);
     font-size:  13px;
+}
+ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before {
+    text-transform: none;
 }
 .pagination {
     top: 48px;
@@ -5936,6 +5988,21 @@ body.advanced_search > div.container-fluid > div.row-fluid > div.col-sm-10 > div
 body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 > form > .btn.btn-default {
     margin-bottom: 20px;
     margin-top:  10px;
+}
+ 
+ body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
+    border-top: 1px solid hsla(0,0%,78%,.15);
+}
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before, body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
+    height: 1px;
+    background: hsla(0,0%,78%,.15);
+}
+body {
+    font-size: 13px
+}
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
+    font-size: 14px;
+    text-transform: uppercase
 }
 
 
