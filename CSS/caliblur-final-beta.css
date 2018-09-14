@@ -6060,7 +6060,27 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:f
     position: fixed;
     z-index: 999999999999999999999999999999999999
 }
-
+body:not(.blur) > .navbar > .container-fluid > .navbar-header:before {
+    content: "\EA30";
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    display: block;
+    font-family: plex-icons-new;
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 48px;
+    letter-spacing: normal;
+    line-height: 48px;
+    position: absolute;
+    left: auto;
+    right: 20px;
+}
 
 
 
