@@ -4174,7 +4174,7 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-2 {
 }
 
 
-
+@media only screen and (min-height: 768px) {
 body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a#logout {
     display: none;
 }
@@ -4298,7 +4298,7 @@ body:not(.blur) > .navbar > .container-fluid > .navbar-header:after {
     position:absolute;
     left: 60px;
 }
-
+}
 
 
 
