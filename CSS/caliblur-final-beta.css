@@ -6007,6 +6007,60 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
     text-transform: uppercase
 }
 
+ 
+ 
+ 
+body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
+    background: transparent !important;
+    width: 100%;
+    height: 42px;
+    display: block;
+    content: '';
+    position: fixed;
+    top: 48px;
+    left: 0px;
+    z-index: 99999999999999999999999999999999999
+}
+body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
+body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
+body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:before,
+body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before {
+    background: var(--color-background-mobile) !important;
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: block;
+    content: '';
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999999999999999999999999999999
+}
+
+body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
+body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after,
+body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:after,
+body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:first-of-type:after {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid var(--color-secondary);
+    border-right: 2px solid var(--color-secondary);
+    width: 24px;
+    height: 24px;
+    -webkit-animation: loading 0.5s linear infinite;
+    animation: loading 0.5s linear infinite;
+    display: block;
+    margin: ;
+    top: 50%;
+    left: calc(50% - 12px);
+    position: fixed;
+    z-index: 999999999999999999999999999999999999
+}
+
 
 
 
