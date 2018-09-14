@@ -5778,12 +5778,12 @@ body.authorlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
 body.shelforder > div.container-fluid > div.row-fluid > div.col-sm-10:before,
 body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8:before {
     position: fixed;
-    top: 59px;
-    right: 15px;
+    top: 62px;
+    right: 23px;
     left: auto;
     width: auto;
     height: auto;
-    font-size: 20px;
+    font-size: 14px;
     color: hsla(0,0%,100%,.7);
 }
 body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
@@ -6082,6 +6082,10 @@ body:not(.blur) > .navbar > .container-fluid > .navbar-header:before {
     right: 20px;
 }
 
+ 
+ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test {
+    border-top: 1px solid hsla(0,0%,78%,.15);
+}
 
 
 
@@ -6179,7 +6183,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
     position: ;
     width: 0;
     height: 0;
-    right: 10px;
+    right: 13px;
     top: 50%;
     vertical-align: middle;
     border-left: 5px dashed;
