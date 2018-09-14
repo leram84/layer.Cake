@@ -6020,6 +6020,9 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
     font-size: 14px;
     text-transform: uppercase
 }
+ .me .dropdown-menu > li > #top_user:hover {
+    color: #fff;
+}
 
  
  
@@ -6038,7 +6041,8 @@ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit)
 body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:before,
-body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before {
+body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before,
+body:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     background: var(--color-background-mobile) !important;
     width: 100%;
     height: calc(100vh - 90px);
@@ -6055,7 +6059,8 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:befor
 body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:after,
-body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:first-of-type:after {
+body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:first-of-type:after,
+body:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
     content: '';
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
