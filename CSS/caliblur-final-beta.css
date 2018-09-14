@@ -4175,7 +4175,7 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-2 {
 }
 
 
-@media only screen and (min-height: 768px) {
+@media only screen and (min-width: 768px) {
 body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a#logout {
     display: none;
 }
@@ -6028,7 +6028,7 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
  
  
 body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
-    background: transparent !important;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), var(--color-background-mobile) !important;
     width: 100%;
     height: 42px;
     display: block;
@@ -6036,7 +6036,10 @@ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit)
     position: fixed;
     top: 48px;
     left: 0px;
-    z-index: 99999999999999999999999999999999999
+    z-index: 99999999999999999999999999999999999;
+    border: 0;
+    animation: none;
+    -webkit-animation: none;
 }
 body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
