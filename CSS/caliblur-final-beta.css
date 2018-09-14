@@ -6106,6 +6106,113 @@ body:not(.blur) > .navbar > .container-fluid > .navbar-header:before {
     border-top: 1px solid hsla(0,0%,78%,.15);
 }
 
+ 
+ 
+ 
+ 
+ .col-sm-10 .book-meta > div.btn-toolbar {
+    position: relative;
+    top: 0px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
+.book-meta .btn-toolbar > h2 {
+    display: none;
+}
+.book-meta .btn-toolbar > .btn-group {
+    
+    float: none;
+    margin: auto;
+    
+}
+.btn-toolbar {
+    margin-left: 0px;
+}
+#shelf-actions {
+    width: 50px
+}
+div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] {
+    
+    display: block;
+}
+div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] > .downloadBtn {
+    border-left: 0;
+}
+
+.blur-wrapper {
+    display: none;
+}
+body.book > div.container-fluid > div.row-fluid > div.col-sm-10 {
+    width: 100%;
+    top: 48px;
+    height: calc(100vh - 48px);
+}
+body > div.container-fluid > div > div.col-sm-10 > div.single {
+    width: 100%;
+    padding: 15px !important;
+}
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    padding: 0;
+    max-width: 100px;
+    margin-top: 75px;
+}
+#bookDetailsModal > .modal-dialog.modal-lg > .modal-content > .modal-body > div > div > div > div.col-sm-3.col-lg-3.col-xs-5 > div.cover > img, body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 > div.cover > img {
+    width: 100px;
+    height: 150px;
+}
+body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-9.col-lg-9.book-meta {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.book-meta > h2 {
+    max-width: 100%;
+    margin-left: 120px;
+    font-size: 16px;
+    padding: 15px 0 10px 0;
+    min-height: 60px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+body.book .author {
+    margin-left: 120px;
+    line-height: 1;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.book-meta > .author > a:first-of-type::before {
+    display: none;
+}
+.book-meta > .bookinfo > p:first-of-type {
+    margin-left: 120px;
+    line-height: 1;
+}
+.book-meta > .author:before {
+    content: "Author — ";
+    color: hsla(0, 0%, 100%, .45);
+    position: relative;
+    left: 0px;
+    pointer-events: none;
+}
+.col-sm-10 .book-meta > div.btn-toolbar:after {
+    display: none;
+}
+.book-meta > .bookinfo > .hr {
+    background: transparent;
+    margin: 45px
+}
+.book-meta > .bookinfo > .rating {
+    display: none;
+}
+.book-meta > .bookinfo > .published-date > span:last-of-type {
+    padding-left: 45px
+}
+div.description + [data-readmore-toggle] {
+    text-align: center;
+}
 
 
 
