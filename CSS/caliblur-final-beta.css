@@ -1799,7 +1799,7 @@ body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only
 
 
 
-@media only screen and (min-height: 768px) {
+@media only screen and (min-width: 768px) {
 body > div.container-fluid > div.row-fluid > div.col-sm-2:after {
     width: 100%;
     height: 60px;
