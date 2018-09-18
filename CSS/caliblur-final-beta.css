@@ -5285,6 +5285,59 @@ body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm
 
 
 
+#loader {
+        background-image: url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-dark.png) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
+#loader > center > img {
+    display: none;
+}
+#loader > center {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: calc(50% - 120px);
+    position: absolute;
+}
+#loader > center > h3 {
+    font-size: 20px;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    text-transform: uppercase;
+}
+#loader > center:after {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid var(--color-secondary);
+    width: 24px;
+    height: 24px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    display: block;
+    margin: 20px auto;
+    position: fixed;
+    top: calc(50% - 24px);
+    left: calc(50% - 12px);
+    z-index: 999999;
+}
+
+
+
  
  
 /* normalize posters */
