@@ -6217,6 +6217,7 @@ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit)
     border: 0;
     animation: none;
     -webkit-animation: none;
+     border-radius: 0;
 }
 body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
