@@ -1586,6 +1586,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     top: 120px;
     right: 0;
     overflow-y: auto !important;
+ display: block !important;
 }
 body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     content: '';
