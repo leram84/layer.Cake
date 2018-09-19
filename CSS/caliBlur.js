@@ -671,7 +671,6 @@ function mobileSupport() {
 if ( $( window ).width() <= 768 ) {
   //Move menu to collapse
   $( '.row-fluid > .col-sm-2:first' ).appendTo( '.navbar-collapse.collapse:first');
-  $( '.book-meta > .bookinfo > .rating' ).clone().addClass('rating-mobile').insertBefore( '.book-meta' );
   if ( $( '.sidebar-backdrop' ).length < 1 ) {
     $( '.navbar-collapse.collapse:first' ).after( '<div class="sidebar-backdrop"></div>' );
   }
