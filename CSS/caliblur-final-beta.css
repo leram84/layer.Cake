@@ -6641,10 +6641,24 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
     width: 225px;
 }
 
+.shelforder #sortTrue > div:before {
+    opacity: 1;
+    pointer-events:  auto;
+    margin-left:  0;
+    margin-right:  0;
+    padding-left:  15px;
+    padding-right:  30px;
+}
+.shelforder #sortTrue > .list-group-item {
+    width: 78px;
+    overflow:  visible;
+    color: #eee;
+    pointer-events: none;
+}
 
-
-
-
+.shelforder #sortTrue > div:hover {
+    background-color: transparent !important;
+}
 
 
 
