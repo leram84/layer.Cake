@@ -6504,6 +6504,7 @@ body.author:not(.authorlist) > div.container-fluid > div > div.col-sm-10 {
     width: 100px;
     height:  100px;
     z-index:  9;
+     border-radius: 50%;
 }
 
 body.author > .container-fluid > .row-fluid > .col-sm-10 > h2:after {
