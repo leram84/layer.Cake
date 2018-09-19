@@ -3853,6 +3853,7 @@ body.author:not(.authorlist) .undefined-img:before {
     padding: 35px 15px 15px 15px;
     font-size: 15px;
     color: hsla(0,0%,100%,.65);
+    margin-top: 125px;
 }
 .author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > img {
     position: fixed;
@@ -4673,7 +4674,7 @@ left: 240px;
 
 
 /* test */
-body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
+body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
     background: linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
     background-repeat: no-reapeat, repeat, no-repeat !important;
     background-attachment: fixed, fixed, fixed !important;
@@ -4691,7 +4692,7 @@ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit)
     left: 240px;
     z-index: 99999999999999999999999999999999999
 }
-body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
+body:not(.blur):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:before,
 body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before {
@@ -4715,7 +4716,7 @@ body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:befor
     z-index: 99999999999999999999999999999999999
 }
 
-body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
+body:not(.blur):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:after,
 body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:first-of-type:after {
@@ -4821,15 +4822,18 @@ body.search > div.container-fluid > div > div.col-sm-10 > div.discover > h2 + p:
 body.login .home-btn {
     display: none;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 {
     max-width: calc(25% - 75px);
     position: fixed;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 {
     margin-left: 25% !important;
     width: 75%;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete {
     position: fixed;
     top: 60px;
     right: 0;
@@ -4841,25 +4845,30 @@ body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div
     cursor: pointer;
     border-radius: 0;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:before {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:before,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:before {
     content: "\EA6D";
     font-family: plex-icons-new;
         font-size: 18px;
     color: hsla(0,0%,100%,.7);
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover {
     background: #ce3d2a;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover:before {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover:before,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center > #delete:hover:before {
     color: #fff;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center.more-stuff > h4 {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center.more-stuff > h4,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-3 > div.text-center.more-stuff > h4 {
     color: #eee;
     margin: 20px;
     text-transform: uppercase;
     font-size: 16px;
 }
-.editbook .form-control.tt-hint {
+.editbook .form-control.tt-hint,
+.upload .form-control.tt-hint {
     background: hsla(0, 0%, 100%, .08) !important;
 }
 .checkbox input[type=checkbox] {
@@ -5112,17 +5121,20 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover .btn > a {
 .form-group[aria-label="Upload cover from local drive"] > .btn-primary {
         font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 {
     max-width: calc(25% - 75px);
     position: fixed;
     padding-left: 30px;
     padding-right: 0
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-9 {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-9,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-9 {
     margin-left: 25% !important;
     width: 75%;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete {
     position: fixed;
     top: 60px;
     right: 0;
@@ -5134,19 +5146,23 @@ body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm
     cursor: pointer;
     border-radius: 0;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before {
     content: "\EA6D";
     font-family: plex-icons-new;
         font-size: 18px;
     color: hsla(0,0%,100%,.7);
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover {
     background: #ce3d2a;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover:before {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover:before,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover:before {
     color: #fff;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center.more-stuff > h4 {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center.more-stuff > h4,
+body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center.more-stuff > h4 {
     color: #eee;
     margin: 20px;
     text-transform: uppercase;
@@ -5936,7 +5952,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover {
 body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h2, body > div.container-fluid > div > div.col-sm-10 > h1, body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h1, body > div.container-fluid > div > div.col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2,
 body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type,
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before,
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before,
+.author > .container-fluid > .row-fluid > .col-sm-10 > h2:before {
     top: 48px;
     left: 0;
     padding-left:  10px;
@@ -6021,7 +6038,8 @@ body.serieslist > div.container-fluid > div > div.col-sm-10:before,
 body.langlist > div.container-fluid > div > div.col-sm-10:before,
 body.authorlist > div.container-fluid > div.row-fluid > div.col-sm-10:before,
 body.shelforder > div.container-fluid > div.row-fluid > div.col-sm-10:before,
-body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8:before {
+body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8:before,
+body.author:not(.authorlist) .undefined-img:before {
     position: fixed;
     top: 62px;
     right: 23px;
@@ -6123,6 +6141,20 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > h2  {
     background: rgba(0,0,0,.15) !important;
     font-size: 13px !important;
     max-width:  100% !important;
+}
+
+.author > .container-fluid > .row-fluid > .col-sm-10 > h2:after {
+    content: "\e008";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 6vw;
+    position: fixed;
+    left: 240px;
+    top: 180px;
+    width: calc(20% - 55px);
+    text-align: center;
 }
 .shelforder > .container-fluid > .row-fluid > .col-sm-10 > div.col-sm-6.col-lg-6.col-xs-6 > h2 {
     top: 48px;
@@ -6258,7 +6290,7 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
  
  
  
-body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
+body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
     background: linear-gradient(0deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://raw.githubusercontent.com/leram84/layer.Cake/master/Resources/blur-noise.png), var(--color-background-mobile) !important;
     width: 100%;
     height: 42px;
@@ -6273,7 +6305,7 @@ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.shelfedit)
     -webkit-animation: none;
      border-radius: 0;
 }
-body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
+body:not(.blur):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:before,
 body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before,
@@ -6291,7 +6323,7 @@ body:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before {
     z-index: 99999999999999999999999999999999999
 }
 
-body:not(.blur):not(.me):not(.author):not(.editbook):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
+body:not(.blur):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:after,
 body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:after,
 body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:after,
 body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > p:first-of-type:after,
@@ -6448,6 +6480,85 @@ body.book .author {
 div.description + [data-readmore-toggle] {
     text-align: center;
 }
+
+
+
+body.author:not(.authorlist) > div.container-fluid > div > div.col-sm-10 {
+    width:  100%;
+    left:  0;
+    padding: 10px;
+}
+.author > .container-fluid > .row-fluid > .col-sm-10 > h2 {
+    float:  right;
+    width:  100%;
+    margin:  0;
+    border-bottom: 1px solid hsla(0,0%,78%,.15);
+    padding: 20px 0 0 135px;
+    min-height: 140px;
+    overflow:  hidden;
+    text-overflow:  ellipsis;
+}
+.author > .container-fluid > .row-fluid > .col-sm-10 > .author-bio > img {
+    position:  absolute;
+    left: 25px;
+    top: 25px;
+    width: 100px;
+    height:  100px;
+    z-index:  9;
+}
+
+body.author > .container-fluid > .row-fluid > .col-sm-10 > h2:after {
+    content: "\e008";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 8vw;
+    position: absolute;
+    left: 25px;
+    top: 26px;
+    width: 100px;
+    text-align: center;
+    z-index: 9;
+    height:  100px;
+}
+body.author:not(.authorlist) .blur-wrapper {
+    display: block;
+    background: var(--color-background-mobile)
+}
+body.author:not(.authorlist) .blur-wrapper > img {
+    opacity: 0;
+}
+body.author:not(.authorlist) .blur-wrapper:before {
+    content: "\e008";
+    font-family: 'Glyphicons Halflings';
+    font-weight: 400;
+    text-align: center;
+    z-index: 9;
+    position: fixed;
+    top: 62px;
+    right: 23px;
+    left: auto;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    color: hsla(0,0%,100%,.7);
+    line-height:  1;
+}
+.author > .container-fluid > .row-fluid > .col-sm-10 > h2 + .discover > .row {
+    padding-top: 30px;
+}
+body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
+    padding: 0 !important;
+}
+
+
+
+
+
+
+
+
 
 
 
