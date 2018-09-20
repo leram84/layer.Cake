@@ -6716,6 +6716,11 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
     opacity: 1;
 }
 
+ 
+ .alert {
+    width: 90%;
+    max-width: 500px;
+}
 
 
 
