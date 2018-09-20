@@ -287,7 +287,7 @@ if ( $( 'body.book' ).length > 0 ) {
   });
 
 // Clone book rating for mobile view.
-$( '.book-meta > .bookinfo > .rating' ).clone().insertBefore( '.book-meta' ).addClass('rating-mobile');
+$( '.book-meta > .bookinfo > .rating' ).clone().insertBefore( '.book-meta > .description' ).addClass('rating-mobile');
 }
 
 ///////////////////////////////
