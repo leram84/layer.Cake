@@ -6412,6 +6412,8 @@ div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] > .d
 
 .blur-wrapper {
     display: none;
+     transition: none;
+    -webkit-transition: none;
 }
 body.book > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width: 100%;
@@ -6533,6 +6535,10 @@ body.author:not(.authorlist) .blur-wrapper {
 }
 body.author:not(.authorlist) .blur-wrapper > img {
     opacity: 0;
+     -webkit-animation: none;
+    animation: none;
+    -moz-animation: none;
+    -o-animation: none;
 }
 body.author:not(.authorlist) .blur-wrapper:before {
     content: "\e008";
