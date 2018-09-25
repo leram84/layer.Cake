@@ -681,6 +681,16 @@ if ( $( window ).width() <= 768 ) {
    }
 }
 
+// Collect delete buttons in editbook to single dropdown
+$( '.editbook .text-center.more-stuff' ).prepend( '<button id="deleteButton" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-remove"></span>Delete Format<span class="caret"></span></button><ul class="dropdown-menu delete-dropdown"></ul>' );
+
+deleteButtons = $(  '.editbook .text-center.more-stuff a' ).removeClass('btn btn-danger' ).attr( 'type', '').get();
+
+$( deleteButtons ).detach();
+$( '.editbook .text-center.more-stuff h4' ).remove();
+$.each(deleteButtons, function(i, val) {
+  $( '<li>' + deleteButtons[i].outerHTML + '</li>' ).appendTo( '.delete-dropdown' );
+});
 
 // Turn off bootstrap animations
 $(function() { $.support.transition = false; })
