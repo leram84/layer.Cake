@@ -2639,7 +2639,7 @@ input.pill + label:hover {
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 > div:nth-child(10) > label:before {
     content: "Edit Metadata";
-    width: calc(100vw - 290px);
+    width: calc(100vw - 350px);
     height: 60px;
     margin: 0;
     padding-left: 25px;
@@ -2649,9 +2649,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9
     font-size: 15px;
     line-height: 60px;
     -webkit-text-size-adjust: 100%;
-       -moz-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     white-space: nowrap;
     -webkit-box-direction: normal;
     -webkit-font-smoothing: antialiased;
@@ -5272,7 +5272,8 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
     max-width: calc(25% - 75px);
     position: fixed;
     padding-left: 30px;
-    padding-right: 0
+    padding-right: 0;
+    z-index: 9;
 }
 body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-9,
 body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-9 {
@@ -5292,12 +5293,12 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
     cursor: pointer;
     border-radius: 0;
 }
-body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before,
-body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before {
+body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before, body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:before {
     content: "\EA6D";
     font-family: plex-icons-new;
-        font-size: 18px;
+    font-size: 18px;
     color: hsla(0,0%,100%,.7);
+    vertical-align: super;
 }
 body.editbook > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover,
 body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3 > div.text-center > #delete:hover {
@@ -5665,6 +5666,64 @@ body.admin.modal-open .navbar {
 .rating-mobile {
     display: none;
 }
+
+
+#deleteButton {
+    position: fixed;
+    top: 60px;
+    right: 50px;
+    width: 50px;
+    height: 60px;
+    color: transparent;
+    background: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0;
+    border-right: 2px solid rgba(0,0,0,.3);
+}
+#deleteButton > span.glyphicon-remove {
+        font-size: 18px;
+    color: hsla(0,0%,100%,.7);
+}
+#deleteButton:hover span.glyphicon-remove {
+    color: #fff;
+}
+#deleteButton > span.glyphicon-remove:before {
+        content: "\EA66";
+}
+.editbook .more-stuff > .dropdown-menu {
+    position: fixed;
+    top: 120px;
+    right: 17px;
+    left: auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
