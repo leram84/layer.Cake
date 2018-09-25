@@ -6918,7 +6918,7 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     height: 40px;
     width: 40px;
     padding: 0 ;
-    margin: 10px;
+    margin: 10px 15px;
     border-radius: 50%
 }
 body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"]:before,
