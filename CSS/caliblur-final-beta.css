@@ -5511,6 +5511,9 @@ body.admin.modal-open .navbar {
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
+.rating-mobile {
+    display: none;
+}
 
 
 
@@ -6892,6 +6895,18 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
 #ShutdownDialog > .modal-dialog > .modal-content {
     max-width: calc(100vw - 40px);
     left: 0;
+}
+ 
+ .rating-mobile {
+    display: block;
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+.rating-mobile .glyphicon-star.good {
+    color: hsla(0,0%,100%,.7);
+}
+.rating-mobile .glyphicon-star {
+    color: hsla(0, 0%, 100%, .25);
 }
 
 
