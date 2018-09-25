@@ -6172,7 +6172,9 @@ body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover > h2
 body > div.container-fluid > div > div.col-sm-10 > h3:first-of-type,
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form > #test:before,
 body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before,
-.author > .container-fluid > .row-fluid > .col-sm-10 > h2:before {
+.author > .container-fluid > .row-fluid > .col-sm-10 > h2:before,
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before,
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before {
     top: 48px;
     left: 0;
     padding-left:  10px;
@@ -6185,6 +6187,11 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first
     white-space:  nowrap;
     background:  rgba(0,0,0,.15);
     font-size:  13px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1, body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1 {
+    top: 10px;
+    left: 55px;
+    font-size: 16px;
 }
  body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before {
     text-transform: none;
@@ -6244,7 +6251,8 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
 
 
 
-body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before {
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10:before,
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10::before, body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10::before {
     position: absolute;
     top: 20px;
     left: 30px;
@@ -6268,12 +6276,14 @@ body.author:not(.authorlist) .undefined-img:before {
     font-size: 14px;
     color: hsla(0,0%,100%,.7);
 }
-body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
+body.me > div.container-fluid > div > div.col-sm-10 > div.discover,
+body.edituser.admin > div.container-fluid > div > div.col-sm-10 > div.discover, body.newuser.admin > div.container-fluid > div > div.col-sm-10 > div.discover {
     left:  0;
     width: auto;
     margin: 75px 15px 0 15px !important;
     padding: 20px 0 !important;
     max-width:  100% !important;
+    border-top: 1px solid hsla(0,0%,78%,.15);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.container  {
     left:  0;
@@ -6782,9 +6792,25 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
 }
 
 
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 {
+    margin-bottom: 20px;padding-right: 15px;
+}
 
-
-
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+    width: auto;
+    height: 150px;
+    padding: 0;
+    margin: 7.5px auto;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+    /* margin: 100px 0 0; */
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
+}
 
 
 
