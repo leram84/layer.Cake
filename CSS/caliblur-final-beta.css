@@ -3381,7 +3381,7 @@ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-b
     padding: 6px 11px;
 }
 body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"]:before {
-    content: "\EA6A";
+    content: "\EA6D";
     font-family: plex-icons-new;
     position: absolute;
     color: hsla(0,0%,100%,.7);
@@ -6909,6 +6909,24 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
     color: hsla(0, 0%, 100%, .25);
 }
 
+ body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group {
+    height: 60px;
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"],
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"],
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"] {
+    height: 40px;
+    width: 40px;
+    padding: 0 ;
+    margin: 10px;
+    border-radius: 50%
+}
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [data-target="#DeleteShelfDialog"]:before,
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="edit"]:before,
+body.shelf > div.container-fluid > div > div.col-sm-10 > div.discover > .shelf-btn-group > [href*="order"]:before {
+    padding: 0 0 0 10px;
+    line-height: 40px;
+}
 
 
 
