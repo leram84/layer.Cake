@@ -6174,7 +6174,9 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8 > form
 body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before,
 .author > .container-fluid > .row-fluid > .col-sm-10 > h2:before,
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before,
-body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before {
+body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before,
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > h1,
+body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type, body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type {
     top: 48px;
     left: 0;
     padding-left:  10px;
@@ -6810,6 +6812,17 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     /* margin: 100px 0 0; */
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
+}
+
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover {
+    padding: 15px 0 !important;
+}
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > form > .btn.btn-default {
+    display:  block;
+    margin:  10px 15px 0 100%;
+}
+body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > form > a.btn.btn-default {
+    margin-bottom: 15px
 }
 
 
