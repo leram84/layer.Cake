@@ -6825,6 +6825,15 @@ body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > form >
     margin-bottom: 15px
 }
 
+ .shelforder #sortTrue > .list-group-item:nth-of-type(even) {
+    background: transparent;
+}
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
