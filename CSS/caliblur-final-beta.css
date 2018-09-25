@@ -2662,6 +2662,7 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9
     position: fixed;
     top: 60px;
     left: 240px;
+     pointer-events: none;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-xs-12 {
     margin: 50px 0;
