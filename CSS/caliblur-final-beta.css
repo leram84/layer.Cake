@@ -103,6 +103,17 @@
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a > span:before {
     font-size: 18px;
 }
+ 
+ #main-nav + .col-sm-2 {
+        position: fixed;
+    width: 240px;
+    height: calc(100% - 120px);
+    left: 0;
+    top: 120px;
+    background: rgba(0,0,0,.15);
+    padding: 0 5px 20px 0;
+    overflow-y: auto;
+}
 }
 @media only screen and (max-height: 600px) {
 body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
@@ -5453,16 +5464,7 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
     color: #fff !important;
 }
 
-#main-nav + .col-sm-2 {
-        position: fixed;
-    width: 240px;
-    height: calc(100% - 120px);
-    left: 0;
-    top: 120px;
-    background: rgba(0,0,0,.15);
-    padding: 0 5px 20px 0;
-    overflow-y: auto;
-}
+
 
 
 
