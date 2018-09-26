@@ -1502,7 +1502,8 @@ app-loading-container {
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar,
 .navbar-collapse.collapse::-webkit-scrollbar,
-#main-nav + #scnd-nav::-webkit-scrollbar {
+#main-nav + #scnd-nav::-webkit-scrollbar,
+#main-nav + .col-sm-2::-webkit-scrollbar {
     width: 14px;
     max-height: calc(100% - 60px);
 }
@@ -1514,7 +1515,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar,
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-track,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-track,
 .navbar-collapse.collapse::-webkit-scrollbar-track,
-#main-nav + #scnd-nav::-webkit-scrollbar-track {
+#main-nav + #scnd-nav::-webkit-scrollbar-track,
+#main-nav + .col-sm-2::-webkit-scrollbar-track {
     background-color: transparent;
     max-height: calc(100% - 60px);
 }
@@ -1528,7 +1530,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-tra
 body > div.container-fluid > div > div.col-sm-10::-webkit-scrollbar-thumb,
 body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thumb,
 .navbar-collapse.collapse::-webkit-scrollbar-thumb,
-#main-nav + #scnd-nav::-webkit-scrollbar-thumb {
+#main-nav + #scnd-nav::-webkit-scrollbar-thumb,
+#main-nav + .col-sm-2::-webkit-scrollbar-thumb {
     min-height: 110px;
     border: 3px solid transparent;
     border-radius: 8px;
@@ -1551,7 +1554,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-2::-webkit-scrollbar-thu
 #description::-webkit-scrollbar-thumb:hover,
 .book-meta::-webkit-scrollbar-thumb:hover,
 .navbar-collapse.collapse::-webkit-scrollbar-thumb:hover,
-#main-nav + #scnd-nav::-webkit-scrollbar-thumb:hover {
+#main-nav + #scnd-nav::-webkit-scrollbar-thumb:hover,
+#main-nav + .col-sm-2::-webkit-scrollbar-thumb:hover {
     background-color: hsla(0,0%,100%,.3);
 }
 ::-webkit-scrollbar-corner {
@@ -5448,6 +5452,20 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
     background: transparent;
     color: #fff !important;
 }
+
+#main-nav + .col-sm-2 {
+        position: fixed;
+    width: 240px;
+    height: calc(100% - 120px);
+    left: 0;
+    top: 120px;
+    background: rgba(0,0,0,.15);
+    padding: 0 5px 20px 0;
+    overflow-y: auto;
+}
+
+
+
 
 
 
