@@ -99,7 +99,7 @@
                 transform: rotate(1turn)
     }
 }
-@media only screen and (max-width: 991px) and (min-width: 767px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
 body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a > span:before {
     font-size: 18px;
 }
@@ -114,6 +114,16 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
     padding: 0 5px 20px 0;
     overflow-y: auto;
 }
+ #main-nav + .col-sm-2:after {
+     width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,.15);
+    display: block;
+    content: '';
+    position: fixed;
+    top: 60px;
+    left: 240px;
+ }
 }
 @media only screen and (max-height: 600px) {
 body.login > div.navbar.navbar-default.navbar-static-top > div > div.navbar-header > a {
@@ -1852,7 +1862,7 @@ body:not(.admin) > div.container-fluid > div > div.col-sm-10 > div.discover:only
 
 
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 body > div.container-fluid > div.row-fluid > div.col-sm-2:after {
     width: 100%;
     height: 60px;
@@ -4310,7 +4320,7 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-2 {
 }
 
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a#logout {
     display: none;
 }
