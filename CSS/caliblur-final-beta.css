@@ -1605,6 +1605,7 @@ body > .container-fluid {
     left: 0;
     min-height: 1px;
     min-width: 1px;
+                                                                   z-index: 9;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-2 {
     position: fixed;
