@@ -6424,8 +6424,8 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width:  100%;
-    top:  90px;
-    height: calc(100% - 90px);
+    top: 42px;
+    height: calc(100% - 42px);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
     width:  100%;
@@ -6484,7 +6484,7 @@ body > div.container-fluid > div > div.col-sm-10 > div.pagination > a.previous:b
     padding: 11px 25px 11px 25px;
 }
 body > .container-fluid {
-    height: calc(100% - 42px);
+    height: calc(100% - 48px);
     top: 48px;
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
@@ -6916,8 +6916,8 @@ div.btn-group[role="group"][aria-label="Download, send to Kindle, reading"] > .d
 }
 body.book > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width: 100%;
-    top: 48px;
-    height: calc(100% - 48px);
+    top: 0px;
+    height: calc(100% - 0px);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.single {
     width: 100%;
