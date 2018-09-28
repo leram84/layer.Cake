@@ -6429,7 +6429,7 @@ body > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.c
 
 body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     width:  100%;
-    top: 0;
+    top: 42px;
     height: calc(100% - 42px);
 }
 body > div.container-fluid > div > div.col-sm-10 > div.discover {
