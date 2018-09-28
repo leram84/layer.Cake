@@ -59,6 +59,10 @@ $( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navba
 
 // Wrap book description in div container
 if ( $( 'body.book' ).length > 0 ) {
+
+  // Edge Jiggery fix
+  $( '.comment' ).addClass('description');
+
   description = $( 'h3:contains("Description:")' ).nextUntil( '.morestuff' ).slice(0,-1);
   bookInfo = $( '.author' ).nextUntil( 'h3:contains("Description:")');
   $( 'h3:contains("Description:")' ).hide();
