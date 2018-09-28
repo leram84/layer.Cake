@@ -3606,6 +3606,8 @@ body > div.navbar.navbar-default:before {
     -o-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
     -webkit-transition: background-color 1s ease-in;
+ 
+ z-index: -9;
 }
 .blur-wrapper > div {
     -webkit-font-smoothing: antialiased;
@@ -5922,7 +5924,8 @@ label[for="theme"] {
 @media only screen and (max-width: 767px) {
 body:not(.read-frame),
 body.login:not(.read-frame) {
-    background: var(--color-background-mobile) !important;
+    background-color: var(--color-background-mobile) !important;
+ background-image: none !important;
 }
 .navbar-default {
     height: 48px;
