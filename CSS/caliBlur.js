@@ -191,6 +191,7 @@ if ( $( 'body.book' ).length > 0 ) {
   if ( $('.comments:has(p)' ).length === 0 ) {
     newdesc = description.text()
     .replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
+    $('.comments' ).empty();
     $.each(newdesc, function(i, val) {
     $( 'div.comments' ).append( '<p>' + newdesc[i] + '</p>' );
     });
