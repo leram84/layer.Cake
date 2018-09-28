@@ -152,6 +152,7 @@ if ( $( 'body.book' ).length > 0 ) {
     $( 'div.description' ).fadeIn( 100 );
   }*/
 
+  description = $( '.comments' );
   bookInfo = $( '.author' ).nextUntil( 'h3:contains("Description:")');
   $( 'h3:contains("Description:")' ).hide();
   $( '.comments' ).detach();
@@ -242,7 +243,7 @@ if ( $( 'body.book' ).length > 0 ) {
       });
     $( 'div.comments' ).fadeIn( 100 );
   }
-  
+
   // Sexy blurred backgrounds
   cover = $( '.cover img' ).attr( 'src' );
   $( '#loader + .container-fluid' )
