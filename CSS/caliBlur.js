@@ -154,7 +154,7 @@ if ( $( 'body.book' ).length > 0 ) {
 
   description = $( '.comments' );
   bookInfo = $( '.author' ).nextUntil( 'h3:contains("Description:")');
-  $( 'h3:contains("Description:")' ).hide();
+  $( 'h3:contains("Description:")' ).detach();
   $( '.comments' ).detach();
   $( bookInfo ).wrapAll( '<div class="bookinfo"></div>' );
 //  $( 'h3:contains("Description:")' ).after( '<div class="description"></div>' );
@@ -188,21 +188,8 @@ if ( $( 'body.book' ).length > 0 ) {
   styles and empty elements */
 
   // If text is sitting in div as text node
-  if ( description[0] === undefined ) {
-    textValue = description
-      .contents()
-      .filter(function() {
-        return this.nodeType == Node.TEXT_NODE;
-      }).text();
-    description = $.makeArray(
-      textValue.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "")
-    );
-    $( '.comments' ).contents().filter(function() {
-      return this.nodeType === 3;
-    }).remove();
-  }
   if ( description[1] === undefined ) {
-    newdesc = description.toString()
+    newdesc = description.text()
     .replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
     $.each(newdesc, function(i, val) {
     $( 'div.comments' ).append( '<p>' + newdesc[i] + '</p>' );
