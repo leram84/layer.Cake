@@ -188,7 +188,7 @@ if ( $( 'body.book' ).length > 0 ) {
   styles and empty elements */
 
   // If text is sitting in div as text node
-  if ( description[1] === undefined ) {
+  if ( $( '#rmjs-1 > div:has(p)' ) === undefined ) {
     newdesc = description.text()
     .replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
     $.each(newdesc, function(i, val) {
