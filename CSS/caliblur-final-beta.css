@@ -4322,6 +4322,9 @@ body.login > div.container-fluid > div.row-fluid > div.col-sm-2 {
 
 
 @media only screen and (min-width: 768px) {
+ #main-nav + #scnd-nav {
+    background: rgba(0,0,0,.15);
+}
 body:not(.blur) > div.navbar.navbar-default.navbar-static-top > div > div.navbar-collapse.collapse > ul > li > a#logout {
     display: none;
 }
@@ -5476,9 +5479,7 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
 }
 
 
-#main-nav + #scnd-nav {
-    background: rgba(0,0,0,.15);
-}
+
 #main-nav + #scnd-nav:after {
     width: 100%;
     height: 60px;
