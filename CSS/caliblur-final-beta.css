@@ -6447,10 +6447,10 @@ body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h
     height:  42px;
     width: calc(100%);
     line-height:  42px;
-    padding-right: 50px;
+        padding-right: 130px;
     overflow:  hidden;
     -o-text-overflow:  ellipsis;
-       text-overflow:  ellipsis;
+    text-overflow:  ellipsis;
     white-space:  nowrap;
     background:  rgba(0,0,0,.15);
     font-size:  13px;
