@@ -189,7 +189,6 @@ if ( $( 'body.book' ).length > 0 ) {
 
   // If text is sitting in div as text node
   if ( $('.comments:has(p)' ).length === 0 ) {
-    $('.comments' ).empty();
     newdesc = description.text()
     .replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm,"").split(/\n/);
     $.each(newdesc, function(i, val) {
