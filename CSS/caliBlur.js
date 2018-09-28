@@ -61,7 +61,7 @@ $( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navba
 if ( $( 'body.book' ).length > 0 ) {
 
   // Edge Jiggery fix
-  $( '.comments' ).addClass('description');
+//  $( '.comments' ).addClass('description');
 
   description = $( 'h3:contains("Description:")' ).nextUntil( '.morestuff' ).slice(0,-1);
   bookInfo = $( '.author' ).nextUntil( 'h3:contains("Description:")');
