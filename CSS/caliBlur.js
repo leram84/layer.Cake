@@ -190,7 +190,7 @@ if ( $( 'body.book' ).length > 0 ) {
 
   // If text is sitting in div as text node
   if ( description[0] === undefined ) {
-    textValue = $( '.book-meta' )
+    textValue = $( '.comments' )
       .contents()
       .filter(function() {
         return this.nodeType == Node.TEXT_NODE;
@@ -198,7 +198,7 @@ if ( $( 'body.book' ).length > 0 ) {
     description = $.makeArray(
       textValue.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "")
     );
-    $( '.book-meta' ).contents().filter(function() {
+    $( '.comments' ).contents().filter(function() {
       return this.nodeType === 3;
     }).remove();
   }
@@ -511,7 +511,7 @@ $(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identif
 });
 
 // Collapse long text into read-more
-$( 'div.description' ).readmore( {
+$( 'div.comments' ).readmore( {
   collapsedHeight: 134,
   heightMargin: 45,
   speed: 300,
