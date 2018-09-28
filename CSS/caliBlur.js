@@ -224,7 +224,7 @@ if ( $( 'body.book' ).length > 0 ) {
    }
   } else {
       $.each(description, function(i, val) {
-      $( description[i].outerHTML ).appendTo( '.comments' );
+//      $( description[i].outerHTML ).appendTo( '.comments' );
       $( 'div.comments :empty' ).remove();
       $( 'div.comments ').attr( 'style', '' );
       });
