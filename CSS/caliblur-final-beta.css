@@ -2886,10 +2886,12 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 }
 #bookDetailsModal > .modal-dialog.modal-lg > .modal-content > .modal-body> div > div > div > div.col-sm-3.col-lg-3.col-xs-5 > div.cover > img,
 body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-lg-3.col-xs-5 > div.cover > img {
-    margin: 0 auto;
+    
+ margin: 0 auto;
     max-height: 300px;
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
+    width: 100%;
 }
 
 
