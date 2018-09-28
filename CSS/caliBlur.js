@@ -196,7 +196,7 @@ if ( $( 'body.book' ).length > 0 ) {
     $( 'div.comments' ).append( '<p>' + newdesc[i] + '</p>' );
     });
     $( '.comments' ).fadeIn(100);
-    //If still a wall of text create 3 sentence paragraphs.
+  }    //If still a wall of text create 3 sentence paragraphs.
    if( $( '.comments p' ).length === 1 ) {
      if ( description.context != undefined ) {
      newdesc = description.text()
@@ -222,7 +222,7 @@ if ( $( 'body.book' ).length > 0 ) {
      });
      $( 'div.comments' ).append( output );
    }
-  } else {
+   else {
       $.each(description, function(i, val) {
 //      $( description[i].outerHTML ).appendTo( '.comments' );
       $( 'div.comments :empty' ).remove();
