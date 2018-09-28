@@ -3632,6 +3632,11 @@ body > div.navbar.navbar-default:before {
     max-width: 100% !important;
     -webkit-filter: blur(125px) brightness(85%);
             filter: blur(125px) brightness(85%);
+ 
+     -moz-filter: blur(125px);
+       -o-filter: blur(125px);
+      -ms-filter: blur(125px);
+ 
     opacity: .4;
     -webkit-animation: fade 1s;
     animation: fade 1s;
