@@ -178,9 +178,8 @@ if ( $( 'body.book' ).length > 0 ) {
     }
   }
   $( '.rating' ).insertBefore( '.hr' );
-  $( 'div.comments' ).hide();
   $( '#remove-from-shelves' ).insertAfter( '.hr' );
-
+  $( description ).appendTo('.bookinfo')
   /* if book description is not in html format, Remove extra line breaks
   Remove blank lines/unnecessary spaces, split by line break to array
   Push array into .description div. If there is still a wall of text,
@@ -190,7 +189,7 @@ if ( $( 'body.book' ).length > 0 ) {
 
   // If text is sitting in div as text node
   if ( description[0] === undefined ) {
-    textValue = $( '.comments' )
+    textValue = description
       .contents()
       .filter(function() {
         return this.nodeType == Node.TEXT_NODE;
