@@ -5602,14 +5602,23 @@ body.admin.modal-open .navbar {
     border-bottom: 1px solid #222;
     background-color: #323232;
 }
-#RestartDialog > .modal-dialog > .modal-content > .modal-header:before,
-#ShutdownDialog > .modal-dialog > .modal-content > .modal-header:before {
-    content: "\E197";
+#RestartDialog > .modal-dialog > .modal-content > .modal-header:before {
+        content: "\EA4F";
     padding-right: 10px;
     font-size: 18px;
     color: #999;
     display: inline-block;
-    font-family: Glyphicons Regular;
+    font-family: plex-icons-new;
+    font-style: normal;
+    font-weight: 400;
+}
+#ShutdownDialog > .modal-dialog > .modal-content > .modal-header:before {
+    content: "\E064";
+    padding-right: 10px;
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    font-family: glyphicons regular;
     font-style: normal;
     font-weight: 400;
 }
@@ -5758,7 +5767,7 @@ body.admin.modal-open .navbar {
 }
 .editbook .more-stuff > .dropdown-menu {
     position: fixed;
-    top: 120px;
+    top: 90px;
     right: 17px;
     left: auto !important;
 }
@@ -6999,12 +7008,26 @@ body.book .author {
     display: none;
 }
 .book-meta > .bookinfo > .published-date > span:last-of-type {
-    padding-left: 45px
+    padding-left: 25px
 }
+ .book-meta > .bookinfo > .publishers > span:last-of-type {
+    padding-left: 70px;
+ }
+ .book-meta > .bookinfo > .languages > span:last-of-type {
+    padding-left: 65px;
+}
+ .book-meta > .bookinfo .publishers {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ 
+ 
 div.description + [data-readmore-toggle],
  div.comments + [data-readmore-toggle] {
     text-align: center;
     color:  var(--color-secondary);
+      margin: 10px auto;
 }
 div.description + [data-readmore-toggle]:hover,
  div.comments + [data-readmore-toggle]:hover {
