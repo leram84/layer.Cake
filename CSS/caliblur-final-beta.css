@@ -2901,7 +2901,8 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 
 
 
-.book-meta > .description {
+.book-meta > .description,
+.book-meta > .bookinfo > .comments {
     margin-top: 30px;
     font-size: 15px;
     color: #eee
@@ -3814,7 +3815,8 @@ body.login:not(.read-frame) {
 }
 
 
-.book-meta > .description[aria-expanded="true"] + a:after {
+.book-meta > .description[aria-expanded="true"] + a:after,
+.book-meta > .bookinfo > .comments[aria-expanded="true"] + a:after {
     content: '';
     display: inline-block;
     border-color: hsla(0,0%,100%,.45);
@@ -3837,7 +3839,8 @@ body.login:not(.read-frame) {
     transition: border .2s,transform .4s,-webkit-transform .4s;
     margin: 9px 6px
 }
-.book-meta > .description[aria-expanded="false"] + a:after {
+.book-meta > .description[aria-expanded="false"] + a:after,
+.book-meta > .bookinfo > .comments[aria-expanded="false"] + a:after {
     content: '';
     display: inline-block;
     border-color: hsla(0,0%,100%,.45);
@@ -3860,23 +3863,27 @@ body.login:not(.read-frame) {
     transition: border .2s,transform .4s,-webkit-transform .4s;
     margin: 12px 6px
 }
-.book-meta > .description + a {
+.book-meta > .description + a,
+.book-meta > .bookinfo > .comments + a {
     width: 100px;
     margin-top: 10px;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
-.book-meta > .description + a:hover {
+.book-meta > .description + a:hover,
+.book-meta > .bookinfo > .comments + a:hover {
     text-decoration: none;
 }
-.book-meta > .description[aria-expanded="false"] + a:hover:after {
+.book-meta > .description[aria-expanded="false"] + a:hover:after,
+.book-meta > .bookinfo > .comments[aria-expanded="false"] + a:hover:after {
     border-color: #fff;
     border-right: 4px solid transparent;
     border-top-width: 5px;
     border-left: 4px solid transparent;
 }
-.book-meta > .description[aria-expanded="true"] + a:hover:after {
+.book-meta > .description[aria-expanded="true"] + a:hover:after,
+.book-meta > .bookinfo > .comments[aria-expanded="true"] + a:hover:after {
     border-color: #fff;
     border-right: 4px solid transparent;
     border-bottom-width: 5px;
@@ -5253,7 +5260,8 @@ border: 1px rgba(0,0,0,.2) solid;
     pointer-events: auto ;
 } 
 
-.description > p {
+.description > p,
+.book-meta > .bookinfo > .comments > p {
     margin: 0 0 27px;
 }
 
@@ -6993,14 +7001,17 @@ body.book .author {
 .book-meta > .bookinfo > .published-date > span:last-of-type {
     padding-left: 45px
 }
-div.description + [data-readmore-toggle] {
+div.description + [data-readmore-toggle],
+ div.comments + [data-readmore-toggle] {
     text-align: center;
     color:  var(--color-secondary);
 }
-div.description + [data-readmore-toggle]:hover {
+div.description + [data-readmore-toggle]:hover,
+ div.comments + [data-readmore-toggle]:hover {
     color:  #fff;
 }
-.book-meta > .description[aria-expanded="false"] + a:after {
+.book-meta > .description[aria-expanded="false"] + a:after,
+ .book-meta > .bookinfo > .comments[aria-expanded="false"] + a:after {
     content: '';
     display: inline-block;
     border-color: var(--color-secondary);
@@ -7023,7 +7034,8 @@ div.description + [data-readmore-toggle]:hover {
     transition: border .2s,transform .4s,-webkit-transform .4s;
     margin: 12px 6px;
 }
-.book-meta > .description[aria-expanded="true"] + a:after {
+.book-meta > .description[aria-expanded="true"] + a:after,
+.book-meta > .bookinfo > .comments[aria-expanded="true"] + a:after {
     content: '';
     display: inline-block;
     border-color: var(--color-secondary);
