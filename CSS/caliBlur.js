@@ -207,6 +207,7 @@ if ( $( 'body.book' ).length > 0 ) {
      }
      doc = nlp ( newdesc.toString() );
      sentences = doc.map((m)=> m.out( 'text' ));
+     sentences[0] = sentences[0].replace(",","");
      $( '.comments p' ).remove();
      let size = 3; let sentenceChunks = [];
      for (var i=0; i<sentences.length; i+=size) {
