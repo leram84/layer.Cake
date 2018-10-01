@@ -52,9 +52,13 @@ if ( history.length === 1 ||
 }
 
 //Weird missing a after pressing back from edit.
-if ( $( '.plexBack a').length < 1 ) {
-  $( '.plexBack' ).append('<a href="' + document.referrer + '"></a>');
-}
+setTimeout(function() {
+  if ( $( '.plexBack a').length < 1 ) {
+    $( '.plexBack' ).append('<a href="' + document.referrer + '"></a>');
+  }
+},100);
+});
+
 // Home button
 $( '.plexBack' ).before( '<div class="home-btn"></div>' );
 $( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navbar-brand');
