@@ -50,6 +50,11 @@ if ( history.length === 1 ||
   $( 'body.root' )>length > 0 ) {
     $( '.plexBack' ).addClass( 'noBack' );
 }
+
+//Weird missing a after pressing back from edit.
+if ( $( '.plexBack a').length < 1 ) {
+  $( '.plexBack' ).append('<a href="' + document.referrer + '"></a>');
+}
 // Home button
 $( '.plexBack' ).before( '<div class="home-btn"></div>' );
 $( 'a.navbar-brand' ).clone().appendTo( '.home-btn' ).empty().removeClass('navbar-brand');
