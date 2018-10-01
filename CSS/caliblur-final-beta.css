@@ -4474,31 +4474,32 @@ body:not(.blur) > .navbar > .container-fluid > .navbar-header:after {
 
 
 
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type:before,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row:first-of-type > div.col > h2:before {
     content: "Admin Settings";
-width: calc(100vw - 240px);
-height: 60px;
-margin: 0;
-padding-left: 25px;
-background: transparent;
-color: hsla(0,0%,100%,.7);
-font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 15px;
-line-height: 60px;
--webkit-text-size-adjust: 100%;
-   -moz-text-size-adjust: 100%;
+    width: calc(100vw - 240px);
+    height: 60px;
+    margin: 0;
+    padding-left: 25px;
+    background: transparent;
+    color: hsla(0,0%,100%,.7);
+    font-family: "Open Sans Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-        text-size-adjust: 100%;
-white-space: nowrap;
--webkit-box-direction: normal;
--webkit-font-smoothing: antialiased;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-font-weight: 400;
--webkit-margin-before: 0;
--webkit-margin-after: 0;
-position: fixed;
-top: 60px;
-left: 240px;
+    text-size-adjust: 100%;
+    white-space: nowrap;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    position: fixed;
+    top: 60px;
+    left: 240px;
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before {
     content: "User Settings";
@@ -4552,13 +4553,19 @@ position: fixed;
 top: 60px;
 left: 240px;
 }
-
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid {
+    height: auto;
+    width: calc(100vw - 257px);
+    margin: 20px 0 30px !important;
+    padding: 0 10px 0 40px !important;
+}
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > h2 {
     font-size: 24px;
-font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-color: #eee;
-font-weight: 400;
-line-height: 1;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1;
 }
 .table-striped > tbody > tr:nth-of-type(2n+1) {
 
@@ -4566,16 +4573,19 @@ line-height: 1;
 
 }
 
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .btn > a {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .btn > a,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > .btn > a {
     text-decoration: none;
     color: #fff;
 }
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .table > tbody > tr > td {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .table > tbody > tr > td,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col .table > tbody > tr > td {
     border-bottom: 2px solid rgba(0,0,0,.3);
     border-top: 2px solid rgba(0,0,0,.3);
     border: collapse
 }
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .table > tbody > tr > th {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > .table > tbody > tr > th,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col .table > tbody > tr > th {
     border-bottom: 2px solid rgba(0,0,0,.3);
     border-top: 2px solid rgba(0,0,0,.3);
     border: collapse
@@ -5273,29 +5283,35 @@ border: 1px rgba(0,0,0,.2) solid;
 }
 
 
-.admin #container > h2 {
+.admin #container > h2,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > h2 {
     font-size: 24px;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #eee;
     font-weight: 400;
     line-height: 1;
 }
-.admin #container > .col-xs-12 {
+.admin #container > .col-xs-12,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > .col-xs-12 {
     width: 100%;
     background: rgba(0,0,0,.15);
     padding: 0;
     
     border-collapse: collapse
 }
-.admin #container > .col-xs-12:last-of-type {
+.admin #container > .col-xs-12:last-of-type,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > .col-xs-12:last-of-type {
     border-bottom: 2px solid rgba(0,0,0,.3);
 }
-.admin #container > .col-xs-12 > .Row > .col-xs-6 {
+.admin #container > .col-xs-12 > .Row > .col-xs-6,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > .col-xs-12 > .row > .col-xs-6 {
     width: 50%;
     padding-top: 8px;
     padding-bottom: 8px;
+    
 }
-.admin #container > .col-xs-12 > .Row > .col-xs-6 {
+.admin #container > .col-xs-12 > .Row > .col-xs-6,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > .col-xs-12 > .row > .col-xs-6 {
     border-top: 2px solid rgba(0,0,0,.3);
 
 }
@@ -5307,7 +5323,12 @@ body.admin > div.container-fluid > div > div.col-sm-10 > div.discover .btn > a {
     padding: 0;
     margin: 10px 0 30px;
 }
-
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > .col-xs-12:nth-child(3) {
+    margin-bottom: 20px;
+}
+body.admin .btn-default {
+    margin-bottom: 10px;
+}
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     background-color: hsla(0, 0%, 100%, .02);
 }
@@ -6454,7 +6475,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 {
     top: 42px;
     height: calc(100% - 42px);
 }
-body > div.container-fluid > div > div.col-sm-10 > div.discover {
+body > div.container-fluid > div > div.col-sm-10 > div.discover,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid {
     width:  100%;
     margin: 0 !important;
     padding:  10px !important;
@@ -6468,7 +6490,8 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
 body.newuser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > h1:before,
 body.mailset > div.container-fluid > div > div.col-sm-10 > div.discover > h1,
 body.admin.config > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type, body.admin.uiconfig > div.container-fluid > div > div.col-sm-10 > div.discover > h2:first-of-type,
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 > div:nth-child(10) > label:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > form > div.col-sm-9 > div:nth-child(10) > label:before,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row:first-of-type > div.col > h2:before {
     top: 48px;
     left: 0;
     padding-left:  10px;
@@ -6805,7 +6828,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
 body {
     font-size: 13px
 }
-body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2 {
+body.admin > div.container-fluid > div > div.col-sm-10 > div.discover > h2,
+body.admin > div.container-fluid > div > div.col-sm-10 > div.container-fluid > div.row > div.col > h2 {
     font-size: 14px;
     text-transform: uppercase
 }
