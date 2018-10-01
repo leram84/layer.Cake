@@ -55,7 +55,7 @@ if ( history.length === 1 ||
 setTimeout(function() {
   if ( $( '.plexBack a').length < 1 ) {
     $( '.plexBack' ).append('<a href="' + document.referrer + '"></a>');
-  }
+
 },100);
 });
 
