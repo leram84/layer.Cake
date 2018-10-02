@@ -772,7 +772,8 @@ if ( $( window ).width() <= 768 ) {
 
 // LayerCake plug
 $(' .stat.blur.stats p').append(" and <a href='https://github.com/leram84/layer.Cake/tree/master/caliBlur'>LayerCake</a>");
-$(' .stat.blur.stats p').text().replace(".","");
+str = $(' .stat.blur.stats p').html().replace("</a>.","</a>");
+$(' .stat.blur.stats p').html(str);
 
 // Collect delete buttons in editbook to single dropdown
 $( '.editbook .text-center.more-stuff' ).prepend( '<button id="deleteButton" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-remove"></span>Delete Format<span class="caret"></span></button><ul class="dropdown-menu delete-dropdown"></ul>' );
