@@ -4860,7 +4860,13 @@ left: 240px;
 }
 
 
-
+body:not(.blur) #scnd-nav > li > a > .glyphicon-book,
+body:not(.blur) #scnd-nav > li > a > .glyphicon-search {
+    margin-right: 8px
+}
+#scnd-nav > li > a > .glyphicon-search {
+    margin-right: 11px
+}
 
 
 
