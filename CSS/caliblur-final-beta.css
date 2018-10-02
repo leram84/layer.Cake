@@ -5558,7 +5558,8 @@ body.admin.modal-open .navbar {
 }
 #RestartDialog,
 #ShutdownDialog,
-#UpdateprogressDialog {
+#UpdateprogressDialog,
+#deleteModal {
     
     top: 0;
     overflow: hidden;
@@ -5570,7 +5571,8 @@ body.admin.modal-open .navbar {
 }
 #RestartDialog:before,
 #ShutdownDialog:before,
-#UpdateprogressDialog:before {
+#UpdateprogressDialog:before,
+#deleteModal:before {
     content: "\E208";
     padding-right: 10px;
     font-size: 18px;
@@ -5598,26 +5600,30 @@ body.admin.modal-open .navbar {
 }
 #RestartDialog:hover:before,
 #ShutdownDialog:hover:before,
-#UpdateprogressDialog:hover:before {
+#UpdateprogressDialog:hover:before,
+#deleteModal:hover:before {
     cursor: pointer;
 }
 #RestartDialog.in:before,
 #ShutdownDialog.in:before,
-#UpdateprogressDialog.in:before {
+#UpdateprogressDialog.in:before,
+#deleteModal.in:before {
     -webkit-transform: translate(0,0);
     -ms-transform: translate(0,0);
     transform: translate(0,0);
 }
 #RestartDialog > .modal-dialog,
 #ShutdownDialog > .modal-dialog,
-#UpdateprogressDialog > .modal-dialog {
+#UpdateprogressDialog > .modal-dialog,
+#deleteModal > .modal-dialog {
     width: 450px;
     margin: auto;
     
 }
 #RestartDialog > .modal-dialog > .modal-content,
 #ShutdownDialog > .modal-dialog > .modal-content,
-#UpdateprogressDialog > .modal-dialog > .modal-content {
+#UpdateprogressDialog > .modal-dialog > .modal-content,
+#deleteModal > .modal-dialog > .modal-content {
         max-height: calc(100% - 90px);
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
@@ -5629,7 +5635,8 @@ body.admin.modal-open .navbar {
 }
 #RestartDialog > .modal-dialog > .modal-content > .modal-header,
 #ShutdownDialog > .modal-dialog > .modal-content > .modal-header,
-#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-header {
+#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-header,
+#deleteModal > .modal-dialog > .modal-content > .modal-header {
         padding: 15px 20px;
     border-radius: 3px 3px 0 0;
     line-height: 1.71428571;
@@ -5671,6 +5678,16 @@ body.admin.modal-open .navbar {
     font-style: normal;
     font-weight: 400;
 }
+#deleteModal > .modal-dialog > .modal-content > .modal-header:before {
+    content: "\EA6D";
+    padding-right: 10px;
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    font-family: plex-icons-new;
+    font-style: normal;
+    font-weight: 400;
+}
 #RestartDialog > .modal-dialog > .modal-content > .modal-header:after {
     content: "Restart Calibre-Web";
     display: inline-block;
@@ -5686,7 +5703,13 @@ body.admin.modal-open .navbar {
     display: inline-block;
     font-size: 20px;
 }
-#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-header > span {
+#deleteModal > .modal-dialog > .modal-content > .modal-header:after {
+    content: "Delete Book";
+    display: inline-block;
+    font-size: 20px;
+}
+#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-header > span,
+#deleteModal > .modal-dialog > .modal-content > .modal-header > span {
     display: none;
 }
 #RestartDialog > .modal-dialog > .modal-content > .modal-body {
@@ -5699,7 +5722,8 @@ body.admin.modal-open .navbar {
     text-align: left;
 }
 #ShutdownDialog > .modal-dialog > .modal-content > .modal-body,
-#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-body {
+#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-body,
+#deleteModal > .modal-dialog > .modal-content > .modal-body {
     padding: 20px 20px 40px;
     font-size: 16px;
     line-height: 1.6em;
@@ -5710,7 +5734,8 @@ body.admin.modal-open .navbar {
 }
 #RestartDialog > .modal-dialog > .modal-content > .modal-body > p,
 #ShutdownDialog > .modal-dialog > .modal-content > .modal-body > p,
-#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-body > p {
+#UpdateprogressDialog > .modal-dialog > .modal-content > .modal-body > p,
+#deleteModal > .modal-dialog > .modal-content > .modal-body > p {
     padding: 20px 20px 0px 0px;
     font-size: 16px;
     line-height: 1.6em;
@@ -5751,6 +5776,17 @@ body.admin.modal-open .navbar {
     line-height: 1.33;
     border-radius: 3px;
 }
+#deleteModal > .modal-dialog > .modal-content > .modal-footer > .btn-danger {
+    float: right;
+    z-index: 9;
+    position: relative;
+    margin: 0px 0 0 10px;
+    min-width: 80px;
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 3px;
+}
 #RestartDialog > .modal-dialog > .modal-content > .modal-body > .btn-default:not(#restart) {
     float: right;
     z-index: 9;
@@ -5775,8 +5811,21 @@ body.admin.modal-open .navbar {
     border-radius: 3px;
     background-color: hsla(0,0%,100%,.25);
 }
+#deleteModal > .modal-dialog > .modal-content > .modal-footer > .btn-default {
+    float: right;
+    z-index: 9;
+    position: relative;
+    margin: 0 0 0 10px;
+    min-width: 80px;
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 3px;
+    background-color: hsla(0,0%,100%,.25);
+}
 #RestartDialog > .modal-dialog > .modal-content > .modal-body > .btn-default:not(#restart):hover,
-#ShutdownDialog > .modal-dialog > .modal-content > .modal-body > .btn-default:not(#shutdown):hover {
+#ShutdownDialog > .modal-dialog > .modal-content > .modal-body > .btn-default:not(#shutdown):hover,
+#deleteModal > .modal-dialog > .modal-content > .modal-footer > .btn-default:hover {
     background-color: hsla(0,0%,100%,.3);
 }
 #RestartDialog > .modal-dialog > .modal-content > .modal-body:after {
@@ -7438,20 +7487,17 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
 }
 
  
- #RestartDialog.in:before,
-#ShutdownDialog.in:before,
-#UpdateprogressDialog.in:before {
-        left: auto;
-    right: 34px;
-}
+ 
 #RestartDialog > .modal-dialog,
 #ShutdownDialog > .modal-dialog,
-#UpdateprogressDialog > .modal-dialog {
+#UpdateprogressDialog > .modal-dialog,
+#deleteModal > .modal-dialog {
     max-width: calc(100vw - 40px);
 }
 #RestartDialog > .modal-dialog > .modal-content,
 #ShutdownDialog > .modal-dialog > .modal-content,
-#UpdateprogressDialog > .modal-dialog > .modal-content {
+#UpdateprogressDialog > .modal-dialog > .modal-content,
+#deleteModal > .modal-dialog > .modal-content {
     max-width: calc(100vw - 40px);
     left: 0;
 }
@@ -7614,7 +7660,13 @@ body > div.container-fluid > div > div.col-sm-10 > div.container > div > .row {
     .login .well > form {
         padding: 30px 15px
     }
-
+#RestartDialog.in:before,
+#ShutdownDialog.in:before,
+#UpdateprogressDialog.in:before,
+#deleteModal.in:before {
+        left: auto;
+    right: 34px;
+}
 
 }
 @media only screen and (max-width: 490px) {
