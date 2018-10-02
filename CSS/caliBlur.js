@@ -483,7 +483,7 @@ $(document).on('click','.dropdown-toggle',function() {
 
 // Fade out content on page unload
 // delegate all clicks on "a" tag (links)
-$(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identifiers a, .bookinfo , .btn-group > a, #add-to-shelves a, #book-list a )", function () {
+$(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identifiers a, .bookinfo , .btn-group > a, #add-to-shelves a, #book-list a, .stat.blur.stats a )", function () {
 
     // get the href attribute
     var newUrl = $(this).attr("href");
@@ -771,7 +771,7 @@ if ( $( window ).width() <= 768 ) {
 }
 
 // LayerCake plug
-$(' .stat.blur.stats p').append(" and <a href='https://github.com/leram84/layer.Cake/tree/master/caliBlur'>LayerCake</a>");
+$(' .stat.blur.stats p').append(" and <a href='https://github.com/leram84/layer.Cake/tree/master/caliBlur' target='_blank'>LayerCake</a>");
 str = $(' .stat.blur.stats p').html().replace("</a>.","</a>");
 $(' .stat.blur.stats p').html(str);
 
