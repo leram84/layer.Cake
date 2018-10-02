@@ -2903,7 +2903,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 
 .book-meta > .description,
 .book-meta > .bookinfo > .comments {
-    margin-top: 30px;
+    margin-top: 60px;
     font-size: 15px;
     color: #eee
 }
@@ -5280,9 +5280,9 @@ border: 1px rgba(0,0,0,.2) solid;
     pointer-events: auto ;
 } 
 
-.description > p,
-.book-meta > .bookinfo > .comments > p {
-    margin: 0 0 27px;
+.description p,
+.book-meta > .bookinfo > .comments p {
+    margin: 0 0 28px;
 }
 
 .profileDrop + span.hidden-sm {
@@ -6024,14 +6024,14 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     font-size: 14px;
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
-    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     display: -ms-grid;
     display: grid;
     margin-top: 40px;
     margin-bottom: 60px;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 {
-    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     display: -ms-grid;
     display: grid;
     margin-top: 90px;
@@ -6057,7 +6057,7 @@ body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > f
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img,
 body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
     width: 135px !important;
-    height: 203px !important;
+    height: 200px !important;
 }
 /* kill themes */
 #theme {
