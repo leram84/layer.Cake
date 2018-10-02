@@ -483,7 +483,7 @@ $(document).on('click','.dropdown-toggle',function() {
 
 // Fade out content on page unload
 // delegate all clicks on "a" tag (links)
-$(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identifiers a, .bookinfo , .btn-group > a, #add-to-shelves a )", function () {
+$(document).on("click", "a:not(.btn-toolbar a, a[href*='shelf/remove'], .identifiers a, .bookinfo , .btn-group > a, #add-to-shelves a, #book-list a )", function () {
 
     // get the href attribute
     var newUrl = $(this).attr("href");
