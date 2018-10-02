@@ -670,7 +670,7 @@ $( '#have_read_cb:checked' ).attr({
   .addClass('readunread-btn-tooltip');
 
   $( 'button#delete' ).attr({
-    'data-toggle': 'tooltip',
+    'data-toggle-two': 'tooltip',
     'title': 'Delete',
     'data-placement': 'bottom',
     'data-viewport': '.btn-toolbar' })
