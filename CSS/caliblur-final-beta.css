@@ -4867,7 +4867,11 @@ body:not(.blur) #scnd-nav > li > a > .glyphicon-search {
 #scnd-nav > li > a > .glyphicon-search {
     margin-right: 11px
 }
-
+.tags + .more-stuff + .languages,
+.identifiers + .more-stuff + .languages,
+#remove-from-shelves + .more-stuff + .languages {
+    margin-top: 20px;
+}
 
 
 
