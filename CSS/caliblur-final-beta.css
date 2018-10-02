@@ -3579,9 +3579,10 @@ body > div.navbar.navbar-default:before {
  
  
 
-.author .blur-wrapper:after {
+/* .author .blur-wrapper:after {
     background-image: none !important;
 }
+*/
 .blur-wrapper:after {
     content: '';
     display: block;
