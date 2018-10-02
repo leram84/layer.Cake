@@ -2903,7 +2903,7 @@ body > div.container-fluid > div > div.col-sm-10 > div > div > div.col-sm-3.col-
 
 .book-meta > .description,
 .book-meta > .bookinfo > .comments {
-    margin-top: 30px;
+    margin-top: 60px;
     font-size: 15px;
     color: #eee
 }
@@ -5280,9 +5280,9 @@ border: 1px rgba(0,0,0,.2) solid;
     pointer-events: auto ;
 } 
 
-.description > p,
-.book-meta > .bookinfo > .comments > p {
-    margin: 0 0 27px;
+.description p,
+.book-meta > .bookinfo > .comments p {
+    margin: 0 0 28px;
 }
 
 .profileDrop + span.hidden-sm {
