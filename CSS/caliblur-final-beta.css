@@ -4655,7 +4655,8 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     padding: 0;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2 {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2 {
     color: #eee;
     font-size: 15px;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -4677,29 +4678,34 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
     left: 0;
     height: auto;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 {
     width: auto;
 height: 200px;
 padding: 0;
 margin: 15px;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a {
     width: 100%;
     display: inline-block;
 height: 100%;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover {
     outline: 2px solid var(--color-secondary);
 font-size: 50px;
 -o-transition: outline 0s;
 transition: outline 0s;
 -webkit-transition: outline 0s;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img {
     height: 100%;
 width: auto;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:before {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:before,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:before {
     content: "\e352";
 display: inline-block;
 position: absolute;
@@ -4721,13 +4727,15 @@ margin: auto;
 opacity: 0;
 z-index: 9;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:before {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:before,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:before {
     -o-transition: opacity .2s;
     transition: opacity .2s;
 -webkit-transition: opacity .2s;
 opacity: 1;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:after {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:after,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:after {
     position: absolute;
 content: '';
 width: 100%;
@@ -4740,7 +4748,8 @@ background: -webkit-radial-gradient(50% 50%,farthest-corner,rgba(50,50,50,.5) 50
 background: -o-radial-gradient(50% 50%,farthest-corner,rgba(50,50,50,.5) 50%,#323232 100%);
 background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:after {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:after,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a:hover:after {
     opacity: 1;
 -o-transition: opacity .2s;
 transition: opacity .2s;
@@ -6019,12 +6028,14 @@ body > div.container-fluid > div > div.col-sm-10 > div.discover > div.isotope {
 }
  
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2,
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > h2 {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > h2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > h2 {
     position: absolute;
     margin-top: -30px;
     font-size: 14px;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     display: -ms-grid;
     display: grid;
@@ -6039,7 +6050,8 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     margin-bottom: 0;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before,
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
     content: '';
     display: block;
     position: absolute;
@@ -6050,13 +6062,15 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
     margin-top: -65px;
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2,
-body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 {
     width: 135px !important;
     max-width: 135px !important;
     min-width: 135px !important;
 }
 body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img,
-body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img {
     width: 135px !important;
     height: 200px !important;
 }
@@ -6752,8 +6766,16 @@ body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form
     width: 100%;
     margin-bottom:  10px;
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before, body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {width:  100%;margin-left: 0;margin-top: -45px;}
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before,
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
+    width:  100%;
+    margin-left: 0;
+    margin-top: -45px;
+}
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2,
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 {
     width: 100px !important;
     max-width: 100px !important;
     min-width: 100px !important;
@@ -6765,7 +6787,9 @@ body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > f
     margin: 7.5px auto;
 }
 body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a:before {}
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img,
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 > a > img,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 > a > img {
     width: 100px !important;
     height: 150px !important;
 }
@@ -6934,7 +6958,9 @@ body.advanced_search > div.container-fluid > div > div.col-sm-10 > div.col-sm-8 
  body.me > div.container-fluid > div > div.col-sm-10 > div.discover {
     border-top: 1px solid hsla(0,0%,78%,.15);
 }
-body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before, body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12:before,
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12:before {
     height: 1px;
     background: hsla(0,0%,78%,.15);
 }
@@ -7300,7 +7326,8 @@ body.author > div.container-fluid > div > div.col-sm-10 > div.discover {
 }
 
 
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     float: left;
     width: 100%;
     margin-bottom: 10px;
@@ -7309,13 +7336,16 @@ body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.
     margin-bottom: 20px;padding-right: 15px;
 }
 
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2, body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2 {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2,
+body.me > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > form > div.col-sm-12 > div.col-sm-12 > div.col-sm-2,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 > div.col-sm-2 {
     width: auto;
     height: 150px;
     padding: 0;
     margin: 7.5px auto;
 }
-body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
+body.edituser.admin > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12,
+body > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover > div.col-sm-12 {
     /* margin: 100px 0 0; */
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
 }
