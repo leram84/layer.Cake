@@ -5963,7 +5963,9 @@ body.admin.modal-open .navbar {
     right: 17px;
     left: auto !important;
 }
-
+body.authorlist .blur-wrapper:after {
+    content: none;
+}
 
 
 
@@ -7463,7 +7465,9 @@ body.upload > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-3
 #metaModal > .modal-dialog > .modal-content {
     border-radius: 8px;
 }
-
+.blur-wrapper:after {
+    content: none;
+}
 
 
 
