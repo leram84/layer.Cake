@@ -2,7 +2,7 @@
 
 # layer.Cake 
 
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/leram84/layer.Cake/blob/master/LICENSE) [![Discord](https://img.shields.io/badge/Discord-layer%23Cake-7289da.svg)](https://discord.gg/rZXH7hu) [![PM](https://img.shields.io/badge/Reddit-Message-lightgrey.svg)](https://www.reddit.com/message/compose?to=leram84&subject=layer.Cake)  
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/leram84/layer.Cake/blob/master/LICENSE) [![Discord](https://img.shields.io/badge/Discord-layer.Cake-7289da.svg)](https://discord.gg/rZXH7hu) [![PM](https://img.shields.io/badge/Reddit-Message-lightgrey.svg)](https://www.reddit.com/message/compose?to=leram84&subject=layer.Cake)  
 
 layer.Cake is a tribute to OSS. A project with the goal of combining several OSS repos into a single uniform front-end. The heart of this project is [Plex](plex.tv) and so that will be the design language we adopt for everything else we build. The current road map is to incorporate:
 1) [Plex](plex.tv) - Movies, TV, Live TV, Podcasts
