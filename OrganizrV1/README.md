@@ -1,7 +1,7 @@
 # Organizr
 This is the theme engine for [Organizr](https://github.com/causefx/Organizr). The Basic and Advanced will take user submitted colors and apply a well thought out logic to generate your theme. There is a lot of extensibility here, but if you just want to skin your site, it can be done in seconds. The "themes" section will allow you to install entire UI mods on top of Organizr with a one click install. The first theme is theBlur, but more are comming!
 
-[![Discord](https://img.shields.io/badge/Discord-layer%23Cake-7289da.svg)](https://discord.gg/rZXH7hu)  [![PM](https://img.shields.io/badge/Reddit-Message-lightgrey.svg)](https://www.reddit.com/message/compose?to=leram84&subject=layer.Cake) 
+[![Discord](https://img.shields.io/badge/Discord-layer.Cake-7289da.svg)](https://discord.gg/rZXH7hu)  [![PM](https://img.shields.io/badge/Reddit-Message-lightgrey.svg)](https://www.reddit.com/message/compose?to=leram84&subject=layer.Cake) 
 
 ## Features
 
@@ -60,9 +60,3 @@ Once your base theme is setup, you can also make some customization's and additi
 [Numbered Playlist Fix Add-On](https://github.com/leram84/layer.Cake/blob/master/Add-Ons/Numbered-Plist-Fix.css)
 > **Description**:  Hides the first letter of your Playlist Title. This is useful if you want to number your plex playlists but don't want the number to display on your homepage.  <br/>
 > **Installation**: Paste `<link rel="stylesheet" type="text/css" href="ajax.php?a=show-file&file=https://raw.githubusercontent.com/leram84/layer.Cake/master/Add-Ons/Numbered-Plist-Fix.css">` into the "CSS Add-On Links Section" of your Organizr CSS box.
-
-## Roll Credits
-
-* Obviously none of this would be possible without [@causefx](https://github.com/causefx) and the amazing work he has done with [Organizr](https://github.com/causefx/Organizr) But much more than that (and on a personal level) he has been one of the most altruistic devs I have yet to come across! On top of the one man show that is Organizr... the dude literally spends hours a day closing issues on git/reddit/gitter and is personally responsible for hundreds (thousands?) of running web servers.... Also he literally taught me everything I needed to know to make this repo. Cheers homie!
-
-* Shout out to team Organizr on [discord](https://discord.gg/rZXH7hu) and [reddit](https://www.reddit.com/r/organizr/). Best online community I've ever had the privilege of being a part of, and an incredible learning experience. layer.Cake is my way of payin it back :)
